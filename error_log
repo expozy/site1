@@ -1,0 +1,20 @@
+[05-Jul-2023 16:36:06 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22
+[05-Jul-2023 16:36:45 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22
+[05-Jul-2023 16:38:35 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22
+[05-Jul-2023 16:39:13 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22

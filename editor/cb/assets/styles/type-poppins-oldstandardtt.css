@@ -1,0 +1,141 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+ 
+.type-poppins-oldstandardtt {
+    font-family: 'Old Standard TT', serif;
+    font-size: 100%; 
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-poppins-oldstandardtt p, .type-poppins-oldstandardtt td, .type-poppins-oldstandardtt li, .type-poppins-oldstandardtt label {
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.26rem; 
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-poppins-oldstandardtt h1, .type-poppins-oldstandardtt h2, .type-poppins-oldstandardtt h3, .type-poppins-oldstandardtt h4, .type-poppins-oldstandardtt h5, .type-poppins-oldstandardtt h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-poppins-oldstandardtt h1 {font-size: 2.7rem;margin: 0.13rem 0 0.3rem;}
+.type-poppins-oldstandardtt h2 {font-size: 2.3rem;margin: 0.23rem 0 0.3rem;}
+.type-poppins-oldstandardtt h3 {font-size: 1.9rem;margin: 0.35rem 0 0.3rem;}
+.type-poppins-oldstandardtt h4 {font-size: 1.6rem;margin: 0.47rem 0 0.3rem;line-height: 1.6;}
+.type-poppins-oldstandardtt h5 {font-size: 1.3rem;margin: 0.57rem 0 0.3rem;line-height: 1.7;}
+.type-poppins-oldstandardtt h6 {font-size: 1.1rem;margin: 0.74rem 0 0.3rem;line-height: 1.9;}
+.type-poppins-oldstandardtt p {margin:0.7rem 0 1rem;}
+
+.type-poppins-oldstandardtt .display { margin-bottom: 0.5rem; }
+.type-poppins-oldstandardtt .display h1 {
+	font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin: 0.6rem 0;
+    font-style: normal;
+}
+.type-poppins-oldstandardtt .display p {
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-style: normal;
+    text-transform: none;
+}
+
+.type-poppins-oldstandardtt .is-btn {
+    padding: 13px 50px 8px;
+}
+.type-poppins-oldstandardtt .is-btn-small {
+    padding: 7px 25px 4px;
+}
+
+.type-poppins-oldstandardtt .display-font1 {font-family: 'Poppins', sans-serif;}
+.type-poppins-oldstandardtt .display-font2 {font-family: 'Old Standard TT', serif;}
+.type-poppins-oldstandardtt .default-font1 {font-family: 'Poppins', sans-serif;}
+.type-poppins-oldstandardtt .default-font2 {font-family: 'Old Standard TT', serif;}
+
+/* h1-h6: 42  28  21  17  14 12 */
+.type-poppins-oldstandardtt h1 {font-size:42px}
+@media all and (max-width: 1800px) { 
+    .type-poppins-oldstandardtt h1 {font-size:2.19vw; font-size:clamp(27px, 2.19vw, 2.19vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-poppins-oldstandardtt h1 {font-size:2.19vw}
+}
+
+.type-poppins-oldstandardtt h2 {font-size:28px}
+@media all and (max-width: 1800px) { 
+    .type-poppins-oldstandardtt h2 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-poppins-oldstandardtt h2 {font-size:1.46vw}
+}
+
+.type-poppins-oldstandardtt h3 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-poppins-oldstandardtt h3 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-poppins-oldstandardtt h3 {font-size:1.09vw}
+}
+
+.type-poppins-oldstandardtt h4 {font-size:17px}
+@media all and (max-width: 1800px) { 
+    .type-poppins-oldstandardtt h4 {font-size:1.05vw; font-size:clamp(17px, 1.05vw, 1.05vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-poppins-oldstandardtt h4 {font-size:0.89vw}
+}
+
+.type-poppins-oldstandardtt h5 {font-size:14px}
+@media all and (max-width: 1800px) { 
+    .type-poppins-oldstandardtt h5 {font-size:0.86vw; font-size:clamp(14px, 0.86vw, 0.86vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-poppins-oldstandardtt h5 {font-size:0.73vw}
+}
+
+.type-poppins-oldstandardtt h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-poppins-oldstandardtt h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-poppins-oldstandardtt h6 {font-size:0.63vw}
+}
+
+/* 19 */
+.type-poppins-oldstandardtt p,
+.type-poppins-oldstandardtt td, 
+.type-poppins-oldstandardtt li, 
+.type-poppins-oldstandardtt label {
+    font-size: 19px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-poppins-oldstandardtt p,
+    .type-poppins-oldstandardtt td, 
+    .type-poppins-oldstandardtt li, 
+    .type-poppins-oldstandardtt label {font-size:1.17vw; font-size:clamp(16px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-poppins-oldstandardtt .v2 p,
+    .type-poppins-oldstandardtt .v2 td, 
+    .type-poppins-oldstandardtt .v2 li, 
+    .type-poppins-oldstandardtt .v2 label {font-size:0.99vw}
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,600,600i,800');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700'); */

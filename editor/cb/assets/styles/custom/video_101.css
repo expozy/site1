@@ -1,0 +1,15 @@
+.youtube_overflow{
+            position: absolute;
+            top: 0px;
+            right: 0;
+            color: white;
+            width: 30%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            background-color: #0000002b;
+          }
+          .youtube_overflow > p{
+            color: white;
+            font-weight: bold;
+          }

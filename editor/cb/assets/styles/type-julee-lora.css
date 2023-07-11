@@ -1,0 +1,146 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.type-julee-lora {
+    font-family: 'Lora', serif;
+    font-size: 100%; 
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-julee-lora p, .type-julee-lora td, .type-julee-lora li, .type-julee-lora label {
+    font-family: 'Lora', serif;
+    font-size: 1.12rem; 
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-julee-lora h1, .type-julee-lora h2, .type-julee-lora h3, .type-julee-lora h4, .type-julee-lora h5, .type-julee-lora h6 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-julee-lora h1 {font-size: 3rem;margin: 0.1rem 0 0.3rem;}
+.type-julee-lora h2 {font-size: 2.4rem;margin: 0.23rem 0 0.3rem;}
+.type-julee-lora h3 {font-size: 1.9rem;margin: 0.41rem 0 0.3rem;}
+.type-julee-lora h4 {font-size: 1.6rem;margin: 0.48rem 0 0.3rem;line-height: 1.5;}
+.type-julee-lora h5 {font-size: 1.3rem;margin: 0.6rem 0 0.3rem;line-height: 1.7;}
+.type-julee-lora h6 {font-size: 1.12rem;margin: 0.65rem 0 0.3rem;font-weight: bold;line-height: 1.9;}
+.type-julee-lora p {margin:0.56rem 0 1rem;}
+
+.type-julee-lora .display { margin-bottom: 0.5rem; }
+.type-julee-lora .display h1 {
+    font-family: 'Julee', cursive;
+    font-size: 4.4rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0.4rem 0;
+    font-style: normal;
+}
+.type-julee-lora .display p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.type-julee-lora .is-btn {
+    padding: 10px 50px;
+}
+.type-julee-lora .is-btn-small {
+    padding: 5px 25px 4px;
+}
+
+.type-julee-lora .display-font1 {font-family: 'Julee', cursive;}
+.type-julee-lora .display-font2 {font-family: 'Montserrat', sans-serif;}
+.type-julee-lora .default-font1 {font-family: 'Lora', serif;}
+.type-julee-lora .default-font2 {font-family: 'Lora', serif;}
+
+/* h1-h6: 48 32  24  19  16  12 */
+.type-julee-lora h1 {font-size:48px} 
+@media all and (max-width: 1800px) { 
+    .type-julee-lora h1 {font-size:2.5vw; font-size:clamp(29px, 2.5vw, 2.5vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-julee-lora h1 {font-size:2.5vw}
+}
+
+.type-julee-lora h2 {font-size:32px}
+@media all and (max-width: 1800px) { 
+    .type-julee-lora h2 {font-size:1.64vw; font-size:clamp(24px, 1.64vw, 1.64vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-julee-lora h2 {font-size:1.67vw}
+}
+
+.type-julee-lora h3 {font-size:24px}
+@media all and (max-width: 1800px) { 
+    .type-julee-lora h3 {font-size:1.48vw; font-size:clamp(22px, 1.48vw, 1.48vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-julee-lora h3 {font-size:1.25vw}
+}
+
+.type-julee-lora h4 {font-size:19px}
+@media all and (max-width: 1800px) { 
+    .type-julee-lora h4 {font-size:1.17vw; font-size:clamp(19px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-julee-lora h4 {font-size:0.99vw}
+}
+
+.type-julee-lora h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-julee-lora h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-julee-lora h5 {font-size:0.83vw}
+}
+
+.type-julee-lora h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-julee-lora h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-julee-lora h6 {font-size:0.63vw}
+}
+
+/* 18 */
+.type-julee-lora p,
+.type-julee-lora td, 
+.type-julee-lora li, 
+.type-julee-lora label {
+    font-size: 18px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-julee-lora p,
+    .type-julee-lora td, 
+    .type-julee-lora li, 
+    .type-julee-lora label {font-size:1.11vw; font-size:clamp(16px, 1.11vw, 1.11vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-julee-lora .v2 p,
+    .type-julee-lora .v2 td, 
+    .type-julee-lora .v2 li, 
+    .type-julee-lora .v2 label {font-size:0.94vw}
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Julee');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,700'); */

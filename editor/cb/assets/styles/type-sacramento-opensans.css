@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.type-sacramento-opensans {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+	font-size: 100%;
+	line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-sacramento-opensans p, .type-sacramento-opensans td, .type-sacramento-opensans li, .type-sacramento-opensans label {
+   	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9rem;
+    font-weight: 300;
+	line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-sacramento-opensans h1, .type-sacramento-opensans h2, .type-sacramento-opensans h3, .type-sacramento-opensans h4, .type-sacramento-opensans h5, .type-sacramento-opensans h6 {
+   	font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: none;
+}        
+
+.type-sacramento-opensans h1 {font-size: 3.6rem;margin: 0.8rem 0px 1rem;}
+.type-sacramento-opensans h2 {font-size: 2.8rem;margin: 1.2rem 0 0.6rem;}
+.type-sacramento-opensans h3 {font-size: 2.5rem;margin: 1.1rem 0 0.3rem;}
+.type-sacramento-opensans h4 {font-size: 2.3rem;margin: 0.56rem 0 0.3rem;line-height: 1.6;}
+.type-sacramento-opensans h5 {font-size: 2.2rem;margin: 0.58rem 0 0.3rem;line-height: 1.7;}
+.type-sacramento-opensans h6 {font-size: 2.1rem;margin: 0.6rem 0 0.3rem;line-height: 2;}
+.type-sacramento-opensans p {margin:0.4rem 0 1rem;}
+
+.type-sacramento-opensans .display { margin-bottom: 0.5rem; }
+.type-sacramento-opensans .display h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 3.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    text-transform: none;
+    font-style: normal;
+}
+.type-sacramento-opensans .display p {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    text-transform: none;
+    font-style: italic;
+}
+
+.type-sacramento-opensans .is-btn {
+    padding: 10px 50px;
+}
+.type-sacramento-opensans .is-btn-small {
+    padding: 5px 25px;
+}
+
+.type-sacramento-opensans .display-font1 {font-family: 'Sacramento', cursive;}
+.type-sacramento-opensans .display-font2 {font-family: 'Open Sans', sans-serif;}
+.type-sacramento-opensans .default-font1 {font-family: 'Sacramento', cursive;}
+.type-sacramento-opensans .default-font2 {font-family: 'Open Sans', sans-serif;}
+
+/* h1-h6: 54 38  28  21  17  14 */
+.type-sacramento-opensans h1 {font-size:54px} 
+@media all and (max-width: 1800px) { 
+    .type-sacramento-opensans h1 {font-size:2.81vw; font-size:clamp(31px, 2.81vw, 2.81vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sacramento-opensans h1 {font-size:2.81vw;}
+}
+
+.type-sacramento-opensans h2 {font-size:38px}
+@media all and (max-width: 1800px) { 
+    .type-sacramento-opensans h2 {font-size:1.98vw; font-size:clamp(26px, 1.98vw, 1.98vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sacramento-opensans h2 {font-size:1.98vw}
+}
+
+.type-sacramento-opensans h3 {font-size:28px}
+@media all and (max-width: 1800px) { 
+    .type-sacramento-opensans h3 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sacramento-opensans h3 {font-size:1.46vw}
+}
+
+.type-sacramento-opensans h4 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-sacramento-opensans h4 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sacramento-opensans h4 {font-size:1.09vw}
+}
+
+.type-sacramento-opensans h5 {font-size:17px}
+@media all and (max-width: 1800px) { 
+    .type-sacramento-opensans h5 {font-size:1.05vw; font-size:clamp(17px, 1.05vw, 1.05vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sacramento-opensans h5 {font-size:0.89vw}
+}
+
+.type-sacramento-opensans h6 {font-size:14px}
+@media all and (max-width: 1800px) { 
+    .type-sacramento-opensans h6 {font-size:0.86vw; font-size:clamp(14px, 0.86vw, 0.86vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sacramento-opensans h6 {font-size:0.73vw}
+}
+
+/* 17 */
+.type-sacramento-opensans p,
+.type-sacramento-opensans td, 
+.type-sacramento-opensans li, 
+.type-sacramento-opensans label {
+    font-size: 17px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-sacramento-opensans p,
+    .type-sacramento-opensans td, 
+    .type-sacramento-opensans li, 
+    .type-sacramento-opensans label {font-size:1.05vw; font-size:clamp(16px, 1.05vw, 1.05vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sacramento-opensans .v2 p,
+    .type-sacramento-opensans .v2 td, 
+    .type-sacramento-opensans .v2 li, 
+    .type-sacramento-opensans .v2 label {font-size:0.89vw}
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,600i,700,700i'); */

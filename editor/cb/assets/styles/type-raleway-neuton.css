@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+.type-raleway-neuton {
+    font-family: 'Neuton', serif;
+    font-size: 100%; 
+    line-height: 1.8;
+    font-weight: 200;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-raleway-neuton p, .type-raleway-neuton td, .type-raleway-neuton li, .type-raleway-neuton label {
+    font-family: 'Neuton', serif;
+    font-size: 1.3rem; 
+    line-height: 1.8;
+    font-weight: 200;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-raleway-neuton h1, .type-raleway-neuton h2, .type-raleway-neuton h3, .type-raleway-neuton h4, .type-raleway-neuton h5, .type-raleway-neuton h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-raleway-neuton h1 {font-size: 3.4rem;margin: 0.04rem 0 0.3rem;}
+.type-raleway-neuton h2 {font-size: 2.8rem;margin: 0.25rem 0 0.3rem;}
+.type-raleway-neuton h3 {font-size: 2.3rem;margin: 0.42rem 0 0.3rem;}
+.type-raleway-neuton h4 {font-size: 1.92rem;margin: 0.53rem 0 0.3rem;line-height: 1.6;}
+.type-raleway-neuton h5 {font-size: 1.6rem;margin: 0.56rem 0 0.3rem;line-height: 1.8;}
+.type-raleway-neuton h6 {font-size: 1.35rem;margin: 0.53rem 0 0.3rem;line-height: 2;}
+.type-raleway-neuton p {margin:0.4rem 0 1rem;}
+
+.type-raleway-neuton .display { margin-bottom: 0.5rem; }
+.type-raleway-neuton .display h1 {
+	font-family: 'Raleway', sans-serif;
+    font-size: 4.8rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0.4rem 0;
+}
+.type-raleway-neuton .display p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.34rem;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-style: italic;
+}
+
+.type-raleway-neuton .is-btn {
+    padding: 10px 50px;
+}
+.type-raleway-neuton .is-btn-small {
+    padding: 5px 25px;
+}
+
+.type-raleway-neuton .display-font1 {font-family: 'Raleway', sans-serif;}
+.type-raleway-neuton .display-font2 {font-family: 'Raleway', sans-serif;}
+.type-raleway-neuton .default-font1 {font-family: 'Raleway', sans-serif;}
+.type-raleway-neuton .default-font2 {font-family: 'Neuton', serif;}
+
+/* h1-h6: 54 38  28  21  17  14 */
+.type-raleway-neuton h1 {font-size:54px} 
+@media all and (max-width: 1800px) { 
+    .type-raleway-neuton h1 {font-size:2.81vw; font-size:clamp(31px, 2.81vw, 2.81vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-neuton h1 {font-size:2.81vw;}
+}
+
+.type-raleway-neuton h2 {font-size:38px}
+@media all and (max-width: 1800px) { 
+    .type-raleway-neuton h2 {font-size:1.98vw; font-size:clamp(26px, 1.98vw, 1.98vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-neuton h2 {font-size:1.98vw}
+}
+
+.type-raleway-neuton h3 {font-size:28px}
+@media all and (max-width: 1800px) { 
+    .type-raleway-neuton h3 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-neuton h3 {font-size:1.46vw}
+}
+
+.type-raleway-neuton h4 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-raleway-neuton h4 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-neuton h4 {font-size:1.09vw}
+}
+
+.type-raleway-neuton h5 {font-size:17px}
+@media all and (max-width: 1800px) { 
+    .type-raleway-neuton h5 {font-size:1.05vw; font-size:clamp(17px, 1.05vw, 1.05vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-neuton h5 {font-size:0.89vw}
+}
+
+.type-raleway-neuton h6 {font-size:14px}
+@media all and (max-width: 1800px) { 
+    .type-raleway-neuton h6 {font-size:0.86vw; font-size:clamp(14px, 0.86vw, 0.86vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-neuton h6 {font-size:0.73vw}
+}
+
+/* 17 */
+.type-raleway-lusitana p,
+.type-raleway-lusitana td, 
+.type-raleway-lusitana li, 
+.type-raleway-lusitana label {
+    font-size: 17px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana p,
+    .type-raleway-lusitana td, 
+    .type-raleway-lusitana li, 
+    .type-raleway-lusitana label {font-size:1.05vw; font-size:clamp(16px, 1.05vw, 1.05vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana .v2 p,
+    .type-raleway-lusitana .v2 td, 
+    .type-raleway-lusitana .v2 li, 
+    .type-raleway-lusitana .v2 label {font-size:0.89vw}
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Neuton:200,700'); */

@@ -1,0 +1,46 @@
+{
+  "name": "is-menu",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "7222571caa5c15f83dcfd447c58d68d9",
+      "css": "menu-search",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "css": "menu-user",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "e126987944593dfee041f8e2a68145db",
+      "css": "menu-basket",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "menu-home",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "91426c82d94428a33353e495418435e3",
+      "css": "menu-share",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "css": "menu-more",
+      "code": 59397,
+      "src": "entypo"
+    }
+  ]
+}

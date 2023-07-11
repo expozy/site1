@@ -1,0 +1,143 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.type-josefinsans-lekton {
+    font-family: 'Lekton', sans-serif;
+    font-size: 100%; 
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-josefinsans-lekton p, .type-josefinsans-lekton td, .type-josefinsans-lekton li, .type-josefinsans-lekton label {
+    font-family: 'Lekton', sans-serif;
+    font-size: 1.2rem; 
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-josefinsans-lekton h1, .type-josefinsans-lekton h2, .type-josefinsans-lekton h3, .type-josefinsans-lekton h4, .type-josefinsans-lekton h5, .type-josefinsans-lekton h6 {
+    font-family: 'Lekton', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 1.4;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-josefinsans-lekton h1 {font-size: 3rem;margin: 0.19rem 0 0.3rem;}
+.type-josefinsans-lekton h2 {font-size: 2.4rem;margin: 0.32rem 0 0.3rem;}
+.type-josefinsans-lekton h3 {font-size: 1.9rem;margin: 0.48rem 0 0.3rem;}
+.type-josefinsans-lekton h4 {font-size: 1.6rem;margin: 0.64rem 0 0.3rem;}
+.type-josefinsans-lekton h5 {font-size: 1.4rem;margin: 0.67rem 0 0.3rem;line-height: 1.6;}
+.type-josefinsans-lekton h6 {font-size: 1.2rem;margin: 0.77rem 0 0.3rem;font-weight: bold;text-transform: none;line-height: 1.8;}
+.type-josefinsans-lekton p {margin:0.6rem 0 1rem;}
+
+.type-josefinsans-lekton .display { margin-bottom: 0.5rem; }
+.type-josefinsans-lekton .display h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3.4rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0.4rem 0;
+    font-style: normal;
+}
+.type-josefinsans-lekton .display p {
+    font-family: 'Lekton', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none; 
+}
+
+.type-josefinsans-lekton .is-btn {
+    padding: 11px 50px 8px;
+}
+.type-josefinsans-lekton .is-btn-small {
+    padding: 6px 25px 5px;
+}
+
+.type-josefinsans-lekton .display-font1 {font-family: 'Josefin Sans', sans-serif;}
+.type-josefinsans-lekton .display-font2 {font-family: 'Lekton', sans-serif;}
+.type-josefinsans-lekton .default-font1 {font-family: 'Lekton', sans-serif;}
+.type-josefinsans-lekton .default-font2 {font-family: 'Lekton', sans-serif;}
+
+/* h1-h6: 48 32  24  19  16  12 */
+.type-josefinsans-lekton h1 {font-size:48px} 
+@media all and (max-width: 1800px) { 
+    .type-josefinsans-lekton h1 {font-size:2.5vw; font-size:clamp(29px, 2.5vw, 2.5vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-josefinsans-lekton h1 {font-size:2.5vw}
+}
+
+.type-josefinsans-lekton h2 {font-size:32px}
+@media all and (max-width: 1800px) { 
+    .type-josefinsans-lekton h2 {font-size:1.64vw; font-size:clamp(24px, 1.64vw, 1.64vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-josefinsans-lekton h2 {font-size:1.67vw}
+}
+
+.type-josefinsans-lekton h3 {font-size:24px}
+@media all and (max-width: 1800px) { 
+    .type-josefinsans-lekton h3 {font-size:1.48vw; font-size:clamp(22px, 1.48vw, 1.48vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-josefinsans-lekton h3 {font-size:1.25vw}
+}
+
+.type-josefinsans-lekton h4 {font-size:19px}
+@media all and (max-width: 1800px) { 
+    .type-josefinsans-lekton h4 {font-size:1.17vw; font-size:clamp(19px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-josefinsans-lekton h4 {font-size:0.99vw}
+}
+
+.type-josefinsans-lekton h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-josefinsans-lekton h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-josefinsans-lekton h5 {font-size:0.83vw}
+}
+
+.type-josefinsans-lekton h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-josefinsans-lekton h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-josefinsans-lekton h6 {font-size:0.63vw}
+}
+
+/* 19 */
+.type-josefinsans-lekton p,
+.type-josefinsans-lekton td, 
+.type-josefinsans-lekton li, 
+.type-josefinsans-lekton label {
+    font-size: 19px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-josefinsans-lekton p,
+    .type-josefinsans-lekton td, 
+    .type-josefinsans-lekton li, 
+    .type-josefinsans-lekton label {font-size:1.17vw; font-size:clamp(16px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-josefinsans-lekton .v2 p,
+    .type-josefinsans-lekton .v2 td, 
+    .type-josefinsans-lekton .v2 li, 
+    .type-josefinsans-lekton .v2 label {font-size:0.99vw}
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lekton:400,400i,700'); */

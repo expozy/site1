@@ -1,0 +1,143 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.type-averialibre-barlow {
+    font-family: 'Barlow', sans-serif;
+    font-size: 100%; 
+    line-height: 1.9;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-averialibre-barlow p, .type-averialibre-barlow td, .type-averialibre-barlow li, .type-averialibre-barlow label {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.26rem;
+    line-height: 1.9;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-averialibre-barlow h1, .type-averialibre-barlow h2, .type-averialibre-barlow h3, .type-averialibre-barlow h4, .type-averialibre-barlow h5, .type-averialibre-barlow h6 {
+    font-family: 'Averia Libre', cursive;
+    font-weight: 400;
+    line-height: 1.4;  
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;  
+}        
+
+.type-averialibre-barlow h1 {font-size: 3.1rem;margin: 0.05rem 0 0.3rem;}
+.type-averialibre-barlow h2 {font-size: 2.5rem;margin: 0.16rem 0 0.3rem;}
+.type-averialibre-barlow h3 {font-size: 2rem;margin: 0.3rem 0 0.3rem;}
+.type-averialibre-barlow h4 {font-size: 1.7rem;margin: 0.43rem 0 0.3rem;line-height: 1.6;}
+.type-averialibre-barlow h5 {font-size: 1.4rem;margin: 0.61rem 0 0.3rem;line-height: 1.8;}
+.type-averialibre-barlow h6 {font-size: 1.2rem;margin: 0.7rem 0 0.3rem;font-weight: bold;line-height: 2;}
+.type-averialibre-barlow p {margin:0.48rem 0 1rem;}
+
+.type-averialibre-barlow .display { margin-bottom: 0.5rem; }
+.type-averialibre-barlow .display h1 {
+	font-family: 'Averia Libre', cursive;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0.4rem 0;
+    font-style: normal;
+}
+.type-averialibre-barlow .display p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.type-averialibre-barlow .is-btn {
+    padding: 10px 50px;
+}
+.type-averialibre-barlow .is-btn-small {
+    padding: 5px 25px;
+}
+
+.type-averialibre-barlow .display-font1 {font-family: 'Averia Libre', cursive;}
+.type-averialibre-barlow .display-font2 {font-family: 'Barlow', sans-serif;}
+.type-averialibre-barlow .default-font1 {font-family: 'Averia Libre', cursive;}
+.type-averialibre-barlow .default-font2 {font-family: 'Barlow', sans-serif;}
+
+/* h1-h6: 50 38  28  21  16  12 */
+.type-averialibre-barlow h1 {font-size:50px} 
+@media all and (max-width: 1800px) { 
+    .type-averialibre-barlow h1 {font-size:2.61vw; font-size:clamp(30px, 2.61vw, 2.61vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-averialibre-barlow h1 {font-size:2.61vw;}
+}
+
+.type-averialibre-barlow h2 {font-size:38px}
+@media all and (max-width: 1800px) { 
+    .type-averialibre-barlow h2 {font-size:1.98vw; font-size:clamp(26px, 1.98vw, 1.98vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-averialibre-barlow h2 {font-size:1.98vw}
+}
+
+.type-averialibre-barlow h3 {font-size:28px}
+@media all and (max-width: 1800px) { 
+    .type-averialibre-barlow h3 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-averialibre-barlow h3 {font-size:1.46vw}
+}
+
+.type-averialibre-barlow h4 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-averialibre-barlow h4 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-averialibre-barlow h4 {font-size:1.09vw}
+}
+
+.type-averialibre-barlow h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-averialibre-barlow h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-averialibre-barlow h5 {font-size:0.83vw}
+}
+
+.type-averialibre-barlow h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-averialibre-barlow h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-averialibre-barlow h6 {font-size:0.63vw}
+}
+
+/* 19 */
+.type-averialibre-barlow p,
+.type-averialibre-barlow td, 
+.type-averialibre-barlow li, 
+.type-averialibre-barlow label {
+    font-size: 19px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-averialibre-barlow p,
+    .type-averialibre-barlow td, 
+    .type-averialibre-barlow li, 
+    .type-averialibre-barlow label {font-size:1.17vw; font-size:clamp(16px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-averialibre-barlow .v2 p,
+    .type-averialibre-barlow .v2 td, 
+    .type-averialibre-barlow .v2 li, 
+    .type-averialibre-barlow .v2 label {font-size:0.99vw}
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Averia+Libre:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,300i,700'); */

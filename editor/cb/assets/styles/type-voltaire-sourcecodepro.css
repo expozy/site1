@@ -1,0 +1,134 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.type-voltaire-sourcecodepro {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 100%; 
+    line-height: 1.9;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-voltaire-sourcecodepro p, .type-voltaire-sourcecodepro td, .type-voltaire-sourcecodepro li, .type-voltaire-sourcecodepro label {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.1rem; 
+    line-height: 1.9;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-voltaire-sourcecodepro h1, .type-voltaire-sourcecodepro h2, .type-voltaire-sourcecodepro h3, .type-voltaire-sourcecodepro h4, .type-voltaire-sourcecodepro h5, .type-voltaire-sourcecodepro h6 {
+    font-family: 'Voltaire', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-voltaire-sourcecodepro h1 {font-size: 3rem;margin: 0.19rem 0 0.3rem;}
+.type-voltaire-sourcecodepro h2 {font-size: 2.5rem;margin: 0.3rem 0 0.3rem;}
+.type-voltaire-sourcecodepro h3 {font-size: 2.1rem;margin: 0.4rem 0 0.3rem;}
+.type-voltaire-sourcecodepro h4 {font-size: 1.8rem;margin: 0.54rem 0 0.3rem;}
+.type-voltaire-sourcecodepro h5 {font-size: 1.5rem;margin: 0.56rem 0 0.3rem;line-height: 1.6;}
+.type-voltaire-sourcecodepro h6 {font-size: 1.2rem;margin: 0.68rem 0 0.3rem;text-transform: none;line-height: 1.8;}
+.type-voltaire-sourcecodepro p {margin:0.75rem 0 1rem;}
+
+.type-voltaire-sourcecodepro .display { margin-bottom: 0.5rem; }
+.type-voltaire-sourcecodepro .display h1 {
+	font-family: 'Voltaire', sans-serif;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0.4rem 0;
+    font-style: normal;
+}
+.type-voltaire-sourcecodepro .display p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: normal;  
+}
+
+.type-voltaire-sourcecodepro .display-font1 {font-family: 'Voltaire', sans-serif;}
+.type-voltaire-sourcecodepro .display-font2 {font-family: 'Source Code Pro', monospace;}
+.type-voltaire-sourcecodepro .default-font1 {font-family: 'Voltaire', sans-serif;}
+.type-voltaire-sourcecodepro .default-font2 {font-family: 'Source Code Pro', monospace;}
+
+/* h1-h6: 48 32  24  19  16  12 */
+.type-voltaire-sourcecodepro h1 {font-size:48px} 
+@media all and (max-width: 1800px) { 
+    .type-voltaire-sourcecodepro h1 {font-size:2.5vw; font-size:clamp(29px, 2.5vw, 2.5vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-voltaire-sourcecodepro h1 {font-size:2.5vw}
+}
+
+.type-voltaire-sourcecodepro h2 {font-size:32px}
+@media all and (max-width: 1800px) { 
+    .type-voltaire-sourcecodepro h2 {font-size:1.64vw; font-size:clamp(24px, 1.64vw, 1.64vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-voltaire-sourcecodepro h2 {font-size:1.67vw}
+}
+
+.type-voltaire-sourcecodepro h3 {font-size:24px}
+@media all and (max-width: 1800px) { 
+    .type-voltaire-sourcecodepro h3 {font-size:1.48vw; font-size:clamp(22px, 1.48vw, 1.48vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-voltaire-sourcecodepro h3 {font-size:1.25vw}
+}
+
+.type-voltaire-sourcecodepro h4 {font-size:19px}
+@media all and (max-width: 1800px) { 
+    .type-voltaire-sourcecodepro h4 {font-size:1.17vw; font-size:clamp(19px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-voltaire-sourcecodepro h4 {font-size:0.99vw}
+}
+
+.type-voltaire-sourcecodepro h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-voltaire-sourcecodepro h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-voltaire-sourcecodepro h5 {font-size:0.83vw}
+}
+
+.type-voltaire-sourcecodepro h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-voltaire-sourcecodepro h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-voltaire-sourcecodepro h6 {font-size:0.63vw}
+}
+
+/* 18 */
+.type-voltaire-sourcecodepro p,
+.type-voltaire-sourcecodepro td, 
+.type-voltaire-sourcecodepro li, 
+.type-voltaire-sourcecodepro label {
+    font-size: 18px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-voltaire-sourcecodepro p,
+    .type-voltaire-sourcecodepro td, 
+    .type-voltaire-sourcecodepro li, 
+    .type-voltaire-sourcecodepro label {font-size:1.11vw; font-size:clamp(16px, 1.11vw, 1.11vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-voltaire-sourcecodepro .v2 p,
+    .type-voltaire-sourcecodepro .v2 td, 
+    .type-voltaire-sourcecodepro .v2 li, 
+    .type-voltaire-sourcecodepro .v2 label {font-size:0.94vw}
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Voltaire');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,700'); */

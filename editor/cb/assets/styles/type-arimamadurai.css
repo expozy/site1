@@ -1,0 +1,141 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
+
+
+.type-arimamadurai {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 100%; 
+    line-height: 2.2;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-arimamadurai p, .type-arimamadurai td, .type-arimamadurai li, .type-arimamadurai label {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.19rem;
+    line-height: 2.2;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-arimamadurai h1, .type-arimamadurai h2, .type-arimamadurai h3, .type-arimamadurai h4, .type-arimamadurai h5, .type-arimamadurai h6 {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-arimamadurai h1 {font-size: 3rem;margin: 0.2rem 0 0.3rem;}
+.type-arimamadurai h2 {font-size: 2.5rem;margin: 0.31rem 0 0.3rem;}
+.type-arimamadurai h3 {font-size: 2.1rem;margin: 0.42rem 0 0.3rem;}
+.type-arimamadurai h4 {font-size: 1.7rem;margin: 0.51rem 0 0.3rem;line-height: 1.5;}
+.type-arimamadurai h5 {font-size: 1.4rem;margin: 0.65rem 0 0.3rem;line-height: 1.7;}
+.type-arimamadurai h6 {font-size: 1.19rem;margin: 0.72rem 0 0.3rem;font-weight: bold;line-height: 1.9;}
+.type-arimamadurai p {margin:0.57rem 0 1rem;}
+
+.type-arimamadurai .display { margin-bottom: 0.5rem; }
+.type-arimamadurai .display h1 {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 4.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0.4rem 0;
+    font-style: normal;
+}
+.type-arimamadurai .display p {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    font-style: normal;
+    text-transform: none;
+}
+
+.type-arimamadurai .is-btn {
+    padding: 12px 50px 8px;
+}
+.type-arimamadurai .is-btn-small {
+    padding: 7px 25px 4px;
+}
+
+.type-arimamadurai .display-font1 {font-family: 'Arima Madurai', cursive;}
+.type-arimamadurai .display-font2 {font-family: 'Arima Madurai', cursive;}
+.type-arimamadurai .default-font1 {font-family: 'Arima Madurai', cursive;}
+.type-arimamadurai .default-font2 {font-family: 'Arima Madurai', cursive;}
+
+/* h1-h6: 48 32  24  19  16  12 */
+.type-arimamadurai h1 {font-size:48px} 
+@media all and (max-width: 1800px) { 
+    .type-arimamadurai h1 {font-size:2.5vw; font-size:clamp(29px, 2.5vw, 2.5vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-arimamadurai h1 {font-size:2.5vw}
+}
+
+.type-arimamadurai h2 {font-size:32px}
+@media all and (max-width: 1800px) { 
+    .type-arimamadurai h2 {font-size:1.64vw; font-size:clamp(24px, 1.64vw, 1.64vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-arimamadurai h2 {font-size:1.67vw}
+}
+
+.type-arimamadurai h3 {font-size:24px}
+@media all and (max-width: 1800px) { 
+    .type-arimamadurai h3 {font-size:1.48vw; font-size:clamp(22px, 1.48vw, 1.48vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-arimamadurai h3 {font-size:1.25vw}
+}
+
+.type-arimamadurai h4 {font-size:19px}
+@media all and (max-width: 1800px) { 
+    .type-arimamadurai h4 {font-size:1.17vw; font-size:clamp(19px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-arimamadurai h4 {font-size:0.99vw}
+}
+
+.type-arimamadurai h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-arimamadurai h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-arimamadurai h5 {font-size:0.83vw}
+}
+
+.type-arimamadurai h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-arimamadurai h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-arimamadurai h6 {font-size:0.63vw}
+}
+
+/* 19 */
+.type-arimamadurai p,
+.type-arimamadurai td, 
+.type-arimamadurai li, 
+.type-arimamadurai label {
+    font-size: 19px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-arimamadurai p,
+    .type-arimamadurai td, 
+    .type-arimamadurai li, 
+    .type-arimamadurai label {font-size:1.17vw; font-size:clamp(16px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-arimamadurai .v2 p,
+    .type-arimamadurai .v2 td, 
+    .type-arimamadurai .v2 li, 
+    .type-arimamadurai .v2 label {font-size:0.99vw}
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300,700,900'); */

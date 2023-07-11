@@ -1,0 +1,141 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.type-sriracha-arvo {
+    font-family: 'Arvo', serif;
+    font-size: 100%; 
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-sriracha-arvo p, .type-sriracha-arvo td, .type-sriracha-arvo li, .type-sriracha-arvo label {
+    font-family: 'Arvo', serif;
+    font-size: 1.14rem;
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-sriracha-arvo h1, .type-sriracha-arvo h2, .type-sriracha-arvo h3, .type-sriracha-arvo h4, .type-sriracha-arvo h5, .type-sriracha-arvo h6 {
+    font-family: 'Sriracha', cursive;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-sriracha-arvo h1 {font-size: 3.3rem;margin: 0.07rem 0 0.3rem;}
+.type-sriracha-arvo h2 {font-size: 2.6rem;margin: 0.18rem 0 0.3rem;}
+.type-sriracha-arvo h3 {font-size: 2.1rem;margin: 0.3rem 0 0.3rem;}
+.type-sriracha-arvo h4 {font-size: 1.7rem;margin: 0.47rem 0 0.3rem;}
+.type-sriracha-arvo h5 {font-size: 1.5rem;margin: 0.56rem 0 0.3rem;line-height: 1.6;}
+.type-sriracha-arvo h6 {font-size: 1.2rem;margin: 0.69rem 0 0.3rem;font-weight:bold;line-height: 1.8;}
+.type-sriracha-arvo p {margin:0.68rem 0 1rem;}
+
+.type-sriracha-arvo .display { margin-bottom: 0.5rem; }
+.type-sriracha-arvo .display h1 {
+	font-family: 'Sriracha', cursive;
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin:0.4rem 0;
+    font-style: normal;
+}
+.type-sriracha-arvo .display p {
+    font-family: 'Arvo', serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.type-sriracha-arvo .is-btn {
+    padding: 11px 50px 9px;
+}
+.type-sriracha-arvo .is-btn-small {
+    padding: 6px 25px 5px;
+}
+
+.type-sriracha-arvo .display-font1 {font-family: 'Sriracha', cursive;}
+.type-sriracha-arvo .display-font2 {font-family: 'Arvo', serif;}
+.type-sriracha-arvo .default-font1 {font-family: 'Sriracha', cursive;}
+.type-sriracha-arvo .default-font2 {font-family: 'Arvo', serif;}
+
+/* h1-h6: 50 38  28  21  16  12 */
+.type-sriracha-arvo h1 {font-size:50px} 
+@media all and (max-width: 1800px) { 
+    .type-sriracha-arvo h1 {font-size:2.61vw; font-size:clamp(30px, 2.61vw, 2.61vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sriracha-arvo h1 {font-size:2.61vw;}
+}
+
+.type-sriracha-arvo h2 {font-size:38px}
+@media all and (max-width: 1800px) { 
+    .type-sriracha-arvo h2 {font-size:1.98vw; font-size:clamp(26px, 1.98vw, 1.98vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sriracha-arvo h2 {font-size:1.98vw}
+}
+
+.type-sriracha-arvo h3 {font-size:28px}
+@media all and (max-width: 1800px) { 
+    .type-sriracha-arvo h3 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sriracha-arvo h3 {font-size:1.46vw}
+}
+
+.type-sriracha-arvo h4 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-sriracha-arvo h4 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sriracha-arvo h4 {font-size:1.09vw}
+}
+
+.type-sriracha-arvo h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-sriracha-arvo h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sriracha-arvo h5 {font-size:0.83vw}
+}
+
+.type-sriracha-arvo h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-sriracha-arvo h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-sriracha-arvo h6 {font-size:0.63vw}
+}
+
+/* 17 */
+.type-sriracha-arvo p,
+.type-sriracha-arvo td, 
+.type-sriracha-arvo li, 
+.type-sriracha-arvo label {
+    font-size: 17px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-sriracha-arvo p,
+    .type-sriracha-arvo td, 
+    .type-sriracha-arvo li, 
+    .type-sriracha-arvo label {font-size:1.05vw; font-size:clamp(16px, 1.05vw, 1.05vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-sriracha-arvo .v2 p,
+    .type-sriracha-arvo .v2 td, 
+    .type-sriracha-arvo .v2 li, 
+    .type-sriracha-arvo .v2 label {font-size:0.89vw}
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Sriracha');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700'); */

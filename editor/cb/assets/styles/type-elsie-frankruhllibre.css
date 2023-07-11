@@ -1,0 +1,143 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
+
+
+.type-elsie-frankruhllibre {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 100%; 
+    line-height: 1.9;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-elsie-frankruhllibre p, .type-elsie-frankruhllibre td, .type-elsie-frankruhllibre li, .type-elsie-frankruhllibre label {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.24rem; 
+    line-height: 1.9;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-elsie-frankruhllibre h1, .type-elsie-frankruhllibre h2, .type-elsie-frankruhllibre h3, .type-elsie-frankruhllibre h4, .type-elsie-frankruhllibre h5, .type-elsie-frankruhllibre h6 {
+    font-family: 'Elsie', cursive;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-elsie-frankruhllibre h1 {font-size: 3.4rem;margin: 0.06rem 0 0.2rem;}
+.type-elsie-frankruhllibre h2 {font-size: 2.7rem;margin: 0.16rem 0 0.2rem;}
+.type-elsie-frankruhllibre h3 {font-size: 2.1rem;margin: 0.33rem 0 0.2rem;}
+.type-elsie-frankruhllibre h4 {font-size: 1.8rem;margin: 0.4rem 0 0.2rem;line-height: 1.5;}
+.type-elsie-frankruhllibre h5 {font-size: 1.5rem;margin: 0.47rem 0 0.2rem;line-height: 1.7;}
+.type-elsie-frankruhllibre h6 {font-size: 1.24rem;margin: 0.58rem 0 0.2rem;font-weight: bold;line-height: 1.9;}
+.type-elsie-frankruhllibre p {margin:0.68rem 0 1rem;}
+
+.type-elsie-frankruhllibre .display { margin-bottom: 0.5rem; }
+.type-elsie-frankruhllibre .display h1 {
+	font-family: 'Elsie', cursive;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0.4rem 0;
+    letter-spacing: 0px;
+    font-style: normal;
+}
+.type-elsie-frankruhllibre .display p {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-style: normal;
+    text-transform: none;
+}
+
+.type-elsie-frankruhllibre .is-btn {
+    padding: 11px 50px 9px;
+}
+.type-elsie-frankruhllibre .is-btn-small {
+    padding: 6px 25px 4px;
+}
+
+.type-elsie-frankruhllibre .display-font1 {font-family: 'Elsie', cursive;}
+.type-elsie-frankruhllibre .display-font2 {font-family: 'Frank Ruhl Libre', serif;}
+.type-elsie-frankruhllibre .default-font1 {font-family: 'Elsie', cursive;}
+.type-elsie-frankruhllibre .default-font2 {font-family: 'Frank Ruhl Libre', serif;}
+
+/* h1-h6: 50 38  28  21  16  12 */
+.type-elsie-frankruhllibre h1 {font-size:50px} 
+@media all and (max-width: 1800px) { 
+    .type-elsie-frankruhllibre h1 {font-size:2.61vw; font-size:clamp(30px, 2.61vw, 2.61vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-elsie-frankruhllibre h1 {font-size:2.61vw;}
+}
+
+.type-elsie-frankruhllibre h2 {font-size:38px}
+@media all and (max-width: 1800px) { 
+    .type-elsie-frankruhllibre h2 {font-size:1.98vw; font-size:clamp(26px, 1.98vw, 1.98vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-elsie-frankruhllibre h2 {font-size:1.98vw}
+}
+
+.type-elsie-frankruhllibre h3 {font-size:28px}
+@media all and (max-width: 1800px) { 
+    .type-elsie-frankruhllibre h3 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-elsie-frankruhllibre h3 {font-size:1.46vw}
+}
+
+.type-elsie-frankruhllibre h4 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-elsie-frankruhllibre h4 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-elsie-frankruhllibre h4 {font-size:1.09vw}
+}
+
+.type-elsie-frankruhllibre h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-elsie-frankruhllibre h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-elsie-frankruhllibre h5 {font-size:0.83vw}
+}
+
+.type-elsie-frankruhllibre h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-elsie-frankruhllibre h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-elsie-frankruhllibre h6 {font-size:0.63vw}
+}
+
+/* 19 */
+.type-elsie-frankruhllibre p,
+.type-elsie-frankruhllibre td, 
+.type-elsie-frankruhllibre li, 
+.type-elsie-frankruhllibre label {
+    font-size: 19px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-elsie-frankruhllibre p,
+    .type-elsie-frankruhllibre td, 
+    .type-elsie-frankruhllibre li, 
+    .type-elsie-frankruhllibre label {font-size:1.17vw; font-size:clamp(16px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-elsie-frankruhllibre .v2 p,
+    .type-elsie-frankruhllibre .v2 td, 
+    .type-elsie-frankruhllibre .v2 li, 
+    .type-elsie-frankruhllibre .v2 label {font-size:0.99vw}
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Elsie:400,900');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,700'); */

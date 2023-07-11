@@ -1,0 +1,29 @@
+
+    .footer_infraconcept{
+      font-size:16px;
+      font-weight: 400;
+    }
+    .footer_infraconcept p{
+      font-size:16px;
+      font-weight: 400;
+    }
+
+    .footer_infraconcept
+    .nav-link{
+      color:#fff;
+      font-size:16px;
+      font-weight: 400;
+    }
+    .footer_infraconcept a{
+      color:#fff;
+      text-decoration:none
+    }
+    .footer_infraconcept h5{
+      color: white !important;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .footer_menu_infraconcept{
+      background: rgb(128,128,128);
+      background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+    }

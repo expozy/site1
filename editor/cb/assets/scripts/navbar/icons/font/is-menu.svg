@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="is-menu" horiz-adv-x="1000" >
+<font-face font-family="is-menu" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="menu-search" unicode="&#xe800;" d="M772 78q30-34 6-62l-46-46q-36-32-68 0l-190 190q-74-42-156-42-128 0-223 95t-95 223 90 219 218 91 224-95 96-223q0-88-46-162z m-678 358q0-88 68-156t156-68 151 63 63 153q0 88-68 155t-156 67-151-63-63-151z" horiz-adv-x="789" />
+
+<glyph glyph-name="menu-user" unicode="&#xe801;" d="M736 128q204-72 204-122l0-106-940 0 0 106q0 50 204 122 94 34 128 69t34 95q0 22-22 49t-32 73q-2 12-9 18t-14 8-14 17-9 43q0 16 5 26t9 12l4 4q-8 50-12 88-4 54 41 112t157 58 158-58 40-112l-12-88q18-8 18-42-2-28-9-43t-14-17-14-8-9-18q-8-48-31-74t-23-48q0-60 35-95t127-69z" horiz-adv-x="940" />
+
+<glyph glyph-name="menu-basket" unicode="&#xe802;" d="M150 0q0 40 30 70t70 30q42 0 71-30t29-70q0-42-29-71t-71-29q-40 0-70 29t-30 71z m500 0q0 40 30 70t70 30q42 0 71-30t29-70q0-42-29-71t-71-29q-40 0-70 29t-30 71z m-322 236q-36-10-34-23t44-13l562 0 0-76q0-20-20-20l-654 0q-20 0-20 20l0 76-10 46-98 454-98 0 0 80q0 20 20 20l156 0q20 0 20-20l0-86 704 0 0-274q0-22-18-26z" horiz-adv-x="900" />
+
+<glyph glyph-name="menu-home" unicode="&#xe803;" d="M888 336q16-16 11-27t-27-11l-84 0 0-310q0-14-1-21t-8-13-23-6l-204 0 0 310-204 0 0-310-194 0q-28 0-35 10t-7 30l0 310-84 0q-22 0-27 11t11 27l400 402q16 16 38 16t38-16z" horiz-adv-x="900" />
+
+<glyph glyph-name="menu-share" unicode="&#xe804;" d="M650 200q62 0 106-43t44-107q0-62-44-106t-106-44-106 44-44 106q0 6 1 14t1 12l-260 156q-42-32-92-32-62 0-106 44t-44 106 44 106 106 44q54 0 92-30l260 156q0 4-1 12t-1 12q0 62 44 106t106 44 106-43 44-107q0-62-44-106t-106-44q-52 0-90 32l-262-156q2-8 2-26 0-16-2-24l262-156q36 30 90 30z" horiz-adv-x="800" />
+
+<glyph glyph-name="menu-more" unicode="&#xe805;" d="M650 400q22 0 36-15t14-35-15-35-35-15l-600 0q-20 0-35 15t-15 35 14 35 36 15l600 0z m-600 100q-20 0-35 15t-15 35 14 35 36 15l600 0q22 0 36-15t14-35-15-35-35-15l-600 0z m600-300q22 0 36-15t14-35-15-35-35-15l-600 0q-20 0-35 15t-15 35 14 35 36 15l600 0z" horiz-adv-x="700" />
+</font>
+</defs>
+</svg>

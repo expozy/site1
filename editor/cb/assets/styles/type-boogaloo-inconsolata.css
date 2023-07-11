@@ -1,0 +1,136 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.type-boogaloo-inconsolata {
+    font-family: 'Inconsolata', monospace;
+    font-size: 100%; 
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-boogaloo-inconsolata p, .type-boogaloo-inconsolata td, .type-boogaloo-inconsolata li, .type-boogaloo-inconsolata label {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.14rem; 
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-boogaloo-inconsolata h1, .type-boogaloo-inconsolata h2, .type-boogaloo-inconsolata h3, .type-boogaloo-inconsolata h4, .type-boogaloo-inconsolata h5, .type-boogaloo-inconsolata h6 {
+    font-family: 'Boogaloo', cursive;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-boogaloo-inconsolata h1 {font-size: 2.4rem;margin: 0.14rem 0;}
+.type-boogaloo-inconsolata h2 {font-size: 2.1rem;margin: 0.27rem 0;}
+.type-boogaloo-inconsolata h3 {font-size: 1.8rem;margin: 0.35rem 0;}
+.type-boogaloo-inconsolata h4 {font-size: 1.6rem;margin: 0.49rem 0;}
+.type-boogaloo-inconsolata h5 {font-size: 1.4rem;margin: 0.59rem 0;}
+.type-boogaloo-inconsolata h6 {font-size: 1.4rem;margin: 0.6rem 0;line-height:1.6;}
+.type-boogaloo-inconsolata p {margin:0.67rem 0 1rem;}
+
+.type-boogaloo-inconsolata .display { margin-bottom: 0.5rem; }
+.type-boogaloo-inconsolata .display h1 {
+	font-family: 'Boogaloo', cursive;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0.4rem 0;
+    font-style: normal;
+}
+.type-boogaloo-inconsolata .display p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-style: normal;
+    text-transform: none;
+}
+
+.type-boogaloo-inconsolata .display-font1 {font-family: 'Boogaloo', cursive;}
+.type-boogaloo-inconsolata .display-font2 {font-family: 'Inconsolata', monospace;}
+.type-boogaloo-inconsolata .default-font1 {font-family: 'Boogaloo', cursive;}
+.type-boogaloo-inconsolata .default-font2 {font-family: 'Inconsolata', monospace;}
+
+/* h1-h6: 38 28  21  17  14  12 */
+.type-boogaloo-inconsolata h1 {font-size:38px}
+@media all and (max-width: 1800px) { 
+    .type-boogaloo-inconsolata h1 {font-size:1.98vw; font-size:clamp(26px, 1.98vw, 1.98vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-boogaloo-inconsolata h1 {font-size:1.98vw}
+}
+
+.type-boogaloo-inconsolata h2 {font-size:28px} 
+@media all and (max-width: 1800px) { 
+    .type-boogaloo-inconsolata h2 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-boogaloo-inconsolata h2 {font-size:1.46vw}
+}
+
+.type-boogaloo-inconsolata h3 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-boogaloo-inconsolata h3 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-boogaloo-inconsolata h3 {font-size:1.09vw}
+}
+
+.type-boogaloo-inconsolata h4 {font-size:17px} 
+@media all and (max-width: 1800px) { 
+    .type-boogaloo-inconsolata h4 {font-size:1.05vw; font-size:clamp(17px, 1.05vw, 1.05vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-boogaloo-inconsolata h4 {font-size:0.89vw}
+}
+
+.type-boogaloo-inconsolata h5 {font-size:14}
+@media all and (max-width: 1800px) { 
+    .type-boogaloo-inconsolata h5 {font-size:0.86vw; font-size:clamp(14px, 0.86vw, 0.86vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-boogaloo-inconsolata h5 {font-size:0.73vw}
+}
+
+.type-boogaloo-inconsolata h6 {font-size:12} 
+@media all and (max-width: 1800px) { 
+    .type-boogaloo-inconsolata h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-boogaloo-inconsolata h6 {font-size:0.63vw}
+}
+
+/* 18 */
+.type-boogaloo-inconsolata p,
+.type-boogaloo-inconsolata td, 
+.type-boogaloo-inconsolata li, 
+.type-boogaloo-inconsolata label {
+    font-size: 18px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-boogaloo-inconsolata p,
+    .type-boogaloo-inconsolata td, 
+    .type-boogaloo-inconsolata li, 
+    .type-boogaloo-inconsolata label {font-size:1.11vw; font-size:clamp(16px, 1.11vw, 1.11vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-boogaloo-inconsolata .v2 p,
+    .type-boogaloo-inconsolata .v2 td, 
+    .type-boogaloo-inconsolata .v2 li, 
+    .type-boogaloo-inconsolata .v2 label {font-size:0.94vw}
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Boogaloo');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700'); */

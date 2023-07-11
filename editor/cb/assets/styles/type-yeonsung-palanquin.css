@@ -1,0 +1,140 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+ 
+.type-yeonsung-palanquin {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 100%; 
+    line-height: 2.1;
+    font-weight: 200;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-yeonsung-palanquin p, .type-yeonsung-palanquin td, .type-yeonsung-palanquin li, .type-yeonsung-palanquin label {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2.1;
+    font-weight: 200;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-yeonsung-palanquin h1, .type-yeonsung-palanquin h2, .type-yeonsung-palanquin h3, .type-yeonsung-palanquin h4, .type-yeonsung-palanquin h5, .type-yeonsung-palanquin h6 {
+    font-family: 'Yeon Sung', cursive;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-style: normal;    
+}        
+
+.type-yeonsung-palanquin h1 {font-size: 3.2rem;margin: 0.02rem 0 0.3rem;}
+.type-yeonsung-palanquin h2 {font-size: 2.5rem;margin: 0.18rem 0 0.3rem;}
+.type-yeonsung-palanquin h3 {font-size: 1.9rem;margin: 0.33rem 0 0.3rem;}
+.type-yeonsung-palanquin h4 {font-size: 1.7rem;margin: 0.39rem 0 0.3rem;}
+.type-yeonsung-palanquin h5 {font-size: 1.5rem;margin: 0.55rem 0 0.3rem;}
+.type-yeonsung-palanquin h6 {font-size: 1.3rem;margin: 0.6rem 0 0.3rem;line-height: 1.6;}
+.type-yeonsung-palanquin p {margin:0.5rem 0 1rem;}
+
+.type-yeonsung-palanquin .display { margin-bottom: 0.5rem; }
+.type-yeonsung-palanquin .display h1 {
+	font-family: 'Yeon Sung', cursive;
+    font-size: 4.1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.type-yeonsung-palanquin .display p {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-transform: none;
+}
+
+.type-yeonsung-palanquin .is-btn {
+    padding: 10px 50px 11px;
+}
+.type-yeonsung-palanquin .is-btn-small {
+    padding: 5px 25px 6px;
+}
+
+.type-yeonsung-palanquin .display-font1 {font-family: 'Yeon Sung', cursive;}
+.type-yeonsung-palanquin .display-font2 {font-family: 'Palanquin', sans-serif;}
+.type-yeonsung-palanquin .default-font1 {font-family: 'Yeon Sung', cursive;}
+.type-yeonsung-palanquin .default-font2 {font-family: 'Palanquin', sans-serif;}
+
+/* h1-h6: 50 38  28  21  16  12 */
+.type-yeonsung-palanquin h1 {font-size:50px} 
+@media all and (max-width: 1800px) { 
+    .type-yeonsung-palanquin h1 {font-size:2.61vw; font-size:clamp(30px, 2.61vw, 2.61vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-yeonsung-palanquin h1 {font-size:2.61vw;}
+}
+
+.type-yeonsung-palanquin h2 {font-size:38px}
+@media all and (max-width: 1800px) { 
+    .type-yeonsung-palanquin h2 {font-size:1.98vw; font-size:clamp(26px, 1.98vw, 1.98vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-yeonsung-palanquin h2 {font-size:1.98vw}
+}
+
+.type-yeonsung-palanquin h3 {font-size:28px}
+@media all and (max-width: 1800px) { 
+    .type-yeonsung-palanquin h3 {font-size:1.56vw; font-size:clamp(23px, 1.56vw, 1.56vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-yeonsung-palanquin h3 {font-size:1.46vw}
+}
+
+.type-yeonsung-palanquin h4 {font-size:21px}
+@media all and (max-width: 1800px) { 
+    .type-yeonsung-palanquin h4 {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-yeonsung-palanquin h4 {font-size:1.09vw}
+}
+
+.type-yeonsung-palanquin h5 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-yeonsung-palanquin h5 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-yeonsung-palanquin h5 {font-size:0.83vw}
+}
+
+.type-yeonsung-palanquin h6 {font-size:12px}
+@media all and (max-width: 1800px) { 
+    .type-yeonsung-palanquin h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-yeonsung-palanquin h6 {font-size:0.63vw}
+}
+
+/* 19 */
+.type-yeonsung-palanquin p,
+.type-yeonsung-palanquin td, 
+.type-yeonsung-palanquin li, 
+.type-yeonsung-palanquin label {
+    font-size: 19px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-yeonsung-palanquin p,
+    .type-yeonsung-palanquin td, 
+    .type-yeonsung-palanquin li, 
+    .type-yeonsung-palanquin label {font-size:1.17vw; font-size:clamp(16px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-yeonsung-palanquin .v2 p,
+    .type-yeonsung-palanquin .v2 td, 
+    .type-yeonsung-palanquin .v2 li, 
+    .type-yeonsung-palanquin .v2 label {font-size:0.99vw}
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Yeon+Sung');
+@import url('https://fonts.googleapis.com/css?family=Palanquin:200,600'); */

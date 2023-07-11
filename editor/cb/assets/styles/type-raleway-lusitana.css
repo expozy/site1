@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+
+.type-raleway-lusitana {
+    font-family: 'Lusitana', serif;
+    font-size: 100%;
+    line-height: 1.9;
+    font-weight: 400;
+    text-transform: none;
+    font-style: normal;
+}
+.type-raleway-lusitana p, .type-raleway-lusitana td, .type-raleway-lusitana li, .type-raleway-lusitana label {
+    font-family: 'Lusitana', serif;
+    font-size: 0.93rem;
+    letter-spacing: 0.7px;
+    line-height: 1.9;
+    font-weight: 400;
+    text-transform: none;
+    font-style: normal;
+}
+.type-raleway-lusitana h1, .type-raleway-lusitana h2, .type-raleway-lusitana h3, .type-raleway-lusitana h4, .type-raleway-lusitana h5, .type-raleway-lusitana h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-transform: none;
+    font-style: normal;
+}        
+
+.type-raleway-lusitana h1 {font-size: 1.9rem;margin: 0.8rem 0 0.9rem;}
+.type-raleway-lusitana h2 {font-size: 1.25rem;margin: 1rem 0 0.3rem;}
+.type-raleway-lusitana h3 {font-size: 1rem;margin: 1.15rem 0 0.3rem;}
+.type-raleway-lusitana h4 {font-size: 0.8rem;margin: 0.56rem 0 0.3rem;line-height: 1.6;}
+.type-raleway-lusitana h5 {font-size: 0.7rem;margin: 0.58rem 0 0.3rem;line-height: 1.7;}
+.type-raleway-lusitana h6 {font-size: 0.6rem;margin: 0.6rem 0 0.3rem;line-height: 2;}
+.type-raleway-lusitana p {margin:0.4rem 0 1rem;}
+
+.type-raleway-lusitana .display { margin-bottom: 0.5rem; }
+.type-raleway-lusitana .display h1 {
+	font-family: 'Raleway', sans-serif;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: none;
+    font-style: normal;
+}
+.type-raleway-lusitana .display p {
+	font-family: 'Lusitana', serif;
+    font-size: 0.93rem;
+    line-height: 1.6;
+    text-transform: none;
+    font-style: normal;
+}
+
+.type-raleway-lusitana .is-btn {
+    padding: 10px 50px;
+}
+.type-raleway-lusitana .is-btn-small {
+    padding: 5px 25px;
+}
+
+.type-raleway-lusitana .display-font1 {font-family: 'Raleway', sans-serif;}
+.type-raleway-lusitana .display-font2 {font-family: 'Lusitana', serif;}
+.type-raleway-lusitana .default-font1 {font-family: 'Raleway', sans-serif;}
+.type-raleway-lusitana .default-font2 {font-family: 'Lusitana', serif;}
+
+/* h1-h6: 32 24  19  16  14  12 */
+.type-raleway-lusitana h1 {font-size:32px}
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana h1 {font-size:1.64vw; font-size:clamp(24px, 1.64vw, 1.64vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana h1 {font-size:1.67vw}
+}
+
+.type-raleway-lusitana h2 {font-size:24px} 
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana h2 {font-size:1.48vw; font-size:clamp(22px, 1.48vw, 1.48vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana h2 {font-size:1.25vw}
+}
+
+.type-raleway-lusitana h3 {font-size:19px}
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana h3 {font-size:1.17vw; font-size:clamp(19px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana h3 {font-size:0.99vw}
+}
+
+.type-raleway-lusitana h4 {font-size:16px} 
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana h4 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana h4 {font-size:0.83vw}
+}
+
+.type-raleway-lusitana h5 {font-size:14}
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana h5 {font-size:0.86vw; font-size:clamp(14px, 0.86vw, 0.86vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana h5 {font-size:0.73vw}
+}
+
+.type-raleway-lusitana h6 {font-size:12} 
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana h6 {font-size:0.74vw; font-size:clamp(12px, 0.74vw, 0.74vw)} 
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana h6 {font-size:0.63vw}
+}
+
+/* 18 */
+.type-raleway-lusitana p,
+.type-raleway-lusitana td, 
+.type-raleway-lusitana li, 
+.type-raleway-lusitana label {
+    font-size: 18px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-raleway-lusitana p,
+    .type-raleway-lusitana td, 
+    .type-raleway-lusitana li, 
+    .type-raleway-lusitana label {font-size:1.11vw; font-size:clamp(16px, 1.11vw, 1.11vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-raleway-lusitana .v2 p,
+    .type-raleway-lusitana .v2 td, 
+    .type-raleway-lusitana .v2 li, 
+    .type-raleway-lusitana .v2 label {font-size:0.94vw}
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lusitana'); */

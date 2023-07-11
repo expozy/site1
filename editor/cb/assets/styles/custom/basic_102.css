@@ -1,0 +1,21 @@
+.accent_info_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  @media(max-width:1200px){
+    .accent_main_container{
+      max-width: 100%;
+    }
+  }
+  @media(max-width:992px){
+    .accent_div {
+      margin-top: 30px;
+    }
+    .accent_img{
+      padding: 20px;
+    }
+    .accent_info_box{
+      justify-content: center;
+    }
+  }

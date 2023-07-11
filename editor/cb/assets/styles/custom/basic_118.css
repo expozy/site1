@@ -1,0 +1,9 @@
+.refference_info_box{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding-left: 50px;
+
+    }

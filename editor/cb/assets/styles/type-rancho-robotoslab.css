@@ -1,0 +1,134 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.type-rancho-robotoslab {
+    font-family: 'Roboto Slab', serif;
+    font-size: 100%; 
+    line-height: 2.2;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-rancho-robotoslab p, .type-rancho-robotoslab td, .type-rancho-robotoslab li, .type-rancho-robotoslab label {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.13rem;
+    line-height: 2.2;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal;
+}
+.type-rancho-robotoslab h1, .type-rancho-robotoslab h2, .type-rancho-robotoslab h3, .type-rancho-robotoslab h4, .type-rancho-robotoslab h5, .type-rancho-robotoslab h6 {
+    font-family: 'Rancho', cursive;
+    font-weight: 400;
+    line-height: 1.2;  
+    letter-spacing: 0px;
+    text-transform: none;
+    font-style: normal; 
+}        
+
+.type-rancho-robotoslab h1 {font-size: 4rem;margin: 0.14rem 0 0.2rem;}
+.type-rancho-robotoslab h2 {font-size: 3.3rem;margin: 0.22rem 0 0.25rem;}
+.type-rancho-robotoslab h3 {font-size: 2.7rem;margin: 0.3rem 0 0.3rem;}
+.type-rancho-robotoslab h4 {font-size: 2.3rem;margin: 0.44rem 0 0.3rem;}
+.type-rancho-robotoslab h5 {font-size: 1.8rem;margin: 0.5rem 0;line-height: 1.35;}
+.type-rancho-robotoslab h6 {font-size: 1.55rem;margin: 0.6rem 0;line-height: 1.4;}
+.type-rancho-robotoslab p {margin:0.55rem 0 1rem;}
+
+.type-rancho-robotoslab .display { margin-bottom: 0.5rem; }
+.type-rancho-robotoslab .display h1 {
+	font-family: 'Rancho', cursive;
+    font-size: 5.2rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin:0.4rem 0;
+    font-style: normal;
+}
+.type-rancho-robotoslab .display p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.type-rancho-robotoslab .display-font1 {font-family: 'Rancho', cursive;}
+.type-rancho-robotoslab .display-font2 {font-family: 'Roboto Slab', serif;}
+.type-rancho-robotoslab .default-font1 {font-family: 'Rancho', cursive;}
+.type-rancho-robotoslab .default-font2 {font-family: 'Roboto Slab', serif;}
+
+/* h1-h6: 64 46 32  24  19  16 */
+.type-rancho-robotoslab h1 {font-size:64px} 
+@media all and (max-width: 1800px) { 
+    .type-rancho-robotoslab h1 {font-size:3.33vw; font-size:clamp(33px, 3.33vw, 3.33vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-rancho-robotoslab h1 {font-size:3.33vw}
+}
+
+.type-rancho-robotoslab h2 {font-size:46px} 
+@media all and (max-width: 1800px) { 
+    .type-rancho-robotoslab h2 {font-size:2.4vw; font-size:clamp(28px, 2.4vw, 2.4vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-rancho-robotoslab h2 {font-size:2.4vw}
+}
+
+.type-rancho-robotoslab h3 {font-size:32px}
+@media all and (max-width: 1800px) { 
+    .type-rancho-robotoslab h3 {font-size:1.64vw; font-size:clamp(24px, 1.64vw, 1.64vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-rancho-robotoslab h3 {font-size:1.67vw}
+}
+
+.type-rancho-robotoslab h4 {font-size:24px}
+@media all and (max-width: 1800px) { 
+    .type-rancho-robotoslab h4 {font-size:1.48vw; font-size:clamp(22px, 1.48vw, 1.48vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-rancho-robotoslab h4 {font-size:1.25vw}
+}
+
+.type-rancho-robotoslab h5 {font-size:19px}
+@media all and (max-width: 1800px) { 
+    .type-rancho-robotoslab h5 {font-size:1.17vw; font-size:clamp(19px, 1.17vw, 1.17vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-rancho-robotoslab h5 {font-size:0.99vw}
+}
+
+.type-rancho-robotoslab h6 {font-size:16px}
+@media all and (max-width: 1800px) { 
+    .type-rancho-robotoslab h6 {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-rancho-robotoslab h6 {font-size:0.83vw}
+}
+
+/* 18 */
+.type-rancho-robotoslab p,
+.type-rancho-robotoslab td, 
+.type-rancho-robotoslab li, 
+.type-rancho-robotoslab label {
+    font-size: 18px; 
+}
+@media all and (max-width: 1800px) { 
+    .type-rancho-robotoslab p,
+    .type-rancho-robotoslab td, 
+    .type-rancho-robotoslab li, 
+    .type-rancho-robotoslab label {font-size:1.11vw; font-size:clamp(16px, 1.11vw, 1.11vw)}
+}
+@media all and (min-width: 1921px) { 
+    .type-rancho-robotoslab .v2 p,
+    .type-rancho-robotoslab .v2 td, 
+    .type-rancho-robotoslab .v2 li, 
+    .type-rancho-robotoslab .v2 label {font-size:0.94vw}
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Rancho');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,700'); */

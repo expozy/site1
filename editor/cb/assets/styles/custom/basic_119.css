@@ -1,0 +1,12 @@
+.social_FD{
+    display: flex;
+    align-items: end;
+  }
+  .social_FD >p{
+    margin-left: 10px;
+
+  }
+  .social_SD{
+    display: flex;
+align-items: end;
+  }
