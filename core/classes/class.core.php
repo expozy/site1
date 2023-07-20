@@ -53,8 +53,10 @@ class FrontCore
 			}
 		}
 
+	}
+	
+	public function get_web(){
 		$this->web = Api::get()->settings_web();
-
 	}
 
 

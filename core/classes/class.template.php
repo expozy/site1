@@ -6,7 +6,7 @@ if (!defined("_VALID_PHP")) { die('Direct access to this location is not allowed
  * ========================================================== */
 class Template
 {
-		public const DIR_PATH = BASEPATH.'templates/';
+		public const DIR_PATH = BASEPATH.'static/';
 		public $file = false;
 
 		public function __construct(string $type, string $slug='') {

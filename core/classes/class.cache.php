@@ -42,9 +42,11 @@ class Cache{
 	}
 
 	public function save($response):bool{
+			global $core;
+			
 			if($this->api_method !== 'GET') return false;
 			if(!in_array($this->endpoint, self::ENDPOINTS)) return false;
-			
+			if(!isset($core->devMode) || $core->devMode==1) return false;
 			
 			$this->expire = time() + self::EXPIRE_HOUR*60*60;
 
@@ -57,9 +59,11 @@ class Cache{
 	}
 	
 	public function load(){
+			global $core;
 			
 			if($this->api_method !== 'GET') return FALSE;
 			if(file_exists($this->file) === false) return FALSE;
+			if(isset($core->devMode) && $core->devMode) return false;
 			
 			$file = file_get_contents($this->file);
 			

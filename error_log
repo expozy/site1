@@ -1,20 +1,94 @@
-[05-Jul-2023 16:36:06 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+[15-Jul-2023 10:22:16 Europe/Helsinki] PHP Warning:  Array to string conversion in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/pages/header.php on line 37
+[15-Jul-2023 10:22:26 Europe/Helsinki] PHP Warning:  Array to string conversion in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/pages/header.php on line 37
+[15-Jul-2023 10:22:29 Europe/Helsinki] PHP Warning:  Array to string conversion in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/pages/header.php on line 37
+[18-Jul-2023 21:58:16 Europe/Helsinki] PHP Warning:  Undefined array key "address" in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 58
+[19-Jul-2023 13:02:01 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:02:01 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
 Stack trace:
-#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
-#1 {main}
-  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22
-[05-Jul-2023 16:36:45 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:02:07 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:02:07 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
 Stack trace:
-#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
-#1 {main}
-  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22
-[05-Jul-2023 16:38:35 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:05:22 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:05:22 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
 Stack trace:
-#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
-#1 {main}
-  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22
-[05-Jul-2023 16:39:13 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php:22
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:06:59 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:06:59 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
 Stack trace:
-#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/post.php(30): require_once()
-#1 {main}
-  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/editor/savecontent.php on line 22
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:07:10 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:07:10 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:09:20 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:09:21 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:15:22 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:15:23 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:16:08 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:16:08 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:16:11 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:16:11 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47
+[19-Jul-2023 13:21:53 Europe/Helsinki] PHP Warning:  foreach() argument must be of type array|object, string given in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.core.php on line 51
+[19-Jul-2023 13:21:53 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php:47
+Stack trace:
+#0 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(31): Users->login_check()
+#1 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php(22): Users->_start_session()
+#2 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/autoload.php(53): Users->__construct()
+#3 /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/index.php(4): require_once('...')
+#4 {main}
+  thrown in /home/v3frontend/web/storefront3.studiowebdemo.com/public_html/core/classes/class.users.php on line 47

@@ -35,7 +35,8 @@ class Page
 
 
 			if(!isset($tmp[2])){
-				$this->slug = $pathinfo['basename'];
+				$this->slug = explode("?", $pathinfo['basename'])[0] ;
+
 			} else {
 				$this->slug = $tmp[2];
 			}
@@ -59,7 +60,7 @@ class Page
 				$this->type = 'product';
 			}
 
-		
+
 
 			//d($this);die();
 
@@ -68,7 +69,7 @@ class Page
 	function load_page(bool $cache = true){
 		global $lang, $core;
 
-		
+
 		$header = new Template('header');
 
 		$this->header = $header->get_html();
@@ -78,8 +79,8 @@ class Page
 
 		$this->footer = $footer->get_html();
 
-		
-		
+
+
 			//blog
 		if($this->type == 'post' || $this->type == 'index'	|| $this->type == 'product' ||
 			$this->type == 'category' || $this->type == 'blog'	){
@@ -168,17 +169,17 @@ class Page
 
 
 		if(isset($core->devMode) && $core->devMode){
-			
+
 			//d($this);
 			$tmpl = new Template($this->type, $this->slug);
-			
+
 			if(!file_exists($tmpl->file)){
 				$tmpl->save_html($this->html);
 			} else{
-				
+
 				$this->html = $tmpl->get_html();
 			}
-			
+
 			//d($this);
 			return $this->_devMode();
 		}
@@ -187,7 +188,7 @@ class Page
 		if($this->error404) redirect_to('404');
 
 	}
-	
+
 	private function _devMode(){
 		//d($this) ;
 	}

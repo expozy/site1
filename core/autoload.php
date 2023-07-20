@@ -2,6 +2,7 @@
 
 if (!defined("_VALID_PHP")) { die('Direct access to this location is not allowed.'); }
 
+
 require_once(str_replace("autoload.php", "", realpath(__FILE__)).'classes/class.core.php');
 
 
@@ -39,7 +40,8 @@ require_once(BASEPATH.'core/classes/class.api.php');
 
 
 $core = new FrontCore();
-
+$core->get_web();
+//d($core);
 
 require_once(BASEPATH.'core/classes/class.page.php');
 $page = new Page();

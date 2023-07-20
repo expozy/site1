@@ -116,10 +116,17 @@ function initMap() {
 
   function getLongAddressObject(object) {
     console.log(object);
+
     let address = {};
     const address_components = object[0].address_components;
     address_components.forEach(element => {
-      address[element.types[0]] = element.long_name;
+
+      if(element.types[0] == "country"){
+        address['country_code'] = element.short_name
+        address[element.types[0]] = element.long_name;
+      }else {
+            address[element.types[0]] = element.short_name;
+      }
     });
     return address;
   }
@@ -141,6 +148,7 @@ function initMap() {
           geocoder.geocode({ 'latLng': latlng }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
               final_address = '';
+
                updateInputAddress(getLongAddressObject(results));
 
             }
@@ -216,8 +224,8 @@ function updateInputAddress(addressObject){
   let country = document.getElementById('country');
   let streetName = document.getElementById('streetName');
   let streetNumber = document.getElementById('streetNumber');
+    let country_code = document.getElementById('country_code');
 
-  
 
   if(post_code != undefined && addressObject.postal_code != undefined){
     post_code.value = addressObject.postal_code;
@@ -240,9 +248,9 @@ function updateInputAddress(addressObject){
   }
 
 
-
-
-
+  if(country_code != undefined && addressObject.country_code != undefined){
+    country_code.value = addressObject.country_code;
+  }
 
 
   final_address = '';
