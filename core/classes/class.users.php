@@ -15,7 +15,7 @@ class Users
 	public $userlevel = 0;
 	public $token;
 
-	const LEVEL_ADMIN = 9;
+	const LEVEL_ADMIN = 99;
 
 	function __construct()
 	{
@@ -34,7 +34,6 @@ class Users
 			$this->email = $_SESSION['email'] = "";
 			$this->sesid = sha1(session_id());
 			$this->userlevel = 0;
-				$this->addresses = '';
 		}
 	}
 
@@ -56,10 +55,8 @@ class Users
 			$this->userlevel = $row['userlevel'];
 			$this->sesid = sha1(session_id());
 			$this->token = $row['token'];
-			$this->addresses = $row['addresses'];
-
+			// $this->address = $row['address'];
 			$this->company = $row['company'];
-
 			return true;
 		} else {
 			if(isset($_COOKIE['email'])){
@@ -70,7 +67,6 @@ class Users
 				$this->balance = $_SESSION['balance'] = $row['balance'];
 				$this->userlevel = $_SESSION['userlevel'] = $row['userlevel'];
 				$this->token = $_SESSION['token'] = $row['token'];
-
 				$this->sesid = sha1(session_id());
 				return true;
 			} else {
@@ -191,7 +187,7 @@ class Users
 
 
 	public function is_Admin() {
-		return $this->userlevel == 9 ? true : false;
+		return $this->userlevel >= self::LEVEL_ADMIN ? true : false;
 	}
 
 	public function hasAccess(){

@@ -80,7 +80,7 @@
 			</template>
 		</div>
 
-<?php	 if($core->devMode && $user->logged_in && $user->userlevel == 99) { ?>
+<?php	 if($core->devMode && $user->logged_in && $user->is_Admin()) { ?>
 
 	<div style="display: none;" id="tailwindCss"></div>
 	<div style="width:100px;height: 50px;position: fixed;right: 100px;bottom: 60px;background-color: red;z-index: 1000;display: flex;justify-content: center;align-items: center;border-radius: 25px;color: white;font-weight: bold;letter-spacing: 1.2px;font-size: 18px;cursor: pointer;" id="dev_save">Save</div>
