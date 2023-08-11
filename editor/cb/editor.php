@@ -55,6 +55,27 @@ $dir = SITEURL.'/editor/cb/';
 
     <link data-name="contentstyle" data-class="type-poppins" href="<?php echo $dir ?>assets/styles/type-poppins.css" rel="stylesheet">
 
+    <style media="screen">
+    .is-section.lock{
+      background-image: url(/editor/cb/assets/images/lock2.png) !important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  background-position: center!important;
+  background-color: white !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  min-height: unset !important;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  margin-bottom: 10px !important;
+  aspect-ratio: 5 / 1;
+}
+
+    .is-section.lock > div{
+    opacity: 0 !important;
+    }
+
+    </style>
 
 
 </head>

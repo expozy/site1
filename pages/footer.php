@@ -1,14 +1,15 @@
 <?php if (!defined("_VALID_PHP")) { die('Direct access to this location is not allowed.'); } ?>
 
-<div  :class="data.corePage.slug != 'checkout' ? 'block' : ' hidden' " >
+
+<div id="footer" style="<?php if($page->slug == 'checkout' || $page->slug == 'checkout2') echo "display:none"; ?>">
 	<?php echo  Page::html_res_change($page->footer, '10x10'); ?>
-  
 </div>
 
 
 
 
-<!-- <?= Inline::buttonEdit(); ?> -->
+
+ <?= Inline::buttonEdit(); ?>
 
 
 
@@ -27,16 +28,16 @@
 
 
 <!-- SCRIPTS AND STYLES FOR GLIDE SLIDER -->
- <link href="<?php echo $core->site_url ?>/editor/cb/assets/scripts/glide/css/glide.core.css" rel="stylesheet">
+ <link href="<?php echo $core->site_url ?>/editor/cb/assets/scripts/glide/css/glide.core.min.css" rel="stylesheet">
 <link href="<?php echo $core->site_url ?>/editor/cb/assets/scripts/glide/css/glide.theme.css" rel="stylesheet">
-<script src="<?php echo $core->site_url ?>/editor/cb/assets/scripts/glide/glide.js"></script>
+<script src="<?php echo $core->site_url ?>/editor/cb/assets/scripts/glide/glide.min.js"></script>
 
 
 <!-- ICONS  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" type="text/css" href="<?= CBURL ?>assets/styles/simple-line-icons/css/simple-line-icons.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="<?= CBURL ?>assets/styles/simple-line-icons/css/simple-line-icons.min.css"> -->
 
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/134d7d4e2d.js" crossorigin="anonymous"></script>
 
 
 <!-- SCRIPT FOR EDITOR  -->

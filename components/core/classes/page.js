@@ -86,7 +86,7 @@ export class PageClass {
 
 
 		if(DEV_MODE){
-			let response = await fetch(SITEURL+"/static/"+this.type+"~"+this.slug+"~"+this.lang+".html");
+			let response = await fetch(this.get_template_url());
 
 
 			if(response.status ==200){
@@ -114,17 +114,28 @@ export class PageClass {
 		}
 
 		if(this.type !== 'product' && "product" in dataProxy ){
-			dataProxy['product'] = '';
+			delete dataProxy['product'];
 		}
-		if(this.type === 'products' && "products" in dataProxy ){
+		if(window.location.pathname.includes("products") && "products" in dataProxy ){
 			delete dataProxy['products']['result'] ;
 			delete dataProxy['products']['pagination'];
 		}
-		// debugger;
+
 		dataProxy['corePage'] = this;
 
-
 		document.title = this.title;
+
+		// debugger;
+
+		if(this.slug != 'checkout'){
+			document.getElementById('header').style.removeProperty('display');
+			document.getElementById('footer').style.removeProperty('display');
+		}else {
+			document.getElementById('header').style.display = "none";
+			document.getElementById('footer').style.display = "none";
+		}
+
+
 		document.getElementById('pageCss').innerHTML = this.css;
 
 		document.getElementById('main').innerHTML = this.html;
@@ -145,11 +156,19 @@ export class PageClass {
 
 	}
 
-	saveTemplate(){
+	async saveTemplate(){
 		const styles = document.getElementById('tailwindCss').getElementsByTagName('style');
 		const lastElement = styles[styles.length - 1];
 		const lastElementString = lastElement.outerHTML;
-		console.log(lastElementString);
+		let html = '';
+
+		let response = await fetch(this.get_template_url());
+
+		if(response.status ==200){
+				let html = await response.text(); // Returns it as Promise
+				this.html = html;
+		}
+
 
 		const reqBody = {
 						description: this.html,
@@ -157,6 +176,10 @@ export class PageClass {
 					};
 		Api.put('pages/'+this.id+"?lang="+this.lang, reqBody);
 
+	}
+
+	get_template_url(){
+		return SITEURL+"/static/"+this.type+"~"+this.slug+"~"+this.lang+".html";
 	}
 
 

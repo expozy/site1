@@ -1,4 +1,4 @@
-import {PageClass, Page} from './page.js'; 
+import {PageClass, Page} from './page.js';
 
 document.addEventListener('click', async function(event) {
 		// Проверете дали кликнатият елемент е елемент 'a'
@@ -14,6 +14,9 @@ document.addEventListener('click', async function(event) {
 
 				//change URL in address bar
 				history.pushState(null, null, link.pathname);
+
+				// Refresh pageUrl parameters
+				dataProxy['pageUrl'] = [];
 
 				await Page.load();
 
@@ -32,6 +35,14 @@ document.addEventListener('click', async function(event) {
 
 
 });
+
+
+// Ако потребителя се върне назад се зарежда на ново страницата
+document.addEventListener('beforeunload', function(event) {
+	Page.load();
+});
+
+
 window.addEventListener('popstate', function(event) {
 	Page.load();
 });

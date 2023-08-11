@@ -1,5 +1,6 @@
 
 function initMap() {
+  console.log('init map google');
   var final_address = '';
 
   const map = new google.maps.Map(document.getElementById("map"), {

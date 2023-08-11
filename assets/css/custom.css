@@ -1,6 +1,62 @@
-/* .xl\:flex {
-  display: flex !important;
-} */
+
+
+
+
+/*
+    @font-face {
+    font-family: 'Repo Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo Light'), url('../fonts/repo/Repo-Light.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Repo Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo Medium'), url('../fonts/repo/Repo-Medium.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Repo DemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo DemiBold'), url('../fonts/repo/Repo-DemiBold.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Repo Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo Bold'), url('../fonts/repo/Repo-Bold.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Repo ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo ExtraBold'), url('../fonts/repo/Repo-ExtraBold.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Repo Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo Black'), url('../fonts/repo/Repo-Black.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Repo ExtraBlack';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo ExtraBlack'), url('../fonts/repo/Repo-ExtraBlack.woff') format('woff');
+    } */
 
  .container img{
   margin: 0px !important;
@@ -63,10 +119,7 @@ html {
 scroll-behavior: smooth;
 }
 
-p,h1,h2,h3,h4,h5,h6,span,a,label{
-      /* font-family: 'Marmelad', Helvetica Neue, Verdana, sans-serif !important; */
-      font-family: "Oswald",sans-serif ;
-}
+
 [x-cloak] {
     display: none !important;
 }

@@ -5,19 +5,19 @@
         <div class="flex gap-2 items-center">
             <p>Подреди по : </p>
             <select class="border-b border-slate-300 py-1 px-3 lg:my-[20px] rounded-[5px]" name="" @change="alpineListeners('Shop.get_products', $event)">
-                <option data-sort="newest" keyname="products" :selected="data.settings.sortProducts == 'newest'" value="">Най - нови</option>
-                <option data-sort="min_price" keyname="products" :selected="data.settings.sortProducts == 'min_price'" value="">Цена възх.</option>
-                <option data-sort="max_price" keyname="products" :selected="data.settings.sortProducts == 'max_price'" value="">Цена низх.</option>
-                <option data-sort="discount" keyname="products" :selected="data.settings.sortProducts == 'discount'" value="">На промоция</option>
+                <option data-sort="newest" keyname="products" :selected="data.pageUrl.sort == 'newest'" value="">Най - нови</option>
+                <option data-sort="min_price" keyname="products" :selected="data.pageUrl.sort == 'min_price'" value="">Цена възх.</option>
+                <option data-sort="max_price" keyname="products" :selected="data.pageUrl.sort == 'max_price'" value="">Цена низх.</option>
+                <option data-sort="discount" keyname="products" :selected="data.pageUrl.sort == 'discount'" value="">На промоция</option>
             </select>
         </div>
 
         <div class="flex gap-2 items-center">
             <p>Продукти на страница : </p>
             <select class="border-b border-slate-300 py-1 px-3 lg:my-[20px] rounded-[5px] " name="" @change="alpineListeners('Shop.get_products', $event)">
-                <option data-limit="10" keyname="products" :selected="data.settings.limitProducts == 10" value="" selected="selected">10</option>
-                <option data-limit="20" keyname="products" :selected="data.settings.limitProducts == 20" value="">20</option>
-                <option data-limit="50" keyname="products" :selected="data.settings.limitProducts == 50" value="">50</option>
+                <option data-limit="10" keyname="products" :selected="data.pageUrl.limit == 10" value="" selected="selected">10</option>
+                <option data-limit="20" keyname="products" :selected="data.pageUrl.limit == 20" value="">20</option>
+                <option data-limit="50" keyname="products" :selected="data.pageUrl.limit == 50" value="">50</option>
             </select>
         </div>
 
@@ -25,17 +25,17 @@
 </div>
 <div class=" w-full  mt-10 flex justify-center" x-data="{activeCategory: 0, activeSubCategory: 0, test: 1}" apidata="Shop.get_categories" keyname="categories" data-droplist="true">
 
-    <div class="lg:w-2/5 xl:w-1/5 hidden lg:block">
-        <div class=" mx-5 py-10 px-5">
+    <div class="lg:w-2/5 xl:w-1/5 hidden lg:block min-w-[450px]">
+        <div class=" mx-5 py-10 ">
             <p class="text-xl font-bold  pb-2 text-slate-700 uppercase border-b-2 border-slate-800">Категории</p>
-            <ul class="  py-3">
+            <ul class=" divide-y py-3">
                 <template x-for="category in data.categories">
-                    <li class=" w-full px-2 py-1 my-2" @click="if(activeCategory == category.id) { activeCategory = 0; subCategory= 0} else{  activeCategory = category.id; activeSubCategory = 0}">
-                        <div class="w-full h-full border border-neutral-600 flex gap-4 items-center justify-between px-3 cursor-pointer " :class="activeCategory == category.id ? 'bg-neutral-700 text-white' : 'text-neutral-700 bg-unset' ">
+                    <li class=" w-full  " >
+                        <div class="w-full h-full px-2 flex  items-center justify-between cursor-pointer w-full h-full px-2 flex items-center justify-between cursor-pointer my-2 rounded-md shadow text-neutral-700 " @click="if(activeCategory == category.id) { activeCategory = 0; subCategory= 0} else{  activeCategory = category.id; activeSubCategory = 0}" :class="activeCategory == category.id ? 'bg-sky-900 text-white' : 'text-neutral-700 bg-white' ">
                             <a @click="forceChange(category.url)" x-text="category.title" class="hover:text-orange-400 text-[14px] py-2">Tojiro Fuji</a>
                             <template x-if="category.children">
                                 <div class="">
-                                    <span><i class="fa-solid  text-[20px]" :class="activeCategory == category.id ? 'fa-circle-chevron-left' : 'fa-circle-chevron-down'"></i></span>
+                                    <span><i class="fa-solid  text-[20px]" :class="activeCategory == category.id ? 'fa-circle-chevron-left text-white' : 'fa-circle-chevron-down text-sky-900'"></i></span>
                                 </div>
 
                             </template>
@@ -46,12 +46,12 @@
 
                         <template x-if="category.children">
                             <div x-show="activeCategory == category.id">
-                                <div class=" bg-neutral-50 px-5 py-2">
-                                    <ul>
+                                <div class=" bg-neutral-50 px-1 drop-shadow border border-neutral-100">
+                                    <ul class="divide-y">
                                         <template x-for="subCategory in category.children">
-                                            <li :class="activeSubCategory == subCategory.id ? 'bg-neutral-700 text-white py-2  px-1' : 'bg-unset'">
+                                            <li class="p-1" :class="activeSubCategory == subCategory.id ? 'bg-sky-900 text-white' : 'bg-unset '">
                                                 <template x-if="if(subCategory.id == data.corePage.target_id){ activeCategory = category.id; activeSubCategory = subCategory.id  }"></template>
-                                                <a x-text="subCategory.title" @click="forceChange(subCategory.url)" class="hover:text-orange-400 text-[14px]"></a>
+                                                <a x-text="subCategory.title" @click="forceChange(subCategory.url)" class="hover:text-orange-400 text-[14px] cursor-pointer"></a>
                                             </li>
                                         </template>
                                     </ul>
@@ -65,11 +65,12 @@
         </div>
     </div>
 
-    <div class="w-full lg:w-3/5 xl:w-4/5 px-10">
+    <div class="w-full lg:w-3/5 xl:w-4/5 px-3 lg:px-10">
 
         <div class="lg:mb-[100px]  ">
-            <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-10 xl:grid-cols-4" apidata="Shop.get_products" :data-category_id="data.corePage.target_id" keyname="products" data-limit="12">
+            <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-10 xl:grid-cols-4" apidata="Shop.get_products" data-subcategories="true" data-only_instock="0" :data-category_id="data.corePage.target_id" keyname="products" options-chnageurl="true">
                 <template x-for="product in data.products.result">
+
                     <div class="ribbon-wrapper">
                         <template x-if="product.variations[0].promoprice != 0">
                             <div class="ribbon ribbon-secondary ribbon-clip !top-[10px]">Sale</div>
@@ -79,7 +80,7 @@
                         </div>
 
                         <div class=" relative  text-center shadow-xl flex flex-col justify-between h-full bg-neutral-100 " x-data="{hover:false}" @mouseenter="hover = true" @mouseleave="hover = false">
-                            <div class="p-10 hover:p-0 h-[300px] bg-white">
+                            <div class="lg:p-10 hover:p-0  lg:h-[300px] bg-white">
                                 <div class="absolute top-4 right-4 z-30" x-data="{wishlist: product.isWishlisted}">
                                     <template x-if="!wishlist">
                                         <i class="fa-regular fa-heart text-[22px] cursor-pointer drop-shadow-xl hover:text-red-600" @click="alpineListeners('Shop.post_wishlist', $event); wishlist =! wishlist" :data-product_id="product.id"></i>
@@ -91,7 +92,7 @@
 
                                 </div>
                                 <a @click="forceChange(product.url)">
-                                    <img :src="product.images[0].image" alt="" class="!m-0 w-full h-full object-scale-down">
+                                    <img :src="product.images[0].image_10x10" alt="" class="!m-0 w-full  lg:h-full lg:object-scale-down cursor-pointer">
                                 </a>
                             </div>
 
@@ -114,18 +115,28 @@
                                     </template>
 
                                     <template x-if="product.variations[0].promoprice == 0">
-                                        <p x-text="product.variations[0].price + ' лв.'" class=" py-1 text-base font-bold">80.00 BGN</p>
+                                        <p x-text="product.variations[0].price.toFixed(2) + ' лв.'" class=" py-1 text-[17px] text-red-600 font-bold">80.00 BGN</p>
                                     </template>
 
                                 </a>
                             </div>
 
                             <div class="px-3 py-3 w-full">
-                                <button @click="alpineListeners('Shop.post_carts', $event)" :data-product_id="product.id" :data-variations_id="product.variations[0].id" :data-qty="1" name="button" class=" w-full py-2 bg-neutral-700 text-white hover:bg-neutral-100 hover:text-neutral-700 border-2 border-neutral-600">Купи</button>
+                              <button @click="alpineListeners('Shop.post_carts', $event)" :data-product_id="product.id" :data-variations_id="product.variations[0].id" :data-qty="1" name="button" class="flex items-center justify-center w-full py-2 bg-sky-900 text-white hover:bg-sky-800 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                                Купи
+                              </button>
+
                             </div>
 
                         </div>
                     </div>
+                </template>
+
+                <template x-if="!data.products.result[0]">
+                  <p class=" mx-5 py-10 mt-10 px-5">Няма намерени продукти</p>
                 </template>
 
             </div>
@@ -141,7 +152,7 @@
                                     <p class="w-[40px] h-[40px] inline-flex justify-center  items-center">...</p>
                                 </template>
                                 <template x-if="page != '...'">
-                                    <a @click="alpineListeners('Shop.change_page', $event)" :data-page="page" keyname="products" x-text="page" :data-endpoint="data.products.endpoint" :class="page == data.products.pagination.current_page ? 'bg-neutral-700 text-white' : 'bg-white text-neutral-700'" class="w-[40px] h-[40px] inline-flex justify-center cursor-pointer items-center  hover:text-white  border border-gray-100  hover:bg-neutral-700   ">1</a>
+                                    <a @click="alpineListeners('Shop.get_products', $event)" :data-page="page" options-scroll="true" keyname="products" x-text="page"  :class="page == data.products.pagination.current_page ? 'bg-sky-900 text-white' : 'bg-white text-neutral-700'" class="w-[40px] h-[40px] inline-flex justify-center cursor-pointer items-center  hover:text-white  border border-gray-100  hover:bg-sky-900   ">1</a>
                                 </template>
                             </li>
                         </template>

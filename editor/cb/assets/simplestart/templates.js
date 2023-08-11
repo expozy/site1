@@ -12,10 +12,8 @@
 		{
 		    'thumbnail': 'preview/simple-01.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-dark-text type-poppins box-autofit is-section-100">
+			<div class="is-section is-box is-dark-text  box-autofit is-section-100">
 				<div class="is-overlay">
 				</div>
 				<div class="is-boxes">
@@ -54,10 +52,8 @@
 		{
 		    'thumbnail': 'preview/simple-02.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -81,11 +77,9 @@
             'thumbnail': 'preview/navbar-01.png',
             'category': '1',
             'googleFonts': [],
-		    'contentCss': 'type-opensans.css',
-		    'contentClass': 'type-opensans',
             'type': 'navbar',
             'html':
-                '<div class="is-section is-section-navbar is-section-sticky is-section-auto is-box type-opensans" style="height:90px;background:transparent;">' +
+                '<div class="is-section is-section-navbar is-section-sticky is-section-auto is-box " style="height:90px;background:transparent;">' +
                     '<div class="is-overlay">' +
                         '<div class="is-overlay-content content-selectable" data-module="navbar-builder" data-module-desc="Navigation Bar" data-dialog-width="570px" data-dialog-height="640px" data-html="' +
                         
@@ -175,10 +169,8 @@
 		{
 		    'thumbnail': 'preview/simple-03.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box is-box-6 box-autofit">
 						<div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -224,10 +216,8 @@
 		{
 		    'thumbnail': 'preview/simple-04.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -259,10 +249,8 @@
 		{
 		    'thumbnail': 'preview/simple-05.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box is-box-6 box-autofit min-height-40">
 						<div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -322,10 +310,8 @@
 		{
 		    'thumbnail': 'preview/simple-06.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box type-poppins box-autofit">
+			<div class="is-section is-section-100 is-box  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -367,10 +353,8 @@
 		{
 		    'thumbnail': 'preview/simple-07.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box is-align-left type-poppins box-autofit">
+			<div class="is-section is-section-100 is-box is-align-left  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -415,10 +399,8 @@
 		{
 		    'thumbnail': 'preview/simple-08.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box is-align-left type-poppins box-autofit">
+			<div class="is-section is-section-100 is-box is-align-left  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -453,10 +435,8 @@
 		{
 		    'thumbnail': 'preview/simple-09.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box type-poppins box-autofit">
+			<div class="is-section is-section-100 is-box  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -501,10 +481,8 @@
 		{
 		    'thumbnail': 'preview/simple-10.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -557,10 +535,8 @@
 		{
 		    'thumbnail': 'preview/simple-11.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 box-space type-poppins">
+			<div class="is-section is-section-100 box-space ">
 				<div class="is-boxes">
 					<div class="is-box is-box-7 box-autofit min-height-70">
 						<div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -594,10 +570,8 @@
 		{
 		    'thumbnail': 'preview/simple-12.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -654,10 +628,8 @@
 		{
 		    'thumbnail': 'preview/simple-13.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -687,10 +659,8 @@
 		{
 		    'thumbnail': 'preview/simple-14.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 box-space type-poppins">
+			<div class="is-section is-section-100 box-space ">
 				<div class="is-boxes">
 					<div class="is-box is-dark-text is-box-6 box-autofit">
 						<div class="is-overlay"></div>
@@ -736,10 +706,8 @@
 		{
 			'thumbnail': 'preview/simple-15.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box is-box-6 is-content-top is-dark-text box-autofit min-height-50">
 						<div class="is-overlay">
@@ -815,10 +783,8 @@
 		{
 			'thumbnail': 'preview/simple-16.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-box is-section-100 type-poppins is-light-text box-autofit min-height-70">
+			<div class="is-section is-box is-section-100  is-light-text box-autofit min-height-70">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/the-unmistakables-suNS4qGA1i0-unsplash-editVLhIybF.jpeg&quot;);" data-bottom-top="transform:translateY(-70px) scale(1);" data-top-bottom="transform:translateY(50px) scale(1.1)"></div>
 				</div>
@@ -880,10 +846,8 @@
 		{
 			'thumbnail': 'preview/simple-17.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-box is-section-100 type-poppins is-dark-text box-autofit min-height-70">
+			<div class="is-section is-box is-section-100  is-dark-text box-autofit min-height-70">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-cottonbro-1054793.jpeg&quot;);" data-bottom-top="transform:translateY(-70px) scale(1);" data-top-bottom="transform:translateY(50px) scale(1.1)"></div>
 				</div>
@@ -946,10 +910,8 @@
 		{
 		    'thumbnail': 'preview/simple-18.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 is-dark-text type-poppins box-autofit">
+			<div class="is-section is-box is-section-100 is-dark-text  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95 edge-y-0-5">
@@ -995,10 +957,8 @@
 		{
 		    'thumbnail': 'preview/simple-19.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 is-dark-text type-poppins box-autofit">
+			<div class="is-section is-box is-section-100 is-dark-text  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95 edge-y-0-5">
@@ -1041,10 +1001,8 @@
 		{
 		    'thumbnail': 'preview/simple-20.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 box-space type-poppins">
+			<div class="is-section is-section-100 box-space ">
 				<div class="is-boxes">
 					<div class="is-box is-dark-text is-box-3 box-autofit">
 						<div class="is-overlay"></div>
@@ -1092,10 +1050,8 @@
 		{
 			'thumbnail': 'preview/simple-21.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box is-dark-text is-box-6 box-autofit">
 						<div class="is-overlay"></div>
@@ -1135,10 +1091,8 @@
 		{
 			'thumbnail': 'preview/simple-22.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box is-box-6 box-autofit min-height-50">
 						<div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -1179,10 +1133,8 @@
 		{
 			'thumbnail': 'preview/simple-23.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box is-dark-text is-box-4 box-autofit">
 						<div class="is-overlay" style="background-color: rgb(255 247 231);">
@@ -1245,10 +1197,8 @@
 		{
 		    'thumbnail': 'preview/simple-24.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-dark-text is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-dark-text is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95 edge-y-0-25">
@@ -1289,10 +1239,8 @@
 		{
 		    'thumbnail': 'preview/simple-25.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -1348,10 +1296,8 @@
 		{
 		    'thumbnail': 'preview/simple-26.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -1417,10 +1363,8 @@
 		{
 		    'thumbnail': 'preview/simple-27.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -1454,10 +1398,8 @@
 		{
 		    'thumbnail': 'preview/simple-28.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box is-align-left type-poppins box-autofit">
+			<div class="is-section is-section-100 is-box is-align-left  box-autofit">
 			<div class="is-overlay"></div>
 			<div class="is-boxes">
 				<div class="is-box-centered">
@@ -1509,15 +1451,13 @@
 		{
 		    'thumbnail': 'preview/simple-29.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-70 type-opensans box-autofit min-height-70">
+			<div class="is-section is-box is-section-70  box-autofit min-height-70">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-liza-summer-6347543-editsfM745W.jpeg&quot;);"></div>
 				</div>
 			</div>
-			<div class="is-section is-box is-dark-text is-content-top is-section-30 type-poppins box-autofit">
+			<div class="is-section is-box is-dark-text is-content-top is-section-30  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95 is-content-top edge-y-0-25">
@@ -1548,15 +1488,13 @@
 		{
 		    'thumbnail': 'preview/simple-30.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box box-space is-section-70 type-opensans box-autofit min-height-70">
+			<div class="is-section is-box box-space is-section-70  box-autofit min-height-70">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/the-unmistakables-suNS4qGA1i0-unsplash-editVLhIybF.jpeg&quot;);"></div>
 				</div>
 			</div>
-			<div class="is-section is-box is-dark-text is-content-top is-section-30 type-poppins box-autofit">
+			<div class="is-section is-box is-dark-text is-content-top is-section-30  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95 is-content-top edge-y-0-25">
@@ -1582,15 +1520,13 @@
 		{
 		    'thumbnail': 'preview/simple-31.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box box-space is-section-70 type-opensans box-autofit min-height-70">
+			<div class="is-section is-box box-space is-section-70  box-autofit min-height-70">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-ivan-samkov-4458554.jpg&quot;);"></div>
 				</div>
 			</div>
-			<div class="is-section is-box is-dark-text is-section-30 is-content-top type-opensans box-autofit">
+			<div class="is-section is-box is-dark-text is-section-30 is-content-top  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95 is-content-top edge-y-0">
@@ -1617,10 +1553,8 @@
 		{
 			'thumbnail': 'preview/simple-32.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 			<div class="is-boxes">
 				<div class="is-box is-box-6 is-dark-text is-content-top">
 					<div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -1673,10 +1607,8 @@
 		{
 			'thumbnail': 'preview/simple-33.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 type-poppins box-space box-space-xxs">
+			<div class="is-section is-section-100  box-space box-space-xxs">
 				<div class="is-boxes">
 					<div class="is-box is-box-6 is-content-top is-light-text hover-zoom box-autofit min-height-60">
 						<div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -1734,10 +1666,8 @@
 		{
 		    'thumbnail': 'preview/simple-35.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section type-poppins box-space box-space-xxs stack-top is-section-50">
+			<div class="is-section  box-space box-space-xxs stack-top is-section-50">
 				<div class="is-boxes">
 					<div class="is-box is-box-4 hover-zoom is-light-text">
 						<div class="is-overlay">
@@ -1809,7 +1739,7 @@
 				</div>
 			</div>
 			
-			<div class="is-section type-poppins box-space box-space-xxs stack-bottom is-section-50">
+			<div class="is-section  box-space box-space-xxs stack-bottom is-section-50">
 				<div class="is-boxes">
 					<div class="is-box is-box-4 hover-zoom is-light-text">
 						<div class="is-overlay">
@@ -1885,10 +1815,8 @@
 		{
 		    'thumbnail': 'preview/simple-36.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section type-poppins is-section-100 box-space box-space-xxs">
+			<div class="is-section  is-section-100 box-space box-space-xxs">
 				<div class="is-boxes">
 					<div class="is-box is-box-4 hover-zoom is-content-bottom">
 						<div class="is-overlay">
@@ -1967,10 +1895,8 @@
 		{
 		    'thumbnail': 'preview/simple-37.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section type-poppins is-section-100">
+			<div class="is-section  is-section-100">
 				<div class="is-boxes">
 					<div class="is-box is-box-4 hover-zoom is-content-bottom">
 						<div class="is-overlay">
@@ -2049,10 +1975,8 @@
 		{
 		    'thumbnail': 'preview/simple-34.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-dark-text is-section-100 type-poppins box-autofit">
+			<div class="is-section is-box is-dark-text is-section-100  box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95 edge-y-0-25">
@@ -2094,11 +2018,9 @@
 		{
 		    'thumbnail': 'preview/slider-01.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'glide',
 		    'html': `
-			<div class="is-section is-section-100 is-box is-align-left type-poppins is-light-text box-autofit min-height-60">
+			<div class="is-section is-section-100 is-box is-align-left  is-light-text box-autofit min-height-60">
 				<div class="is-overlay">
 					<div class="is-overlay-content content-selectable" data-dialog-width="1200px" data-dialog-height="900px" data-module="slider-box" data-module-desc="Slider" data-html="${encodeURIComponent(`
 						<div id="{id}" class="glide cover" style="display:none">
@@ -2272,11 +2194,9 @@
 		{
 		    'thumbnail': 'preview/slider-02.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'glide',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-align-left is-light-text is-content-top box-autofit min-height-60">
 						<div class="is-overlay">
@@ -2465,11 +2385,9 @@
 		{
 		    'thumbnail': 'preview/slider-03.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'glide',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-dark-text box-autofit">
 						<div class="is-overlay"></div>
@@ -2633,11 +2551,9 @@
 		{
 		    'thumbnail': 'preview/slider-04.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'glide',
 		    'html': `
-			<div class="is-section is-box is-align-left is-light-text type-opensans is-section-80">
+			<div class="is-section is-box is-align-left is-light-text  is-section-80">
 				<div class="is-overlay">
 					<div class="is-overlay-content content-selectable" data-dialog-width="1200px" data-dialog-height="900px" data-module="slider-box" data-module-desc="Slider" data-html="${encodeURIComponent(`
 						<div id="{id}" class="glide cover" style="display:none">
@@ -2766,11 +2682,9 @@
 		{
 		    'thumbnail': 'preview/slider-05.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'glide',
 		    'html': `
-			<div class="is-section is-box is-align-left is-light-text type-opensans is-section-70">
+			<div class="is-section is-box is-align-left is-light-text  is-section-70">
 				<div class="is-overlay">
 					<div class="is-overlay-content content-selectable" data-dialog-width="1200px" data-dialog-height="900px" data-module="slider-box" data-module-desc="Slider" data-html="${encodeURIComponent(`
 						<div id="{id}" class="glide cover" style="display:none">
@@ -2899,11 +2813,9 @@
 		{
 		    'thumbnail': 'preview/slider-06.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'glide',
 		    'html': `
-			<div class="is-section is-box is-align-left is-light-text type-opensans is-section-70">
+			<div class="is-section is-box is-align-left is-light-text  is-section-70">
 				<div class="is-overlay">
 					<div class="is-overlay-content content-selectable" data-dialog-width="1200px" data-dialog-height="900px" data-module="slider-box" data-module-desc="Slider" data-html="${encodeURIComponent(`
 						<div id="{id}" class="glide cover" style="display:none">
@@ -3040,11 +2952,9 @@
 		{
 		    'thumbnail': 'preview/coverflow-01.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'glide',
 		    'html': `
-			<div class="is-section is-box type-poppins is-section-50 box-autofit">
+			<div class="is-section is-box  is-section-50 box-autofit">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -3071,7 +2981,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="is-section is-section-50 is-box is-align-left type-poppins is-light-text section-flow">
+			<div class="is-section is-section-50 is-box is-align-left  is-light-text section-flow">
 				<div class="is-overlay">
 					<div class="is-overlay-content content-selectable" data-dialog-width="1200px" data-dialog-height="900px" data-module="coverflow-box" data-module-desc="Coverflow" data-html="${encodeURIComponent(`
 						<div id="{id}" class="glide cover coverflow" style="display:none">
@@ -3471,11 +3381,9 @@
 		{
 		    'thumbnail': 'preview/slider-01.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 			'type': 'slick',
 		    'html': `
-			<div class="is-section is-section-100 is-box is-align-left type-poppins is-light-text">
+			<div class="is-section is-section-100 is-box is-align-left  is-light-text">
 				<div class="is-overlay">
 					<div class="is-overlay-content content-selectable" data-module="slider" data-module-desc="Slider" data-html="${encodeURIComponent(`
 						<div id="{id}" class="slider-on-box" style="width:100%;height:100%;">
@@ -3587,12 +3495,10 @@
 			'thumbnail': 'preview/slider-02.png',
 			'category': '2',
 			'googleFonts': [],
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 			'type': 'slick',
 			'html': `
 
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-align-left is-light-text is-content-top">
 						<div class="is-overlay">
@@ -3717,11 +3623,9 @@
 		{
 		    'thumbnail': 'preview/slider-03.png',
 		    'category': '2',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
             'type': 'slick',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-dark-text">
 						<div class="is-overlay"></div>
@@ -3824,10 +3728,8 @@
 		{
 		    'thumbnail': 'preview/video-01.png',
 		    'category': '3',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box is-light-text type-poppins box-autofit min-height-60">
+			<div class="is-section is-section-100 is-box is-light-text  box-autofit min-height-60">
 				<div class="is-overlay">
 					<div class="is-overlay-content content-selectable" data-module="video-bg" data-module-desc="Video Background" data-dialog-width="600px" data-dialog-height="600px" data-html="${encodeURIComponent(`
 			
@@ -4127,10 +4029,8 @@
 		{
 		    'thumbnail': 'preview/video-02.png',
 		    'category': '3',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-light-text box-autofit min-height-50">
 						<div class="is-overlay">
@@ -4470,10 +4370,8 @@
 		{
 		    'thumbnail': 'preview/video-03.png',
 		    'category': '3',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-dark-text box-autofit">
 						<div class="is-overlay"></div>
@@ -4757,10 +4655,8 @@
 		{
 		    'thumbnail': 'preview/video-05.png',
 		    'category': '3',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section type-poppins is-section-80">
+			<div class="is-section  is-section-80">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-light-text box-autofit min-height-50">
 						<div class="is-overlay">
@@ -5038,10 +4934,8 @@
 		{
 		    'thumbnail': 'preview/video-04.png',
 		    'category': '3',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section type-poppins is-section-80">
+			<div class="is-section  is-section-80">
 				<div class="is-boxes">
 					<div class="is-box-6 is-box is-dark-text box-autofit">
 						<div class="is-overlay"></div>
@@ -5322,10 +5216,8 @@
 		{
 		    'thumbnail': 'preview/custom-01.png',
 		    'category': '4',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box type-poppins is-light-text box-autofit min-height-70">
+			<div class="is-section is-section-100 is-box  is-light-text box-autofit min-height-70">
 			<div class="is-overlay" style="background-color: rgb(237 237 237);">
 				<div class="is-overlay-content" data-module="code" data-module-desc="Custom HTML or Javascript " data-html="${encodeURIComponent(`
 				<style>
@@ -5471,10 +5363,8 @@
 		{
 		    'thumbnail': 'preview/custom-02.png',
 		    'category': '4',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 			<div class="is-boxes">
 				<div class="is-box-6 is-box is-light-text box-autofit min-height-50">
 					<div class="is-overlay">
@@ -5651,10 +5541,8 @@
 		{
 		    'thumbnail': 'preview/custom-03.png',
 		    'category': '4',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins">
+			<div class="is-section is-section-100 ">
 			<div class="is-boxes">
 				<div class="is-box-6 is-box is-dark-text box-autofit">
 					<div class="is-overlay"></div>
@@ -5788,10 +5676,8 @@
 		{
 		    'thumbnail': 'preview/custom-04.png',
 		    'category': '4',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 is-box type-poppins">
+			<div class="is-section is-section-100 is-box ">
 				<div class="is-overlay">
 					<div class="is-overlay-content" data-module="code" data-module-desc="Custom HTML or Javascript " data-html="${encodeURIComponent(`
 					<script id="script-{id}">
@@ -5914,10 +5800,8 @@
 		{
 		    'thumbnail': 'preview/custom-05.png',
 		    'category': '4',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 box-autofit min-height-70 type-poppins is-content-top" style="transform: translate3d(1e-05px, 1e-05px, 1e-05px);">
+			<div class="is-section is-box is-section-100 box-autofit min-height-70  is-content-top" style="transform: translate3d(1e-05px, 1e-05px, 1e-05px);">
 				<div class="is-overlay-content" data-module="code" data-module-desc="Custom HTML or Javascript " data-html="${encodeURIComponent(`
 					<div class="section-{id}"></div>
 
@@ -6007,10 +5891,8 @@
 		{
 		    'thumbnail': 'preview/custom-06.png',
 		    'category': '4',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 is-dark-text type-poppins box-autofit min-height-70">
+			<div class="is-section is-box is-section-100 is-dark-text  box-autofit min-height-70">
 				<div class="is-overlay" style="background-color: rgb(247, 247, 247);">
 					<div class="is-overlay-content" data-module="code" data-module-desc="Custom HTML or Javascript " data-html="${encodeURIComponent(`
 						<div class="section-{id}"></div>

@@ -8,10 +8,8 @@
 		{
 		    'thumbnail': 'preview/anim-01.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins">
+			<div class="is-section is-box is-section-100 ">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -50,10 +48,8 @@
 		{
 		    'thumbnail': 'preview/anim-04.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-section-100 type-poppins m-skrollrr-off">
+			<div class="is-section is-section-100  m-skrollrr-off">
 				<div class="is-boxes">
 					<div class="is-box is-box-6 box-autofit">
 						<div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -108,10 +104,8 @@
 		{
 		    'thumbnail': 'preview/anim-03.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins">
+			<div class="is-section is-box is-section-100 ">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -154,10 +148,8 @@
 		{
 		    'thumbnail': 'preview/anim-06.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 is-content-top is-dark-text type-poppins" style="background-color: rgb(150, 150, 150); transform: translate3d(1e-05px, 1e-05px, 1e-05px);" data-section="section-Ki7GT3M">
+			<div class="is-section is-box is-section-100 is-content-top is-dark-text " style="background-color: rgb(150, 150, 150); transform: translate3d(1e-05px, 1e-05px, 1e-05px);" data-section="section-Ki7GT3M">
 				<div class="is-overlay">
 					<div class="is-overlay-content" data-module="code" data-module-desc="Custom HTML or Javascript " data-html="${encodeURIComponent(`
 						<div class="section-{id}"></div>
@@ -248,10 +240,8 @@
 		{
 		    'thumbnail': 'preview/anim-08.png',
 		    'category': '1',
-		    'contentCss': 'type-montserrat-roboto.css',
-		    'contentClass': 'type-montserrat-roboto',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-montserrat-roboto">
+			<div class="is-section is-box is-section-100 ">
 				<div class="is-overlay">
 					<div class="is-overlay-bg is-scale-animated" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-cup-of-couple-7303914.jpg&quot;); background-position: 50% 60%; height: 103.757%; top: -2.25443%; left: 0%; width: 100%;" data-y="-2.2544283413848603" data-x="0" data-scale="103.75738056897477"></div>
 				</div>
@@ -307,10 +297,8 @@
 		{
 		    'thumbnail': 'preview/anim-09.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-poppins" data-anim-start="" data-anim-end="">
+			<div class="is-section is-box is-section-100 " data-anim-start="" data-anim-end="">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-cup-of-couple-7303914.jpg&quot;); background-position: 50% 60%;"></div>
 				</div>
@@ -344,10 +332,8 @@
 		{
 		    'thumbnail': 'preview/anim-10.png',
 		    'category': '1',
-		    'contentCss': 'type-dosis-oldstandardtt.css',
-		    'contentClass': 'type-dosis-oldstandardtt',
 		    'html': `
-			<div class="is-section is-section-100 type-dosis-oldstandardtt">
+			<div class="is-section is-section-100">
 				<div class="is-boxes">
 					<div class="is-box is-dark-text is-box-4 is-content-top">
 						<div class="is-overlay">
@@ -485,10 +471,8 @@
 		{
 		    'thumbnail': 'preview/anim-11.png',
 		    'category': '1',
-		    'contentCss': 'type-oswald-biryani.css',
-		    'contentClass': 'type-oswald-biryani',
 		    'html': `
-			<div class="is-section is-box is-section-100 type-oswald-biryani is-light-text">
+			<div class="is-section is-box is-section-100 is-light-text">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-cup-of-couple-7303914.jpg&quot;); background-position: 50% 60%;">
 						<div class="is-overlay-color opacity-10" style="background-color: rgb(0, 0, 0);"></div>
@@ -510,10 +494,8 @@
 		{
 		    'thumbnail': 'preview/anim-12.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box is-light-text type-raleway-lato is-section-100">
+			<div class="is-section is-box is-light-text  is-section-100">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-karolina-grabowska-4207790-2.jpg&quot;); background-position: 50% 60%;" data-in="transform: scale(1);" data-cen="transform: translateY(0px);" data-out="transform: translateY(100%) scale(1.4);" data-smooth-scrolling="off">
 						<div class="is-overlay-color opacity-10" style="background-color: rgb(0, 0, 0);"></div>
@@ -525,10 +507,8 @@
 		{
 		    'thumbnail': 'preview/anim-13.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-			<div class="is-section is-box type-poppins is-section-100">
+			<div class="is-section is-box  is-section-100">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -577,10 +557,8 @@
 		{
 		    'thumbnail': 'preview/anim-14.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-				<div class="is-section section-pin is-box is-dark-text type-poppins is-section-100 m-skrollrr-off">
+				<div class="is-section section-pin is-box is-dark-text  is-section-100 m-skrollrr-off">
 					<div class="is-overlay"></div>
 					<div class="is-boxes">
 						<div class="is-box-centered">
@@ -628,10 +606,8 @@
 		{
 		    'thumbnail': 'preview/anim-16.png',
 		    'category': '1',
-		    'contentCss': 'type-poppins.css',
-		    'contentClass': 'type-poppins',
 		    'html': `
-				<div class="is-section section-pin is-section-100 is-box is-align-left type-poppins m-skrollrr-off">
+				<div class="is-section section-pin is-section-100 is-box is-align-left  m-skrollrr-off">
 					<div class="is-overlay"></div>
 					<div class="is-boxes">
 						<div class="is-box-centered">
@@ -688,10 +664,8 @@
 		{
 		    'thumbnail': 'preview/anim-15.png',
 		    'category': '1',
-		    'contentCss': 'type-spacemono.css',
-		    'contentClass': 'type-spacemono',
 		    'html': `
-				<div class="is-section section-pin is-section-100 type-spacemono">
+				<div class="is-section section-pin is-section-100 ">
 					<div class="is-boxes">
 						<div class="is-box is-box-6">
 							<div class="is-overlay">
@@ -760,10 +734,8 @@
 		{
 			'thumbnail': 'preview/anim-18.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-box is-section-100 type-poppins section-pin is-align-center is-content-top">
+			<div class="is-section is-box is-section-100  section-pin is-align-center is-content-top">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-ksenia-chernaya-76950380.jpg&quot;); background-position: 50% 60%; height: 204.754%; top: -69%;" data-y="-69"></div>
 				</div>
@@ -787,10 +759,8 @@
 		{
 			'thumbnail': 'preview/anim-19.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-box is-section-100 type-poppins section-pin is-light-text">
+			<div class="is-section is-box is-section-100  section-pin is-light-text">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-cup-of-couple-7303914.jpg&quot;); background-position: 50% 60%;"></div>
 				</div>
@@ -813,10 +783,8 @@
 		{
 			'thumbnail': 'preview/anim-17.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-				<div class="is-section is-box is-section-100 type-poppins section-wide-250 section-pin">
+				<div class="is-section is-box is-section-100  section-wide-250 section-pin">
 					<div class="is-overlay"></div>
 					<div class="is-boxes">
 						<div class="is-box-centered is-opacity-95">
@@ -860,10 +828,8 @@
 		{
 			'thumbnail': 'preview/anim-20.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 is-box type-poppins section-pin pin-overlap m-pin-off">
+			<div class="is-section is-section-100 is-box  section-pin pin-overlap m-pin-off">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -913,10 +879,8 @@
 		{
 			'thumbnail': 'preview/anim-21.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-box is-section-100 type-poppins section-pin pin-overlap pin-space-lg">
+			<div class="is-section is-box is-section-100  section-pin pin-overlap pin-space-lg">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -1018,10 +982,8 @@
 		{
 			'thumbnail': 'preview/anim-22.png',
 			'category': '1',
-			'contentCss': 'type-montserrat-roboto.css',
-			'contentClass': 'type-montserrat-roboto',
 			'html': `
-			<div class="is-section is-box is-section-100 section-pin pin-space-lg type-montserrat-roboto">
+			<div class="is-section is-box is-section-100 section-pin pin-space-lg ">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -1060,10 +1022,8 @@
 		{
 			'thumbnail': 'preview/anim-23.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-box is-section-100 type-poppins no-spacing section-pin pin-space-lg m-pin-off box-autofit">
+			<div class="is-section is-box is-section-100  no-spacing section-pin pin-space-lg m-pin-off box-autofit">
 				<div class="is-overlay" style="background-color: rgb(249, 168, 37);"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered is-opacity-95">
@@ -1093,10 +1053,8 @@
 		{
 			'thumbnail': 'preview/anim-24.png',
 			'category': '1',
-			'contentCss': 'type-poppins.css',
-			'contentClass': 'type-poppins',
 			'html': `
-			<div class="is-section is-section-100 is-box type-poppins section-pin pin-overlap pin-space-lg m-pin-off">
+			<div class="is-section is-section-100 is-box  section-pin pin-overlap pin-space-lg m-pin-off">
 				<div class="is-overlay" style="background-color: rgb(247, 247, 247);"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -1158,10 +1116,8 @@
 		{
 			'thumbnail': 'preview/anim-25.png',
 			'category': '1',
-			'contentCss': 'type-alegreya-lato.css',
-			'contentClass': 'type-alegreya-lato',
 			'html': `
-			<div class="is-section box-space type-alegreya-lato section-pin is-section-100">
+			<div class="is-section box-space section-pin is-section-100">
 				<div class="is-boxes">
 					<div class="is-box-4 is-box is-dark-text is-content-bottom" data-t-300="transform: translateY(100%);" data-t-700="transform: translateY(0px);" data-t="transform: scale(0.8);" data-t-900="transform: scale(0.8);" data-t-1200="transform: scale(1);">
 						<div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -1244,10 +1200,8 @@
 		{
 			'thumbnail': 'preview/anim-26.png',
 			'category': '1',
-			'contentCss': 'type-oswald-opensans.css',
-			'contentClass': 'type-oswald-opensans',
 			'html': `
-			<div class="is-section is-section-100 is-box type-oswald-opensans section-pin m-pin-off pin-space-lg">
+			<div class="is-section is-section-100 is-box  section-pin m-pin-off pin-space-lg">
 				<div class="is-overlay"></div>
 				<div class="is-boxes">
 					<div class="is-box-centered">
@@ -1296,10 +1250,8 @@
 		{
 			'thumbnail': 'preview/anim-27.png',
 			'category': '1',
-			'contentCss': 'type-oswald-biryani.css',
-			'contentClass': 'type-oswald-biryani',
 			'html': `
-			<div class="is-section is-box is-section-100 type-oswald-biryani is-light-text is-content-top section-pin pin-overlap">
+			<div class="is-section is-box is-section-100 is-light-text is-content-top section-pin pin-overlap">
 				<div class="is-overlay">
 					<div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/pexels-lisa-fotios-19857754.jpg&quot;); background-position: 50% 60%;">
 						<div class="is-overlay-color opacity-10" style="background-color: rgb(0, 0, 0);"></div>

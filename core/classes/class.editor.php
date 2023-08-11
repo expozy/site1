@@ -40,7 +40,9 @@ class Editor{
 		$page->type = $parameters['type'];
 		$page->id = $parameters['id']??0;
 		
-		
+		if($this->type == 'post'){
+			$page->target_id = $parameters['id'];
+		}
 		$this->load_page();
 		
 

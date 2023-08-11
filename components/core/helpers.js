@@ -7,10 +7,10 @@ export let Helpers = {
     const object= {};
 
 
-    for ( var i = 0; i < form.elements.length; i++ ) {
+    for ( let i = 0; i < form.elements.length; i++ ) {
 
-			var e = form.elements[i];
-
+			let e = form.elements[i];
+			//
 			if(e.name != ''){
 
 				if(e.name.endsWith('[]')){
@@ -30,11 +30,34 @@ export let Helpers = {
 					}
 				}else if (e.type == 'checkbox'){
 					object[e.name] = e.checked;
-				}else {
-					if(e.value != 'dontSelect'){
-						if(e.value != ''){
-							object[e.name] = e.value;
+				}else if (e.type == 'file'){
+
+					if(e.files[1] != undefined){
+						// object[e.name+'[]'] = [];
+
+						for (const file of e.files){
+									if(object[e.name] !== undefined){
+										object[e.name].push(file);
+									}else {
+										object[e.name] = [file];
+									}
 						}
+					}else {
+							object[e.name] = e.files[0];
+					}
+
+
+
+					// let data =  Helpers.fileToBinary(e.files[0]);
+					//
+
+
+
+				}else{
+					if(e.value != 'dontSelect'){
+						// if(e.value != ''){
+							object[e.name] = e.value;
+						// }
 					}
 				}
 
@@ -44,10 +67,20 @@ export let Helpers = {
 		}
     return object;
   },
+	fileToBinary:  function fileToBinary(file){
+		var r = new FileReader();
 
+		r.onload =  function(){
+			let result =   r.result;
+
+			return result;
+		 };
+		let res = r.readAsBinaryString(file);
+
+	},
 	clear_form_data: function(form){
-		for ( var i = 0; i < form.elements.length; i++ ) {
-			var e = form.elements[i];
+		for ( let i = 0; i < form.elements.length; i++ ) {
+			let e = form.elements[i];
 			e.value = '';
 		}
 			document.getElementById('main').scrollIntoView(true);
@@ -56,33 +89,39 @@ export let Helpers = {
 
 	show_errors: function(request){
 
+
 			Helpers.old_errors_remove();
+
+			// Ако статус = 1 изписваме генерално съобщение
 			if(request.status == 1  &&  request.msg){
 				Helpers.show_toast_msg(request.msg, 'success');
 			}
+
+			// При статус = 0 добавяме грешка към елемент или изписваме генерална грешка.
 			if(request.status == 0  &&  request.errors){
+
 	      for(const e in  request.errors){
 
-					var elements =  document.querySelectorAll(e);
-					for(const element of elements){
-						element.parentNode.innerHTML += '<span class="msg-error text-red-600 font-normal">'+`${request.errors[e]}`+'</span>';
+					if (request.errors.hasOwnProperty(e)) {
 
+						// Грешка за конкретен елемент
+						if(e.includes('name=')){
+							let elements =  document.querySelectorAll(e);
+							for(const element of elements){
+								element.parentNode.innerHTML += '<span class="msg-error text-red-600 font-normal">'+`${request.errors[e]}`+'</span>';
+							}
+						}
+
+						// Генерална грешка Тоаст
+						else {
+							Helpers.show_toast_msg(request.errors[e], 'error');
+						}
 					}
-	      }
-	    }else if(request.status == 0  &&  request.error_fields){
-	      for(const e in  request.error_fields){
 
-					var dataElement = document.querySelectorAll(e);
-					if(dataElement[0]){
-						dataElement[0].parentNode.innerHTML += '<span class="msg-error text-danger">'+`${request.error_fields[e]}`+'</span>';
-					}
+				}
 
-	      }
-	    }else if(request.status == 0 && request.error){
-				Helpers.show_toast_msg(request.error, 'error');
-			}else if (request.status == 0 && request.msg) {
-				Helpers.show_toast_msg(request.msg, 'error');
-			}
+	    }
+
 		},
 
 		old_errors_remove: function(){
@@ -99,14 +138,9 @@ export let Helpers = {
 		},
 
 		combineRequest: function(functionCall, parameters){
-			// debugger;
-			if (functionCall.includes('?')) {
-					var url_parameters = '&';
-				}else {
-							var url_parameters = '?';
-				}
 
-			var endpoint = functionCall;
+			let endpoint = functionCall;
+			let url_parameters = '';
 
 			const objParameters = parameters;
 			for (const key in objParameters) {
@@ -125,8 +159,9 @@ export let Helpers = {
 								url_parameters += key + '=' + value + '&';
 							}
 						}else {
-							// debugger;
+							//
 							if(objParameters[key] != 'empty' && objParameters[key] != ''){
+
 								url_parameters += key + '=' + objParameters[key] + '&';
 							}
 						}
@@ -134,7 +169,22 @@ export let Helpers = {
 				}
 			}
 
-			endpoint += url_parameters;
+
+			if(url_parameters != ''){
+				if(!endpoint.includes('?')){
+						endpoint += '?'+url_parameters;
+					}else {
+							endpoint += '&'+url_parameters;
+					}
+			}
+
+			// if (functionCall.includes('?')) {
+			// 		let url_parameters = '&';
+			// 	}else {
+			// 				let url_parameters = '?';
+			// 	}
+
+			// endpoint += url_parameters;
 
 			if(endpoint.substr(endpoint.length - 1) === '&' || endpoint.substr(endpoint.length - 1) === '?'){
 				endpoint = endpoint.slice(0, -1);
@@ -143,7 +193,7 @@ export let Helpers = {
 		},
 
 		pagination: function (selectedPage, totalPages) {
-			var current = selectedPage,
+			let current = selectedPage,
 			last = totalPages,
 			delta = 2,
 			left = current - delta,

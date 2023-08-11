@@ -1,7 +1,7 @@
 
 <div class="is-section is-box is-section-100 type-poppins box-autofit">
     <div class="is-overlay"></div>
-    <section class="relative md:py-24 py-16" apidata="Blog.get_blogPosts" keyname="blogPosts" :data-limit="data.pageUrl.limit" :data-page="data.pageUrl.page">
+    <section class="relative md:py-24 py-16" apidata="Blog.get_blogPosts" keyname="blogPosts" options-chnageurl="true">
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
                 <template x-for="blog in data.blogPosts.result">
@@ -15,7 +15,7 @@
                         </div>
 
                         <div class="mt-4 px-6 pt-2 pb-4">
-                            <button @click="forceChange(blog.url)" class="w-fit  py-2 px-10 bg-neutral-700 text-white hover:font-bold hover:bg-neutral-100 hover:text-neutral-700 border-2 border-neutral-600">Прочети <i class="uil uil-arrow-right"></i></button>
+                            <button @click="forceChange(blog.url)" class="w-fit  py-2 px-10 bg-sky-900 text-white  hover:bg-sky-800">Прочети <i class="uil uil-arrow-right"></i></button>
                         </div>
 
                     </div>
@@ -30,7 +30,7 @@
                         <ul class="inline-flex items-center -space-x-px">
                             <template x-for="(page,index) in data.blogPosts.pagination.total_pages" :key="index">
                                 <li>
-                                    <a @click="alpineListeners('Blog.change_page', $event)" :data-page="page" keyname="blogPosts" x-text="page" :class="page == data.blogPosts.pagination.current_page ? 'bg-neutral-600 text-white' : 'bg-neutral-50 text-nautral-800'" class="w-[40px] h-[40px] inline-flex justify-center items-center cursor-pointer hover:bg-neutral-600 hover:text-white">1</a>
+                                  <a @click="alpineListeners('Blog.get_blogPosts', $event)" :data-page="page" keyname="blogPosts" x-text="page" :class="page == data.blogPosts.pagination.current_page ? 'bg-sky-900 text-white' : 'bg-white text-sky-900'" class="w-[40px] h-[40px] inline-flex justify-center items-center cursor-pointer hover:bg-sky-900 hover:text-white">1</a>
                                 </li>
                             </template>
                         </ul>

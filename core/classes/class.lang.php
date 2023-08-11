@@ -11,8 +11,8 @@ class Lang
 	public $langlist;
 
 	const DEF_LANG = 'bg';
-	
-	
+
+
 	function __construct()
 	{
 		$this->get_language();
@@ -30,11 +30,11 @@ class Lang
 						$this->language = get('lang');
 						$_SESSION['LANG_'. APP_NAME] =  get('lang');
 				}
-					
+
         } else {
 			$this->language = $core->lang??self::DEF_LANG;
 		}
-	
+
     }
 
 	/** =========================================================
@@ -44,11 +44,11 @@ class Lang
 	public function lang_list()
 	{
 		$row = Api::get()->languages();
-		
+
 		return ($row) ? $this->langlist = $row : [];
 	}
-	
-	
+
+
 	/** =========================================================
 	 * Function : lang_as_array()
 	 * @return string
@@ -56,7 +56,7 @@ class Lang
 	public function lang_as_array()
 	{
 		$lines = file($this->langdir . $this->language . ".lang.php");
-		
+
 		if($this->modules) {
 		    foreach($this->modules as $row){
 
@@ -83,7 +83,7 @@ class Lang
 
 		return $array;
 	}
-	
+
 	/** =========================================================
 	 * Function : validLang()
 	 *
@@ -98,7 +98,7 @@ class Lang
 			if(in_array($var, $value))
 				return true;
 		}
-		
+
 		return false;
 	}
 

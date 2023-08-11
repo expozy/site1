@@ -1,12 +1,9 @@
 import {cacheSet, cacheGet} from './cache.js';
 
 
-export const COREURL = localStorage.getItem('COREURL');
-export const SAASKEY = localStorage.getItem('SAAS_KEY');
-export const SITEURL = localStorage.getItem('SITEURL');
-export const lang = localStorage.getItem('lang');
+
+export const lang = LANG;
 let warehouse_id = 1;
-// localStorage.getItem('WAREHOUSE_ID') ?  warehouse_id = parseInt(localStorage.getItem('WAREHOUSE_ID'))    :    warehouse_id = 1;
 
 
 
@@ -33,8 +30,8 @@ export class ApiClass {
 
 		const data = await cacheGet(url);
 
-// debugger;
-		if(DEV_MODE === 0 && cachable === true && typeof data === 'object' && Object.keys(data).length > 0){
+//debugger;
+	if (DEV_MODE === 0 && cachable === true && typeof data === 'object' && data !== null && Object.keys(data).length > 0) {
 
 
 			this.response = data;
@@ -49,7 +46,7 @@ export class ApiClass {
 					cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
 					headers: {
 						'Content-Type': 'application/json',
-						'authentication': 'basic '+SAASKEY,
+						'authentication': 'basic '+SAAS_KEY,
 						'authorization' : localStorage.getItem('token') ? 'bearer '+localStorage.getItem('token') : 'session '+sesid,
 					},
 				}).then(response => response.clone().json().then( data => {
@@ -85,7 +82,7 @@ export class ApiClass {
 				cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
 				headers: {
 					'Content-Type': 'application/json',
-					'authentication': 'basic '+SAASKEY,
+					'authentication': 'basic '+SAAS_KEY,
 					'authorization' : localStorage.getItem('token') ? 'bearer '+localStorage.getItem('token') : 'session '+sesid,
 				},
 				body: JSON.stringify(data)
@@ -125,16 +122,39 @@ export class ApiClass {
 		// data['warehouse_id'] = warehouse_id;
 		var sesid = /SESS\w*ID=([^;]+)/i.test(document.cookie) ? RegExp.$1 : false;
 
+		var formData = new FormData;
+        if (data instanceof FormData) {
+            formData = data;
+        } else if (typeof data === 'object') {
+            for (var key in data) {
+
+
+							if(Array.isArray(data[key])){
+								if(data[key][0].constructor.name === 'File'){
+									for (const file of data[key]){
+										formData.append(key+'[]', file);
+									}
+								}
+							}else {
+
+								formData.append(key, data[key]);
+							}
+
+            }
+        } else {
+            formData = JSON.stringify(data);
+            headers['Content-Type'] = 'application/json';
+        }
+
 		const conn = fetch(url, {
 				method: 'POST', // *GET, POST, PUT, DELETE, etc.
 				mode: 'cors', // no-cors, *cors, same-origin
 				cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
 				headers: {
-					'Content-Type': 'application/json',
-					'authentication': 'basic '+SAASKEY,
+					'authentication': 'basic '+SAAS_KEY,
 					'authorization' : localStorage.getItem('token') ? 'bearer '+localStorage.getItem('token') : 'session '+sesid,
 				},
-				body: JSON.stringify(data)
+				body: formData
 		  	})
 		  	.then(response => response.json().then( data => {
 				this.response = data;
@@ -166,13 +186,36 @@ export class ApiClass {
 		var sesid = /SESS\w*ID=([^;]+)/i.test(document.cookie) ? RegExp.$1 : false;
 		data['warehouse_id'] = warehouse_id;
 
+		var formData = new FormData;
+        if (data instanceof FormData) {
+            formData = data;
+        } else if (typeof data === 'object') {
+            for (var key in data) {
+
+
+							if(Array.isArray(data[key])){
+								if(data[key][0].constructor.name === 'File'){
+									for (const file of data[key]){
+										formData.append(key+'[]', file);
+									}
+								}
+							}else {
+
+								formData.append(key, data[key]);
+							}
+
+            }
+        } else {
+            formData = JSON.stringify(data);
+            headers['Content-Type'] = 'application/json';
+        }
+
 		const conn = fetch(COREURL+endpoint, {
 				method: 'PUT', // *GET, POST, PUT, DELETE, etc.
 				mode: 'cors', // no-cors, *cors, same-origin
 				cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
 				headers: {
-					'Content-Type': 'application/json',
-					'authentication': 'basic '+SAASKEY,
+					'authentication': 'basic '+SAAS_KEY,
 					'authorization' : localStorage.getItem('token') ? 'bearer '+localStorage.getItem('token') : 'session '+sesid,
 				},
 				body: JSON.stringify(data)

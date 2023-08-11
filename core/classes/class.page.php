@@ -35,11 +35,12 @@ class Page
 
 
 			if(!isset($tmp[2])){
-				$this->slug = explode("?", $pathinfo['basename'])[0] ;
-
+				$this->slug = $pathinfo['basename'];
 			} else {
 				$this->slug = $tmp[2];
 			}
+
+			$this->slug = parse_url($this->slug, PHP_URL_PATH);
 
 			if(empty($this->slug)){
 				$this->id = 1;
@@ -54,10 +55,11 @@ class Page
 
 
 
+
 			if($this->slug == 'post'){
 				$this->type = 'post';
 			} else if ($this->slug == 'product'){
-				$this->type = 'product';
+				//$this->type = 'product';
 			}
 
 
@@ -170,7 +172,7 @@ class Page
 
 		if(isset($core->devMode) && $core->devMode){
 
-			//d($this);
+			//d($this);die('end3');
 			$tmpl = new Template($this->type, $this->slug);
 
 			if(!file_exists($tmpl->file)){
@@ -203,8 +205,8 @@ class Page
 	}
 
 	public static function html_res_change(string $html, string $res):string{
-		    $pattern = '/https:\/\/storage\.de-fra1\.upcloudobjects\.com\/expozy\/frontend\/contbuilder\/(.*?)\/(.*?)\.webp/';
-			$replacement = 'https://storage.de-fra1.upcloudobjects.com/expozy/frontend/contbuilder/$1/'.$res.'/$2.webp';
+		    $pattern = '/https:\/\/storage\.de-fra1\.upcloudobjects\.com\/expozy\/nojovete\/contbuilder\/(.*?)\/(.*?)\.webp/';
+			$replacement = 'https://storage.de-fra1.upcloudobjects.com/expozy/nojovete/contbuilder/$1/'.$res.'/$2.webp';
 
 
 			return preg_replace($pattern, $replacement, $html);

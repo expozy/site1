@@ -34,6 +34,7 @@ class Users
 			$this->email = $_SESSION['email'] = "";
 			$this->sesid = sha1(session_id());
 			$this->userlevel = 0;
+			$this->addresses ='';
 		}
 	}
 
@@ -55,7 +56,8 @@ class Users
 			$this->userlevel = $row['userlevel'];
 			$this->sesid = sha1(session_id());
 			$this->token = $row['token'];
-			// $this->address = $row['address'];
+
+			$this->addresses = $row['addresses'];
 			$this->company = $row['company'];
 			return true;
 		} else {

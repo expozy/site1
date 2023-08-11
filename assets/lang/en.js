@@ -1,18 +1,24 @@
-const TEST = `TEST_EN`;
-const PLS_FILL_IN = 'Please fill in';
-const ERROR_EMAIL = 'Invalid Email';
-const SUCCESS_ORDER = 'Successfully submitted offer';
-const NO_ADDED_PRODUCTS = 'No products added';
-const ADD_WANTER_PRODUCTS = 'Add desired products first';
-const QTY = 'Enter quantity';
-const T_SPEC = 'Technical Specification';
-const BROCHURE = 'DWG file';
-const GALLERY = 'JPG';
-const PRODUCT_IS_ADDED = 'Product added to offer';
-const SUCCESS_REGISTER_NEWSLETTER = 'You have successfully subscribed to our newsletter';
-const PLS_AGREE_TERMS = 'Please agree to the terms of the site';
-const ENTER_SEARCH_WORD = 'Enter a search term.';
-const DIVISION = 'Division';
-const TAKE_A_LOOK = 'Take a look';
-const ONLINE = 'Online';
-const CATALOG = 'Catalog';
+let _LANG = {
+  test: `testBG`,
+  PLS_FILL_IN : 'Моля попълнете ',
+  ERROR_EMAIL : 'Невалиден имейл',
+  SUCCESS_ORDER : 'Успешно изпратихте оферта',
+  NO_ADDED_PRODUCTS : 'Нямате добавени продукти',
+  ADD_WANTER_PRODUCTS : 'Първо добавете желаните продукти',
+  QTY : 'Въведете количество',
+  T_SPEC : 'Техническа Спецификация',
+  BROCHURE : 'DWG file',
+  GALLERY : 'JPG',
+  PRODUCT_IS_ADDED : 'Продуктът е добавен към офертата',
+  SUCCESS_REGISTER_NEWSLETTER : 'Успешно се регистрирахте за нашия бюлетин',
+  PLS_AGREE_TERMS : 'Моля сългасете се с условията на сайта',
+  ENTER_SEARCH_WORD : 'Въведете дума за търсене.',
+  DIVISION : 'Дивизии',
+  TAKE_A_LOOK : 'Разгледай',
+  ONLINE : 'Онлайн',
+  CATALOG : 'Каталог',
+  REMOVE : 'Премахни',
+  PRODUCTS : 'Продукта',
+  SUCCESS_REQUEST : 'Успешно изпратихте вашето зпитване.',
+  LOGIN : 'Вход'
+};

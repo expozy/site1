@@ -1,16 +1,16 @@
 import {Api} from '../core/api/api.js';
 import {Page} from './classes/page.js';
 import {Helpers} from './helpers.js';
-import {Blog} from '../static/blog.js';
-import {Shop} from '../static/shop.js';
-import {Newsletter} from '../static/newsletter.js';
-import {Reviews} from '../static/reviews.js';
-import {User} from '../static/users.js';
-import {Search} from '../static/search.js';
-import {Countries} from '../static/countries.js';
-import {Contacts} from '../static/contacts.js';
-import {Menu} from '../static/menu.js';
-import {Econt} from '../static/econt.js';
+// import {Blog} from '../static/blog.js';
+// import {Shop} from '../static/shop.js';
+// import {Newsletter} from '../static/newsletter.js';
+// import {Reviews} from '../static/reviews.js';
+// import {User} from '../static/user.js';
+// import {Search} from '../static/search.js';
+// import {Countries} from '../static/countries.js';
+// import {Contacts} from '../static/contacts.js';
+// import {Menu} from '../static/menu.js';
+// import {Econt} from '../static/econt.js';
 
 let updatedMain = false;
 
@@ -19,17 +19,10 @@ let dataBody = {
   corePage:PAGEINIT,
   user:USER,
   pageUrl:URL_PARAMETERS,
-  // settings:{logo:LOGO_URL, social:SOCIAL_NETWORKS},
-  settings:{
-    limitProducts : localStorage.getItem('LIMITPRODUCTS'),
-    sortProducts: localStorage.getItem('SORTPRODUCTS'),
-    limitSearch : localStorage.getItem('LIMITSEARCH'),
-    sortSearch: localStorage.getItem('SORTSEARCH'),
-    limitBlog : localStorage.getItem('LIMITBLOG'),
-    sortBlog: localStorage.getItem('SORTBLOG'),
-  },
+  settings:{logo:LOGO_URL, social:SOCIAL_NETWORKS},
   openCart:false,
-  openMobileMenu:false
+  openMobileMenu:false,
+  screenWidth: window.screen.width,
 };
 
 
@@ -73,7 +66,6 @@ document.addEventListener('alpine:init', () => {
   window.dataset =  function () {
     return {
       data:dataBody,
-      lang:_LANG,
       updatedata(data, keyName){
         if(data['property']){
           this.data[data['property']] = {};
@@ -88,10 +80,10 @@ document.addEventListener('alpine:init', () => {
   };
 
 
-  Alpine.nextTick(() => {
-    console.log('Промените по дизайна са свършени.');
-    // Тук можете да добавите своя код, който да изпълни след завършването на промените по дизайна
-  });
+  // Alpine.nextTick(() => {
+  //   console.log('Промените по дизайна са свършени.');
+  // });
+
 
 });
 
@@ -114,23 +106,31 @@ function callApiData(){
   for(const element of apiDataElements){
     let functionCall = element.getAttribute('apiData');
     let keyName = element.getAttribute('keyName');
-    let data = getDataAttributes(element, 'data');
 
-    let options = [];
+    let data = getDataAttributes(element, 'data');
+    let options = getDataAttributes(element, 'options');
+
     options['keyName'] = keyName;
     options['initial'] = true;
 
-      try {
-       eval(functionCall + '(data, options)');
-      } catch(error) {
-        console.error('Failed to get Data' + error);
-      }
+
+
+
+    let importFile =  functionCall.split(".")[0];
+    importFile = importFile.charAt(0).toLowerCase() + importFile.slice(1);
+
+    import(`../static/${importFile}.js`)
+    .then(module => {
+        try {
+         eval(functionCall + '(data, options)');
+        } catch(error) {
+          console.error('Failed to get Data' + error);
+        }
+      })
+      .catch(error => console.error(`File in ../static/${importFile}.js was not found !  /n  ${functionCall}`));
+
 
   }
-
-  setTimeout(function() {
-    replaceImages();
-}, 1000);
 
 }
 
@@ -203,7 +203,26 @@ try {
   }
 
 
+
+  /*
+    Import js functnions file
+  */
+  // let response ={};
+
+  let importFile =  method.split(".")[0];
+  importFile = importFile.charAt(0).toLowerCase() + importFile.slice(1);
+
+  await import(`../static/${importFile}.js`)
+  // .then( module =>  {
+  //
+  // })
+    .catch(error => console.error(`File in ../static/${importFile}.js was not found !  /n  ${method}`));
+
+    // debugger;
+    // console.log('request');
   let response = await eval(method + '(data, options)');
+
+
 
   if(response != undefined){
 
@@ -240,6 +259,7 @@ window.alpineListeners = alpineListeners;
 
 async function forceChange(url){
     history.pushState(null, null, url);
+    dataProxy['pageUrl'] = [];
     Page.load();
     document.getElementById('main').scrollIntoView(true);
 }
@@ -300,17 +320,24 @@ document.addEventListener('alpine:init', () => {
 */
 
 function initScripts(){
+
   let scripts = document.getElementById("main").querySelectorAll("script");
   for(const script of scripts){
-    let textContent = script.textContent;
     let newScript = document.createElement("script");
+
+    let textContent = script.textContent;
+    if(textContent === ''){
+      let src =  script.src
+      newScript.setAttribute('src', script.src);
+    }
+
     newScript.textContent = textContent ;
     document.body.appendChild(newScript);
   }
 
 
   var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://y.studiowebdemo.com/editor/cb/box/box-flex.js';
+  scriptElement.src = `${SITEURL}/editor/cb/box/box-flex.js`;
 
   document.body.appendChild(scriptElement);
 }
@@ -327,8 +354,13 @@ window.initScripts = initScripts;
   FROM 10x10px TO NEEDED WIDTH OF CONTAINER
 */
 
+ replaceImages();
+ window.replaceImages = replaceImages;
+
+
 function replaceImages(){
   let images = document.querySelectorAll('img');
+
   let imageOptions = {};
   let observer = new IntersectionObserver((entries, observer) => {
 
@@ -341,21 +373,21 @@ function replaceImages(){
         let newUrl = '';
         if(image.clientWidth != 0){
           if(image.clientWidth < 640){
-            newUrl = originSrcUrl.replace('10x10', '360x240');
-            // newUrl = originSrcUrl.replace('10x10', '800x600');
+            // newUrl = originSrcUrl.replace('10x10', '360x240');
+            newUrl = originSrcUrl.replace('10x10', '800x600');
           }
           if(image.clientWidth >= 640 && image.clientWidth < 800){
-            newUrl = originSrcUrl.replace('10x10', '640x480');
-            // newUrl = originSrcUrl.replace('10x10', '800x600');
+            // newUrl = originSrcUrl.replace('10x10', '640x480');
+            newUrl = originSrcUrl.replace('10x10', '800x600');
           }
 
           if(image.clientWidth >= 800 && image.clientWidth < 1024){
-            newUrl = originSrcUrl.replace('10x10', '800x600');
-            // newUrl = originSrcUrl.replace('10x10', '1024x768');
+            // newUrl = originSrcUrl.replace('10x10', '800x600');
+            newUrl = originSrcUrl.replace('10x10', '1024x768');
           }
           if(image.clientWidth > 1024 ){
-            newUrl = originSrcUrl.replace('10x10', '1024x768');
             // newUrl = originSrcUrl.replace('10x10', '1024x768');
+            newUrl = originSrcUrl.replace('10x10', '1024x768');
           }
         }
 
@@ -371,18 +403,18 @@ function replaceImages(){
         if(originSrcUrl != 'none'){
           if(el.clientWidth != 0){
             if(el.clientWidth < 640){
-              newUrl = originSrcUrl.replace('10x10', '360x240');
-              // newUrl = originSrcUrl.replace('10x10', '640x480');
+              // newUrl = originSrcUrl.replace('10x10', '360x240');
+              newUrl = originSrcUrl.replace('10x10', '640x480');
             }
 
             if(el.clientWidth >= 640 && el.clientWidth < 800){
-              newUrl = originSrcUrl.replace('10x10', '640x480');
-                // newUrl = originSrcUrl.replace('10x10', '800x600');
+              // newUrl = originSrcUrl.replace('10x10', '640x480');
+                newUrl = originSrcUrl.replace('10x10', '800x600');
             }
 
             if(el.clientWidth >= 800 && el.clientWidth < 1024){
-              newUrl = originSrcUrl.replace('10x10', '800x600');
-              // newUrl = originSrcUrl.replace('10x10', '1024x768');
+              // newUrl = originSrcUrl.replace('10x10', '800x600');
+              newUrl = originSrcUrl.replace('10x10', '1024x768');
             }
 
             if(el.clientWidth > 1024 ){
@@ -396,11 +428,12 @@ function replaceImages(){
     });
 
   }, imageOptions);
+  window.observer = observer;
 
   images.forEach((image) => {
-
     observer.observe(image);
   });
+
 
   // GET ALL DIVS .is-overlay-bg
     let overlaysElements = document.getElementsByClassName("is-overlay-bg");
@@ -423,3 +456,34 @@ if (devSaveButton !== null) {
     Page.saveTemplate();
   };
 }
+
+
+/*
+  CHANGE CURRENT LANGUAGE
+  changeLang('bg')
+*/
+function changeLang(lang){
+  if(dataBody.corePage.lang != undefined && dataBody.corePage.lang != ''){
+    let currentLang = dataBody.corePage.lang;
+    if(currentLang != lang){
+    let oldUrl = window.location.href;
+      if(oldUrl.includes(`/${currentLang}/`)){
+        var newUrl = oldUrl.replace(`/${currentLang}/`, `/${lang}/`);
+        window.location.href = newUrl;
+
+      }else {
+        window.location.href = window.location.origin + `/${lang}/`;
+      }
+    }
+  }else {
+      window.location.href = window.location.origin + `/${lang}/`;
+  }
+}
+
+window.changeLang  = changeLang ;
+
+
+window.addEventListener('resize', function(event) {
+  dataProxy['screenWidth'] = window.screen.width;
+}, true);
+  

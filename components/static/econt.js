@@ -1,16 +1,14 @@
 import {ApiClass} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
 
-
-
 export let Econt = {
+
 
 		get_offices: async function (data, options){
 			let response = [];
-		
-			if("endpoint" in options && options['endpoint'] != '' && options['endpoint'] != null) apiEndpoint = options['endpoint'];
 
       data['offices'] = true;
+
 			let endpoint = Helpers.combineRequest('econt' , data);
 
 			let api = new ApiClass();
@@ -23,8 +21,6 @@ export let Econt = {
       response['keyName'] = 'econt_offices';
 			response['obj'] = api.response;
 
-
-
 			if(options !== undefined){
 				if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
@@ -33,13 +29,9 @@ export let Econt = {
 				}
 			}
 
-
-				return response;
+			return response;
 
 		},
-
-
-
 }
 
 window.Econt = Econt;

@@ -1,0 +1,13 @@
+<div class="w-full">
+
+<div apiData="Countries.get_countries" keyname="countries"></div>
+<div x-data="{open:false}">
+  <p @click="open =! open">Open</p>
+
+
+<template x-if="open">
+  <p>Контейнер опен</p>
+  <div apiData="Blog.get_blogCategories" keyname="blogCategories"></div>
+</template>
+</div>
+</div>

@@ -343,12 +343,16 @@
         }
     }
     function J(e, t, r=void 0) {
+
         Object.assign(e, {
             el: t,
             expression: r
         })
 
-        /* COMMENT ERROR BECAUSE WE HAVE LAZY LOADING */
+        /*
+         ********* CUSTOM FOR EXPOZY ************
+        WE COMMENT ERRORS BECAUSE WE HAVE LAZY LOADING DATA
+        */
 
         // console.warn(`Alpine Expression Error: ${e.message} ${r ? 'Expression: "' + r + `"` : ""}`, t),
         // setTimeout(()=>{
@@ -1074,11 +1078,25 @@
         e._x_undoAddedStyles = V(e, t)
     }
     function Mn(e, t, r) {
+
+
         [null, void 0, !1].includes(r) && In(t) ? e.removeAttribute(t) : (hr(t) && (r = t),
         Pn(e, t, r))
     }
     function Pn(e, t, r) {
-        e.getAttribute(t) != r && e.setAttribute(t, r)
+
+        e.getAttribute(t) != r && e.setAttribute(t, r);
+
+        /*
+          ********* CUSTOM FROM EXPOZY   *********
+          IF  _x_bindings IS SRC AND NAME INCLUDES 10x10
+          WE ADDED IMG ELEMENT TO INTERSECTION
+          */
+
+        if(t == 'src' && r.includes('10x10')){
+          observer.observe(e);
+        }
+          // END
     }
     function Nn(e, t) {
         let r = [].concat(t).map(n=>n + "");
@@ -1824,6 +1842,7 @@
     }
     );
     d("teleport", (e,{expression: t},{cleanup: r})=>{
+
         e.tagName.toLowerCase() !== "template" && O("x-teleport can only be used on a <template> tag", e);
         let n = document.querySelector(t);
         n || O(`Cannot find x-teleport element for selector: "${t}"`);
@@ -2094,9 +2113,11 @@
     Z(Ee(":", Se(E("bind:"))));
     d("bind", (e,{value: t, modifiers: r, expression: n, original: i},{effect: o})=>{
 
-      // !!! VERY IMPORTANT
-      // CUSTOM ADD ROW for x-bind element name
-      // THIS WILL GET EXACT NAME OF ATTRIBUTE WITHOUT TRIMING THE PREFIX
+      /*
+        ******* CUSTOM FOR EXPOZY ************
+        ADD ROW for x-bind element name
+        THIS WILL GET EXACT NAME OF ATTRIBUTE WITHOUT TRIMING THE PREFIX
+       */
       t = i.replaceAll(':','');
       // END
 
@@ -2303,6 +2324,7 @@
             for (let f = 0; f < p.length; f++) {
                 let[h,b] = p[f]
                   , v = h === "template" ? o : a[h];
+
                 v._x_currentIfEl && (v = v._x_currentIfEl);
                 let S = l[b]
                   , G = u[b]
@@ -2405,10 +2427,14 @@
     );
     Z(Ee("@", Se(E("on:"))));
     d("on", D((e,{value: t, modifiers: r, expression: n},{cleanup: i})=>{
-        let o = n ? _(e, n) : ()=>{}
-        ;
+      if(e.tagName.toLowerCase() === "template"){
+        debugger;
+      }
+        let o = n ? _(e, n) : ()=>{};
         e.tagName.toLowerCase() === "template" && (e._x_forwardEvents || (e._x_forwardEvents = []),
         e._x_forwardEvents.includes(t) || e._x_forwardEvents.push(t));
+
+
         let s = de(e, t, r, a=>{
             o(()=>{}
             , {
@@ -2427,6 +2453,7 @@
     Ue("Focus", "trap", "focus");
     Ue("Mask", "mask", "mask");
     function Ue(e, t, r) {
+
         d(t, n=>O(`You can't use [x-${t}] without first installing the "${e}" plugin here: https://alpinejs.dev/plugins/${r}`, n))
     }
     I.setEvaluator(ct);

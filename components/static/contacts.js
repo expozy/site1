@@ -7,6 +7,7 @@ export let Contacts = {
 
 	post_contacts: async function(data, options){
 		let response = [];
+
 		let api = new ApiClass();
 
 		await api.post('contacts', data);
@@ -19,7 +20,7 @@ export let Contacts = {
     if(api.response.status == 1)  response['clearForm'] = true;
 
 
-    
+
 		return response;
 
 	},
