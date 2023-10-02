@@ -1,7 +1,7 @@
-/* default font */
-/* @import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+﻿/* default font */
+@import url('//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 /* Icon support */
-/* @import url("../ionicons/css/ionicons.min.css");  */
+@import url("../ionicons/css/ionicons.min.css"); 
 
 /* Adjustment for css frameworks */
 
@@ -13,16 +13,16 @@ html { color:#000; } /* For UIKit */
 
 /* Default Typography */
 
-html { font-size: 100%; }
+html { font-size: 100%; }  
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 100%;
+    font-size: 100%; 
     line-height: 1.6;
     font-weight: 300;
 }
 p, td, li, label {
-    font-size: 16px;
+    font-size: 16px; 
     line-height: 1.6;
     font-weight: 300;
 }
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     line-height: 1.4;
-}
+}        
 
 h1 {font-size: 2.36rem;margin:0.4rem 0;}
 h2 {font-size: 2rem;margin:0.6rem 0;}
@@ -62,8 +62,8 @@ p {margin:1rem 0;}
 
 /* Default Elements */
 
-a {color: #000;}
-hr {background:none;background-color: transparent;border:none;border-top: rgba(0, 0, 0, 0.18) 1px solid;margin: 30px 0 25px;padding: 5px;}
+a {color: #000;} 
+hr {background:none;background-color: transparent;border:none;border-top: rgba(0, 0, 0, 0.18) 1px solid;margin: 30px 0 25px;padding: 5px;}    
 img {max-width:100%;}
 figure {margin:0}
 table td {padding:12px;}
@@ -97,13 +97,13 @@ sub {
 [type='tel'],
 [type='time'],
 [type='week'],
-textarea,
+textarea, 
 button,
 a {
     box-sizing: border-box;
 }
 
-/* Simple Grid (if css framework not used) */
+/* Built-in Grid */
 .container {
     margin: 0 auto;
     max-width: 800px;
@@ -137,14 +137,27 @@ a {
     .column.tenth { width: 10%; }
     .column.eleventh { width: 9.090909090909091%; }
     .column.twelfth { width: 8.333333333333333%; }
-    .column.flow-opposite { float: right; }
+    .column.flow-opposite { float: right; }  
+
+    /* 
+    .is-container > .row {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: unset;
+    }
+    .is-container > .row > .column {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex-shrink: initial; 
+    }
+    */
 }
 
 /* Responsive Utility */
 @media all and (max-width: 760px) { /*970px*/
-    .flow-reverse { display: flex; flex-direction: column-reverse; }
+    .flow-reverse { display: flex; flex-direction: column-reverse; } 
     .column,
-    .container > div /* in needed, container class here can be changed with your own class */ {
+    .container > div /* in needed, container class here can be changed with your own class */ { 
         min-width: 100%; /* If there is column's inline width, this will make the column full-width in mobile */
         min-height: unset !important;
     }
@@ -177,7 +190,7 @@ a {
 
 /* wrap & reverse columns */
 @media (max-width: 760px) {
-    .xs-items-6, .xs-items-5, .xs-items-4, .xs-items-3, .xs-items-2, .xs-items-1 {
+    .xs-items-6, .xs-items-5, .xs-items-4, .xs-items-3, .xs-items-2, .xs-items-1 { 
         display: flex !important; flex-flow: wrap; justify-content: space-between;
     }
     .xs-items-6 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/6)) !important; max-width: unset !important; flex: 1 0 auto !important; min-width: unset !important; padding-right:15px; }
@@ -188,16 +201,16 @@ a {
     .xs-items-1 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/1)) !important; max-width: unset !important; flex: 1 0 auto !important; min-width: unset !important; }
     /* no class (not set) = xs-items-1 */
 
-    .xs-column-reverse { display: flex; flex-direction: column-reverse !important; }
-    .xs-column-reverse.xs-items-1 { flex-direction: column-reverse !important; }
-    .xs-column-reverse.xs-items-2 { flex-direction: row-reverse !important; }
-    .xs-column-reverse.xs-items-3 { flex-direction: row-reverse !important; }
-    .xs-column-reverse.xs-items-4 { flex-direction: row-reverse !important; }
-    .xs-column-reverse.xs-items-5 { flex-direction: row-reverse !important; }
-    .xs-column-reverse.xs-items-6 { flex-direction: row-reverse !important; }
+    .xs-column-reverse { display: flex; flex-direction: column-reverse !important; } 
+    .xs-column-reverse.xs-items-1 { flex-direction: column-reverse !important; } 
+    .xs-column-reverse.xs-items-2 { flex-direction: row-reverse !important; } 
+    .xs-column-reverse.xs-items-3 { flex-direction: row-reverse !important; } 
+    .xs-column-reverse.xs-items-4 { flex-direction: row-reverse !important; } 
+    .xs-column-reverse.xs-items-5 { flex-direction: row-reverse !important; } 
+    .xs-column-reverse.xs-items-6 { flex-direction: row-reverse !important; } 
 }
 @media (min-width: 761px) and (max-width: 970px) {
-    .sm-items-6, .sm-items-5, .sm-items-4, .sm-items-3, .sm-items-2, .sm-items-1 {
+    .sm-items-6, .sm-items-5, .sm-items-4, .sm-items-3, .sm-items-2, .sm-items-1 { 
         display: flex !important; flex-flow: wrap; justify-content: space-between;
     }
     .sm-items-6 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/6)) !important; max-width: unset !important; flex: 1 0 auto !important; margin: 0; padding-left: 15px;padding-right: 15px; }
@@ -207,12 +220,12 @@ a {
     .sm-items-2 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/2)) !important; max-width: unset !important; flex: 1 0 auto !important; margin: 0; padding-left: 15px;padding-right: 15px; }
     .sm-items-1 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/1)) !important; max-width: unset !important; flex: 1 0 auto !important; margin: 0; padding-left: 15px;padding-right: 15px; }
     /* no class (not set) => use default (all columns in one line) */
-
-    .sm-column-reverse { display: flex; flex-direction: row-reverse !important; }
-    .sm-column-reverse.sm-items-1 { flex-direction: column-reverse !important; }
+    
+    .sm-column-reverse { display: flex; flex-direction: row-reverse !important; } 
+    .sm-column-reverse.sm-items-1 { flex-direction: column-reverse !important; } 
 }
 @media (min-width: 971px) and (max-width: 1280px) {
-    .md-items-6, .md-items-5, .md-items-4, .md-items-3, .md-items-2, .md-items-1 {
+    .md-items-6, .md-items-5, .md-items-4, .md-items-3, .md-items-2, .md-items-1 { 
         display: flex !important; flex-flow: wrap; justify-content: space-between;
     }
     .md-items-6 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/6)) !important; max-width: unset !important; flex: 1 0 auto !important; margin: 0; padding-left: 15px;padding-right: 15px; }
@@ -223,11 +236,11 @@ a {
     .md-items-1 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/1)) !important; max-width: unset !important; flex: 1 0 auto !important; margin: 0; padding-left: 15px;padding-right: 15px; }
     /* no class (not set) => use default (all columns in one line) */
 
-    .md-column-reverse { display: flex; flex-direction: row-reverse !important; }
-    .md-column-reverse.md-items-1 { flex-direction: column-reverse !important; }
+    .md-column-reverse { display: flex; flex-direction: row-reverse !important; } 
+    .md-column-reverse.md-items-1 { flex-direction: column-reverse !important; } 
 }
 @media (min-width: 1281px) {
-    .desktop-items-6, .desktop-items-5, .desktop-items-4, .desktop-items-3, .desktop-items-2, .desktop-items-1 {
+    .desktop-items-6, .desktop-items-5, .desktop-items-4, .desktop-items-3, .desktop-items-2, .desktop-items-1 { 
         display: flex !important; flex-flow: wrap; justify-content: space-between;
     }
     .desktop-items-6 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/6)) !important; max-width: unset !important; flex: 1 0 auto !important; margin: 0; padding-left: 15px;padding-right: 15px; }
@@ -238,8 +251,8 @@ a {
     .desktop-items-1 > div:not(.is-tool,.is-rowadd-tool,.is-row-overlay) { width: calc(100% * (1/1)) !important; max-width: unset !important; flex: 1 0 auto !important; margin: 0; padding-left: 15px;padding-right: 15px; }
     /* no class (not set) => use default (all columns in one line) */
 
-    .desktop-column-reverse { display: flex; flex-direction: row-reverse !important; }
-    .desktop-column-reverse.desktop-items-1 { flex-direction: column-reverse !important; }
+    .desktop-column-reverse { display: flex; flex-direction: row-reverse !important; } 
+    .desktop-column-reverse.desktop-items-1 { flex-direction: column-reverse !important; } 
 }
 /* /Responsive Utility */
 
@@ -268,11 +281,11 @@ a {
     .padding-60 {padding:30px !important;}
 }
 
-.margin-0 {margin:0 !important}
-.margin-20 {margin:20px !important}
-.margin-25 {margin:25px !important}
-.margin-30 {margin:30px !important}
-.margin-35 {margin:35px !important}
+.margin-0 {margin:0 !important} 
+.margin-20 {margin:20px !important} 
+.margin-25 {margin:25px !important} 
+.margin-30 {margin:30px !important} 
+.margin-35 {margin:35px !important} 
 .margin-40 {margin:40px !important}
 .is-card { display:table; background-color:#fff;  }
 .is-card > * { display:table; }
@@ -283,9 +296,9 @@ a {
 .is-card-content-centered { display:table-cell;vertical-align:middle;text-align:center; }
 .max-390 { max-width:390px;margin:0 auto; }
 .shadow-1 { /* card */
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
-    box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24); 
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24); 
+    box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24); 
 }
 .shadow-2 { /* screenshot */
     -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
@@ -293,25 +306,25 @@ a {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
 }
 .shadow-3 { /* highlight */
-    -webkit-box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2); 
+    -moz-box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2); 
 }
 
 img.circle {border-radius:500px;margin-top:0;}
 img.bordered {border: #ccc 1px solid;}
 
-.embed-responsive {position: relative;display:block;width:100%;height:0;padding:0;overflow:hidden;margin-top: 1.4em;margin-bottom: 1em;}
+.embed-responsive {position: relative;display:block;width:100%;height:0;padding:0;overflow:hidden;margin-top: 1.4em;margin-bottom: 1em;} 
 .embed-responsive.embed-responsive-16by9 {padding-bottom: 56.25%;}
 .embed-responsive.embed-responsive-4by3 {padding-bottom: 75%;}
 .embed-responsive iframe {position: absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0;}
 
 .list {position:relative;margin:1.5em 0;box-shadow:none;}
-.list > i {position:absolute;left:-3px;top:6px;font-size:1.7em;line-height:1;}
+.list > i {position:absolute;left:-3px;top:6px;font-size:1.7em;line-height:1;} 
 .list > h2, .list > h3 {margin: 0 0 0 50px !important; line-height: 1.2 !important;}
 .list > p {margin: 5px 0 0 50px !important}
 
-.list.larger > i {position:absolute;left:-3px;top:0;font-size:1.7em;line-height:1;}
+.list.larger > i {position:absolute;left:-3px;top:0;font-size:1.7em;line-height:1;} 
 .list.larger > h2, .list.larger > h3 {margin: 0 0 0 70px !important; line-height: 1.2 !important;}
 .list.larger > p {margin: 5px 0 0 70px !important}
 
@@ -401,11 +414,11 @@ img.bordered {border: #ccc 1px solid;}
 } */
 
 /* Make default paragraph responsive. v2 => optimize on large screen */
-/* @media all and (max-width: 1800px) {
-    p {font-size:0.99vw !important} p {font-size:clamp(16px, 0.99vw, 0.99vw) !important}
+/* @media all and (max-width: 1800px) { 
+    p {font-size:0.99vw !important} p {font-size:clamp(16px, 0.99vw, 0.99vw) !important} 
 }
-@media all and (min-width: 1921px) {
-    .v2 p {font-size:0.83vw !important}
+@media all and (min-width: 1921px) { 
+    .v2 p {font-size:0.83vw !important} 
 } */
 
 .size-12 {font-size:12px !important}
@@ -515,7 +528,7 @@ img.bordered {border: #ccc 1px solid;}
 .size-396 {font-size:396px !important; overflow-wrap: break-word;}
 .size-400 {font-size:400px !important; overflow-wrap: break-word;}
 
-@media all and (max-width: 1800px) {
+@media all and (max-width: 1800px) { 
     .size-12 {font-size:0.74vw !important; font-size:clamp(12px, 0.74vw, 0.74vw) !important} /* Use clamp to prevent small sizes */
     .size-13 {font-size:0.8vw !important; font-size:clamp(13px, 0.8vw, 0.8vw) !important}
     .size-14 {font-size:0.86vw !important; font-size:clamp(14px, 0.86vw, 0.86vw) !important}
@@ -542,11 +555,11 @@ img.bordered {border: #ccc 1px solid;}
     .size-72 {font-size:3.75vw !important; font-size:clamp(35px, 3.75vw, 3.75vw) !important}
     .size-76 {font-size:3.96vw !important; font-size:clamp(36px, 3.96vw, 3.96vw) !important}
     .size-80 {font-size:4.17vw !important; font-size:clamp(37px, 4.17vw, 4.17vw) !important}
-    .size-84 {font-size:4.38vw !important; font-size:clamp(38px, 4.38vw, 4.38vw) !important}
+    .size-84 {font-size:4.38vw !important; font-size:clamp(38px, 4.38vw, 4.38vw) !important} 
     .size-88 {font-size:4.58vw !important; font-size:clamp(39px, 4.58vw, 4.58vw) !important}
     .size-92 {font-size:4.79vw !important; font-size:clamp(40px, 4.79vw, 4.79vw) !important} /**/
     .size-96 {font-size:5vw !important; font-size:clamp(40px, 5vw, 5vw) !important}
-    .size-100 {font-size:5.21vw !important; font-size:clamp(40px, 5.21vw, 5.21vw) !important}
+    .size-100 {font-size:5.21vw !important; font-size:clamp(40px, 5.21vw, 5.21vw) !important} 
     .size-104 {font-size:5.42vw !important; font-size:clamp(40px, 5.42vw, 5.42vw) !important}
     .size-108 {font-size:5.63vw !important; font-size:clamp(40px, 5.63vw, 5.63vw) !important}
     .size-112 {font-size:5.84vw !important; font-size:clamp(40px, 5.84vw, 5.84vw) !important}
@@ -576,7 +589,7 @@ img.bordered {border: #ccc 1px solid;}
     .size-208 {font-size:10.84vw !important; font-size:clamp(40px, 10.84vw, 10.84vw) !important}
     .size-212 {font-size:11.05vw !important; font-size:clamp(40px, 11.05vw, 11.05vw) !important}
     .size-216 {font-size:11.25vw !important; font-size:clamp(40px, 11.25vw, 11.25vw) !important}
-    .size-220 {font-size:11.46vw !important; font-size:clamp(40px, 11.46vw, 11.46vw) !important}
+    .size-220 {font-size:11.46vw !important; font-size:clamp(40px, 11.46vw, 11.46vw) !important}  
     .size-224 {font-size:11.67vw !important; font-size:clamp(40px, 11.67vw, 11.67vw) !important}
     .size-228 {font-size:11.88vw !important; font-size:clamp(40px, 11.88vw, 11.88vw) !important}
     .size-232 {font-size:12.09vw !important; font-size:clamp(40px, 12.09vw, 12.09vw) !important}
@@ -621,8 +634,8 @@ img.bordered {border: #ccc 1px solid;}
     .size-388 {font-size:20.21vw !important; font-size:clamp(40px, 20.21vw, 20.21vw) !important}
     .size-392 {font-size:20.42vw !important; font-size:clamp(40px, 20.42vw, 20.42vw) !important}
     .size-396 {font-size:20.63vw !important; font-size:clamp(40px, 20.63vw, 20.63vw) !important}
-    .size-400 {font-size:20.84vw !important; font-size:clamp(40px, 20.84vw, 20.84vw) !important}
-}
+    .size-400 {font-size:20.84vw !important; font-size:clamp(40px, 20.84vw, 20.84vw) !important}  
+} 
 
 @media all and (min-width: 1921px) { /* v2 */
     .v2 .size-12 {font-size:0.63vw !important}
@@ -651,11 +664,11 @@ img.bordered {border: #ccc 1px solid;}
     .v2 .size-72 {font-size:3.75vw !important;}
     .v2 .size-76 {font-size:3.96vw !important;}
     .v2 .size-80 {font-size:4.17vw !important}
-    .v2 .size-84 {font-size:4.38vw !important}
+    .v2 .size-84 {font-size:4.38vw !important} 
     .v2 .size-88 {font-size:4.58vw !important}
     .v2 .size-92 {font-size:4.79vw !important}
     .v2 .size-96 {font-size:5vw !important}
-    .v2 .size-100 {font-size:5.21vw !important}
+    .v2 .size-100 {font-size:5.21vw !important} 
     .v2 .size-104 {font-size:5.42vw !important}
     .v2 .size-108 {font-size:5.63vw !important}
     .v2 .size-112 {font-size:5.84vw !important}
@@ -685,7 +698,7 @@ img.bordered {border: #ccc 1px solid;}
     .v2 .size-208 {font-size:10.84vw !important}
     .v2 .size-212 {font-size:11.05vw !important}
     .v2 .size-216 {font-size:11.25vw !important}
-    .v2 .size-220 {font-size:11.46vw !important}
+    .v2 .size-220 {font-size:11.46vw !important}  
     .v2 .size-224 {font-size:11.67vw !important}
     .v2 .size-228 {font-size:11.88vw !important}
     .v2 .size-232 {font-size:12.09vw !important}
@@ -730,7 +743,7 @@ img.bordered {border: #ccc 1px solid;}
     .v2 .size-388 {font-size:20.21vw !important}
     .v2 .size-392 {font-size:20.42vw !important}
     .v2 .size-396 {font-size:20.63vw !important}
-    .v2 .size-400 {font-size:20.84vw !important}
+    .v2 .size-400 {font-size:20.84vw !important}  
 }
 
 button.size-12, [role="button"].size-12 {font-size:12px !important}
@@ -877,7 +890,7 @@ button.size-32, [role="button"].size-32 {font-size:32px !important}
 .is-boxed-button-small a {display:table;float:left;text-align:center;margin:0 20px 0 0;width: 50px; height: 50px;background-color: #aaa;text-decoration: none;}
 .is-boxed-button-small a i {display:table-cell;width:100%;height:100%;vertical-align:middle;color:#ffffff;font-size:20px;display: flex;align-items: center;justify-content: center;}
 
-.is-btn,
+.is-btn, 
 a.is-btn {
     padding: 10px 50px;
     font-size: 1rem;
@@ -901,7 +914,7 @@ a.is-btn {
 .is-btn:hover,.is-btn:visited,.is-btn:focus,
 a.is-btn:hover,a.is-btn:visited,a.is-btn:focus {color:initial;text-decoration:initial;opacity:initial;} /* prevent overide */
 
-.is-btn-ghost1,
+.is-btn-ghost1, 
 a.is-btn-ghost1 { color: #000; border: 2px solid #111; }
 
 .is-light-text .is-btn-ghost1,
@@ -1035,7 +1048,7 @@ a.is-btn-ghost2 { color: #000; border: 2px solid #dcdcdc; background-color: #dcd
 }
 
 /* Text Formatting */
-
+        
 .font-thin { font-weight: 100 !important; }
 .font-extralight { font-weight: 200 !important; }
 .font-light { font-weight: 300 !important; }
@@ -1169,7 +1182,7 @@ a.is-btn-ghost2 { color: #000; border: 2px solid #dcdcdc; background-color: #dcd
 .p-14 { padding: 3.5rem }
 .p-16 { padding: 4rem }
 .p-20 { padding: 5rem }
-
+  
 .px-0 { padding-left: 0px; padding-right: 0px; }
 .px-1 { padding-left: 0.25rem; padding-right: 0.25rem; }
 .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
@@ -1272,23 +1285,23 @@ a.is-btn-ghost2 { color: #000; border: 2px solid #dcdcdc; background-color: #dcd
 .pl-16 { padding-left: 4rem }
 .pl-20 { padding-left: 5rem }
 
-.ml-0 { margin-left: 0px }
-.ml-1 { margin-left: 0.25rem }
-.ml-2 { margin-left: 0.5rem }
-.ml-3 { margin-left: 0.75rem }
-.ml-4 { margin-left: 1rem }
-.ml-5 { margin-left: 1.25rem }
-.ml-6 { margin-left: 1.5rem }
-.ml-8 { margin-left: 2rem }
+.ml-0 { margin-left: 0px } 
+.ml-1 { margin-left: 0.25rem } 
+.ml-2 { margin-left: 0.5rem } 
+.ml-3 { margin-left: 0.75rem } 
+.ml-4 { margin-left: 1rem } 
+.ml-5 { margin-left: 1.25rem } 
+.ml-6 { margin-left: 1.5rem } 
+.ml-8 { margin-left: 2rem } 
 .ml-10 { margin-left: 2.5rem }
-.mr-0 { margin-right: 0px }
-.mr-1 { margin-right: 0.25rem }
-.mr-2 { margin-right: 0.5rem }
-.mr-3 { margin-right: 0.75rem }
-.mr-4 { margin-right: 1rem }
-.mr-5 { margin-right: 1.25rem }
-.mr-6 { margin-right: 1.5rem }
-.mr-8 { margin-right: 2rem }
+.mr-0 { margin-right: 0px } 
+.mr-1 { margin-right: 0.25rem } 
+.mr-2 { margin-right: 0.5rem } 
+.mr-3 { margin-right: 0.75rem } 
+.mr-4 { margin-right: 1rem } 
+.mr-5 { margin-right: 1.25rem } 
+.mr-6 { margin-right: 1.5rem } 
+.mr-8 { margin-right: 2rem } 
 .mr-10 { margin-right: 2.5rem }
 .mt-0 { margin-top: 0px }
 .mt-1 { margin-top: 0.25rem }
@@ -1315,7 +1328,7 @@ a.is-btn-ghost2 { color: #000; border: 2px solid #dcdcdc; background-color: #dcd
 .block { display: block }
 .inline { display: inline }
 .inline-block { display: inline-block }
-
+  
 .flex-row { flex-direction: row }
 .flex-row-reverse { flex-direction: row-reverse }
 .flex-col { flex-direction: column }
@@ -1323,7 +1336,7 @@ a.is-btn-ghost2 { color: #000; border: 2px solid #dcdcdc; background-color: #dcd
 
 .flex-wrap { flex-wrap: wrap }
 .flex-wrap-reverse { flex-wrap: wrap-reverse }
-.flex-nowrap { flex-wrap: nowrap }
+.flex-nowrap { flex-wrap: nowrap }  
 .justify-start { justify-content: flex-start }
 .justify-end { justify-content: flex-end }
 .justify-center { justify-content: center }
@@ -1371,7 +1384,7 @@ a.is-btn-ghost2 { color: #000; border: 2px solid #dcdcdc; background-color: #dcd
 .bg-transparent { background-color: transparent }
 .bg-current { background-color: currentColor }
 .bg-black { --tw-bg-opacity: 1; background-color: rgb(0 0 0 / var(--tw-bg-opacity)) }
-.bg-white { --tw-bg-opacity: 1; background-color: rgb(255 255 255 / var(--tw-bg-opacity)) }
+.bg-white { --tw-bg-opacity: 1; background-color: rgb(255 255 255 / var(--tw-bg-opacity)) }  
 
 .bg-gray-50 { --tw-bg-opacity: 1; background-color: rgb(249 250 251 / var(--tw-bg-opacity)) }
 .bg-gray-100 { --tw-bg-opacity: 1; background-color: rgb(243 244 246 / var(--tw-bg-opacity)) }
@@ -2031,7 +2044,7 @@ a.is-btn-ghost2 { color: #000; border: 2px solid #dcdcdc; background-color: #dcd
     border-color: #e5e7eb;
 }
 
-/*
+/* 
 Master Style (new feature)
 You can apply master style to the container (must be .is-container class).
 Example:
@@ -2039,7 +2052,7 @@ Example:
     ...content here (rows & columns)...
 </div>
 Note: .v2 class option gives optimization for large screen.
-*/
+*/ 
 .feature-master-style { display: none; } /* do not remove */
 
 /* size-16 */
@@ -2050,15 +2063,15 @@ Note: .v2 class option gives optimization for large screen.
     font-size: 16px;
 }
 @media all and (max-width: 1800px) {
-    .is-container.size-16 p,
-    .is-container.size-16 td,
-    .is-container.size-16 li,
+    .is-container.size-16 p, 
+    .is-container.size-16 td, 
+    .is-container.size-16 li, 
     .is-container.size-16 label {font-size:0.99vw; font-size:clamp(16px, 0.99vw, 0.99vw)}
 }
-@media all and (min-width: 1921px) {
-    .is-container.size-16.v2 p,
-    .is-container.size-16.v2 td,
-    .is-container.size-16.v2 li,
+@media all and (min-width: 1921px) { 
+    .is-container.size-16.v2 p, 
+    .is-container.size-16.v2 td, 
+    .is-container.size-16.v2 li, 
     .is-container.size-16.v2 label {font-size:0.83vw}
 }
 
@@ -2066,15 +2079,15 @@ Note: .v2 class option gives optimization for large screen.
 .is-container.size-17 { font-size: 17px; }
 .is-container.size-17 p, .is-container.size-17 td, .is-container.size-17 li, .is-container.size-17 label { font-size: 17px; }
 @media all and (max-width: 1800px) {
-    .is-container.size-17 p,
-    .is-container.size-17 td,
-    .is-container.size-17 li,
+    .is-container.size-17 p, 
+    .is-container.size-17 td, 
+    .is-container.size-17 li, 
     .is-container.size-17 label {font-size:1.05vw; font-size:clamp(17px, 1.05vw, 1.05vw)}
 }
-@media all and (min-width: 1921px) {
-    .is-container.size-17.v2 p,
-    .is-container.size-17.v2 td,
-    .is-container.size-17.v2 li,
+@media all and (min-width: 1921px) { 
+    .is-container.size-17.v2 p, 
+    .is-container.size-17.v2 td, 
+    .is-container.size-17.v2 li, 
     .is-container.size-17.v2 label {font-size:0.89vw}
 }
 
@@ -2082,15 +2095,15 @@ Note: .v2 class option gives optimization for large screen.
 .is-container.size-18 { font-size: 18px; }
 .is-container.size-18 p, .is-container.size-18 td, .is-container.size-18 li, .is-container.size-18 label { font-size: 18px; }
 @media all and (max-width: 1800px) {
-    .is-container.size-18 p,
-    .is-container.size-18 td,
-    .is-container.size-18 li,
+    .is-container.size-18 p, 
+    .is-container.size-18 td, 
+    .is-container.size-18 li, 
     .is-container.size-18 label {font-size:1.11vw; font-size:clamp(18px, 1.11vw, 1.11vw)}
 }
-@media all and (min-width: 1921px) {
-    .is-container.size-18.v2 p,
-    .is-container.size-18.v2 td,
-    .is-container.size-18.v2 li,
+@media all and (min-width: 1921px) { 
+    .is-container.size-18.v2 p, 
+    .is-container.size-18.v2 td, 
+    .is-container.size-18.v2 li, 
     .is-container.size-18.v2 label{font-size:0.94vw}
 }
 
@@ -2098,15 +2111,15 @@ Note: .v2 class option gives optimization for large screen.
 .is-container.size-19 { font-size: 19px; }
 .is-container.size-19 p, .is-container.size-19 td, .is-container.size-19 li, .is-container.size-19 label { font-size: 19px; }
 @media all and (max-width: 1800px) {
-    .is-container.size-19 p,
-    .is-container.size-19 td,
-    .is-container.size-19 li,
+    .is-container.size-19 p, 
+    .is-container.size-19 td, 
+    .is-container.size-19 li, 
     .is-container.size-19 label {font-size:1.17vw; font-size:clamp(19px, 1.17vw, 1.17vw)}
 }
-@media all and (min-width: 1921px) {
-    .is-container.size-19.v2 p,
-    .is-container.size-19.v2 td,
-    .is-container.size-19.v2 li,
+@media all and (min-width: 1921px) { 
+    .is-container.size-19.v2 p, 
+    .is-container.size-19.v2 td, 
+    .is-container.size-19.v2 li, 
     .is-container.size-19.v2 label {font-size:0.99vw}
 }
 
@@ -2114,15 +2127,15 @@ Note: .v2 class option gives optimization for large screen.
 .is-container.size-20 { font-size: 20px; }
 .is-container.size-20 p, .is-container.size-20 td, .is-container.size-20 li, .is-container.size-20 label { font-size: 20px; }
 @media all and (max-width: 1800px) {
-    .is-container.size-20 p,
-    .is-container.size-20 td,
-    .is-container.size-20 li,
+    .is-container.size-20 p, 
+    .is-container.size-20 td, 
+    .is-container.size-20 li, 
     .is-container.size-20 label {font-size:1.23vw; font-size:clamp(20px, 1.23vw, 1.23vw)}
 }
-@media all and (min-width: 1921px) {
-    .is-container.size-20.v2 p,
-    .is-container.size-20.v2 td,
-    .is-container.size-20.v2 li,
+@media all and (min-width: 1921px) { 
+    .is-container.size-20.v2 p, 
+    .is-container.size-20.v2 td, 
+    .is-container.size-20.v2 li, 
     .is-container.size-20.v2 label {font-size:1.04vw}
 }
 
@@ -2130,21 +2143,25 @@ Note: .v2 class option gives optimization for large screen.
 .is-container.size-21 { font-size: 21px; }
 .is-container.size-21 p, .is-container.size-21 td, .is-container.size-21 li, .is-container.size-21 label { font-size: 21px; }
 @media all and (max-width: 1800px) {
-    .is-container.size-21 p,
-    .is-container.size-21 td,
-    .is-container.size-21 li,
+    .is-container.size-21 p, 
+    .is-container.size-21 td, 
+    .is-container.size-21 li, 
     .is-container.size-21 label {font-size:1.29vw; font-size:clamp(21px, 1.29vw, 1.29vw)}
 }
-@media all and (min-width: 1921px) {
-    .is-container.size-21.v2 p,
-    .is-container.size-21.v2 td,
-    .is-container.size-21.v2 li,
+@media all and (min-width: 1921px) { 
+    .is-container.size-21.v2 p, 
+    .is-container.size-21.v2 td, 
+    .is-container.size-21.v2 li, 
     .is-container.size-21.v2 label {font-size:1.09vw}
 }
 
 /* leading */
 .is-container.leading-none p, .is-container.leading-none td, .is-container.leading-none li, .is-container.leading-none label { line-height: 1; }
 .is-container.leading-none h1, .is-container.leading-none h2, .is-container.leading-none h3, .is-container.leading-none h4, .is-container.leading-none h5, .is-container.leading-none h6 {
+    line-height: 1.1;
+}
+.is-container.leading-10 p, .is-container.leading-10 td, .is-container.leading-10 li, .is-container.leading-10 label { line-height: 1; }
+.is-container.leading-10 h1, .is-container.leading-10 h2, .is-container.leading-10 h3, .is-container.leading-10 h4, .is-container.leading-10 h5, .is-container.leading-10 h6 {
     line-height: 1.1;
 }
 .is-container.leading-11 p, .is-container.leading-11 td, .is-container.leading-11 li, .is-container.leading-11 label { line-height: 1.1; }

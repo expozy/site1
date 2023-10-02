@@ -7,6 +7,7 @@ import {Page} from '../core/classes/page.js';
 export let User = {
 
 	login: async function(data, options){
+
 		let response = [];
 		let api = new ApiClass();
 		await api.post('login', data);
@@ -21,9 +22,9 @@ export let User = {
 				localStorage.setItem('token', api.response.token);
 
 
-				fetch('/editor/post.php', {
-				 	method: 'POST', // *GET, POST, PUT, DELETE, etc.
-				 	cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+				fetch('/editor/cb/api/post.php', {
+				 	method: 'POST',
+				 	cache: 'no-cache',
 				 	credentials: 'same-origin',
 				 	headers: {
 				 		'Content-Type': 'application/json',

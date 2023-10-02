@@ -1,16 +1,7 @@
 import {Api} from '../core/api/api.js';
 import {Page} from './classes/page.js';
 import {Helpers} from './helpers.js';
-// import {Blog} from '../static/blog.js';
-// import {Shop} from '../static/shop.js';
-// import {Newsletter} from '../static/newsletter.js';
-// import {Reviews} from '../static/reviews.js';
-// import {User} from '../static/user.js';
-// import {Search} from '../static/search.js';
-// import {Countries} from '../static/countries.js';
-// import {Contacts} from '../static/contacts.js';
-// import {Menu} from '../static/menu.js';
-// import {Econt} from '../static/econt.js';
+
 
 let updatedMain = false;
 
@@ -23,6 +14,13 @@ let dataBody = {
   openCart:false,
   openMobileMenu:false,
   screenWidth: window.screen.width,
+  scrollPosition: window.pageYOffset,
+  openLogin:false,
+  openRegistration:false,
+  openProduct:false,
+  openForgotten:false,
+  openGeolocation:false,
+  location:[],
 };
 
 
@@ -189,15 +187,16 @@ try {
     if(element.getAttribute('keyName') != undefined){
       keyName = element.getAttribute('keyName');
 
+      if(keyName != undefined) options['keyName'] = keyName;
 
       // If we dont have endpoint in event target get endpoint from dataBody if we have.
       if(data['endpoint'] === undefined && (keyName in dataBody && dataBody[keyName]['endpoint'] != undefined )){
-
         if (dataBody[keyName]){
           options['endpoint'] = dataBody[keyName]['endpoint'];
         }
-
       }
+
+
     }
 
   }
@@ -218,7 +217,7 @@ try {
   // })
     .catch(error => console.error(`File in ../static/${importFile}.js was not found !  /n  ${method}`));
 
-    // debugger;
+
     // console.log('request');
   let response = await eval(method + '(data, options)');
 
@@ -246,6 +245,8 @@ try {
 
     // IF WE HAVE REDIRECT URL
     if ("url" in response) return forceChange(response.url) ;
+
+      return response['status'];
 
   }else {
     console.error(`no response for alpineListeners /n ${method}`);
@@ -449,12 +450,91 @@ function replaceImages(){
 window.replaceImages = replaceImages;
 
 
+
 const devSaveButton = document.getElementById("dev_save");
 if (devSaveButton !== null) {
-  devSaveButton.onclick = function() {
-    tailwindGen();
-    Page.saveTemplate();
+
+
+
+  devSaveButton.onclick = async function() {
+
+  
+		//remove header
+		var parent = document.body;
+
+
+		var header = document.getElementById('header');
+
+		if (header) {
+			parent.removeChild(header);
+		}
+
+		//remove footer
+		var footer = document.getElementById('footer');
+
+		if (footer) {
+			parent.removeChild(footer);
+		}
+
+		//save page
+		await alpineTemplatesGen();
+		await tailwindGen();
+		await Page.saveTemplate();
+
+
+		//remove main
+		var main = document.getElementById('main');
+
+		if (main) {
+				parent.removeChild(main);
+		}
+
+		//add header
+		parent.appendChild(header);
+
+		//add footer
+		parent.appendChild(footer);
+
+		//save head css
+		await alpineTemplatesGen();
+		await tailwindGen();
+		await Page.saveHeadCss();
+
+		window.location.reload();
+
   };
+}
+
+function processTemplates(container, templates) {
+  return new Promise(resolve => { // Връщаме обещание, което ще бъде резолвнато след като завършим обработката
+    templates.forEach(async function (template) {
+      if(!template.classList.contains("dontSelect")){
+
+
+      var templateContent = template.content;
+      var div = document.createElement("div");
+      div.appendChild(templateContent.cloneNode(true));
+
+      var nestedTemplates = div.querySelectorAll("template");
+      if (nestedTemplates.length > 0) {
+        await processTemplates(div, nestedTemplates); // Изчакваме вложените шаблони да бъдат обработени
+      }
+
+      container.appendChild(div);
+        }
+    });
+
+    resolve(); // Резолваме обещанието, когато завършим обработката
+  });
+}
+
+async function alpineTemplatesGen() {
+  var templates = document.querySelectorAll("template");
+
+  var container = document.getElementById("templatesDiv");
+  container.innerHTML = '';
+
+  await processTemplates(container, templates); // Изчакваме обработката на шаблоните да завърши
 }
 
 
@@ -486,4 +566,7 @@ window.changeLang  = changeLang ;
 window.addEventListener('resize', function(event) {
   dataProxy['screenWidth'] = window.screen.width;
 }, true);
-  
+
+window.addEventListener('scroll', function(event) {
+  dataProxy['scrollPosition'] = window.pageYOffset;
+}, true);

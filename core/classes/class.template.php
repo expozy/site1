@@ -16,11 +16,11 @@ class Template
 
 			$this->page_type = $type;
 			$this->page_slug = $slug;
-			
+
 			if($this->page_type=='footer' || $this->page_type == 'header'){
 				$slug = '';
-			} 
-			
+			}
+
 			$this->file = self::DIR_PATH.$this->page_type.'~'.$slug.'~'.$lang->language. '.html';
 
 
@@ -31,18 +31,19 @@ class Template
 			$html = '';
 
 			if(file_exists($this->file)){
-				//d($this->file);
+
+
 				//d(file_get_contents($this->file));
 				$html = file_get_contents($this->file);
 			}
-			
+
 			return $html;
 		}
 
 		public function save_html($html){
-			
-			
-			if($this->page_type != 'index' && $this->page_type != 'header' && $this->page_type != 'footer'){
+
+
+			if($this->page_type != 'index' && $this->page_type != 'header' && $this->page_type != 'footer' && $this->page_type != 'post' && $this->page_type != 'product'){
 				return false;
 			}
 			if($this->page_type == 'index'){
@@ -51,10 +52,10 @@ class Template
 					return false;
 				}
 			}
-			
+
 			return file_put_contents($this->file, $html);
 		}
-		
-		
+
+
 
 }

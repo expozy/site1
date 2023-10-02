@@ -50,6 +50,7 @@ AddHandler application/x-httpd-php72 .php .php5 .php4 .php3
 	#ExpiresByType image/x-icon "access 1 year"
 	#ExpiresDefault "access 1 month"
 </IfModule>
+
 <IfModule mod_rewrite.c>
 
     RewriteEngine On
@@ -64,12 +65,11 @@ AddHandler application/x-httpd-php72 .php .php5 .php4 .php3
 	RewriteRule ^logout pages/logout.php [NC,L]
 
 
-	#RewriteRule ^bg/мену/$ /bg/ [R=301,L]
 	RewriteRule ^google_feed$ google_feed.php [NC,L]
 	RewriteRule ^rss$ pages/rss.php [NC,L]
 
 	#SITEMAPS
-	
+
 	RewriteRule ^([a-z]{2})/sitemaps/sitemap_products core/sitemaps/sitemap_products.php?lang=$1 [NC,L,QSA]
 	RewriteRule ^([a-z]{2})/sitemaps/sitemap_pages core/sitemaps/sitemap_pages.php?lang=$1 [NC,L,QSA]
 	RewriteRule ^([a-z]{2})/sitemaps/sitemap_blog core/sitemaps/sitemap_blog.php?lang=$1 [NC,L,QSA]
@@ -77,7 +77,7 @@ AddHandler application/x-httpd-php72 .php .php5 .php4 .php3
 
 
 	RewriteRule ^([a-z]{2})/ index.php?lang=$1 [NC,L,QSA]
-	
+
 
 
 

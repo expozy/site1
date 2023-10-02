@@ -1,6 +1,6 @@
 
 function initMap() {
-  console.log('init map google');
+
   var final_address = '';
 
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -222,6 +222,7 @@ function updateInputAddress(addressObject){
   let city = document.getElementById('city');
   let post_code = document.getElementById('post_code');
   let address = document.getElementById('address');
+  let finalGeoAddress = document.getElementById('finalGeoAddress');
   let country = document.getElementById('country');
   let streetName = document.getElementById('streetName');
   let streetNumber = document.getElementById('streetNumber');
@@ -266,6 +267,7 @@ function updateInputAddress(addressObject){
 
   if(final_address != '' && address != undefined){
     address.value = final_address;
+    finalGeoAddress.value = final_address;
   }
 
     document.getElementById('address').value = final_address;

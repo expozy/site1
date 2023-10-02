@@ -353,7 +353,7 @@
          ********* CUSTOM FOR EXPOZY ************
         WE COMMENT ERRORS BECAUSE WE HAVE LAZY LOADING DATA
         */
-
+        // 
         // console.warn(`Alpine Expression Error: ${e.message} ${r ? 'Expression: "' + r + `"` : ""}`, t),
         // setTimeout(()=>{
         //     throw e
@@ -1859,6 +1859,7 @@
         ),
         C(i, {}, e),
         m(()=>{
+
             n.appendChild(i),
             w(i),
             i._x_ignore = !0
@@ -2098,6 +2099,7 @@
         r(()=>{
             i(o=>{
                 m(()=>{
+
                     e.innerHTML = o,
                     e._x_ignoreSelf = !0,
                     w(e),
@@ -2297,6 +2299,7 @@
                 } else
                     W.push(h);
                 pe = h
+
             }
             for (let f = 0; f < M.length; f++) {
                 let h = M[f];
@@ -2386,6 +2389,7 @@
     ;
     d("ref", rn);
     d("if", (e,{expression: t},{effect: r, cleanup: n})=>{
+
         let i = _(e, t)
           , o = ()=>{
             if (e._x_currentIfEl)
@@ -2427,9 +2431,7 @@
     );
     Z(Ee("@", Se(E("on:"))));
     d("on", D((e,{value: t, modifiers: r, expression: n},{cleanup: i})=>{
-      if(e.tagName.toLowerCase() === "template"){
-        debugger;
-      }
+
         let o = n ? _(e, n) : ()=>{};
         e.tagName.toLowerCase() === "template" && (e._x_forwardEvents || (e._x_forwardEvents = []),
         e._x_forwardEvents.includes(t) || e._x_forwardEvents.push(t));

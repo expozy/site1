@@ -10,7 +10,7 @@ export let Helpers = {
     for ( let i = 0; i < form.elements.length; i++ ) {
 
 			let e = form.elements[i];
-			//
+
 			if(e.name != ''){
 
 				if(e.name.endsWith('[]')){
@@ -47,12 +47,6 @@ export let Helpers = {
 					}
 
 
-
-					// let data =  Helpers.fileToBinary(e.files[0]);
-					//
-
-
-
 				}else{
 					if(e.value != 'dontSelect'){
 						// if(e.value != ''){
@@ -67,17 +61,7 @@ export let Helpers = {
 		}
     return object;
   },
-	fileToBinary:  function fileToBinary(file){
-		var r = new FileReader();
 
-		r.onload =  function(){
-			let result =   r.result;
-
-			return result;
-		 };
-		let res = r.readAsBinaryString(file);
-
-	},
 	clear_form_data: function(form){
 		for ( let i = 0; i < form.elements.length; i++ ) {
 			let e = form.elements[i];
@@ -144,6 +128,7 @@ export let Helpers = {
 
 			const objParameters = parameters;
 			for (const key in objParameters) {
+
 				if (objParameters.hasOwnProperty(key)) {
 					if(key === 'id'){
 						endpoint += '/' + objParameters[key];
@@ -153,10 +138,17 @@ export let Helpers = {
 						const regex = new RegExp("[&?]" + key + "=\\w+", "g");
 
 						endpoint = endpoint.replace(regex, '');
+						if(Array.isArray(objParameters[key])){
+							let tmpKey = key;
 
-						if(key.endsWith('[]')){
+							if(!key.endsWith('[]')){
+								tmpKey = `${key}[]`;
+							}
+
 							for(const value of objParameters[key]){
-								url_parameters += key + '=' + value + '&';
+								if(value != 'empty'){
+									url_parameters += tmpKey + '=' + value + '&';
+								}
 							}
 						}else {
 							//
@@ -165,6 +157,8 @@ export let Helpers = {
 								url_parameters += key + '=' + objParameters[key] + '&';
 							}
 						}
+
+
 					}
 				}
 			}
@@ -177,14 +171,6 @@ export let Helpers = {
 							endpoint += '&'+url_parameters;
 					}
 			}
-
-			// if (functionCall.includes('?')) {
-			// 		let url_parameters = '&';
-			// 	}else {
-			// 				let url_parameters = '?';
-			// 	}
-
-			// endpoint += url_parameters;
 
 			if(endpoint.substr(endpoint.length - 1) === '&' || endpoint.substr(endpoint.length - 1) === '?'){
 				endpoint = endpoint.slice(0, -1);

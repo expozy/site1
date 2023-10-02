@@ -88,9 +88,17 @@ class Editor{
 	public function save(string $html, string $language, string $css=''){
 		global $page, $lang;
 
+		
+		//remoce <style> from css
+		$css = str_replace(['<style>', '</style>'], '', $css);
+		
+		
 		if(empty($language)){
 			$language = $lang->language;
 		}
+		
+		
+		
 
 		if($page->type == 'post'){
 
@@ -136,16 +144,30 @@ class Editor{
 				return $result;
 			}
 		}
+		
+		else if($page->type == 'header' || $page->type == 'footer'){
+			
+			$result = Api::admin_api(true)->data(['headCss' => $css])->post()->settings_web();
+			
+			$template = new Template($page->type);
+
+			$template->save_html($html);
+			
+			return ['status' => 1];
+			
+		}
 		else if (in_array ($page->type, self::TEMPLATE_TYPES)){
 			$template = new Template($page->type);
 
-			return $template->save_html($html);
+			$template->save_html($html);
+			
+			return ['status' => 1];
 		}
 
 
 		return ['error'=>'type error: '.$page->type];
 
-
+		
 	}
 
 	private function _refresh_cache(string $endpoint, int $id){

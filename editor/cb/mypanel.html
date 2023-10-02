@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            font-family: sans-serif;
+            margin: 0;
+            border-right: #eee 1px solid;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            padding: 20px 20px 20px 40px;
+        }
+        .list {
+            display: flex;
+            flex-flow: wrap;
+        }
+        .list button {
+            border: none;
+            background-color: #eee;
+            cursor: pointer;
+            width: 300px; height: 80px;
+            margin: 0 20px 20px 0;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Example of Adding Your Own Custom Content</h1>
+        <div class="list">
+            <button data-id="1">Product One (editable)</button>
+            <button data-id="2">Product Two (protected)</button>
+            <button data-id="3">Product Three (with custom script)</button>
+        </div>
+    </div>
+<script>
+    const btns = document.querySelectorAll('.container button')
+    btns.forEach(btn=>{
+        btn.addEventListener('click',(e)=>{
+            const id = btn.getAttribute('data-id');
+
+            // This an example of how you can insert custom content into the page.
+            // Content can be from your database or any source.
+
+            if(id==='1') {
+                parent.contentbox.addSection(`
+                    <div class="is-section is-box is-section-100 type-rufina-oxygen">
+                        <div class="is-container v2 is-content-960 leading-13 size-17">
+                            <div class="row">
+                                <div class="column full">
+                                    <h1 class="text-center leading-09 size-92">Product One</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `, 'type-rufina-oxygen.css');
+            }
+
+            if(id==='2') {
+                // To make content uneditable, do not use .is-container class and add .protected class.
+                parent.contentbox.addSection(`
+                    <div class="is-section is-box is-section-100 type-rufina-oxygen protected">
+                        <div style="display: flex; align-items: center; justify-content: center">
+                            <h1 class="text-center leading-09 size-92">Product Two</h1>
+                        </div>
+                    </div>
+                    `, 'type-rufina-oxygen.css');
+            }
+
+            if(id==='3') {
+                // To add script, use the following format:
+                // Note: when adding <script> tag, separate with ${''} to prevent rendering issue (see below).
+                parent.contentbox.addSection(`
+                    <div class="is-section is-box is-section-100 type-rufina-oxygen is-light-text protected">
+                        <div class="is-overlay" style="background-color: rgb(109, 109, 109);">
+                            <div class="is-overlay-content" 
+                                data-module="code" 
+                                data-module-desc="Custom HTML or Javascript " 
+                                data-html="${encodeURIComponent(`
+
+                                    <!-- Sample of custom script here -->
+
+                                    <style>
+                                        .animate-text-wrapper {
+                                            overflow-x: hidden;
+                                            width: 100%;
+                                            height: 100vh;
+                                            display: flex;
+                                            align-items: center;
+                                            line-height: 1.7;
+                                            color: #fff;
+                                            transform: skewY(-5deg);
+                                        }
+                        
+                                        .bg-text-container {
+                                            transform: translateX(-50%);
+                                            left: 50%;
+                                            position: absolute;
+                                            z-index: -999;
+                                        }
+                        
+                                        @keyframes text-scrolling {
+                                            0% {
+                                                transform: translate3d(-100%, 0, 0);
+                                            }
+                        
+                                            100% {
+                                                transform: translate3d(0%, 0, 0);
+                                            }
+                                        }
+                        
+                                        .animate-text {
+                                            animation: text-scrolling 20s linear infinite;
+                                            will-change: transform;
+                                            display: block;
+                                            position: relative;
+                                            white-space: nowrap;
+                                        }
+                        
+                                        .animate-text.left {
+                                            animation-direction: reverse;
+                                        }
+                        
+                                        .animate-text span {
+                                            font-size: 280px;
+                                            color: transparent;
+                                            -webkit-text-stroke: 2px rgba(255, 255, 255, 0.4);
+                                            text-transform: uppercase;
+                                            display: inline-block;
+                                            line-height: 0.75;
+                                            min-width: auto;
+                                            font-weight: 800;
+                                        }
+                                    </style>
+                        
+                                    <div class="animate-text-wrapper">
+                                        <div class="bg-text-container">
+                                            <div class="animate-text">
+                                                <span>Driven Better&nbsp;</span>
+                                                <span>Driven Better&nbsp;</span>
+                                            </div>
+                                            <div style="height:20vw">
+                        
+                                            </div>
+                                            <div class="animate-text left">
+                                                <span>Driven Better&nbsp;</span>
+                                                <span>Driven Better&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <scr${''}ipt>
+                                        (function() {
+                                            /* Set width of all animated text to match */
+                                            let parent = document.querySelectorAll('.animate-text');
+                                            for (let i = 0; i < parent.length; i++) {
+                                                parent[i].style.width = parent[i].children[0].clientWidth + "px";
+                                            };
+                                        }).call(this);
+                                    </scr${''}ipt>
+
+                                    <!-- /Sample of custom script here -->
+                                    
+                            `)}">
+                                
+                            </div>
+                        </div>
+                    </div>`
+                    , 'type-rufina-oxygen.css');
+            }
+        }); 
+    });
+</script>
+</body>
+</html>

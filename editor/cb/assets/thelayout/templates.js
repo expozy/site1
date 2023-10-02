@@ -10,10 +10,10 @@ designs: [
 {
 "thumbnail":"preview/item-227a.png",
 "category":"1",
-"contentCss":"type-juliussansone-taviraj.css",
-"contentClass":"type-juliussansone-taviraj",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-juliussansone-taviraj min-height-70 box-autofit">
+<div class="is-section is-box is-section-100 is-light-text  min-height-70 box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-6"></div>
@@ -69,10 +69,10 @@ designs: [
 {
 "thumbnail":"preview/item-227b.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-poppins box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -135,10 +135,10 @@ designs: [
 {
 "thumbnail":"preview/item-227c.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-7 min-height-70 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -228,10 +228,10 @@ designs: [
 {
 "thumbnail":"preview/item-227d.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-spacemono box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -286,10 +286,10 @@ designs: [
 {
 "thumbnail":"preview/item-226a.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-content-bottom type-yantramanav-ibmplexserif is-section-40 box-autofit">
+<div class="is-section is-box is-content-bottom  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0">
@@ -320,7 +320,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-poppins is-section-60">
+<div class="is-section is-box  is-section-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;"></div>
 </div>
@@ -341,10 +341,10 @@ designs: [
 {
 "thumbnail":"preview/item-226b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box type-montserrat-roboto is-section-25 box-autofit">
+<div class="is-section is-box  is-section-25 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -363,7 +363,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-75 type-montserrat-roboto">
+<div class="is-section is-section-75 ">
 <div class="is-boxes">
     <div class="is-box is-box-8 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -417,10 +417,10 @@ designs: [
 {
 "thumbnail":"preview/item-226c.png",
 "category":"1",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -503,10 +503,10 @@ designs: [
 {
 "thumbnail":"preview/item-225a.png",
 "category":"1",
-"contentCss":"type-marcellussc-heebo.css",
-"contentClass":"type-marcellussc-heebo",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-marcellussc-heebo is-content-bottom box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  is-content-bottom box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -549,10 +549,10 @@ designs: [
 {
 "thumbnail":"preview/item-225b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-montserrat-roboto">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -622,10 +622,10 @@ designs: [
 {
 "thumbnail":"preview/item-225c.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreya-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -675,10 +675,10 @@ designs: [
 {
 "thumbnail":"preview/item-225d.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-poppins-lekton box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -714,10 +714,10 @@ designs: [
 {
 "thumbnail":"preview/item-224a.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-rufina-oxygen box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-6"></div>
@@ -752,10 +752,10 @@ designs: [
 {
 "thumbnail":"preview/item-224b.png",
 "category":"3",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section type-dosis-oldstandardtt is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay">
@@ -867,10 +867,10 @@ designs: [
 {
 "thumbnail":"preview/item-224c.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -959,10 +959,10 @@ designs: [
 {
 "thumbnail":"preview/item-223a.png",
 "category":"2",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-frankruhllibre-lato box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -1000,10 +1000,10 @@ designs: [
 {
 "thumbnail":"preview/item-223b.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-quicksand-kalam box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -1057,10 +1057,10 @@ designs: [
 {
 "thumbnail":"preview/item-223c.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay">
@@ -1124,10 +1124,10 @@ designs: [
 {
 "thumbnail":"preview/item-222a.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -1177,10 +1177,10 @@ designs: [
 {
 "thumbnail":"preview/item-222b.png",
 "category":"3",
-"contentCss":"type-ubuntumono-sourcecodepro.css",
-"contentClass":"type-ubuntumono-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-section-100 type-ubuntumono-sourcecodepro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -1252,10 +1252,10 @@ designs: [
 {
 "thumbnail":"preview/item-222c.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-prata-hindsiliguri">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -1327,10 +1327,10 @@ designs: [
 {
 "thumbnail":"preview/item-221a.png",
 "category":"1",
-"contentCss":"type-yesteryear-chivo.css",
-"contentClass":"type-yesteryear-chivo",
+
+
 "html":`
-<div class="is-section is-section-100 type-yesteryear-chivo">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text is-content-bottom min-height-70 box-autofit">
         <div class="is-overlay">
@@ -1389,10 +1389,10 @@ designs: [
 {
 "thumbnail":"preview/item-221b.png",
 "category":"1",
-"contentCss":"type-unicaone-cormorantgaramond.css",
-"contentClass":"type-unicaone-cormorantgaramond",
+
+
 "html":`
-<div class="is-section is-section-100 type-unicaone-cormorantgaramond box-space box-space-xxs">
+<div class="is-section is-section-100  box-space box-space-xxs">
 <div class="is-boxes">
     <div class="is-box is-box-4 is-light-text is-content-bottom box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -1464,10 +1464,10 @@ designs: [
 {
 "thumbnail":"preview/item-221c.png",
 "category":"1",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 type-quicksand-kalam">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -1573,10 +1573,10 @@ designs: [
 {
 "thumbnail":"preview/item-220a.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-oranienbaum-sourcesanspro box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -1632,10 +1632,10 @@ designs: [
 {
 "thumbnail":"preview/item-220b.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-oranienbaum-sourcesanspro sm-boxes-1 sm-boxes-wrap">
+<div class="is-section is-section-100 box-space  sm-boxes-1 sm-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -1740,10 +1740,10 @@ designs: [
 {
 "thumbnail":"preview/item-220c.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -1824,10 +1824,10 @@ designs: [
 {
 "thumbnail":"preview/item-219a.png",
 "category":"3",
-"contentCss":"type-fugazone-librefranklin.css",
-"contentClass":"type-fugazone-librefranklin",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-fugazone-librefranklin is-content-bottom box-autofit min-height-80">
+<div class="is-section is-box is-section-100 is-light-text  is-content-bottom box-autofit min-height-80">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-4"></div>
@@ -1888,10 +1888,10 @@ designs: [
 {
 "thumbnail":"preview/item-219b.png",
 "category":"3",
-"contentCss":"type-specialelite-encodesans.css",
-"contentClass":"type-specialelite-encodesans",
+
+
 "html":`
-<div class="is-section is-section-100 type-specialelite-encodesans">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -1983,10 +1983,10 @@ designs: [
 {
 "thumbnail":"preview/item-219c.png",
 "category":"3",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-sm type-engagement-spectral">
+<div class="is-section is-section-100 box-space box-space-sm ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -2062,10 +2062,10 @@ designs: [
 {
 "thumbnail":"preview/item-218a.png",
 "category":"2",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-frankruhllibre-lato is-light-text box-autofit min-height-70">
+<div class="is-section is-box is-section-100  is-light-text box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-8"></div>
@@ -2105,10 +2105,10 @@ designs: [
 {
 "thumbnail":"preview/item-218b.png",
 "category":"2",
-"contentCss":"type-fjallaone-ibmplexserif.css",
-"contentClass":"type-fjallaone-ibmplexserif",
+
+
 "html":`
-<div class="is-section box-space box-space-sm is-section-100 type-fjallaone-ibmplexserif">
+<div class="is-section box-space box-space-sm is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-70">
         <div class="is-overlay">
@@ -2180,10 +2180,10 @@ designs: [
 {
 "thumbnail":"preview/item-218c.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box type-poppins is-section-70">
+<div class="is-section is-box  is-section-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -2199,7 +2199,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-raleway-lato is-section-30">
+<div class="is-section is-box  is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -2238,10 +2238,10 @@ designs: [
 {
 "thumbnail":"preview/item-217a.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-space box-space-xxs type-poppins-lekton is-content-bottom box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text box-space box-space-xxs  is-content-bottom box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-0"></div>
@@ -2281,10 +2281,10 @@ designs: [
 {
 "thumbnail":"preview/item-217b.png",
 "category":"1",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-section-100 type-dosis-oldstandardtt">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-60">
         <div class="is-overlay">
@@ -2385,10 +2385,10 @@ designs: [
 {
 "thumbnail":"preview/item-217c.png",
 "category":"1",
-"contentCss":"type-ubuntumono-sourcecodepro.css",
-"contentClass":"type-ubuntumono-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-box type-ubuntumono-sourcecodepro is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -2424,7 +2424,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-ubuntumono-sourcecodepro is-section-60">
+<div class="is-section  is-section-60">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -2477,10 +2477,10 @@ designs: [
 {
 "thumbnail":"preview/item-216a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-raleway-lato">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top is-light-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -2554,10 +2554,10 @@ designs: [
 {
 "thumbnail":"preview/item-216b.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box type-poppins-lekton is-section-25 box-autofit">
+<div class="is-section is-box  is-section-25 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -2571,7 +2571,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-light-text type-poppins-lekton is-section-75">
+<div class="is-section is-box is-light-text  is-section-75">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-5"></div>
@@ -2620,10 +2620,10 @@ designs: [
 {
 "thumbnail":"preview/item-216c.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-montserrat-roboto">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -2694,10 +2694,10 @@ designs: [
 {
 "thumbnail":"preview/item-215a.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-alegreya-lato">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-10"></div>
@@ -2807,10 +2807,10 @@ designs: [
 {
 "thumbnail":"preview/item-215c.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-rufina-oxygen">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-light-text is-box-7 box-autofit min-height-50 is-content-bottom">
         <div class="is-overlay">
@@ -2881,16 +2881,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-214a.png",
 "category":"1",
-"contentCss":"type-yesteryear-chivo.css",
-"contentClass":"type-yesteryear-chivo",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-yesteryear-chivo">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-7 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -2945,10 +2945,10 @@ designs: [
 {
 "thumbnail":"preview/item-214b.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -2988,10 +2988,10 @@ designs: [
 {
 "thumbnail":"preview/item-214c.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-poppins-lekton box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -3047,10 +3047,10 @@ designs: [
 {
 "thumbnail":"preview/item-213a.png",
 "category":"2",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box type-spacemono is-section-30">
+<div class="is-section is-box  is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -3085,7 +3085,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-70 type-spacemono">
+<div class="is-section is-section-70 ">
 <div class="is-boxes">
     <div class="is-box is-box-6">
         <div class="is-overlay">
@@ -3104,10 +3104,10 @@ designs: [
 {
 "thumbnail":"preview/item-213b.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -3152,10 +3152,8 @@ designs: [
 {
 "thumbnail":"preview/item-213c.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
 "html":`
-<div class="is-section is-section-100 type-poppins space-around box-space box-space-xxs md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  space-around box-space box-space-xxs md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -3220,10 +3218,10 @@ designs: [
 {
 "thumbnail":"preview/item-212a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-6"></div>
@@ -3260,10 +3258,10 @@ designs: [
 {
 "thumbnail":"preview/item-212b.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-alegreya-lato">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 min-height-60 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -3345,10 +3343,10 @@ designs: [
 {
 "thumbnail":"preview/item-212c.png",
 "category":"2",
-"contentCss":"type-oswald-opensans.css",
-"contentClass":"type-oswald-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 stack-bottom type-oswald-opensans">
+<div class="is-section is-section-100 stack-bottom ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -3410,10 +3408,10 @@ designs: [
 {
 "thumbnail":"preview/item-211b.png",
 "category":"3",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-alegreyasanssc-hind">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -3490,10 +3488,10 @@ designs: [
 {
 "thumbnail":"preview/item-211c.png",
 "category":"3",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-quicksand-kalam min-height-70 box-autofit">
+<div class="is-section is-box is-section-100 is-light-text  min-height-70 box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-15"></div>
@@ -3534,10 +3532,10 @@ designs: [
 {
 "thumbnail":"preview/item-211d.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-raleway-lato md-boxes-1 md-boxes-wrap box-space-xxs">
+<div class="is-section is-section-100 box-space  md-boxes-1 md-boxes-wrap box-space-xxs">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -3621,10 +3619,10 @@ designs: [
 {
 "thumbnail":"preview/item-210a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-space box-space-xxs type-montserrat-roboto">
+<div class="is-section is-box is-section-100 is-light-text box-space box-space-xxs ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-5"></div>
@@ -3667,10 +3665,10 @@ designs: [
 {
 "thumbnail":"preview/item-210b.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -3748,10 +3746,10 @@ designs: [
 {
 "thumbnail":"preview/item-210c.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 min-height-70 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -3810,17 +3808,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-209a.png",
 "category":"1",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-playfairdisplay box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -3852,10 +3850,10 @@ designs: [
 {
 "thumbnail":"preview/item-209b.png",
 "category":"1",
-"contentCss":"type-marcellussc-heebo.css",
-"contentClass":"type-marcellussc-heebo",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-marcellussc-heebo">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit min-height-70">
         <div class="is-overlay">
@@ -3920,10 +3918,10 @@ designs: [
 {
 "thumbnail":"preview/item-209c.png",
 "category":"1",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section type-lato stack-bottom is-section-100 md-boxes-1 md-boxes-wrap">
+<div class="is-section  stack-bottom is-section-100 md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -3982,10 +3980,10 @@ designs: [
 {
 "thumbnail":"preview/item-208a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato box-space box-space-m stack-top">
+<div class="is-section is-section-100  box-space box-space-m stack-top">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -4057,10 +4055,10 @@ designs: [
 {
 "thumbnail":"preview/item-208b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section box-space box-space-m type-montserrat-roboto is-section-75 stack-bottom">
+<div class="is-section box-space box-space-m  is-section-75 stack-bottom">
 <div class="is-boxes">
     <div class="is-box is-box-7">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -4101,7 +4099,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-montserrat-roboto is-section-25 is-content-top">
+<div class="is-section is-box  is-section-25 is-content-top">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-top edge-y-0-25">
@@ -4140,10 +4138,10 @@ designs: [
 {
 "thumbnail":"preview/item-208c.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-section-100 type-spacemono box-space box-space-xxs">
+<div class="is-section is-section-100  box-space box-space-xxs">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -4230,10 +4228,10 @@ designs: [
 {
 "thumbnail":"preview/item-207a.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-autofit type-quicksand-kalam is-light-text min-height-70">
+<div class="is-section is-box is-section-100 box-autofit  is-light-text min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -4277,10 +4275,10 @@ designs: [
 {
 "thumbnail":"preview/item-207b.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 type-quicksand-kalam">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 box-autofit min-height-70">
         <div class="is-overlay">
@@ -4367,10 +4365,10 @@ designs: [
 {
 "thumbnail":"preview/item-207c.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 type-quicksand-kalam">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box box-autofit is-box-4">
         <div class="is-overlay">
@@ -4467,10 +4465,10 @@ designs: [
 {
 "thumbnail":"preview/item-205a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -4546,10 +4544,10 @@ designs: [
 {
 "thumbnail":"preview/item-205b.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section type-rufina-oxygen is-section-50">
+<div class="is-section  is-section-50">
 <div class="is-boxes">
     <div class="is-box is-box-6">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -4594,7 +4592,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-rufina-oxygen is-section-50">
+<div class="is-section  is-section-50">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -4657,10 +4655,10 @@ designs: [
 {
 "thumbnail":"preview/item-205c.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-spacemono">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-5"></div>
@@ -4717,10 +4715,10 @@ designs: [
 {
 "thumbnail":"preview/item-204a.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-70">
         <div class="is-overlay">
@@ -4766,10 +4764,10 @@ designs: [
 {
 "thumbnail":"preview/item-204b.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -4861,10 +4859,10 @@ designs: [
 {
 "thumbnail":"preview/item-204c.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-autofit min-height-70 type-lato">
+<div class="is-section is-box is-section-100 is-light-text box-autofit min-height-70 ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -4907,10 +4905,10 @@ designs: [
 {
 "thumbnail":"preview/item-203a.png",
 "category":"2",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-engagement-spectral is-content-bottom stack-top box-autofit">
+<div class="is-section is-box is-section-100  is-content-bottom stack-top box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-bottom edge-y-2">
@@ -4961,10 +4959,10 @@ designs: [
 {
 "thumbnail":"preview/item-203b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-sm type-montserrat-roboto md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 box-space box-space-sm  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-70">
         <div class="is-overlay">
@@ -5033,10 +5031,10 @@ designs: [
 {
 "thumbnail":"preview/item-203c.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box box-autofit is-box-5 is-content-bottom">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -5097,10 +5095,10 @@ designs: [
 {
 "thumbnail":"preview/item-202a.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-rufina-oxygen md-boxes-2 md-boxes-wrap sm-boxes-2 sm-boxes-wrap">
+<div class="is-section is-section-100 box-space box-space-xxs  md-boxes-2 md-boxes-wrap sm-boxes-2 sm-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box-4 is-box box-autofit min-height-40 is-light-text is-content-top">
         <div class="is-overlay">
@@ -5184,10 +5182,10 @@ designs: [
 {
 "thumbnail":"preview/item-202c.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box type-poppins box-space is-light-text box-autofit min-height-50 is-section-60 box-space-sm">
+<div class="is-section is-box  box-space is-light-text box-autofit min-height-50 is-section-60 box-space-sm">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -5205,7 +5203,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-rufina-oxygen is-section-40">
+<div class="is-section is-box  is-section-40">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -5246,10 +5244,10 @@ designs: [
 {
 "thumbnail":"preview/item-201a.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box type-poppins box-autofit is-section-100">
+<div class="is-section is-box  box-autofit is-section-100">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -5294,10 +5292,10 @@ designs: [
 {
 "thumbnail":"preview/item-201b.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato box-reverse md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  box-reverse md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -5372,10 +5370,10 @@ designs: [
 {
 "thumbnail":"preview/item-201c.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section type-poppins is-section-70">
+<div class="is-section  is-section-70">
 <div class="is-boxes">
     <div class="is-box is-box-6">
         <div class="is-overlay">
@@ -5411,7 +5409,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-quicksand-kalam is-section-30 box-autofit">
+<div class="is-section is-box  is-section-30 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -5448,10 +5446,10 @@ designs: [
 {
 "thumbnail":"preview/item-199a.png",
 "category":"1",
-"contentCss":"type-sourcecodepro-nunitosans.css",
-"contentClass":"type-sourcecodepro-nunitosans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-sourcecodepro-nunitosans is-content-top">
+<div class="is-section is-box is-section-100  is-content-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -5489,10 +5487,10 @@ designs: [
 {
 "thumbnail":"preview/item-199b.png",
 "category":"1",
-"contentCss":"type-sourcecodepro-nunitosans.css",
-"contentClass":"type-sourcecodepro-nunitosans",
+
+
 "html":`
-<div class="is-section is-section-100 type-sourcecodepro-nunitosans md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-content-top box-autofit min-height-75 is-box-5">
         <div class="is-overlay">
@@ -5613,10 +5611,10 @@ designs: [
 {
 "thumbnail":"preview/item-199c.png",
 "category":"1",
-"contentCss":"type-sourcecodepro-nunitosans.css",
-"contentClass":"type-sourcecodepro-nunitosans",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-sourcecodepro-nunitosans md-boxes-2 md-boxes-wrap">
+<div class="is-section is-section-100 box-space box-space-xxs  md-boxes-2 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit min-height-50">
         <div class="is-overlay">
@@ -5696,15 +5694,15 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-sourcecodepro-nunitosans" href="/assets/styles/type-sourcecodepro-nunitosans.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-198a.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-poppins-lekton box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -5744,10 +5742,10 @@ designs: [
 {
 "thumbnail":"preview/item-198b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-alegreya-lato">
+<div class="is-section is-box is-section-100 is-dark-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -5812,10 +5810,10 @@ designs: [
 {
 "thumbnail":"preview/item-198c.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -5881,17 +5879,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-197a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-bottom type-raleway-lato box-autofit">
+<div class="is-section is-box is-section-100 is-content-bottom  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-bottom edge-y-3">
@@ -5925,10 +5923,10 @@ designs: [
 {
 "thumbnail":"preview/item-197b.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box type-poppins-lekton is-section-25 box-autofit">
+<div class="is-section is-box  is-section-25 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -5947,7 +5945,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-align-left is-light-text type-poppins-lekton is-section-75 box-autofit min-height-60">
+<div class="is-section is-box is-align-left is-light-text  is-section-75 box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-content content-selectable" data-dialog-width="1200px" data-dialog-height="900px" data-module="slider-box" data-module-desc="Slider" data-html="%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22_style_%7Bid%7D%22%20style%3D%22display%3Anone%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22%7Bid%7D%22%20class%3D%22glide%20cover%20%22%20style%3D%22display%3Anone%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20data-glide-el%3D%22track%22%20class%3D%22glide__track%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22glide__slides%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22glide__slide%22%20style%3D%22height%3A100%25%3B%22%3E%3Cimg%20src%3D%22https%3A%2F%2Fnextassets.fra1.digitaloceanspaces.com%2Fadmin%2F2023-04-02%2Fimg-1920x1080.png%22%20alt%3D%22%22%20%2F%3E%3C%2Fli%3E%3Cli%20class%3D%22glide__slide%22%20style%3D%22height%3A100%25%3B%22%3E%3Cimg%20src%3D%22https%3A%2F%2Fnextassets.fra1.digitaloceanspaces.com%2Fadmin%2F2023-04-02%2Fbg2-1920x1080.png%22%20alt%3D%22%22%20%2F%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22glide__arrows%22%20data-glide-el%3D%22controls%22%3E%3Cbutton%20class%3D%22glide__arrow%20glide__arrow--left%22%20data-glide-dir%3D%22%3C%22%3E%3Csvg%20style%3D%22width%3A4.3vw%3Bheight%3A4.3vw%3Bmin-width%3A30px%3Bmin-height%3A30px%3B%22%20viewBox%3D%220%200%20512%20512%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M352%20115.4L331.3%2096%20160%20256l171.3%20160%2020.7-19.3L201.5%20256z%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%3C%2Fbutton%3E%3Cbutton%20class%3D%22glide__arrow%20glide__arrow--right%22%20data-glide-dir%3D%22%3E%22%3E%3Csvg%20style%3D%22width%3A4.3vw%3Bheight%3A4.3vw%3Bmin-width%3A30px%3Bmin-height%3A30px%3B%22%20viewBox%3D%220%200%20512%20512%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M160%20115.4L180.7%2096%20352%20256%20180.7%20416%20160%20396.7%20310.5%20256z%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20css%20%3D%20document.querySelector('%23_style_%7Bid%7D').innerHTML%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20head%20%3D%20document.getElementsByTagName('head')%5B0%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20s%20%3D%20document.createElement('style')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20s.appendChild(document.createTextNode(css))%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20head.appendChild(s)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20svgDef%20%3D%20'%3Csvg%20width%3D%220%22%20height%3D%220%22%20style%3D%22position%3Aabsolute%3Bdisplay%3Anone%3B%22%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3Cdefs%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3Csymbol%20viewBox%3D%220%200%20512%20512%22%20id%3D%22ion-ios-arrow-left%22%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3Cpath%20d%3D%22M352%20115.4L331.3%2096%20160%20256l171.3%20160%2020.7-19.3L201.5%20256z%22%3E%3C%2Fpath%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3C%2Fsymbol%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3Csymbol%20viewBox%3D%220%200%20512%20512%22%20id%3D%22ion-ios-arrow-right%22%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3Cpath%20d%3D%22M160%20115.4L180.7%2096%20352%20256%20180.7%20416%20160%20396.7%20310.5%20256z%22%3E%3C%2Fpath%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3C%2Fsymbol%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3C%2Fdefs%3E'%20%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'%3C%2Fsvg%3E'%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20pre%20%3D%20document.querySelector('%23ion-ios-arrow-left')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(!pre)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20document.body.insertAdjacentHTML('beforeend'%2C%20svgDef)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20docReady%20%3D%20function(fn)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20stateCheck%20%3D%20setInterval(function()%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20if%20(typeof%20Glide%20%3D%3D%3D%20'undefined')%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20waitSlider%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(typeof%20Glide%20!%3D%3D%20'undefined')%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if((new%20Glide).mount)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20Do%20Nothing%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20waitSlider%20%3D%20true%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20waitSlider%20%3D%20true%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(waitSlider)%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20(typeof%20skrollrr%20%3D%3D%3D%20'undefined')%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%20(typeof%20skrollrr.lax%20%3D%3D%3D%20'undefined')%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20clearInterval(stateCheck)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20try%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20fn()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20catch%20(e)%20%7B%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%201)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20docReady(function()%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20const%20glideSlide%20%3D%20document.querySelector(%22%23%7Bid%7D%22)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(!glideSlide)%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20glideSlide.style.display%3D%22%22%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20const%20glideSlides%20%3D%20document.querySelectorAll('%23%7Bid%7D%20.glide__slide')%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20const%20perView%20%3D%202%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20glideSlides.forEach(slide%3D%3E%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20video%20%3D%20slide.querySelector('video')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(video)%20changeVideo(video)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20window.addEventListener('resize'%2C%20()%3D%3E%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20glideSlides.forEach(slide%3D%3E%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20video%20%3D%20slide.querySelector('video')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(video)%20changeVideo(video)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20function%20changeVideo(video)%20%7B%0A%09%09%09%09%09%20%20%20%20%20%20%20%20if(!video)%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20changed%3Dfalse%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20source%20%3D%20video.querySelector('source')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vidDefault%20%3D%20source.getAttribute('data-default')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid240%20%3D%20source.getAttribute('data-240')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid360%20%3D%20source.getAttribute('data-360')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid480%20%3D%20source.getAttribute('data-480')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid540%20%3D%20source.getAttribute('data-540')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid720%20%3D%20source.getAttribute('data-720')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid1080%20%3D%20source.getAttribute('data-1080')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid1440%20%3D%20source.getAttribute('data-1440')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vid2160%20%3D%20source.getAttribute('data-2160')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20vW%20%3D%20window.innerWidth%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vW%3C%3D426)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid240)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid240)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid240)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid360)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid360)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid360)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid480)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid480)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid480)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid540)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid720)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(426%3CvW%20%26%26%20vW%3C%3D640)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid360)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid360)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid360)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid480)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid480)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid480)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid540)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid720)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(640%3CvW%20%26%26%20vW%3C%3D854)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid480)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid480)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid480)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid540)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid720)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(854%3CvW%20%26%26%20vW%3C%3D960)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid540)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid540)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid720)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(vW%3E960%20%26%26%20vW%3C%3D1280)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid720)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid720)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(1280%3CvW%20%26%26%20vW%3C%3D1920)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid1080)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid1080)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid1080)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(1920%3CvW%20%26%26%20vW%3C%3D2560)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid1440)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid1440)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid1440)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20if%20(2560%3CvW)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(vid2160)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid2160)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid2160)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20else%20if(vid1440)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3Dvid1440)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vid1440)%3Bchanged%3Dtrue%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(changed)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.pause()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.currentTime%20%3D%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.load()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(video.closest('.play'))%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.play()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(source.getAttribute('src')!%3D%3DvidDefault)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.pause()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.currentTime%20%3D%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20source.setAttribute('src'%2C%20vidDefault)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.load()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20function%20stopVideo(slide)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20const%20video%20%3D%20slide.querySelector('video')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(video)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.pause()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.currentTime%20%3D%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20slide.classList.remove('active')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20slide.classList.remove('play')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20function%20playVideo(slide)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20video%20%3D%20slide.querySelector('video')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(video)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20video.play()%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20slide.classList.add('play')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20function%20coverflow(index)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20activeSlide%20%3D%20glideSlides%5Bindex%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20nextSlide%20%3D%20activeSlide.nextElementSibling%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20next2Slide%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(nextSlide)%20next2Slide%20%3D%20nextSlide.nextElementSibling%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20next3Slide%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(next2Slide)%20next3Slide%20%3D%20next2Slide.nextElementSibling%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.classList.remove('glide__slide--previous')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.classList.remove('glide__slide--following')%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(activeSlide.nextElementSibling)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.nextElementSibling.classList.remove('glide__slide--previous')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.nextElementSibling.classList.remove('glide__slide--following')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.nextElementSibling.classList.add('glide__slide--following')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(activeSlide.previousElementSibling)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.previousElementSibling.classList.remove('glide__slide--previous')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.previousElementSibling.classList.remove('glide__slide--following')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.previousElementSibling.classList.add('glide__slide--previous')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(perView%3D%3D%3D1%20%7C%7C%20perView%3D%3D%3D2%20%7C%7C%20perView%3D%3D%3D3%20%7C%7C%20perView%3D%3D%3D4)%20playVideo(activeSlide)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if((perView%3D%3D%3D2%20%7C%7C%20perView%3D%3D%3D3%20%7C%7C%20perView%3D%3D%3D4)%20%26%26%20nextSlide)%20playVideo(nextSlide)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if((perView%3D%3D%3D3%20%7C%7C%20perView%3D%3D%3D4)%20%26%26%20next2Slide)%20playVideo(next2Slide)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(perView%3D%3D%3D4%20%26%26%20next3Slide)%20playVideo(next3Slide)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20activeSlide.classList.add('active')%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20elms%20%3D%20activeSlide.parentNode.querySelectorAll('.glide__slide')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20elms.forEach(elm%3D%3E%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(elm%3D%3D%3DactiveSlide)%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(perView%3D%3D%3D2)%20if(elm%3D%3D%3DactiveSlide%20%7C%7C%20elm%3D%3D%3DnextSlide)%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(perView%3D%3D%3D3)%20if(elm%3D%3D%3DactiveSlide%20%7C%7C%20elm%3D%3D%3DnextSlide%20%7C%7C%20elm%3D%3D%3Dnext2Slide)%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(perView%3D%3D%3D4)%20if(elm%3D%3D%3DactiveSlide%20%7C%7C%20elm%3D%3D%3DnextSlide%20%7C%7C%20elm%3D%3D%3Dnext2Slide%20%7C%7C%20elm%3D%3D%3Dnext3Slide)%20return%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20stopVideo(elm)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20const%20slider%20%3D%20activeSlide.closest('.glide')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20slider.classList.add('running')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20myslider%20%3D%20document.querySelector(%22%23%7Bid%7D%22)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20_%7Bid%7D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if(myslider.classList.contains('coverflow'))%20%7B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20_%7Bid%7D%20%3D%20new%20Glide(myslider%2C%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20type%3A%20%22carousel%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20autoplay%3A%203000%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20animationDuration%3A%201000%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20gap%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20perView%3A%203%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20startAt%3A%202%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20hoverpause%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20arrow%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dots%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20breakpoints%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20575%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20perView%3A%201%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20peek%3A%2050%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20414%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20perView%3A%201%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20peek%3A%2040%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20360%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20perView%3A%201%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20peek%3A%2030%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20focusAt%3A%20%22center%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20_%7Bid%7D%20%3D%20new%20Glide(%22%23%7Bid%7D%22%2C%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20type%3A%20%22carousel%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20autoplay%3A%203000%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20animationDuration%3A%201000%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20gap%3A%200%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20perView%3A%202%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20hoverpause%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20arrow%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20dots%3A%20false%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20breakpoints%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20970%3A%20%7B%20perView%3A%201%2C%20gap%3A%200%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%201280%3A%20%7B%20gap%3A%2015%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20_%7Bid%7D.on('mount.after'%2C%20function%20()%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20coverflow(_%7Bid%7D.index%2C%20true)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20_%7Bid%7D.on('run'%2C%20function%20(event)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20coverflow(_%7Bid%7D.index)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20_%7Bid%7D.mount()%3B%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fscript%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20" data-settings="%7B%22type%22%3A%20%22carousel%22%2C%22autoplay%22%3A%20%223000%22%2C%22animationDuration%22%3A1000%2C%22gap%22%3A%200%2C%22perView%22%3A2%2C%22arrow%22%3Atrue%2C%22arrowPreset%22%3A1%2C%22arrowColor%22%3A%20%22%22%2C%22dots%22%3Afalse%2C%22dotsColor%22%3A%20%22%22%2C%22mobileArrows%22%3Afalse%2C%22mobileDots%22%3Afalse%2C%22fit%22%3A%20%22cover%22%2C%22hoverPause%22%3Afalse%2C%22captionAnim%22%3A%20%22appear%22%2C%22images%22%3A%5B%7B%22src%22%3A%20%22https%3A%2F%2Fnextassets.fra1.digitaloceanspaces.com%2Fadmin%2F2023-04-02%2Fimg-1920x1080.png%22%2C%20%22caption%22%3A%20%22%22%2C%20%22style%22%3A%20%22%22%7D%2C%7B%22src%22%3A%20%22https%3A%2F%2Fnextassets.fra1.digitaloceanspaces.com%2Fadmin%2F2023-04-02%2Fbg2-1920x1080.png%22%2C%20%22caption%22%3A%20%22%22%2C%20%22style%22%3A%20%22%22%7D%5D%7D">
         <div id="_style_bRcwXN6" style="display:none">
@@ -6286,10 +6284,10 @@ designs: [
 {
 "thumbnail":"preview/item-197c.png",
 "category":"1",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-lato">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -6343,17 +6341,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-196a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit is-light-text is-content-top">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -6426,10 +6424,10 @@ designs: [
 {
 "thumbnail":"preview/item-196b.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-raleway-lato">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -6494,10 +6492,10 @@ designs: [
 {
 "thumbnail":"preview/item-196c.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -6573,10 +6571,10 @@ designs: [
 {
 "thumbnail":"preview/item-195a.png",
 "category":"1",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top type-dosis-oldstandardtt is-light-text box-space box-space-xxs stack-top">
+<div class="is-section is-box is-section-100 is-content-top  is-light-text box-space box-space-xxs stack-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -6610,10 +6608,10 @@ designs: [
 {
 "thumbnail":"preview/item-195b.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins-lekton box-space box-space-xxs stack-bottom">
+<div class="is-section is-section-100  box-space box-space-xxs stack-bottom">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -6676,10 +6674,10 @@ designs: [
 {
 "thumbnail":"preview/item-195c.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top type-alegreya-lato box-autofit">
+<div class="is-section is-box is-section-100 is-content-top  box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -6728,10 +6726,10 @@ designs: [
 {
 "thumbnail":"preview/item-194a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-montserrat-roboto">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit min-height-50 is-light-text">
         <div class="is-overlay">
@@ -6795,10 +6793,10 @@ designs: [
 {
 "thumbnail":"preview/item-194b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top type-alegreya-lato">
+<div class="is-section is-box is-section-100 is-content-top ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -6833,10 +6831,10 @@ designs: [
 {
 "thumbnail":"preview/item-194c.png",
 "category":"1",
-"contentCss":"type-sourcesanspro-anonymouspro.css",
-"contentClass":"type-sourcesanspro-anonymouspro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-sourcesanspro-anonymouspro box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -6876,10 +6874,10 @@ designs: [
 {
 "thumbnail":"preview/item-194d.png",
 "category":"1",
-"contentCss":"type-oswald-opensans.css",
-"contentClass":"type-oswald-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 type-oswald-opensans">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7">
         <div class="is-overlay">
@@ -6939,18 +6937,18 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-sourcesanspro-anonymouspro" href="/assets/styles/type-sourcesanspro-anonymouspro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oswald-opensans" href="/assets/styles/type-oswald-opensans.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-193a.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-prata-hindsiliguri box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -6989,10 +6987,10 @@ designs: [
 {
 "thumbnail":"preview/item-193b.png",
 "category":"1",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-xxs type-quicksand-kalam">
+<div class="is-section is-section-100 box-space box-space-xxs ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -7088,10 +7086,10 @@ designs: [
 {
 "thumbnail":"preview/item-193c.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins-lekton">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -7168,17 +7166,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-quicksand-kalam" href="/assets/styles/type-quicksand-kalam.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-192a.png",
 "category":"2",
-"contentCss":"type-ubuntumono-sourcecodepro.css",
-"contentClass":"type-ubuntumono-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-box is-section-20 type-ubuntumono-sourcecodepro">
+<div class="is-section is-box is-section-20 ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -7197,7 +7195,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section box-space is-section-80 type-ubuntumono-sourcecodepro">
+<div class="is-section box-space is-section-80 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay">
@@ -7239,10 +7237,10 @@ designs: [
 {
 "thumbnail":"preview/item-192b.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-dosis-oldstandardtt box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -7302,10 +7300,10 @@ designs: [
 {
 "thumbnail":"preview/item-192c.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -7375,17 +7373,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-ubuntumono-sourcecodepro" href="/assets/styles/type-ubuntumono-sourcecodepro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-191a.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-rufina-oxygen box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -7432,10 +7430,10 @@ designs: [
 {
 "thumbnail":"preview/item-191b.png",
 "category":"1",
-"contentCss":"type-cormorantsc-ibmplexsanscon.css",
-"contentClass":"type-cormorantsc-ibmplexsanscon",
+
+
 "html":`
-<div class="is-section is-section-100 type-cormorantsc-ibmplexsanscon md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -7525,10 +7523,10 @@ designs: [
 {
 "thumbnail":"preview/item-191c.png",
 "category":"1",
-"contentCss":"type-anonymouspro-catamaran.css",
-"contentClass":"type-anonymouspro-catamaran",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-autofit type-anonymouspro-catamaran">
+<div class="is-section is-box is-section-100 box-autofit ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -7566,17 +7564,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-anonymouspro-catamaran" href="/assets/styles/type-anonymouspro-catamaran.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-cormorantsc-ibmplexsanscon" href="/assets/styles/type-cormorantsc-ibmplexsanscon.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-190a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto box-space box-space-xxs">
+<div class="is-section is-section-100  box-space box-space-xxs">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -7649,10 +7647,10 @@ designs: [
 {
 "thumbnail":"preview/item-190b.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box type-oranienbaum-sourcesanspro box-autofit is-section-20 is-content-bottom">
+<div class="is-section is-box  box-autofit is-section-20 is-content-bottom">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0">
@@ -7666,12 +7664,12 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-poppins box-space is-section-60 box-space-xxs stack-top">
+<div class="is-section is-box  box-space is-section-60 box-space-xxs stack-top">
 <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
 </div>
-<div class="is-section is-box type-oranienbaum-sourcesanspro box-space box-space-xxs stack-bottom is-section-20">
+<div class="is-section is-box  box-space box-space-xxs stack-bottom is-section-20">
 <div class="is-overlay">
 </div>
 <div class="is-boxes">
@@ -7707,10 +7705,10 @@ designs: [
 {
 "thumbnail":"preview/item-189a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto no-spacing">
+<div class="is-section is-box is-section-100 is-light-text  no-spacing">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-15" style="background-color: rgb(0, 0, 0);"></div>
@@ -7754,10 +7752,10 @@ designs: [
 {
 "thumbnail":"preview/item-189b.png",
 "category":"2",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins-lekton no-spacing">
+<div class="is-section is-section-100  no-spacing">
 <div class="is-boxes">
     <div class="is-box is-box-6">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -7838,10 +7836,10 @@ designs: [
 {
 "thumbnail":"preview/item-189c.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top type-alegreya-lato">
+<div class="is-section is-box is-section-100 is-content-top ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -7934,17 +7932,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-188a.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreya-lato is-dark-text">
+<div class="is-section is-box is-section-100  is-dark-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -7988,10 +7986,10 @@ designs: [
 {
 "thumbnail":"preview/item-188b.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -8053,10 +8051,10 @@ designs: [
 {
 "thumbnail":"preview/item-188c.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-quicksand-kalam box-autofit is-light-text">
+<div class="is-section is-box is-section-100  box-autofit is-light-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-10"></div>
@@ -8122,10 +8120,10 @@ designs: [
 {
 "thumbnail":"preview/item-187a.png",
 "category":"2",
-"contentCss":"type-playfairdisp-petitformalscr.css",
-"contentClass":"type-playfairdisp-petitformalscr",
+
+
 "html":`
-<div class="is-section is-section-100 type-playfairdisp-petitformalscr box-space box-space-xxs stack-top">
+<div class="is-section is-section-100  box-space box-space-xxs stack-top">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit is-light-text min-height-50">
         <div class="is-overlay">
@@ -8191,10 +8189,10 @@ designs: [
 {
 "thumbnail":"preview/item-187b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto is-content-top box-space box-space-xxs stack-bottom">
+<div class="is-section is-box is-section-100  is-content-top box-space box-space-xxs stack-bottom">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -8244,10 +8242,10 @@ designs: [
 {
 "thumbnail":"preview/item-186a.png",
 "category":"2",
-"contentCss":"type-anonymouspro-catamaran.css",
-"contentClass":"type-anonymouspro-catamaran",
+
+
 "html":`
-<div class="is-section is-box is-section-30 box-autofit type-anonymouspro-catamaran">
+<div class="is-section is-box is-section-30 box-autofit ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -8279,7 +8277,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-70 type-anonymouspro-catamaran">
+<div class="is-section is-section-70 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -8334,10 +8332,10 @@ designs: [
 {
 "thumbnail":"preview/item-186b.png",
 "category":"2",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreyasanssc-hind md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-4 box-autofit min-height-60">
         <div class="is-overlay">
@@ -8441,10 +8439,10 @@ designs: [
 {
 "thumbnail":"preview/item-186c.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-section-100 type-dosis-oldstandardtt md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -8528,17 +8526,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-anonymouspro-catamaran" href="/assets/styles/type-anonymouspro-catamaran.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreyasanssc-hind" href="/assets/styles/type-alegreyasanssc-hind.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-185a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto no-spacing">
+<div class="is-section is-box is-section-100 is-light-text  no-spacing">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -8583,10 +8581,10 @@ designs: [
 {
 "thumbnail":"preview/item-185b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto no-spacing">
+<div class="is-section is-section-100  no-spacing">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -8678,10 +8676,10 @@ designs: [
 {
 "thumbnail":"preview/item-185c.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto box-space box-space-xxs">
+<div class="is-section is-section-100  box-space box-space-xxs">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 box-autofit min-height-50">
         <div class="is-overlay">
@@ -8755,15 +8753,15 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-184a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 is-content-top box-autofit min-height-50">
         <div class="is-overlay">
@@ -8834,10 +8832,10 @@ designs: [
 {
 "thumbnail":"preview/item-184b.png",
 "category":"2",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 stack-bottom space-around type-poppins-lekton md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 stack-bottom space-around  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -8909,16 +8907,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-183a.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-space type-poppins">
+<div class="is-section is-box is-section-100 is-light-text box-space ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-10"></div>
@@ -8958,10 +8956,10 @@ designs: [
 {
 "thumbnail":"preview/item-183b.png",
 "category":"2",
-"contentCss":"type-anonymouspro-catamaran.css",
-"contentClass":"type-anonymouspro-catamaran",
+
+
 "html":`
-<div class="is-section is-section-100 type-anonymouspro-catamaran">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -9036,16 +9034,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-anonymouspro-catamaran" href="/assets/styles/type-anonymouspro-catamaran.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-182a.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 type-quicksand-kalam">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 box-autofit min-height-50">
         <div class="is-overlay">
@@ -9105,10 +9103,10 @@ designs: [
 {
 "thumbnail":"preview/item-182b.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box box-autofit is-box-6">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -9180,10 +9178,10 @@ designs: [
 {
 "thumbnail":"preview/item-182c.png",
 "category":"2",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-autofit is-content-bottom is-light-text type-alegreyasanssc-hind">
+<div class="is-section is-box is-section-100 box-autofit is-content-bottom is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-5"></div>
@@ -9229,10 +9227,10 @@ designs: [
 {
 "thumbnail":"preview/item-181a.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section type-poppins box-space space-around box-space-xxs is-section-70">
+<div class="is-section  box-space space-around box-space-xxs is-section-70">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -9279,7 +9277,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-poppins is-section-30 box-autofit">
+<div class="is-section is-box  is-section-30 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -9303,10 +9301,10 @@ designs: [
 {
 "thumbnail":"preview/item-181b.png",
 "category":"2",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box type-rufina-oxygen is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -9336,7 +9334,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-rufina-oxygen is-section-60">
+<div class="is-section  is-section-60">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4">
         <div class="is-overlay">
@@ -9400,10 +9398,10 @@ designs: [
 {
 "thumbnail":"preview/item-181c.png",
 "category":"2",
-"contentCss":"type-oswald-opensans.css",
-"contentClass":"type-oswald-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-space box-space-xxs is-content-top type-oswald-opensans">
+<div class="is-section is-box is-section-100 box-space box-space-xxs is-content-top ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -9460,10 +9458,10 @@ designs: [
 {
 "thumbnail":"preview/item-180a.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-lato box-space box-space-xxs stack-top">
+<div class="is-section is-section-100  box-space box-space-xxs stack-top">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 box-autofit">
         <div class="is-overlay">
@@ -9578,10 +9576,10 @@ designs: [
 {
 "thumbnail":"preview/item-180b.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreya-lato box-space box-space-xxs stack-bottom">
+<div class="is-section is-section-100  box-space box-space-xxs stack-bottom">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-light-text box-autofit min-height-50">
         <div class="is-overlay">
@@ -9642,10 +9640,10 @@ designs: [
 {
 "thumbnail":"preview/item-180c.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-autofit type-lato">
+<div class="is-section is-box is-section-100 box-autofit ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -9708,10 +9706,10 @@ designs: [
 {
 "thumbnail":"preview/item-179a.png",
 "category":"2",
-"contentCss":"type-cormorantsc-ibmplexsanscon.css",
-"contentClass":"type-cormorantsc-ibmplexsanscon",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-cormorantsc-ibmplexsanscon">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -9801,10 +9799,10 @@ designs: [
 {
 "thumbnail":"preview/item-179b.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-dosis-oldstandardtt box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -9862,10 +9860,10 @@ designs: [
 {
 "thumbnail":"preview/item-179c.png",
 "category":"2",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins-lekton">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -9937,10 +9935,10 @@ designs: [
 {
 "thumbnail":"preview/item-178a.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top type-poppins-lekton box-space box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-content-top  box-space box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -9979,10 +9977,10 @@ designs: [
 {
 "thumbnail":"preview/item-178b.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -10072,10 +10070,10 @@ designs: [
 {
 "thumbnail":"preview/item-178c.png",
 "category":"1",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-frankruhllibre-lato is-content-top min-height-75 box-autofit">
+<div class="is-section is-box is-section-100  is-content-top min-height-75 box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -10132,10 +10130,10 @@ designs: [
 {
 "thumbnail":"preview/item-177a.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -10202,10 +10200,10 @@ designs: [
 {
 "thumbnail":"preview/item-177b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -10270,10 +10268,10 @@ designs: [
 {
 "thumbnail":"preview/item-177c.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-oranienbaum-sourcesanspro is-content-top is-light-text" data-section="section-azkYvzw">
+<div class="is-section is-box is-section-100  is-content-top is-light-text" data-section="section-azkYvzw">
 <div class="is-overlay-content" data-module="code" data-module-desc="Custom HTML or Javascript " data-html="%3Cdiv%20class%3D%22section-%7Bid%7D%22%3E%3C%2Fdiv%3E%0A%3Cscript%3E%0A%20%20%20%20var%20skrollrrReady%20%3D%20function(fn)%20%7B%0A%20%20%20%20%20%20%20%20var%20stateCheck%20%3D%20setInterval(function()%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(typeof%20skrollrr%20%3D%3D%3D%20'undefined')%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(typeof%20skrollrr.lax%20%3D%3D%3D%20'undefined')%20return%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20clearInterval(stateCheck)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20try%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20fn()%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20catch%20(e)%20%7B%7D%0A%20%20%20%20%20%20%20%20%7D%2C%201)%3B%0A%20%20%20%20%7D%3B%0A%20%20%20%20skrollrrReady(function()%20%7B%0A%0A%20%20%20%20%20%20%20%20let%20se%20%3D%20document.querySelector('.section-%7Bid%7D').closest('.is-section')%3B%0A%20%20%20%20%20%20%20%20se.setAttribute('data-section'%2C%20'section-%7Bid%7D')%3B%0A%20%20%20%20%20%20%20%20let%20overlay%20%3D%20se.querySelector('.is-overlay')%3B%0A%0A%20%20%20%20%20%20%20%20overlay.style.top%20%3D%20'unset'%3B%0A%20%20%20%20%20%20%20%20overlay.style.bottom%20%3D%20'unset'%3B%0A%20%20%20%20%20%20%20%20overlay.style.left%20%3D%20'unset'%3B%0A%20%20%20%20%20%20%20%20overlay.style.right%20%3D%20'unset'%3B%0A%0A%20%20%20%20%20%20%20%20let%20wrapper%20%3D%20document.querySelector('.is-wrapper')%3B%0A%20%20%20%20%20%20%20%20const%20clientHeight%20%3D%20se.clientHeight%3B%0A%20%20%20%20%20%20%20%20const%20clientWidth%20%3D%20se.clientWidth%3B%0A%20%20%20%20%20%20%20%20skrollrr.lax.addElements('%5Bdata-section%3Dsection-%7Bid%7D%5D'%2C%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20scrollY%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20scale%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B'elInY'%2C%20'elCenterY'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B0%2C%20100%5D%2C%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20cssFn%3A%20function(val%2C%20domElement)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20let%20n%20%3D%20(val%20%2F%20100)%20*%20clientWidth%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20overlay.style.width%20%3D%20(val%20%2F%20100)%20*%20clientWidth%20%2B%20'px'%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20overlay.style.height%20%3D%20(val%20%2F%20100)%20*%20clientHeight%20%2B%20'px'%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20overlay.style.borderRadius%20%3D%20(400%20-%20val%20*%204)%20%2B%20'px'%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20se.style.backgroundColor%20%3D%20overlay.style.backgroundColor%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%20%20%20%20skrollrr.refresh()%3B%0A%20%20%20%20%7D)%3B%0A%3C%2Fscript%3E" style="z-index: 1;">
     <div class="section-lG6cPUU"></div>
     <script>
@@ -10362,10 +10360,10 @@ designs: [
 {
 "thumbnail":"preview/item-176a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -10425,10 +10423,10 @@ designs: [
 {
 "thumbnail":"preview/item-176b.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-section-100 type-spacemono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -10514,10 +10512,10 @@ designs: [
 {
 "thumbnail":"preview/item-176c.png",
 "category":"1",
-"contentCss":"type-heebo-ibmplexmono-2.css",
-"contentClass":"type-heebo-ibmplexmono-2",
+"contentCss":"-2.css",
+"contentClass":"-2",
 "html":`
-<div class="is-section is-box is-section-100 type-heebo-ibmplexmono-2 box-autofit">
+<div class="is-section is-box is-section-100 -2 box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -10582,17 +10580,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-heebo-ibmplexmono-2" href="/assets/styles/type-heebo-ibmplexmono-2.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="-2" href="/assets/styles/-2.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-175a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto is-content-top box-space">
+<div class="is-section is-box is-section-100  is-content-top box-space">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-2"></div>
@@ -10641,10 +10639,10 @@ designs: [
 {
 "thumbnail":"preview/item-175b.png",
 "category":"1",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-box type-montserrat-roboto box-autofit is-section-15">
+<div class="is-section is-box  box-autofit is-section-15">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -10663,7 +10661,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-dosis-oldstandardtt is-section-85 box-space stack-top">
+<div class="is-section  is-section-85 box-space stack-top">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 box-autofit min-height-60 is-content-top">
         <div class="is-overlay">
@@ -10786,10 +10784,10 @@ designs: [
 {
 "thumbnail":"preview/item-175c.png",
 "category":"1",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-section-100 type-engagement-spectral md-boxes-1 md-boxes-wrap box-space stack-bottom">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap box-space stack-bottom">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay">
@@ -10882,10 +10880,10 @@ designs: [
 {
 "thumbnail":"preview/item-174a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato is-content-top box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  is-content-top box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -10934,10 +10932,10 @@ designs: [
 {
 "thumbnail":"preview/item-174b.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box type-poppins is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -10954,7 +10952,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-poppins is-section-60">
+<div class="is-section  is-section-60">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 box-autofit min-height-50">
         <div class="is-overlay">
@@ -11020,17 +11018,17 @@ designs: [
 {
 "thumbnail":"preview/item-174c.png",
 "category":"1",
-"contentCss":"type-heebo-ibmplexmono.css",
-"contentClass":"type-heebo-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-box is-light-text type-raleway-lato is-content-top min-height-60 box-autofit box-space box-space-xxs is-section-50">
+<div class="is-section is-box is-light-text  is-content-top min-height-60 box-autofit box-space box-space-xxs is-section-50">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
     </div>
 </div>
 </div>
-<div class="is-section is-box type-heebo-ibmplexmono box-autofit is-section-50">
+<div class="is-section is-box  box-autofit is-section-50">
 <div class="is-overlay">
 </div>
 <div class="is-boxes">
@@ -11073,17 +11071,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-heebo-ibmplexmono" href="/assets/styles/type-heebo-ibmplexmono.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-173a.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-top type-poppins box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text is-content-top  box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -11123,10 +11121,10 @@ designs: [
 {
 "thumbnail":"preview/item-173b.png",
 "category":"3",
-"contentCss":"type-oswald-biryani.css",
-"contentClass":"type-oswald-biryani",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-oswald-biryani md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 box-space  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -11201,10 +11199,10 @@ designs: [
 {
 "thumbnail":"preview/item-173c.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -11265,10 +11263,10 @@ designs: [
 {
 "thumbnail":"preview/item-172a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -11319,10 +11317,10 @@ designs: [
 {
 "thumbnail":"preview/item-172b.png",
 "category":"1",
-"contentCss":"type-anonymouspro-catamaran.css",
-"contentClass":"type-anonymouspro-catamaran",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-autofit type-anonymouspro-catamaran">
+<div class="is-section is-box is-section-100 box-autofit ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -11356,10 +11354,10 @@ designs: [
 {
 "thumbnail":"preview/item-172c.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -11441,10 +11439,10 @@ designs: [
 {
 "thumbnail":"preview/item-172d.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-poppins box-autofit is-content-top">
+<div class="is-section is-box is-section-100  box-autofit is-content-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -11493,10 +11491,10 @@ designs: [
 {
 "thumbnail":"preview/item-171a.png",
 "category":"1",
-"contentCss":"type-heebo-ibmplexmono.css",
-"contentClass":"type-heebo-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-heebo-ibmplexmono box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -11529,10 +11527,10 @@ designs: [
 {
 "thumbnail":"preview/item-171b.png",
 "category":"1",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -11612,10 +11610,10 @@ designs: [
 {
 "thumbnail":"preview/item-171c.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section type-poppins-lekton is-section-60">
+<div class="is-section  is-section-60">
 <div class="is-boxes">
     <div class="is-box is-box-7">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -11663,7 +11661,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-poppins-lekton is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -11692,17 +11690,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-heebo-ibmplexmono" href="/assets/styles/type-heebo-ibmplexmono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-170a.png",
 "category":"1",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section type-quicksand-kalam is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-7 is-light-text is-content-bottom box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -11777,10 +11775,10 @@ designs: [
 {
 "thumbnail":"preview/item-170b.png",
 "category":"1",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-playfairdisplay is-content-top box-autofit min-height-50">
+<div class="is-section is-box is-section-100  is-content-top box-autofit min-height-50">
 <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -11836,10 +11834,10 @@ designs: [
 {
 "thumbnail":"preview/item-170c.png",
 "category":"1",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 type-ibmplexmono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -11912,17 +11910,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-quicksand-kalam" href="/assets/styles/type-quicksand-kalam.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-playfairdisplay" href="/assets/styles/type-raleway-playfairdisplay.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-ibmplexmono" href="/assets/styles/type-ibmplexmono.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-169a.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-lato">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -11968,10 +11966,10 @@ designs: [
 {
 "thumbnail":"preview/item-169b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -12016,10 +12014,10 @@ designs: [
 {
 "thumbnail":"preview/item-169c.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-4 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -12114,10 +12112,10 @@ designs: [
 {
 "thumbnail":"preview/item-168a.png",
 "category":"2",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-poppins-lekton">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -12174,10 +12172,10 @@ designs: [
 {
 "thumbnail":"preview/item-168b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-4 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -12253,10 +12251,10 @@ designs: [
 {
 "thumbnail":"preview/item-168c.png",
 "category":"2",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 type-ibmplexmono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -12348,10 +12346,10 @@ designs: [
 {
 "thumbnail":"preview/item-168d.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section box-space type-dosis-oldstandardtt is-section-100">
+<div class="is-section box-space  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 box-autofit">
         <div class="is-overlay"></div>
@@ -12404,18 +12402,18 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-ibmplexmono" href="/assets/styles/type-ibmplexmono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-167a.png",
 "category":"2",
-"contentCss":"type-heebo-ibmplexmono-2.css",
-"contentClass":"type-heebo-ibmplexmono-2",
+"contentCss":"-2.css",
+"contentClass":"-2",
 "html":`
-<div class="is-section is-section-100 type-heebo-ibmplexmono-2 box-space">
+<div class="is-section is-section-100 -2 box-space">
 <div class="is-boxes">
     <div class="is-box is-light-text is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -12485,10 +12483,10 @@ designs: [
 {
 "thumbnail":"preview/item-167b.png",
 "category":"2",
-"contentCss":"type-sacramento-opensans.css",
-"contentClass":"type-sacramento-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-sacramento-opensans">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -12539,10 +12537,10 @@ designs: [
 {
 "thumbnail":"preview/item-167c.png",
 "category":"2",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section type-rufina-oxygen is-section-60">
+<div class="is-section  is-section-60">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -12590,7 +12588,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-rufina-oxygen is-section-40">
+<div class="is-section is-box  is-section-40">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -12626,17 +12624,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-heebo-ibmplexmono-2" href="/assets/styles/type-heebo-ibmplexmono-2.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-sacramento-opensans" href="/assets/styles/type-sacramento-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="-2" href="/assets/styles/-2.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-166a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto is-content-bottom">
+<div class="is-section is-box is-section-100 is-light-text  is-content-bottom">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -12694,10 +12692,10 @@ designs: [
 {
 "thumbnail":"preview/item-166b.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-60 type-raleway-lato">
+<div class="is-section is-section-60 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -12754,7 +12752,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-raleway-lato is-section-40">
+<div class="is-section  is-section-40">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -12811,10 +12809,10 @@ designs: [
 {
 "thumbnail":"preview/item-166c.png",
 "category":"2",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 type-ibmplexmono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -12858,17 +12856,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-ibmplexmono" href="/assets/styles/type-ibmplexmono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-165a.png",
 "category":"3",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreyasanssc-hind box-autofit is-light-text">
+<div class="is-section is-box is-section-100  box-autofit is-light-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -12920,10 +12918,10 @@ designs: [
 {
 "thumbnail":"preview/item-165b.png",
 "category":"3",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 type-quicksand-kalam">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -12985,16 +12983,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-alegreyasanssc-hind" href="/assets/styles/type-alegreyasanssc-hind.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-quicksand-kalam" href="/assets/styles/type-quicksand-kalam.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-164a.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-oranienbaum-sourcesanspro box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -13040,10 +13038,10 @@ designs: [
 {
 "thumbnail":"preview/item-164b.png",
 "category":"3",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-dosis-oldstandardtt box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -13071,10 +13069,10 @@ designs: [
 {
 "thumbnail":"preview/item-163a.png",
 "category":"3",
-"contentCss":"type-sacramento-opensans.css",
-"contentClass":"type-sacramento-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-sacramento-opensans is-content-bottom box-autofit min-height-75">
+<div class="is-section is-box is-section-100 is-light-text  is-content-bottom box-autofit min-height-75">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-8"></div>
@@ -13114,10 +13112,10 @@ designs: [
 {
 "thumbnail":"preview/item-163b.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section box-space type-alegreya-lato is-section-100">
+<div class="is-section box-space  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -13200,10 +13198,10 @@ designs: [
 {
 "thumbnail":"preview/item-163c.png",
 "category":"3",
-"contentCss":"type-teko-muktamahee.css",
-"contentClass":"type-teko-muktamahee",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-teko-muktamahee box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -13257,10 +13255,10 @@ designs: [
 {
 "thumbnail":"preview/item-162a.png",
 "category":"2",
-"contentCss":"type-oswald-cousine.css",
-"contentClass":"type-oswald-cousine",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-oswald-cousine">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -13295,10 +13293,10 @@ designs: [
 {
 "thumbnail":"preview/item-162b.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-box box-space is-light-text is-section-80 type-dosis-oldstandardtt is-content-bottom box-space-sm">
+<div class="is-section is-box box-space is-light-text is-section-80  is-content-bottom box-space-sm">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -13314,7 +13312,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-content-top type-dosis-oldstandardtt is-section-20 box-autofit">
+<div class="is-section is-box is-content-top  is-section-20 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-top edge-y-0">
@@ -13345,10 +13343,10 @@ designs: [
 {
 "thumbnail":"preview/item-162c.png",
 "category":"2",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-playfairdisplay">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -13426,17 +13424,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-oswald-cousine" href="/assets/styles/type-oswald-cousine.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-playfairdisplay" href="/assets/styles/type-raleway-playfairdisplay.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-161a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-8"></div>
@@ -13485,10 +13483,10 @@ designs: [
 {
 "thumbnail":"preview/item-161b.png",
 "category":"2",
-"contentCss":"type-cormorantsc-ibmplexsanscon.css",
-"contentClass":"type-cormorantsc-ibmplexsanscon",
+
+
 "html":`
-<div class="is-section is-box type-cormorantsc-ibmplexsanscon is-section-20 box-autofit is-content-bottom">
+<div class="is-section is-box  is-section-20 box-autofit is-content-bottom">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-1">
@@ -13502,7 +13500,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section box-space type-cormorantsc-ibmplexsanscon is-section-80">
+<div class="is-section box-space  is-section-80">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -13593,10 +13591,10 @@ designs: [
 {
 "thumbnail":"preview/item-161c.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box type-quicksand-kalam box-autofit is-section-15">
+<div class="is-section is-box  box-autofit is-section-15">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -13613,7 +13611,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-quicksand-kalam is-section-85">
+<div class="is-section  is-section-85">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -13683,17 +13681,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-cormorantsc-ibmplexsanscon" href="/assets/styles/type-cormorantsc-ibmplexsanscon.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-quicksand-kalam" href="/assets/styles/type-quicksand-kalam.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-160a.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-50 type-oranienbaum-sourcesanspro box-autofit min-height-40">
+<div class="is-section is-box is-section-50  box-autofit min-height-40">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -13728,7 +13726,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-oranienbaum-sourcesanspro is-section-50">
+<div class="is-section is-box  is-section-50">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -13738,10 +13736,10 @@ designs: [
 {
 "thumbnail":"preview/item-160b.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreya-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -13824,10 +13822,10 @@ designs: [
 {
 "thumbnail":"preview/item-160c.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -13876,10 +13874,10 @@ designs: [
 {
 "thumbnail":"preview/item-159a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-light-text is-section-100 is-content-top type-raleway-lato box-autofit min-height-60 box-space box-space-xxs stack-top">
+<div class="is-section is-box is-light-text is-section-100 is-content-top  box-autofit min-height-60 box-space box-space-xxs stack-top">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;">
         <div class="is-overlay-color opacity-5"></div>
@@ -13937,10 +13935,10 @@ designs: [
 {
 "thumbnail":"preview/item-159b.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato box-space box-space-xxs stack-bottom">
+<div class="is-section is-section-100  box-space box-space-xxs stack-bottom">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -14007,10 +14005,10 @@ designs: [
 {
 "thumbnail":"preview/item-159c.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-box type-dosis-oldstandardtt box-autofit is-section-75">
+<div class="is-section is-box  box-autofit is-section-75">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -14046,7 +14044,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-dosis-oldstandardtt is-section-25 box-autofit">
+<div class="is-section is-box  is-section-25 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -14085,10 +14083,10 @@ designs: [
 {
 "thumbnail":"preview/item-158a.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-poppins-lekton">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -14133,10 +14131,10 @@ designs: [
 {
 "thumbnail":"preview/item-158b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreya-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -14224,10 +14222,10 @@ designs: [
 {
 "thumbnail":"preview/item-157a.png",
 "category":"1",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-dark-text type-spacemono box-autofit is-section-50">
+<div class="is-section is-box is-dark-text  box-autofit is-section-50">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -14262,7 +14260,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-opensans box-autofit min-height-50 is-section-50">
+<div class="is-section is-box  box-autofit min-height-50 is-section-50">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -14272,10 +14270,10 @@ designs: [
 {
 "thumbnail":"preview/item-157b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-montserrat-roboto">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit is-content-bottom">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -14352,10 +14350,10 @@ designs: [
 {
 "thumbnail":"preview/item-157c.png",
 "category":"1",
-"contentCss":"type-unicaone-cormorantgaramond.css",
-"contentClass":"type-unicaone-cormorantgaramond",
+
+
 "html":`
-<div class="is-section is-section-50 type-unicaone-cormorantgaramond">
+<div class="is-section is-section-50 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-dark-text box-autofit">
         <div class="is-overlay">
@@ -14402,7 +14400,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-50 type-unicaone-cormorantgaramond">
+<div class="is-section is-section-50 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit">
         <div class="is-overlay">
@@ -14449,18 +14447,18 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-unicaone-cormorantgaramond" href="/assets/styles/type-unicaone-cormorantgaramond.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-156a.png",
 "category":"1",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-opensans min-height-70 box-autofit">
+<div class="is-section is-box is-section-100 is-light-text  min-height-70 box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -14496,10 +14494,10 @@ designs: [
 {
 "thumbnail":"preview/item-156b.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box type-oranienbaum-sourcesanspro is-section-50 box-autofit">
+<div class="is-section is-box  is-section-50 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -14513,7 +14511,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-oranienbaum-sourcesanspro is-section-50 md-boxes-1 md-boxes-wrap">
+<div class="is-section  is-section-50 md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -14565,10 +14563,10 @@ designs: [
 {
 "thumbnail":"preview/item-156c.png",
 "category":"1",
-"contentCss":"type-voltaire-sourcecodepro.css",
-"contentClass":"type-voltaire-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-section-100 type-voltaire-sourcecodepro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -14641,17 +14639,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-voltaire-sourcecodepro" href="/assets/styles/type-voltaire-sourcecodepro.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-155a.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-light-text is-box-7 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -14707,10 +14705,10 @@ designs: [
 {
 "thumbnail":"preview/item-155b.png",
 "category":"1",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-playfairdisplay box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -14762,16 +14760,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-playfairdisplay" href="/assets/styles/type-raleway-playfairdisplay.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-154a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section box-space type-montserrat-roboto is-section-100">
+<div class="is-section box-space  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -14834,10 +14832,10 @@ designs: [
 {
 "thumbnail":"preview/item-154b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreya-lato is-dark-text box-autofit">
+<div class="is-section is-box is-section-100  is-dark-text box-autofit">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -14917,10 +14915,10 @@ designs: [
 {
 "thumbnail":"preview/item-154c.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section type-raleway-lato is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -14988,17 +14986,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-153a.png",
 "category":"2",
-"contentCss":"type-anonymouspro-catamaran.css",
-"contentClass":"type-anonymouspro-catamaran",
+
+
 "html":`
-<div class="is-section is-section-100 box-reverse type-anonymouspro-catamaran">
+<div class="is-section is-section-100 box-reverse ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -15060,10 +15058,10 @@ designs: [
 {
 "thumbnail":"preview/item-153b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto md-boxes-1 md-boxes-wrap box-space box-space-xxs">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap box-space box-space-xxs">
 <div class="is-boxes">
     <div class="is-box box-autofit min-height-50 is-box-8">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -15128,10 +15126,10 @@ designs: [
 {
 "thumbnail":"preview/item-152a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato box-autofit min-height-60 is-content-bottom">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-60 is-content-bottom">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -15176,10 +15174,10 @@ designs: [
 {
 "thumbnail":"preview/item-152b.png",
 "category":"2",
-"contentCss":"type-novamono-robotomono.css",
-"contentClass":"type-novamono-robotomono",
+
+
 "html":`
-<div class="is-section is-section-100 is-box box-space box-space-sm is-light-text type-novamono-robotomono box-autofit min-height-50">
+<div class="is-section is-section-100 is-box box-space box-space-sm is-light-text  box-autofit min-height-50">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -15207,10 +15205,10 @@ designs: [
 {
 "thumbnail":"preview/item-152c.png",
 "category":"2",
-"contentCss":"type-cormorantsc-ibmplexsanscon.css",
-"contentClass":"type-cormorantsc-ibmplexsanscon",
+
+
 "html":`
-<div class="is-section is-section-100 type-cormorantsc-ibmplexsanscon">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -15290,17 +15288,17 @@ designs: [
 {
 "thumbnail":"preview/item-151a.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-light-text type-poppins is-content-top is-section-60 box-space box-space-xxs">
+<div class="is-section is-box is-light-text  is-content-top is-section-60 box-space box-space-xxs">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
     </div>
 </div>
 </div>
-<div class="is-section is-box type-poppins is-section-40 is-content-top box-autofit">
+<div class="is-section is-box  is-section-40 is-content-top box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
 </div>
 <div class="is-boxes">
@@ -15335,10 +15333,10 @@ designs: [
 {
 "thumbnail":"preview/item-151b.png",
 "category":"2",
-"contentCss":"type-heebo-ibmplexmono-2.css",
-"contentClass":"type-heebo-ibmplexmono-2",
+"contentCss":"-2.css",
+"contentClass":"-2",
 "html":`
-<div class="is-section type-heebo-ibmplexmono-2 is-section-50">
+<div class="is-section -2 is-section-50">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -15391,7 +15389,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-50 type-heebo-ibmplexmono-2">
+<div class="is-section is-section-50 -2">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -15460,10 +15458,10 @@ designs: [
 {
 "thumbnail":"preview/item-150a.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-poppins box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -15514,10 +15512,10 @@ designs: [
 {
 "thumbnail":"preview/item-150b.png",
 "category":"1",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-content-bottom type-lato is-section-20 box-autofit">
+<div class="is-section is-box is-content-bottom  is-section-20 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0">
@@ -15546,7 +15544,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-section-80 box-space is-dark-text box-space-m type-lato">
+<div class="is-section is-box is-section-80 box-space is-dark-text box-space-m ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -15567,16 +15565,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-149a.png",
 "category":"1",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box type-sacramento-opensans is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -15602,7 +15600,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-opensans is-section-60 box-space">
+<div class="is-section  is-section-60 box-space">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -15659,10 +15657,10 @@ designs: [
 {
 "thumbnail":"preview/item-149b.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 is-content-bottom box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -15739,17 +15737,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-sacramento-opensans" href="/assets/styles/type-sacramento-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-148a.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-rufina-oxygen box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -15782,10 +15780,10 @@ designs: [
 {
 "thumbnail":"preview/item-148b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -15864,15 +15862,15 @@ designs: [
 {
 "thumbnail":"preview/item-148c.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box type-opensans is-section-50">
+<div class="is-section is-box  is-section-50">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
 </div>
-<div class="is-section is-box is-dark-text is-section-50 type-rufina-oxygen box-autofit">
+<div class="is-section is-box is-dark-text is-section-50  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -15916,10 +15914,10 @@ designs: [
 {
 "thumbnail":"preview/item-147a.png",
 "category":"2",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-space type-raleway-playfairdisplay box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text box-space  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-2"></div>
@@ -15967,10 +15965,10 @@ designs: [
 {
 "thumbnail":"preview/item-147b.png",
 "category":"2",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-box type-poppins-lekton box-autofit min-height-80 is-section-100 is-light-text is-content-top">
+<div class="is-section is-box  box-autofit min-height-80 is-section-100 is-light-text is-content-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-2"></div>
@@ -16018,16 +16016,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-playfairdisplay" href="/assets/styles/type-raleway-playfairdisplay.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-146a.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box type-montserrat-roboto box-autofit is-section-15">
+<div class="is-section is-box  box-autofit is-section-15">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -16051,7 +16049,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-montserrat-roboto md-boxes-1 md-boxes-wrap is-section-60">
+<div class="is-section  md-boxes-1 md-boxes-wrap is-section-60">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-10 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -16087,7 +16085,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-montserrat-roboto box-autofit is-section-25">
+<div class="is-section is-box  box-autofit is-section-25">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -16106,10 +16104,10 @@ designs: [
 {
 "thumbnail":"preview/item-146b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section type-rufina-oxygen is-section-100 md-boxes-1 md-boxes-wrap">
+<div class="is-section  is-section-100 md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -16186,10 +16184,10 @@ designs: [
 {
 "thumbnail":"preview/item-145a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-lato is-light-text box-autofit min-height-70">
+<div class="is-section is-box is-section-100  is-light-text box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-2"></div>
@@ -16243,10 +16241,10 @@ designs: [
 {
 "thumbnail":"preview/item-145b.png",
 "category":"2",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box type-rufina-oxygen is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -16266,7 +16264,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-60 type-rufina-oxygen md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-60  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-3 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -16355,10 +16353,10 @@ designs: [
 {
 "thumbnail":"preview/item-144a.png",
 "category":"3",
-"contentCss":"type-unicaone-cormorantgaramond.css",
-"contentClass":"type-unicaone-cormorantgaramond",
+
+
 "html":`
-<div class="is-section is-box type-unicaone-cormorantgaramond box-autofit is-section-100">
+<div class="is-section is-box  box-autofit is-section-100">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -16407,10 +16405,10 @@ designs: [
 {
 "thumbnail":"preview/item-144b.png",
 "category":"3",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-section-100 type-dosis-oldstandardtt md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-80 is-light-text is-content-top">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -16497,10 +16495,10 @@ designs: [
 {
 "thumbnail":"preview/item-143a.png",
 "category":"2",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-space type-spacemono box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text box-space  box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-10"></div>
@@ -16533,10 +16531,10 @@ designs: [
 {
 "thumbnail":"preview/item-143b.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 type-poppins">
+<div class="is-section is-section-100 is-shadow-1 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -16627,16 +16625,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-142a.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-content-bottom type-quicksand-kalam is-section-25">
+<div class="is-section is-box is-content-bottom  is-section-25">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-bottom edge-y-0">
@@ -16662,7 +16660,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-dark-text type-quicksand-kalam box-space is-section-75">
+<div class="is-section is-box is-dark-text  box-space is-section-75">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -16672,10 +16670,10 @@ designs: [
 {
 "thumbnail":"preview/item-142b.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-autofit type-quicksand-kalam">
+<div class="is-section is-box is-section-100 box-autofit ">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -16710,15 +16708,15 @@ designs: [
 {
 "thumbnail":"preview/item-142c.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box type-poppins is-section-60 box-space">
+<div class="is-section is-box  is-section-60 box-space">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato is-content-top is-section-40">
+<div class="is-section is-box  is-content-top is-section-40">
 <div class="is-overlay">
 </div>
 <div class="is-boxes">
@@ -16758,10 +16756,10 @@ designs: [
 {
 "thumbnail":"preview/item-141a.png",
 "category":"2",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-light-text type-prata-hindsiliguri box-autofit min-height-40 is-section-85">
+<div class="is-section is-box is-light-text  box-autofit min-height-40 is-section-85">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -16792,7 +16790,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-prata-hindsiliguri box-autofit is-section-15">
+<div class="is-section is-box  box-autofit is-section-15">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -16825,10 +16823,10 @@ designs: [
 {
 "thumbnail":"preview/item-141b.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section box-space is-section-70 type-dosis-oldstandardtt">
+<div class="is-section box-space is-section-70 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -16866,7 +16864,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-dosis-oldstandardtt is-section-30 box-autofit">
+<div class="is-section is-box  is-section-30 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -16903,16 +16901,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-140a.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-autofit min-height-70 type-lato">
+<div class="is-section is-box is-section-100 is-light-text box-autofit min-height-70 ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -16966,10 +16964,10 @@ designs: [
 {
 "thumbnail":"preview/item-140b.png",
 "category":"2",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-80 type-poppins-lekton">
+<div class="is-section is-section-80 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay">
@@ -17039,7 +17037,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-poppins-lekton is-section-20">
+<div class="is-section  is-section-20">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay">
@@ -17082,10 +17080,10 @@ designs: [
 {
 "thumbnail":"preview/item-140c.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-60 type-alegreya-lato">
+<div class="is-section is-section-60 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -17130,7 +17128,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato is-section-40">
+<div class="is-section is-box  is-section-40">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -17167,10 +17165,10 @@ designs: [
 {
 "thumbnail":"preview/item-139a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box type-montserrat-roboto is-section-15">
+<div class="is-section is-box  is-section-15">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -17194,7 +17192,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-montserrat-roboto is-content-top is-light-text box-autofit min-height-70 is-section-85">
+<div class="is-section is-box  is-content-top is-light-text box-autofit min-height-70 is-section-85">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -17227,10 +17225,10 @@ designs: [
 {
 "thumbnail":"preview/item-139b.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section type-poppins is-section-50">
+<div class="is-section  is-section-50">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay">
@@ -17275,7 +17273,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-poppins is-section-50">
+<div class="is-section  is-section-50">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay">
@@ -17312,10 +17310,10 @@ designs: [
 {
 "thumbnail":"preview/item-138a.png",
 "category":"2",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-ibmplexmono box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -17353,10 +17351,10 @@ designs: [
 {
 "thumbnail":"preview/item-138b.png",
 "category":"2",
-"contentCss":"type-teko-muktamahee.css",
-"contentClass":"type-teko-muktamahee",
+
+
 "html":`
-<div class="is-section is-section-100 type-teko-muktamahee">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -17424,10 +17422,10 @@ designs: [
 {
 "thumbnail":"preview/item-137a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-raleway-lato box-autofit min-height-70">
+<div class="is-section is-section-100 is-box  box-autofit min-height-70">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -17478,10 +17476,10 @@ designs: [
 {
 "thumbnail":"preview/item-137b.png",
 "category":"2",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-dark-text box-autofit">
         <div class="is-overlay">
@@ -17556,10 +17554,10 @@ designs: [
 {
 "thumbnail":"preview/item-137c.png",
 "category":"2",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-ibmplexmono box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay" style="background-color: rgb(253, 253, 253);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -17605,10 +17603,10 @@ designs: [
 {
 "thumbnail":"preview/item-136a.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-section-100 type-dosis-oldstandardtt">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-40">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -17677,10 +17675,10 @@ designs: [
 {
 "thumbnail":"preview/item-136b.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section box-space box-space-sm type-alegreya-lato is-section-80">
+<div class="is-section box-space box-space-sm  is-section-80">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-bottom box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -17747,7 +17745,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato is-content-top box-autofit is-section-20">
+<div class="is-section is-box  is-content-top box-autofit is-section-20">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-top edge-y-0">
@@ -17772,16 +17770,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-135a.png",
 "category":"2",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text box-autofit min-height-50 type-alegreyasanssc-hind">
+<div class="is-section is-box is-section-100 is-light-text box-autofit min-height-50 ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;">
         <div class="is-overlay-color opacity-0"></div>
@@ -17826,10 +17824,10 @@ designs: [
 {
 "thumbnail":"preview/item-135b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section type-montserrat-roboto is-section-100 md-boxes-1 md-boxes-wrap">
+<div class="is-section  is-section-100 md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -17911,10 +17909,10 @@ designs: [
 {
 "thumbnail":"preview/item-134a.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreya-lato box-space box-space-m is-light-text">
+<div class="is-section is-box is-section-100  box-space box-space-m is-light-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -17960,10 +17958,10 @@ designs: [
 {
 "thumbnail":"preview/item-134b.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-poppins box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -18011,10 +18009,10 @@ designs: [
 {
 "thumbnail":"preview/item-133a.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box type-quicksand-kalam is-content-bottom box-autofit is-section-25">
+<div class="is-section is-box  is-content-bottom box-autofit is-section-25">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0">
@@ -18041,7 +18039,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space type-quicksand-kalam is-section-75">
+<div class="is-section is-box box-space  is-section-75">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -18051,10 +18049,10 @@ designs: [
 {
 "thumbnail":"preview/item-133b.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 type-quicksand-kalam">
+<div class="is-section is-section-100 is-shadow-1 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -18140,10 +18138,10 @@ designs: [
 {
 "thumbnail":"preview/item-132a.png",
 "category":"2",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-top box-autofit min-height-60 type-alegreyasanssc-hind">
+<div class="is-section is-box is-section-100 is-light-text is-content-top box-autofit min-height-60 ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -18181,10 +18179,10 @@ designs: [
 {
 "thumbnail":"preview/item-132b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box type-montserrat-roboto is-section-50 box-autofit">
+<div class="is-section is-box  is-section-50 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -18203,7 +18201,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-montserrat-roboto is-section-50 md-boxes-1 md-boxes-wrap">
+<div class="is-section  is-section-50 md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-5 box-autofit">
         <div class="is-overlay"></div>
@@ -18249,10 +18247,10 @@ designs: [
 {
 "thumbnail":"preview/item-131a.png",
 "category":"2",
-"contentCss":"type-playfairdisp-petitformalscr.css",
-"contentClass":"type-playfairdisp-petitformalscr",
+
+
 "html":`
-<div class="is-section is-box type-playfairdisp-petitformalscr is-section-20">
+<div class="is-section is-box  is-section-20">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -18268,7 +18266,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-light-text is-section-80 is-content-bottom type-playfairdisp-petitformalscr box-autofit min-height-60">
+<div class="is-section is-box is-light-text is-section-80 is-content-bottom  box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -18297,10 +18295,10 @@ designs: [
 {
 "thumbnail":"preview/item-131b.png",
 "category":"2",
-"contentCss":"type-stintultracon-inconsolata.css",
-"contentClass":"type-stintultracon-inconsolata",
+
+
 "html":`
-<div class="is-section is-section-100 type-stintultracon-inconsolata">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-content-bottom is-box-7 box-autofit">
         <div class="is-overlay"></div>
@@ -18356,10 +18354,10 @@ designs: [
 {
 "thumbnail":"preview/item-131c.png",
 "category":"2",
-"contentCss":"type-teko-muktamahee.css",
-"contentClass":"type-teko-muktamahee",
+
+
 "html":`
-<div class="is-section is-section-100 type-teko-muktamahee">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -18437,10 +18435,10 @@ designs: [
 {
 "thumbnail":"preview/item-130a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto is-content-top box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  is-content-top box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -18483,10 +18481,10 @@ designs: [
 {
 "thumbnail":"preview/item-130b.png",
 "category":"2",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section type-rufina-oxygen md-boxes-1 md-boxes-wrap is-section-100">
+<div class="is-section  md-boxes-1 md-boxes-wrap is-section-100">
 <div class="is-boxes">
     <div class="is-box box-autofit min-height-50 is-box-6">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -18576,10 +18574,10 @@ designs: [
 {
 "thumbnail":"preview/item-130c.png",
 "category":"2",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-spacemono box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -18630,10 +18628,10 @@ designs: [
 {
 "thumbnail":"preview/item-129a.png",
 "category":"2",
-"contentCss":"type-abrilfatface-assistant.css",
-"contentClass":"type-abrilfatface-assistant",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top is-dark-text type-abrilfatface-assistant box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-content-top is-dark-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;"></div>
 </div>
@@ -18664,10 +18662,10 @@ designs: [
 {
 "thumbnail":"preview/item-129b.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -18722,10 +18720,10 @@ designs: [
 {
 "thumbnail":"preview/item-128a.png",
 "category":"2",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-poppins-lekton">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text is-content-bottom box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -18795,10 +18793,10 @@ designs: [
 {
 "thumbnail":"preview/item-128b.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreya-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -18893,10 +18891,10 @@ designs: [
 {
 "thumbnail":"preview/item-127a.png",
 "category":"1",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-quicksand-kalam box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -18929,10 +18927,10 @@ designs: [
 {
 "thumbnail":"preview/item-127b.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section type-rufina-oxygen is-section-100 md-boxes-1 md-boxes-wrap">
+<div class="is-section  is-section-100 md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -19009,10 +19007,10 @@ designs: [
 {
 "thumbnail":"preview/item-126a.png",
 "category":"1",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box is-dark-text type-alegreyasanssc-hind is-content-bottom box-autofit is-section-25">
+<div class="is-section is-box is-dark-text  is-content-bottom box-autofit is-section-25">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0-5">
@@ -19034,7 +19032,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space is-section-75 is-light-text type-alegreyasanssc-hind">
+<div class="is-section is-box box-space is-section-75 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-8"></div>
@@ -19069,10 +19067,10 @@ designs: [
 {
 "thumbnail":"preview/item-126b.png",
 "category":"1",
-"contentCss":"type-italiana-martel.css",
-"contentClass":"type-italiana-martel",
+
+
 "html":`
-<div class="is-section is-section-100 type-italiana-martel md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-content-bottom box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -19157,16 +19155,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-alegreyasanssc-hind" href="/assets/styles/type-alegreyasanssc-hind.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-italiana-martel" href="/assets/styles/type-italiana-martel.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-125a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-content-bottom is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -19242,10 +19240,10 @@ designs: [
 {
 "thumbnail":"preview/item-125b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-60 type-alegreya-lato">
+<div class="is-section is-section-60 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -19272,7 +19270,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -19295,16 +19293,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-124a.png",
 "category":"1",
-"contentCss":"type-greatvibes-robotomono.css",
-"contentClass":"type-greatvibes-robotomono",
+
+
 "html":`
-<div class="is-section is-section-100 type-greatvibes-robotomono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text min-height-50 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -19369,10 +19367,10 @@ designs: [
 {
 "thumbnail":"preview/item-124b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-shadow-1 type-alegreya-lato is-section-100">
+<div class="is-section is-shadow-1  is-section-100">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -19454,15 +19452,15 @@ designs: [
 {
 "thumbnail":"preview/item-124c.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box box-space is-section-70 type-spectralsc-karma box-autofit min-height-50">
+<div class="is-section is-box box-space is-section-70  box-autofit min-height-50">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
 </div>
-<div class="is-section is-box is-dark-text type-oranienbaum-sourcesanspro is-section-30 box-autofit">
+<div class="is-section is-box is-dark-text  is-section-30 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -19506,18 +19504,18 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-greatvibes-robotomono" href="/assets/styles/type-greatvibes-robotomono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-spectralsc-karma" href="/assets/styles/type-spectralsc-karma.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-123a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -19554,10 +19552,10 @@ designs: [
 {
 "thumbnail":"preview/item-123b.png",
 "category":"1",
-"contentCss":"type-ubuntumono-sourcecodepro.css",
-"contentClass":"type-ubuntumono-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-ubuntumono-sourcecodepro">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -19609,10 +19607,10 @@ designs: [
 {
 "thumbnail":"preview/item-123c.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreya-lato box-autofit is-light-text is-content-top">
+<div class="is-section is-box is-section-100  box-autofit is-light-text is-content-top">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -19662,17 +19660,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-ubuntumono-sourcecodepro" href="/assets/styles/type-ubuntumono-sourcecodepro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-122a.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-section-100 type-spacemono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text is-content-bottom box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -19720,10 +19718,10 @@ designs: [
 {
 "thumbnail":"preview/item-122b.png",
 "category":"1",
-"contentCss":"type-abrilfatface-assistant.css",
-"contentClass":"type-abrilfatface-assistant",
+
+
 "html":`
-<div class="is-section type-abrilfatface-assistant is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -19784,10 +19782,10 @@ designs: [
 {
 "thumbnail":"preview/item-122c.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-7 box-autofit min-height-50">
         <div class="is-overlay"></div>
@@ -19831,17 +19829,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-abrilfatface-assistant" href="/assets/styles/type-abrilfatface-assistant.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-121a.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 type-prata-hindsiliguri">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -19911,10 +19909,10 @@ designs: [
 {
 "thumbnail":"preview/item-121b.png",
 "category":"1",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-shadow-1 type-ibmplexmono is-section-100">
+<div class="is-section is-shadow-1  is-section-100">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-bottom min-height-50 box-autofit">
         <div class="is-overlay">
@@ -20010,10 +20008,10 @@ designs: [
 {
 "thumbnail":"preview/item-121c.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box type-raleway-lato is-section-100 box-autofit is-light-text">
+<div class="is-section is-box  is-section-100 box-autofit is-light-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-10"></div>
@@ -20056,10 +20054,10 @@ designs: [
 {
 "thumbnail":"preview/item-120a.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 type-prata-hindsiliguri">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
@@ -20113,10 +20111,10 @@ designs: [
 {
 "thumbnail":"preview/item-120b.png",
 "category":"1",
-"contentCss":"type-fjallaone-ibmplexserif.css",
-"contentClass":"type-fjallaone-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-fjallaone-ibmplexserif md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -20186,10 +20184,10 @@ designs: [
 {
 "thumbnail":"preview/item-120c.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -20250,10 +20248,10 @@ designs: [
 {
 "thumbnail":"preview/item-119a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-5"></div>
@@ -20294,10 +20292,10 @@ designs: [
 {
 "thumbnail":"preview/item-119b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreya-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -20345,16 +20343,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-118a.png",
 "category":"1",
-"contentCss":"type-fjallaone-ibmplexserif.css",
-"contentClass":"type-fjallaone-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-bottom type-fjallaone-ibmplexserif">
+<div class="is-section is-box is-section-100 is-light-text is-content-bottom ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -20394,10 +20392,10 @@ designs: [
 {
 "thumbnail":"preview/item-118b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-shadow-1 type-alegreya-lato md-boxes-1 md-boxes-wrap is-section-80">
+<div class="is-section is-shadow-1  md-boxes-1 md-boxes-wrap is-section-80">
 <div class="is-boxes">
     <div class="is-box is-box-3 is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -20487,7 +20485,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato box-autofit is-section-20">
+<div class="is-section is-box  box-autofit is-section-20">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -20510,16 +20508,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-fjallaone-ibmplexserif" href="/assets/styles/type-fjallaone-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-117a.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 type-rufina-oxygen">
+<div class="is-section is-section-100 is-shadow-1 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-3 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -20581,10 +20579,10 @@ designs: [
 {
 "thumbnail":"preview/item-117b.png",
 "category":"1",
-"contentCss":"type-playfairdisp-petitformalscr.css",
-"contentClass":"type-playfairdisp-petitformalscr",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-space is-content-top type-playfairdisp-petitformalscr">
+<div class="is-section is-box is-section-100 box-space is-content-top ">
 <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -20623,16 +20621,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-playfairdisp-petitformalscr" href="/assets/styles/type-playfairdisp-petitformalscr.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-116a.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-poppins box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-2"></div>
@@ -20682,10 +20680,10 @@ designs: [
 {
 "thumbnail":"preview/item-116b.png",
 "category":"1",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-dark-text type-alegreya-lato is-section-40 box-autofit">
+<div class="is-section is-box is-dark-text  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -20738,7 +20736,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-opensans is-section-60">
+<div class="is-section is-box  is-section-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -20748,10 +20746,10 @@ designs: [
 {
 "thumbnail":"preview/item-115a.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box type-oranienbaum-sourcesanspro box-autofit is-section-100">
+<div class="is-section is-box  box-autofit is-section-100">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -20816,10 +20814,10 @@ designs: [
 {
 "thumbnail":"preview/item-115b.png",
 "category":"1",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-quicksand-kalam box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -20853,10 +20851,10 @@ designs: [
 {
 "thumbnail":"preview/item-115c.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 type-prata-hindsiliguri">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-light-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -20919,17 +20917,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-quicksand-kalam" href="/assets/styles/type-quicksand-kalam.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-114a.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-prata-hindsiliguri is-light-text box-autofit min-height-70">
+<div class="is-section is-box is-section-100  is-light-text box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -20964,10 +20962,10 @@ designs: [
 {
 "thumbnail":"preview/item-114b.png",
 "category":"1",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -21061,10 +21059,10 @@ designs: [
 {
 "thumbnail":"preview/item-114c.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-montserrat-roboto">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -21114,17 +21112,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-113a.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-spacemono is-content-bottom box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  is-content-bottom box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;">
         <div class="is-overlay-color opacity-0"></div>
@@ -21184,10 +21182,10 @@ designs: [
 {
 "thumbnail":"preview/item-113b.png",
 "category":"1",
-"contentCss":"type-oswald-biryani.css",
-"contentClass":"type-oswald-biryani",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-oswald-biryani">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -21261,10 +21259,10 @@ designs: [
 {
 "thumbnail":"preview/item-113c.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-poppins is-content-bottom box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  is-content-bottom box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-8"></div>
@@ -21310,10 +21308,10 @@ designs: [
 {
 "thumbnail":"preview/item-112a.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 type-prata-hindsiliguri">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-7 box-autofit">
         <div class="is-overlay"></div>
@@ -21358,10 +21356,10 @@ designs: [
 {
 "thumbnail":"preview/item-112b.png",
 "category":"1",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreyasanssc-hind">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-4 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -21408,10 +21406,10 @@ designs: [
 {
 "thumbnail":"preview/item-111a.png",
 "category":"1",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box box-autofit is-section-25 is-content-bottom type-opensans">
+<div class="is-section is-box box-autofit is-section-25 is-content-bottom ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-bottom edge-y-0-25">
@@ -21436,7 +21434,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-light-text box-space is-content-top type-opensans min-height-70 box-autofit is-section-75">
+<div class="is-section is-box is-light-text box-space is-content-top  min-height-70 box-autofit is-section-75">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-8" style="background-color: rgb(0, 0, 0);"></div>
@@ -21448,10 +21446,10 @@ designs: [
 {
 "thumbnail":"preview/item-111b.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-section-100 type-spacemono md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -21540,10 +21538,10 @@ designs: [
 {
 "thumbnail":"preview/item-110a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-top type-raleway-lato box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text is-content-top  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -21585,10 +21583,10 @@ designs: [
 {
 "thumbnail":"preview/item-110b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -21648,10 +21646,10 @@ designs: [
 {
 "thumbnail":"preview/item-109a.png",
 "category":"1",
-"contentCss":"type-forum-nanumgothiccoding.css",
-"contentClass":"type-forum-nanumgothiccoding",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-bottom box-autofit type-forum-nanumgothiccoding">
+<div class="is-section is-box is-section-100 is-content-bottom box-autofit ">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-bottom edge-y-2">
@@ -21696,10 +21694,10 @@ designs: [
 {
 "thumbnail":"preview/item-109b.png",
 "category":"1",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -21779,10 +21777,10 @@ designs: [
 {
 "thumbnail":"preview/item-109c.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 type-rufina-oxygen">
+<div class="is-section is-section-100 is-shadow-1 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-3 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -21877,15 +21875,15 @@ designs: [
 {
 "thumbnail":"preview/item-108a.png",
 "category":"1",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box box-space type-opensans is-section-70 box-autofit min-height-75">
+<div class="is-section is-box box-space  is-section-70 box-autofit min-height-75">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
 </div>
-<div class="is-section is-box is-dark-text is-section-30 box-autofit type-alegreyasanssc-hind">
+<div class="is-section is-box is-dark-text is-section-30 box-autofit ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -21914,10 +21912,10 @@ designs: [
 {
 "thumbnail":"preview/item-108b.png",
 "category":"1",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-autofit type-alegreyasanssc-hind is-content-bottom">
+<div class="is-section is-box is-section-100 box-autofit  is-content-bottom">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;">
         <div class="is-overlay-color opacity-0"></div>
@@ -21973,10 +21971,10 @@ designs: [
 {
 "thumbnail":"preview/item-108c.png",
 "category":"1",
-"contentCss":"type-oswald-opensans.css",
-"contentClass":"type-oswald-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-oswald-opensans box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -22013,10 +22011,10 @@ designs: [
 {
 "thumbnail":"preview/item-107a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-8"></div>
@@ -22050,10 +22048,10 @@ designs: [
 {
 "thumbnail":"preview/item-106a.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-shadow-1 is-section-100 type-montserrat-roboto">
+<div class="is-section is-shadow-1 is-section-100 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -22143,10 +22141,10 @@ designs: [
 {
 "thumbnail":"preview/item-106b.png",
 "category":"2",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box type-spacemono is-section-100 box-autofit">
+<div class="is-section is-box  is-section-100 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -22187,10 +22185,10 @@ designs: [
 {
 "thumbnail":"preview/item-106c.png",
 "category":"2",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -22278,10 +22276,10 @@ designs: [
 {
 "thumbnail":"preview/item-105a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-2"></div>
@@ -22333,10 +22331,10 @@ designs: [
 {
 "thumbnail":"preview/item-105b.png",
 "category":"2",
-"contentCss":"type-voltaire-sourcecodepro.css",
-"contentClass":"type-voltaire-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-box type-voltaire-sourcecodepro is-section-100 box-autofit">
+<div class="is-section is-box  is-section-100 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -22386,10 +22384,10 @@ designs: [
 {
 "thumbnail":"preview/item-104a.png",
 "category":"2",
-"contentCss":"type-hammersmithone-poppins.css",
-"contentClass":"type-hammersmithone-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-hammersmithone-poppins">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-2"></div>
@@ -22431,10 +22429,10 @@ designs: [
 {
 "thumbnail":"preview/item-104b.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-sm type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 box-space box-space-sm  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-light-text box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -22498,10 +22496,10 @@ designs: [
 {
 "thumbnail":"preview/item-104c.png",
 "category":"2",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-dark-text type-dosis-oldstandardtt is-section-40 box-autofit">
+<div class="is-section is-box is-dark-text  is-section-40 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -22553,23 +22551,23 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-opensans is-section-60 box-autofit min-height-60">
+<div class="is-section is-box  is-section-60 box-autofit min-height-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-hammersmithone-poppins" href="/assets/styles/type-hammersmithone-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-103a.png",
 "category":"2",
-"contentCss":"type-alegreyasanssc-hind.css",
-"contentClass":"type-alegreyasanssc-hind",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-top type-alegreyasanssc-hind box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text is-content-top  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-10"></div>
@@ -22627,10 +22625,10 @@ designs: [
 {
 "thumbnail":"preview/item-103b.png",
 "category":"2",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-content-bottom is-section-40 type-lato box-autofit">
+<div class="is-section is-box is-content-bottom is-section-40  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-1">
@@ -22670,7 +22668,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-60 type-lato">
+<div class="is-section is-section-60 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-5 is-content-bottom box-autofit">
         <div class="is-overlay"></div>
@@ -22699,16 +22697,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-alegreyasanssc-hind" href="/assets/styles/type-alegreyasanssc-hind.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-102a.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-poppins">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -22755,10 +22753,10 @@ designs: [
 {
 "thumbnail":"preview/item-102b.png",
 "category":"2",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box type-rufina-oxygen is-content-bottom is-section-20 box-autofit">
+<div class="is-section is-box  is-content-bottom is-section-20 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-bottom edge-y-0-25">
@@ -22781,7 +22779,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space is-light-text type-rufina-oxygen is-section-80">
+<div class="is-section is-box box-space is-light-text  is-section-80">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -22805,10 +22803,10 @@ designs: [
 {
 "thumbnail":"preview/item-102c.png",
 "category":"2",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-engagement-spectral box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -22859,10 +22857,10 @@ designs: [
 {
 "thumbnail":"preview/item-101a.png",
 "category":"2",
-"contentCss":"type-pathwaygothicone-merriweather.css",
-"contentClass":"type-pathwaygothicone-merriweather",
+
+
 "html":`
-<div class="is-section is-section-100 type-pathwaygothicone-merriweather">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-8 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -22909,10 +22907,10 @@ designs: [
 {
 "thumbnail":"preview/item-101b.png",
 "category":"2",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-ibmplexmono is-light-text box-autofit min-height-70">
+<div class="is-section is-box is-section-100  is-light-text box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -22965,10 +22963,10 @@ designs: [
 {
 "thumbnail":"preview/item-101c.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom is-light-text box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -23058,17 +23056,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-pathwaygothicone-merriweather" href="/assets/styles/type-pathwaygothicone-merriweather.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-ibmplexmono" href="/assets/styles/type-ibmplexmono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-100a.png",
 "category":"2",
-"contentCss":"type-cinzeldecor-palanquin.css",
-"contentClass":"type-cinzeldecor-palanquin",
+
+
 "html":`
-<div class="is-section is-section-100 type-cinzeldecor-palanquin">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text min-height-70 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -23127,10 +23125,10 @@ designs: [
 {
 "thumbnail":"preview/item-100b.png",
 "category":"2",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-section-100 is-box box-autofit type-raleway-playfairdisplay">
+<div class="is-section is-section-100 is-box box-autofit ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -23178,10 +23176,10 @@ designs: [
 {
 "thumbnail":"preview/item-100c.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-quicksand-kalam is-content-top">
+<div class="is-section is-section-100 is-box  is-content-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;"></div>
 </div>
@@ -23236,10 +23234,10 @@ designs: [
 {
 "thumbnail":"preview/item-099a.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box type-alegreya-lato is-section-20 box-autofit">
+<div class="is-section is-box  is-section-20 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -23258,7 +23256,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-section-80 type-alegreya-lato is-content-bottom box-autofit min-height-90">
+<div class="is-section is-box is-section-80  is-content-bottom box-autofit min-height-90">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -23286,10 +23284,10 @@ designs: [
 {
 "thumbnail":"preview/item-099b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section type-montserrat-roboto is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -23355,10 +23353,10 @@ designs: [
 {
 "thumbnail":"preview/item-098a.png",
 "category":"2",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-quicksand-kalam box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -23404,10 +23402,10 @@ designs: [
 {
 "thumbnail":"preview/item-098b.png",
 "category":"2",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-frankruhllibre-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -23451,10 +23449,10 @@ designs: [
 {
 "thumbnail":"preview/item-098c.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-40 type-montserrat-roboto">
+<div class="is-section is-section-40 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 box-autofit">
         <div class="is-overlay"></div>
@@ -23490,7 +23488,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-section-60 is-content-top type-montserrat-roboto box-autofit">
+<div class="is-section is-box is-section-60 is-content-top  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-content-top edge-y-1">
@@ -23527,10 +23525,10 @@ designs: [
 {
 "thumbnail":"preview/item-097a.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-bottom type-poppins box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text is-content-bottom  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-5"></div>
@@ -23595,10 +23593,10 @@ designs: [
 {
 "thumbnail":"preview/item-097b.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -23700,10 +23698,10 @@ designs: [
 {
 "thumbnail":"preview/item-097c.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 is-box box-autofit type-poppins">
+<div class="is-section is-section-100 is-box box-autofit ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -23746,10 +23744,10 @@ designs: [
 {
 "thumbnail":"preview/item-096a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-dark-text is-content-bottom type-raleway-lato box-autofit is-section-40">
+<div class="is-section is-box is-dark-text is-content-bottom  box-autofit is-section-40">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0-25">
@@ -23796,10 +23794,10 @@ designs: [
 {
 "thumbnail":"preview/item-096b.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-prata-hindsiliguri box-autofit min-height-60 box-space box-space-m stack-bottom">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-60 box-space box-space-m stack-bottom">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;"></div>
 </div>
@@ -23833,10 +23831,10 @@ designs: [
 {
 "thumbnail":"preview/item-096c.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-30 type-rufina-oxygen box-autofit">
+<div class="is-section is-box is-section-30  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -23862,7 +23860,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-section-70 type-opensans box-autofit">
+<div class="is-section is-box is-section-70  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -23879,10 +23877,10 @@ designs: [
 {
 "thumbnail":"preview/item-095a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-montserrat-roboto box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-10"></div>
@@ -23932,10 +23930,10 @@ designs: [
 {
 "thumbnail":"preview/item-095b.png",
 "category":"1",
-"contentCss":"type-heebo-ibmplexmono.css",
-"contentClass":"type-heebo-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 type-heebo-ibmplexmono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -23998,16 +23996,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-heebo-ibmplexmono" href="/assets/styles/type-heebo-ibmplexmono.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-094a.png",
 "category":"1",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-spacemono box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-4"></div>
@@ -24038,10 +24036,10 @@ designs: [
 {
 "thumbnail":"preview/item-094b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 box-space box-space-m type-montserrat-roboto">
+<div class="is-section is-section-100 box-space box-space-m ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -24129,10 +24127,10 @@ designs: [
 {
 "thumbnail":"preview/item-094c.png",
 "category":"1",
-"contentCss":"type-pathwaygothicone-merriweather.css",
-"contentClass":"type-pathwaygothicone-merriweather",
+
+
 "html":`
-<div class="is-section is-section-100 type-pathwaygothicone-merriweather">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -24168,17 +24166,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-pathwaygothicone-merriweather" href="/assets/styles/type-pathwaygothicone-merriweather.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-092a.png",
 "category":"2",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-bottom type-frankruhllibre-lato min-height-70 box-autofit">
+<div class="is-section is-box is-section-100 is-light-text is-content-bottom  min-height-70 box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-15"></div>
@@ -24237,10 +24235,10 @@ designs: [
 {
 "thumbnail":"preview/item-092b.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box type-poppins is-section-30">
+<div class="is-section is-box  is-section-30">
 <div class="is-overlay">
     <div class="is-overlay-bg">
         <div class="is-overlay-color opacity-5" style="background-color: rgb(255, 255, 255);"></div>
@@ -24269,7 +24267,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-70 type-poppins">
+<div class="is-section is-section-70 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-dark-text">
         <div class="is-overlay">
@@ -24346,10 +24344,10 @@ designs: [
 {
 "thumbnail":"preview/item-092c.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro box-space">
+<div class="is-section is-section-100  box-space">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -24403,17 +24401,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-frankruhllibre-lato" href="/assets/styles/type-frankruhllibre-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-091a.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-light-text type-prata-hindsiliguri is-section-100">
+<div class="is-section is-box is-light-text  is-section-100">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-0"></div>
@@ -24459,10 +24457,10 @@ designs: [
 {
 "thumbnail":"preview/item-091b.png",
 "category":"1",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-poppins-lekton box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -24509,10 +24507,10 @@ designs: [
 {
 "thumbnail":"preview/item-091c.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -24571,10 +24569,10 @@ designs: [
 {
 "thumbnail":"preview/item-090a.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 box-space type-alegreya-lato is-light-text">
+<div class="is-section is-box is-section-100 box-space  is-light-text">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-4"></div>
@@ -24610,10 +24608,10 @@ designs: [
 {
 "thumbnail":"preview/item-090b.png",
 "category":"2",
-"contentCss":"type-heebo-ibmplexmono-2.css",
-"contentClass":"type-heebo-ibmplexmono-2",
+"contentCss":"-2.css",
+"contentClass":"-2",
 "html":`
-<div class="is-section type-heebo-ibmplexmono-2 is-section-100">
+<div class="is-section -2 is-section-100">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -24695,10 +24693,10 @@ designs: [
 {
 "thumbnail":"preview/item-089a.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-raleway-lato box-autofit min-height-70 is-light-text">
+<div class="is-section is-section-100 is-box  box-autofit min-height-70 is-light-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -24756,10 +24754,10 @@ designs: [
 {
 "thumbnail":"preview/item-089b.png",
 "category":"2",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-montserrat-roboto box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -24816,10 +24814,10 @@ designs: [
 {
 "thumbnail":"preview/item-088a.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-dark-text type-alegreya-lato is-section-20">
+<div class="is-section is-box is-dark-text  is-section-20">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -24838,12 +24836,12 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space type-alegreya-lato is-section-60">
+<div class="is-section is-box box-space  is-section-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato is-section-20">
+<div class="is-section is-box  is-section-20">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -24873,10 +24871,10 @@ designs: [
 {
 "thumbnail":"preview/item-088b.png",
 "category":"1",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -24973,10 +24971,10 @@ designs: [
 {
 "thumbnail":"preview/item-087a.png",
 "category":"1",
-"contentCss":"type-cutivemono-lato.css",
-"contentClass":"type-cutivemono-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-cutivemono-lato box-reverse md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  box-reverse md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -25057,10 +25055,10 @@ designs: [
 {
 "thumbnail":"preview/item-087b.png",
 "category":"1",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-alegreya-lato">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -25136,10 +25134,10 @@ designs: [
 {
 "thumbnail":"preview/item-087c.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top is-light-text type-montserrat-roboto box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-content-top is-light-text  box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-5"></div>
@@ -25206,10 +25204,10 @@ designs: [
 {
 "thumbnail":"preview/item-086a.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box type-prata-hindsiliguri is-section-30 is-content-bottom box-autofit">
+<div class="is-section is-box  is-section-30 is-content-bottom box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-1">
@@ -25234,7 +25232,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-70 type-prata-hindsiliguri">
+<div class="is-section is-section-70 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-5 is-content-top box-autofit">
         <div class="is-overlay"></div>
@@ -25278,10 +25276,10 @@ designs: [
 {
 "thumbnail":"preview/item-086b.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-yantramanav-ibmplexserif box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -25325,16 +25323,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-085a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-40 type-raleway-lato box-autofit">
+<div class="is-section is-box is-section-40  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -25355,7 +25353,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-raleway-lato is-section-60">
+<div class="is-section  is-section-60">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -25427,10 +25425,10 @@ designs: [
 {
 "thumbnail":"preview/item-085b.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-frankruhllibre-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -25506,10 +25504,10 @@ designs: [
 {
 "thumbnail":"preview/item-085c.png",
 "category":"3",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-section-100 type-spacemono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -25583,17 +25581,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-frankruhllibre-lato" href="/assets/styles/type-frankruhllibre-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-084a.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto is-light-text">
+<div class="is-section is-box is-section-100  is-light-text">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-10"></div>
@@ -25622,10 +25620,10 @@ designs: [
 {
 "thumbnail":"preview/item-084b.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section type-rufina-oxygen is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -25714,16 +25712,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-083a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section type-raleway-lato is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -25795,10 +25793,10 @@ designs: [
 {
 "thumbnail":"preview/item-083b.png",
 "category":"1",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-prata-hindsiliguri">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -25849,10 +25847,10 @@ designs: [
 {
 "thumbnail":"preview/item-083c.png",
 "category":"1",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-lato box-autofit min-height-70 is-light-text">
+<div class="is-section is-box is-section-100  box-autofit min-height-70 is-light-text">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -25896,17 +25894,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-082a.png",
 "category":"1",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section type-rufina-oxygen is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-content-top box-autofit is-box-6">
         <div class="is-overlay">
@@ -25991,10 +25989,10 @@ designs: [
 {
 "thumbnail":"preview/item-082b.png",
 "category":"1",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-5 min-height-60 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -26068,10 +26066,10 @@ designs: [
 {
 "thumbnail":"preview/item-081a.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-30 type-oranienbaum-sourcesanspro box-autofit">
+<div class="is-section is-box is-section-30  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -26091,7 +26089,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-70 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-70 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -26174,10 +26172,10 @@ designs: [
 {
 "thumbnail":"preview/item-081b.png",
 "category":"1",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box type-montserrat-roboto is-section-25 box-autofit">
+<div class="is-section is-box  is-section-25 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -26214,7 +26212,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-montserrat-roboto is-section-75">
+<div class="is-section  is-section-75">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -26250,10 +26248,10 @@ designs: [
 {
 "thumbnail":"preview/item-081c.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato box-space box-autofit min-height-75">
+<div class="is-section is-box is-section-100 is-light-text  box-space box-autofit min-height-75">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-10"></div>
@@ -26302,17 +26300,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-080a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section type-raleway-lato is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-40">
         <div class="is-overlay">
@@ -26367,10 +26365,10 @@ designs: [
 {
 "thumbnail":"preview/item-080b.png",
 "category":"1",
-"contentCss":"type-marcellussc-heebo.css",
-"contentClass":"type-marcellussc-heebo",
+
+
 "html":`
-<div class="is-section is-section-100 type-marcellussc-heebo">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
@@ -26447,16 +26445,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-marcellussc-heebo" href="/assets/styles/type-marcellussc-heebo.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-079a.png",
 "category":"1",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-playfairdisplay">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-70 is-light-text">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -26552,10 +26550,10 @@ designs: [
 {
 "thumbnail":"preview/item-079b.png",
 "category":"1",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-dark-text box-autofit is-section-30 type-raleway-playfairdisplay">
+<div class="is-section is-box is-dark-text box-autofit is-section-30 ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -26590,7 +26588,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-opensans box-autofit min-height-50 is-section-70">
+<div class="is-section is-box  box-autofit min-height-50 is-section-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -26600,10 +26598,10 @@ designs: [
 {
 "thumbnail":"preview/item-079c.png",
 "category":"1",
-"contentCss":"type-raleway-playfairdisplay.css",
-"contentClass":"type-raleway-playfairdisplay",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-raleway-playfairdisplay">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay"></div>
@@ -26661,16 +26659,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-playfairdisplay" href="/assets/styles/type-raleway-playfairdisplay.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-078a.png",
 "category":"2",
-"contentCss":"type-oswald-biryani.css",
-"contentClass":"type-oswald-biryani",
+
+
 "html":`
-<div class="is-section is-section-100 type-oswald-biryani">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -26765,10 +26763,10 @@ designs: [
 {
 "thumbnail":"preview/item-078b.png",
 "category":"2",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-prata-hindsiliguri">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -26835,10 +26833,10 @@ designs: [
 {
 "thumbnail":"preview/item-078c.png",
 "category":"2",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-frankruhllibre-lato">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-4"></div>
@@ -26881,17 +26879,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-oswald-biryani" href="/assets/styles/type-oswald-biryani.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-frankruhllibre-lato" href="/assets/styles/type-frankruhllibre-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-077a.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-dark-text is-section-75 is-content-bottom type-poppins">
+<div class="is-section is-box is-dark-text is-section-75 is-content-bottom ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;">
         <div class="is-overlay-color opacity-0"></div>
@@ -26952,10 +26950,10 @@ designs: [
 {
 "thumbnail":"preview/item-077b.png",
 "category":"2",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 type-opensans">
+<div class="is-section is-section-100 is-shadow-1 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -27070,10 +27068,10 @@ designs: [
 {
 "thumbnail":"preview/item-076a.png",
 "category":"2",
-"contentCss":"type-sacramento-opensans.css",
-"contentClass":"type-sacramento-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 type-sacramento-opensans">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -27164,10 +27162,10 @@ designs: [
 {
 "thumbnail":"preview/item-076b.png",
 "category":"2",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-box type-engagement-spectral is-section-100 box-autofit">
+<div class="is-section is-box  is-section-100 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -27218,10 +27216,10 @@ designs: [
 {
 "thumbnail":"preview/item-076c.png",
 "category":"2",
-"contentCss":"type-abrilfatface-assistant.css",
-"contentClass":"type-abrilfatface-assistant",
+
+
 "html":`
-<div class="is-section is-shadow-1 type-opensans is-section-70">
+<div class="is-section is-shadow-1  is-section-70">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -27240,7 +27238,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-abrilfatface-assistant is-section-30">
+<div class="is-section  is-section-30">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -27308,10 +27306,10 @@ designs: [
 {
 "thumbnail":"preview/item-075a.png",
 "category":"2",
-"contentCss":"type-yesteryear-chivo.css",
-"contentClass":"type-yesteryear-chivo",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-yesteryear-chivo is-content-top box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  is-content-top box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color"></div>
@@ -27372,10 +27370,10 @@ designs: [
 {
 "thumbnail":"preview/item-075b.png",
 "category":"2",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-prata-hindsiliguri box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -27425,10 +27423,10 @@ designs: [
 {
 "thumbnail":"preview/item-075c.png",
 "category":"2",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-3 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -27506,10 +27504,10 @@ designs: [
 {
 "thumbnail":"preview/item-074a.png",
 "category":"2",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-section-100 type-dosis-oldstandardtt" data-anim-start="" data-anim-end="">
+<div class="is-section is-section-100 " data-anim-start="" data-anim-end="">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -27582,10 +27580,10 @@ designs: [
 {
 "thumbnail":"preview/item-074b.png",
 "category":"2",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-alegreya-lato is-content-top" data-anim-start="">
+<div class="is-section is-box is-section-100 is-dark-text  is-content-top" data-anim-start="">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -27642,10 +27640,10 @@ designs: [
 {
 "thumbnail":"preview/item-072a.png",
 "category":"3",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box type-spacemono is-section-50 is-content-top box-autofit">
+<div class="is-section is-box  is-section-50 is-content-top box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-top edge-y-1">
@@ -27715,10 +27713,10 @@ designs: [
 {
 "thumbnail":"preview/item-072b.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 min-height-60 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -27808,10 +27806,10 @@ designs: [
 {
 "thumbnail":"preview/item-071a.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section type-montserrat-roboto is-section-100 box-space box-space-xxs stack-top">
+<div class="is-section  is-section-100 box-space box-space-xxs stack-top">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-40">
         <div class="is-overlay">
@@ -27876,10 +27874,10 @@ designs: [
 {
 "thumbnail":"preview/item-071b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 type-rufina-oxygen box-space box-space-xxs stack-bottom">
+<div class="is-section is-section-100 is-shadow-1  box-space box-space-xxs stack-bottom">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-light-text">
         <div class="is-overlay">
@@ -27961,10 +27959,10 @@ designs: [
 {
 "thumbnail":"preview/item-070a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -28043,10 +28041,10 @@ designs: [
 {
 "thumbnail":"preview/item-070b.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -28135,10 +28133,10 @@ designs: [
 {
 "thumbnail":"preview/item-069a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-lato is-light-text is-content-top box-autofit min-height-70">
+<div class="is-section is-box is-section-100  is-light-text is-content-top box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -28176,10 +28174,10 @@ designs: [
 {
 "thumbnail":"preview/item-069b.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-poppins box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -28243,10 +28241,10 @@ designs: [
 {
 "thumbnail":"preview/item-068a.png",
 "category":"1",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-30 type-oranienbaum-sourcesanspro">
+<div class="is-section is-box is-section-30 ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -28267,7 +28265,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-dark-text type-oranienbaum-sourcesanspro is-section-70 is-content-top">
+<div class="is-section is-box is-dark-text  is-section-70 is-content-top">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -28288,10 +28286,10 @@ designs: [
 {
 "thumbnail":"preview/item-068b.png",
 "category":"1",
-"contentCss":"type-sriracha-arvo.css",
-"contentClass":"type-sriracha-arvo",
+
+
 "html":`
-<div class="is-section is-section-100 type-sriracha-arvo">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-5 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -28357,16 +28355,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-sriracha-arvo" href="/assets/styles/type-sriracha-arvo.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-067a.png",
 "category":"1",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section type-raleway-lato is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -28439,10 +28437,10 @@ designs: [
 {
 "thumbnail":"preview/item-067b.png",
 "category":"1",
-"contentCss":"type-oswald-opensans.css",
-"contentClass":"type-oswald-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-oswald-opensans box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -28488,10 +28486,10 @@ designs: [
 {
 "thumbnail":"preview/item-067c.png",
 "category":"1",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-yantramanav-ibmplexserif box-autofit min-height-80">
+<div class="is-section is-box is-section-100 is-dark-text  box-autofit min-height-80">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -28542,10 +28540,10 @@ designs: [
 {
 "thumbnail":"preview/item-066a.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-light-text is-section-100 type-frankruhllibre-lato box-autofit min-height-70">
+<div class="is-section is-box is-light-text is-section-100  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -28599,10 +28597,10 @@ designs: [
 {
 "thumbnail":"preview/item-066b.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-oranienbaum-sourcesanspro box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -28652,10 +28650,10 @@ designs: [
 {
 "thumbnail":"preview/item-066c.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-8 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -28713,10 +28711,10 @@ designs: [
 {
 "thumbnail":"preview/item-065a.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section box-space is-section-100 type-yantramanav-ibmplexserif">
+<div class="is-section box-space is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 box-autofit">
         <div class="is-overlay"></div>
@@ -28785,10 +28783,10 @@ designs: [
 {
 "thumbnail":"preview/item-065b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-rufina-oxygen box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -28841,10 +28839,10 @@ designs: [
 {
 "thumbnail":"preview/item-065c.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-50">
         <div class="is-overlay">
@@ -28921,10 +28919,10 @@ designs: [
 {
 "thumbnail":"preview/item-064a.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-alegreya-lato min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-0"></div>
@@ -28986,10 +28984,10 @@ designs: [
 {
 "thumbnail":"preview/item-064b.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-dark-text type-alegreya-lato is-section-100 box-space box-autofit">
+<div class="is-section is-box is-dark-text  is-section-100 box-space box-autofit">
 <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
 </div>
 <div class="is-boxes">
@@ -29056,10 +29054,10 @@ designs: [
 {
 "thumbnail":"preview/item-064c.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreya-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-4 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -29122,10 +29120,10 @@ designs: [
 {
 "thumbnail":"preview/item-063a.png",
 "category":"3",
-"contentCss":"type-fjallaone-ibmplexserif.css",
-"contentClass":"type-fjallaone-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-fjallaone-ibmplexserif">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -29204,10 +29202,10 @@ designs: [
 {
 "thumbnail":"preview/item-063b.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-80">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -29293,10 +29291,10 @@ designs: [
 {
 "thumbnail":"preview/item-063c.png",
 "category":"3",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-engagement-spectral box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -29347,10 +29345,10 @@ designs: [
 {
 "thumbnail":"preview/item-062a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-content-top is-light-text type-raleway-lato is-section-80 box-autofit min-height-70">
+<div class="is-section is-box is-content-top is-light-text  is-section-80 box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -29372,7 +29370,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-raleway-lato is-section-20 box-autofit min-height-30">
+<div class="is-section is-box  is-section-20 box-autofit min-height-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -29394,10 +29392,10 @@ designs: [
 {
 "thumbnail":"preview/item-062b.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-prata-hindsiliguri box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay" style="background-color: rgb(249, 249, 249);"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -29448,10 +29446,10 @@ designs: [
 {
 "thumbnail":"preview/item-062c.png",
 "category":"3",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-poppins-lekton md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 box-space  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50 is-light-text is-content-top">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -29500,17 +29498,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-061a.png",
 "category":"3",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins-lekton">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -29593,10 +29591,10 @@ designs: [
 {
 "thumbnail":"preview/item-061b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-rufina-oxygen box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -29652,10 +29650,10 @@ designs: [
 {
 "thumbnail":"preview/item-060a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text is-content-top type-raleway-lato">
+<div class="is-section is-box is-section-100 is-dark-text is-content-top ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -29716,10 +29714,10 @@ designs: [
 {
 "thumbnail":"preview/item-060b.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-frankruhllibre-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 box-space  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -29779,16 +29777,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-frankruhllibre-lato" href="/assets/styles/type-frankruhllibre-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-059a.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-yantramanav-ibmplexserif box-autofit min-height-75">
+<div class="is-section is-box is-section-100 is-dark-text  box-autofit min-height-75">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -29834,10 +29832,10 @@ designs: [
 {
 "thumbnail":"preview/item-059b.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-60 type-alegreya-lato">
+<div class="is-section is-section-60 ">
 <div class="is-boxes">
     <div class="is-box is-light-text is-box-6 is-content-bottom">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -29871,7 +29869,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -29908,16 +29906,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-058a.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-rufina-oxygen box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-8" style="background-color: rgb(0, 0, 0);"></div>
@@ -29955,10 +29953,10 @@ designs: [
 {
 "thumbnail":"preview/item-058b.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box type-raleway-lato box-autofit is-section-30">
+<div class="is-section is-box  box-autofit is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -29976,7 +29974,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-poppins is-light-text is-content-top is-section-70">
+<div class="is-section is-box  is-light-text is-content-top is-section-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -30001,17 +29999,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-057a.png",
 "category":"3",
-"contentCss":"type-sacramento-opensans.css",
-"contentClass":"type-sacramento-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text is-content-bottom type-sacramento-opensans box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-dark-text is-content-bottom  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -30055,10 +30053,10 @@ designs: [
 {
 "thumbnail":"preview/item-057b.png",
 "category":"3",
-"contentCss":"type-dosis-oldstandardtt.css",
-"contentClass":"type-dosis-oldstandardtt",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-dosis-oldstandardtt box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -30095,10 +30093,10 @@ designs: [
 {
 "thumbnail":"preview/item-057c.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -30152,17 +30150,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-sacramento-opensans" href="/assets/styles/type-sacramento-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-dosis-oldstandardtt" href="/assets/styles/type-dosis-oldstandardtt.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-056a.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-frankruhllibre-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-30">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -30207,10 +30205,10 @@ designs: [
 {
 "thumbnail":"preview/item-056b.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-content-bottom type-lato is-section-25">
+<div class="is-section is-box is-content-bottom  is-section-25">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0-25">
@@ -30231,7 +30229,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space is-section-75 is-light-text is-content-bottom type-lato">
+<div class="is-section is-box box-space is-section-75 is-light-text is-content-bottom ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;"></div>
 </div>
@@ -30264,10 +30262,10 @@ designs: [
 {
 "thumbnail":"preview/item-056c.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-yantramanav-ibmplexserif box-autofit">
+<div class="is-section is-box is-section-100 is-dark-text  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -30315,10 +30313,10 @@ designs: [
 {
 "thumbnail":"preview/item-055a.png",
 "category":"3",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-box type-ibmplexmono is-section-30">
+<div class="is-section is-box  is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -30340,7 +30338,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-ibmplexmono is-section-70">
+<div class="is-section  is-section-70">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-7 box-autofit min-height-30">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -30385,10 +30383,10 @@ designs: [
 {
 "thumbnail":"preview/item-055b.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-content-top is-box-5 box-autofit min-height-80">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -30448,16 +30446,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-ibmplexmono" href="/assets/styles/type-ibmplexmono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-054a.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box is-light-text is-section-70 type-yantramanav-ibmplexserif box-autofit min-height-50">
+<div class="is-section is-box is-light-text is-section-70  box-autofit min-height-50">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -30473,7 +30471,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-yantramanav-ibmplexserif is-section-30 box-autofit min-height-50">
+<div class="is-section is-box  is-section-30 box-autofit min-height-50">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -30497,10 +30495,10 @@ designs: [
 {
 "thumbnail":"preview/item-054b.png",
 "category":"3",
-"contentCss":"type-heebo-ibmplexmono-2.css",
-"contentClass":"type-heebo-ibmplexmono-2",
+"contentCss":"-2.css",
+"contentClass":"-2",
 "html":`
-<div class="is-section is-section-100 box-space type-heebo-ibmplexmono-2">
+<div class="is-section is-section-100 box-space -2">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -30546,16 +30544,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-heebo-ibmplexmono-2" href="/assets/styles/type-heebo-ibmplexmono-2.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="-2" href="/assets/styles/-2.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-053a.png",
 "category":"3",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-spacemono box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -30598,15 +30596,15 @@ designs: [
 {
 "thumbnail":"preview/item-053b.png",
 "category":"3",
-"contentCss":"type-josefinsans-neuton.css",
-"contentClass":"type-josefinsans-neuton",
+
+
 "html":`
-<div class="is-section is-box box-space is-section-60 type-raleway-neuton">
+<div class="is-section is-box box-space is-section-60 ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
 </div>
-<div class="is-section is-box is-dark-text is-section-40 type-josefinsans-neuton box-autofit">
+<div class="is-section is-box is-dark-text is-section-40  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -30649,10 +30647,10 @@ designs: [
 {
 "thumbnail":"preview/item-053c.png",
 "category":"3",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins-lekton">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -30718,10 +30716,10 @@ designs: [
 {
 "thumbnail":"preview/item-052a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-content-bottom is-box-3 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -30806,10 +30804,10 @@ designs: [
 {
 "thumbnail":"preview/item-052b.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-yantramanav-ibmplexserif box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -30851,10 +30849,10 @@ designs: [
 {
 "thumbnail":"preview/item-052c.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-8 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
@@ -30918,10 +30916,10 @@ designs: [
 {
 "thumbnail":"preview/item-051a.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 is-box type-alegreya-lato box-autofit">
+<div class="is-section is-section-100 is-box  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -30975,10 +30973,10 @@ designs: [
 {
 "thumbnail":"preview/item-051b.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -31045,10 +31043,10 @@ designs: [
 {
 "thumbnail":"preview/item-051c.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -31114,10 +31112,10 @@ designs: [
 {
 "thumbnail":"preview/item-050a.png",
 "category":"3",
-"contentCss":"type-yesteryear-chivo.css",
-"contentClass":"type-yesteryear-chivo",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-yesteryear-chivo box-autofit">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -31156,10 +31154,10 @@ designs: [
 {
 "thumbnail":"preview/item-050b.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -31216,10 +31214,10 @@ designs: [
 {
 "thumbnail":"preview/item-049a.png",
 "category":"3",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 type-ibmplexmono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-4 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -31296,10 +31294,10 @@ designs: [
 {
 "thumbnail":"preview/item-049b.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -31381,10 +31379,10 @@ designs: [
 {
 "thumbnail":"preview/item-049c.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top is-dark-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -31434,10 +31432,10 @@ designs: [
 {
 "thumbnail":"preview/item-048a.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-frankruhllibre-lato box-space box-space-xxs">
+<div class="is-section is-section-100  box-space box-space-xxs">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit is-content-bottom">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -31508,10 +31506,10 @@ designs: [
 {
 "thumbnail":"preview/item-048b.png",
 "category":"3",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-box is-section-50 type-spacemono box-autofit">
+<div class="is-section is-box is-section-50  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -31535,7 +31533,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-spacemono is-section-50">
+<div class="is-section  is-section-50">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-6 is-content-bottom box-autofit">
         <div class="is-overlay"></div>
@@ -31580,10 +31578,10 @@ designs: [
 {
 "thumbnail":"preview/item-048c.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-lato">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -31658,17 +31656,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-frankruhllibre-lato" href="/assets/styles/type-frankruhllibre-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-047a.png",
 "category":"3",
-"contentCss":"type-playfairdisp-petitformalscr.css",
-"contentClass":"type-playfairdisp-petitformalscr",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-playfairdisp-petitformalscr box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color" style="opacity: 0.15; display: block;"></div>
@@ -31723,10 +31721,10 @@ designs: [
 {
 "thumbnail":"preview/item-047b.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -31822,10 +31820,10 @@ designs: [
 {
 "thumbnail":"preview/item-047c.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -31887,17 +31885,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-playfairdisp-petitformalscr" href="/assets/styles/type-playfairdisp-petitformalscr.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-046a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-raleway-lato box-autofit">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -31936,10 +31934,10 @@ designs: [
 {
 "thumbnail":"preview/item-046b.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -32031,10 +32029,10 @@ designs: [
 {
 "thumbnail":"preview/item-046c.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-frankruhllibre-lato is-light-text box-autofit min-height-70">
+<div class="is-section is-box is-section-100  is-light-text box-autofit min-height-70">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -32087,17 +32085,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-frankruhllibre-lato" href="/assets/styles/type-frankruhllibre-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-045a.png",
 "category":"3",
-"contentCss":"type-heebo-ibmplexmono-2.css",
-"contentClass":"type-heebo-ibmplexmono-2",
+"contentCss":"-2.css",
+"contentClass":"-2",
 "html":`
-<div class="is-section is-box type-heebo-ibmplexmono-2 is-section-30">
+<div class="is-section is-box -2 is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -32119,7 +32117,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space is-content-top type-heebo-ibmplexmono-2 is-section-70 box-autofit min-height-100">
+<div class="is-section is-box box-space is-content-top -2 is-section-70 box-autofit min-height-100">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
@@ -32152,10 +32150,10 @@ designs: [
 {
 "thumbnail":"preview/item-045b.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-oranienbaum-sourcesanspro box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -32198,10 +32196,10 @@ designs: [
 {
 "thumbnail":"preview/item-044a.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-40 type-oranienbaum-sourcesanspro">
+<div class="is-section is-box is-section-40 ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -32220,7 +32218,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-oranienbaum-sourcesanspro is-section-60">
+<div class="is-section  is-section-60">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -32262,10 +32260,10 @@ designs: [
 {
 "thumbnail":"preview/item-044b.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins sm-boxes-1 sm-boxes-wrap md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  sm-boxes-1 sm-boxes-wrap md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -32332,10 +32330,10 @@ designs: [
 {
 "thumbnail":"preview/item-043a.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box box-autofit is-content-bottom is-section-25 type-frankruhllibre-lato">
+<div class="is-section is-box box-autofit is-content-bottom is-section-25 ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0">
@@ -32363,7 +32361,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space box-space-xxs is-section-75 type-frankruhllibre-lato is-content-top is-light-text">
+<div class="is-section is-box box-space box-space-xxs is-section-75  is-content-top is-light-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -32395,10 +32393,10 @@ designs: [
 {
 "thumbnail":"preview/item-043b.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-frankruhllibre-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 is-content-top box-autofit min-height-60 is-light-text">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -32468,10 +32466,10 @@ designs: [
 {
 "thumbnail":"preview/item-043c.png",
 "category":"3",
-"contentCss":"type-ibmplexmono.css",
-"contentClass":"type-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-ibmplexmono box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -32506,10 +32504,10 @@ designs: [
 {
 "thumbnail":"preview/item-042a.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -32583,10 +32581,10 @@ designs: [
 {
 "thumbnail":"preview/item-042b.png",
 "category":"3",
-"contentCss":"type-poppins-lekton.css",
-"contentClass":"type-poppins-lekton",
+
+
 "html":`
-<div class="is-section type-poppins-lekton is-section-40">
+<div class="is-section  is-section-40">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -32626,7 +32624,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-section-60 type-poppins-lekton">
+<div class="is-section is-section-60 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-3 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -32680,16 +32678,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins-lekton" href="/assets/styles/type-poppins-lekton.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-041a.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-section-100 type-prata-hindsiliguri">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -32765,10 +32763,10 @@ designs: [
 {
 "thumbnail":"preview/item-041b.png",
 "category":"3",
-"contentCss":"type-novamono-robotomono.css",
-"contentClass":"type-novamono-robotomono",
+
+
 "html":`
-<div class="is-section is-section-100 is-box is-content-top type-novamono-robotomono box-autofit">
+<div class="is-section is-section-100 is-box is-content-top  box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%; transition: all 0.3s ease-out 0s;"></div>
 </div>
@@ -32822,10 +32820,10 @@ designs: [
 {
 "thumbnail":"preview/item-040a.png",
 "category":"3",
-"contentCss":"type-ptserif-poppins.css",
-"contentClass":"type-ptserif-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-ptserif-poppins">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-75">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -32882,10 +32880,10 @@ designs: [
 {
 "thumbnail":"preview/item-040b.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-50 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-50 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -32928,7 +32926,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-section-50 type-yantramanav-ibmplexserif box-autofit">
+<div class="is-section is-box is-section-50  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -32967,10 +32965,10 @@ designs: [
 {
 "thumbnail":"preview/item-040c.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box type-raleway-lato is-section-100 box-autofit">
+<div class="is-section is-box  is-section-100 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -33011,10 +33009,10 @@ designs: [
 {
 "thumbnail":"preview/item-039a.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-80 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-80 ">
 <div class="is-boxes">
     <div class="is-box is-content-bottom is-box-4 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -33068,7 +33066,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-yantramanav-ibmplexserif is-section-auto box-autofit">
+<div class="is-section is-box  is-section-auto box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -33091,10 +33089,10 @@ designs: [
 {
 "thumbnail":"preview/item-039b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-content-bottom is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -33150,16 +33148,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-038a.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay">
@@ -33226,10 +33224,10 @@ designs: [
 {
 "thumbnail":"preview/item-038b.png",
 "category":"3",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-shadow-1 is-section-100 type-engagement-spectral">
+<div class="is-section is-shadow-1 is-section-100 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit is-content-bottom">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -33294,10 +33292,10 @@ designs: [
 {
 "thumbnail":"preview/item-037a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box type-raleway-lato is-section-100 box-autofit">
+<div class="is-section is-box  is-section-100 box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -33350,10 +33348,10 @@ designs: [
 {
 "thumbnail":"preview/item-037b.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-section-100 type-poppins">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -33440,10 +33438,10 @@ designs: [
 {
 "thumbnail":"preview/item-037c.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-prata-hindsiliguri box-autofit min-height-70">
+<div class="is-section is-box is-section-100 is-light-text  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color" style="opacity: 0.15; display: block;"></div>
@@ -33506,17 +33504,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-poppins" href="/assets/styles/type-poppins.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-036a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-light-text is-box-6 box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -33597,10 +33595,10 @@ designs: [
 {
 "thumbnail":"preview/item-036b.png",
 "category":"3",
-"contentCss":"type-engagement-spectral.css",
-"contentClass":"type-engagement-spectral",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-engagement-spectral box-autofit">
+<div class="is-section is-box is-section-100 is-dark-text  box-autofit">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -33656,10 +33654,10 @@ designs: [
 {
 "thumbnail":"preview/item-036c.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -33698,17 +33696,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-engagement-spectral" href="/assets/styles/type-engagement-spectral.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-035a.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-bottom type-prata-hindsiliguri box-autofit min-height-60">
+<div class="is-section is-box is-section-100 is-light-text is-content-bottom  box-autofit min-height-60">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -33777,10 +33775,10 @@ designs: [
 {
 "thumbnail":"preview/item-035b.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-oranienbaum-sourcesanspro md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 box-space  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -33861,10 +33859,10 @@ designs: [
 {
 "thumbnail":"preview/item-035c.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-alegreya-lato">
+<div class="is-section is-box is-section-100 is-dark-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -33905,17 +33903,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-034a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-light-text is-section-70 type-raleway-lato is-content-bottom">
+<div class="is-section is-box is-light-text is-section-70  is-content-bottom">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -33938,7 +33936,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-raleway-lato is-section-30">
+<div class="is-section is-box  is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -33968,10 +33966,10 @@ designs: [
 {
 "thumbnail":"preview/item-034b.png",
 "category":"3",
-"contentCss":"type-spacemono.css",
-"contentClass":"type-spacemono",
+
+
 "html":`
-<div class="is-section is-section-100 type-spacemono md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -34068,10 +34066,10 @@ designs: [
 {
 "thumbnail":"preview/item-034c.png",
 "category":"3",
-"contentCss":"type-prata-hindsiliguri.css",
-"contentClass":"type-prata-hindsiliguri",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-prata-hindsiliguri box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -34128,10 +34126,10 @@ designs: [
 {
 "thumbnail":"preview/item-034d.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-yantramanav-ibmplexserif box-autofit min-height-70 is-light-text">
+<div class="is-section is-box is-section-100  box-autofit min-height-70 is-light-text">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -34171,18 +34169,18 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-spacemono" href="/assets/styles/type-spacemono.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-prata-hindsiliguri" href="/assets/styles/type-prata-hindsiliguri.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-033a.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-light-text is-content-bottom box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -34265,10 +34263,10 @@ designs: [
 {
 "thumbnail":"preview/item-033b.png",
 "category":"3",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-section-100 type-quicksand-kalam">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -34329,10 +34327,10 @@ designs: [
 {
 "thumbnail":"preview/item-033c.png",
 "category":"3",
-"contentCss":"type-heebo-ibmplexmono-2.css",
-"contentClass":"type-heebo-ibmplexmono-2",
+"contentCss":"-2.css",
+"contentClass":"-2",
 "html":`
-<div class="is-section is-section-100 type-heebo-ibmplexmono-2">
+<div class="is-section is-section-100 -2">
 <div class="is-boxes">
     <div class="is-box is-box-8 is-light-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -34392,17 +34390,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-quicksand-kalam" href="/assets/styles/type-quicksand-kalam.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-heebo-ibmplexmono-2" href="/assets/styles/type-heebo-ibmplexmono-2.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="-2" href="/assets/styles/-2.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-032a.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreya-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -34465,10 +34463,10 @@ designs: [
 {
 "thumbnail":"preview/item-032b.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-dark-text is-section-40 type-yantramanav-ibmplexserif box-autofit">
+<div class="is-section is-box is-dark-text is-section-40  box-autofit">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -34497,22 +34495,22 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box box-space type-opensans is-section-60">
+<div class="is-section is-box box-space  is-section-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%; opacity: 1;"></div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-031a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-dark-text is-content-top type-rufina-oxygen is-section-30">
+<div class="is-section is-box is-dark-text is-content-top  is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-top edge-y-1">
@@ -34543,7 +34541,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-raleway-lato is-section-70 box-space stack-top">
+<div class="is-section is-box  is-section-70 box-space stack-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -34553,10 +34551,10 @@ designs: [
 {
 "thumbnail":"preview/item-031b.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-frankruhllibre-lato box-space stack-bottom">
+<div class="is-section is-section-100  box-space stack-bottom">
 <div class="is-boxes">
     <div class="is-box is-box-7 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -34629,10 +34627,10 @@ designs: [
 {
 "thumbnail":"preview/item-031c.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-box type-frankruhllibre-lato is-section-100 box-autofit">
+<div class="is-section is-box  is-section-100 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -34688,15 +34686,15 @@ designs: [
 {
 "thumbnail":"preview/item-030a.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box type-poppins is-section-60">
+<div class="is-section is-box  is-section-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
 </div>
-<div class="is-section is-box type-montserrat-roboto is-content-bottom box-autofit is-section-40">
+<div class="is-section is-box  is-content-bottom box-autofit is-section-40">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-1">
@@ -34746,10 +34744,10 @@ designs: [
 {
 "thumbnail":"preview/item-030b.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 box-space no-space-between type-lato">
+<div class="is-section is-section-100 is-shadow-1 box-space no-space-between ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-bottom box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -34836,10 +34834,10 @@ designs: [
 {
 "thumbnail":"preview/item-030c.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -34914,10 +34912,10 @@ designs: [
 {
 "thumbnail":"preview/item-029a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -34972,10 +34970,10 @@ designs: [
 {
 "thumbnail":"preview/item-029b.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-alegreya-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -35015,10 +35013,10 @@ designs: [
 {
 "thumbnail":"preview/item-028a.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box type-yantramanav-ibmplexserif is-content-bottom is-section-60">
+<div class="is-section is-box  is-content-bottom is-section-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -35039,7 +35037,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-yantramanav-ibmplexserif md-box-reverse is-section-40">
+<div class="is-section  md-box-reverse is-section-40">
 <div class="is-boxes">
     <div class="is-box is-dark-text box-autofit is-box-9">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
@@ -35095,10 +35093,10 @@ designs: [
 {
 "thumbnail":"preview/item-028b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-rufina-oxygen is-dark-text">
+<div class="is-section is-box is-section-100  is-dark-text">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -35141,16 +35139,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-027a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section box-space is-section-100 type-raleway-lato" data-anim-end="">
+<div class="is-section box-space is-section-100 " data-anim-end="">
 <div class="is-boxes">
     <div class="is-box box-autofit min-height-70 is-box-7">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -35222,10 +35220,10 @@ designs: [
 {
 "thumbnail":"preview/item-027b.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-alegreya-lato" style="transition: all 0.3s ease-out 0s;" data-anim-end="">
+<div class="is-section is-section-100 " style="transition: all 0.3s ease-out 0s;" data-anim-end="">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -35295,16 +35293,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-alegreya-lato" href="/assets/styles/type-alegreya-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-026a.png",
 "category":"3",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-section-100 md-boxes-1 md-boxes-wrap type-oranienbaum-sourcesanspro">
+<div class="is-section is-section-100 md-boxes-1 md-boxes-wrap ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay">
@@ -35372,10 +35370,10 @@ designs: [
 {
 "thumbnail":"preview/item-026b.png",
 "category":"3",
-"contentCss":"type-unicaone-cormorantgaramond.css",
-"contentClass":"type-unicaone-cormorantgaramond",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-unicaone-cormorantgaramond">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -35428,16 +35426,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-oranienbaum-sourcesanspro" href="/assets/styles/type-oranienbaum-sourcesanspro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-unicaone-cormorantgaramond" href="/assets/styles/type-unicaone-cormorantgaramond.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-025a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -35486,10 +35484,10 @@ designs: [
 {
 "thumbnail":"preview/item-025b.png",
 "category":"3",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-section-50 type-frankruhllibre-lato">
+<div class="is-section is-section-50 ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -35551,7 +35549,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section type-frankruhllibre-lato is-section-50">
+<div class="is-section  is-section-50">
 <div class="is-boxes">
     <div class="is-box-4 is-box box-autofit">
         <div class="is-overlay">
@@ -35627,10 +35625,10 @@ designs: [
 {
 "thumbnail":"preview/item-025c.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box box-space is-section-100 type-poppins box-autofit">
+<div class="is-section is-box box-space is-section-100  box-autofit">
 <div class="is-overlay">
 </div>
 <div class="is-boxes">
@@ -35702,10 +35700,10 @@ designs: [
 {
 "thumbnail":"preview/item-024a.png",
 "category":"3",
-"contentCss":"type-playfairdisp-petitformalscr.css",
-"contentClass":"type-playfairdisp-petitformalscr",
+
+
 "html":`
-<div class="is-section is-section-100 type-playfairdisp-petitformalscr">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-align-left box-autofit">
         <div class="is-overlay">
@@ -35754,10 +35752,10 @@ designs: [
 {
 "thumbnail":"preview/item-024b.png",
 "category":"3",
-"contentCss":"type-voltaire-sourcecodepro.css",
-"contentClass":"type-voltaire-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top is-light-text type-voltaire-sourcecodepro box-autofit min-height-60 box-space stack-top">
+<div class="is-section is-box is-section-100 is-content-top is-light-text  box-autofit min-height-60 box-space stack-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -35807,10 +35805,10 @@ designs: [
 {
 "thumbnail":"preview/item-024c.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 type-opensans box-space stack-bottom">
+<div class="is-section is-section-100  box-space stack-bottom">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-light-text is-content-top box-autofit min-height-60">
         <div class="is-overlay">
@@ -35866,10 +35864,10 @@ designs: [
 {
 "thumbnail":"preview/item-023a.png",
 "category":"3",
-"contentCss":"type-caveat-sourcecodepro.css",
-"contentClass":"type-caveat-sourcecodepro",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-caveat-sourcecodepro">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -35926,10 +35924,10 @@ designs: [
 {
 "thumbnail":"preview/item-023b.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section type-montserrat-roboto is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-7 is-content-bottom box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -36013,10 +36011,10 @@ designs: [
 {
 "thumbnail":"preview/item-023c.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 is-box is-light-text type-montserrat-roboto box-autofit">
+<div class="is-section is-section-100 is-box is-light-text  box-autofit">
 <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-10" style="background-color: rgb(0, 0, 0);"></div>
@@ -36065,15 +36063,15 @@ designs: [
 {
 "thumbnail":"preview/item-023d.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box box-space is-section-70 type-montserrat-roboto">
+<div class="is-section is-box box-space is-section-70 ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
 </div>
-<div class="is-section is-box type-montserrat-roboto is-section-30 is-dark-text">
+<div class="is-section is-box  is-section-30 is-dark-text">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -36095,16 +36093,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-caveat-sourcecodepro" href="/assets/styles/type-caveat-sourcecodepro.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-021a.png",
 "category":"3",
-"contentCss":"type-arimamadurai.css",
-"contentClass":"type-arimamadurai",
+
+
 "html":`
-<div class="is-section is-section-100 is-box is-light-text is-content-bottom type-arimamadurai">
+<div class="is-section is-section-100 is-box is-light-text is-content-bottom ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;">
         <div class="is-overlay-color opacity-6"></div>
@@ -36166,10 +36164,10 @@ designs: [
 {
 "thumbnail":"preview/item-021b.png",
 "category":"3",
-"contentCss":"type-arimamadurai.css",
-"contentClass":"type-arimamadurai",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-arimamadurai">
+<div class="is-section is-section-100 box-space ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-top box-autofit">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -36223,15 +36221,15 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-arimamadurai" href="/assets/styles/type-arimamadurai.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-020a.png",
 "category":"2",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-box is-dark-text is-section-25 type-yantramanav-ibmplexserif box-autofit min-height-30">
+<div class="is-section is-box is-dark-text is-section-25  box-autofit min-height-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -36273,7 +36271,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-section-75 type-yantramanav-ibmplexserif box-autofit min-height-70 box-space stack-top">
+<div class="is-section is-box is-section-75  box-autofit min-height-70 box-space stack-top">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -36283,10 +36281,10 @@ designs: [
 {
 "thumbnail":"preview/item-020b.png",
 "category":"2",
-"contentCss":"type-frankruhllibre-lato.css",
-"contentClass":"type-frankruhllibre-lato",
+
+
 "html":`
-<div class="is-section is-shadow-1 no-space-between is-section-100 type-frankruhllibre-lato box-space stack-bottom">
+<div class="is-section is-shadow-1 no-space-between is-section-100  box-space stack-bottom">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -36386,10 +36384,10 @@ designs: [
 {
 "thumbnail":"preview/item-020c.png",
 "category":"2",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-dark-text is-section-100 type-poppins">
+<div class="is-section is-box is-dark-text is-section-100 ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -36467,10 +36465,10 @@ designs: [
 {
 "thumbnail":"preview/item-020d.png",
 "category":"2",
-"contentCss":"type-oranienbaum-sourcesanspro.css",
-"contentClass":"type-oranienbaum-sourcesanspro",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-oranienbaum-sourcesanspro box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -36502,10 +36500,10 @@ designs: [
 {
 "thumbnail":"preview/item-019a.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 box-space type-opensans" data-anim-end="">
+<div class="is-section is-section-100 box-space " data-anim-end="">
 <div class="is-boxes">
     <div class="is-box is-light-text is-content-bottom is-box-8 box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -36575,10 +36573,10 @@ designs: [
 {
 "thumbnail":"preview/item-019b.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-dark-text type-opensans is-content-bottom is-section-20 box-autofit" data-anim-start="" data-anim-end="">
+<div class="is-section is-box is-dark-text  is-content-bottom is-section-20 box-autofit" data-anim-start="" data-anim-end="">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95 is-content-bottom edge-y-0">
@@ -36607,7 +36605,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-content-top is-light-text box-space is-section-80 type-opensans box-autofit min-height-50" data-anim-start="" data-anim-end="">
+<div class="is-section is-box is-content-top is-light-text box-space is-section-80  box-autofit min-height-50" data-anim-start="" data-anim-end="">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -36630,10 +36628,10 @@ designs: [
 {
 "thumbnail":"preview/item-019c.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-opensans box-autofit" data-anim-end="" data-anim-start="">
+<div class="is-section is-box is-section-100  box-autofit" data-anim-end="" data-anim-start="">
 <div class="is-overlay" style="background-color: rgb(247, 247, 247);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -36696,10 +36694,10 @@ designs: [
 {
 "thumbnail":"preview/item-018a.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section type-opensans is-section-100">
+<div class="is-section  is-section-100">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit min-height-50">
         <div class="is-overlay">
@@ -36765,10 +36763,10 @@ designs: [
 {
 "thumbnail":"preview/item-018b.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 type-opensans">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit is-content-bottom">
         <div class="is-overlay">
@@ -36822,10 +36820,10 @@ designs: [
 {
 "thumbnail":"preview/item-017a.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay">
@@ -36904,10 +36902,10 @@ designs: [
 {
 "thumbnail":"preview/item-017b.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 type-opensans">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -36983,10 +36981,10 @@ designs: [
 {
 "thumbnail":"preview/item-017c.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto">
+<div class="is-section is-box is-section-100 ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -37051,17 +37049,17 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-015a.png",
 "category":"3",
-"contentCss":"type-heebo-ibmplexmono.css",
-"contentClass":"type-heebo-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 type-heebo-ibmplexmono" data-anim-end="">
+<div class="is-section is-section-100 " data-anim-end="">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -37110,10 +37108,10 @@ designs: [
 {
 "thumbnail":"preview/item-015b.png",
 "category":"3",
-"contentCss":"type-heebo-ibmplexmono.css",
-"contentClass":"type-heebo-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-heebo-ibmplexmono box-autofit" data-anim-end="">
+<div class="is-section is-box is-section-100 is-dark-text  box-autofit" data-anim-end="">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -37160,10 +37158,10 @@ designs: [
 {
 "thumbnail":"preview/item-015c.png",
 "category":"3",
-"contentCss":"type-heebo-ibmplexmono.css",
-"contentClass":"type-heebo-ibmplexmono",
+
+
 "html":`
-<div class="is-section is-section-100 type-heebo-ibmplexmono">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 is-content-top box-autofit">
         <div class="is-overlay"></div>
@@ -37224,10 +37222,10 @@ designs: [
 {
 "thumbnail":"preview/item-014a.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-opensans">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -37263,10 +37261,10 @@ designs: [
 {
 "thumbnail":"preview/item-014b.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 box-space type-opensans">
+<div class="is-section is-section-100 is-shadow-1 box-space ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-bottom box-autofit min-height-50">
         <div class="is-overlay">
@@ -37359,15 +37357,15 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-013a.png",
 "category":"3",
-"contentCss":"type-inconsolata.css",
-"contentClass":"type-inconsolata",
+
+
 "html":`
-<div class="is-section is-box box-autofit is-section-15 type-inconsolata">
+<div class="is-section is-box box-autofit is-section-15 ">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -37388,7 +37386,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-light-text box-autofit min-height-50 is-section-85 is-content-bottom type-inconsolata">
+<div class="is-section is-box is-light-text box-autofit min-height-50 is-section-85 is-content-bottom ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); opacity: 1; background-position: 50% 60%;"></div>
 </div>
@@ -37413,10 +37411,10 @@ designs: [
 {
 "thumbnail":"preview/item-013b.png",
 "category":"3",
-"contentCss":"type-yantramanav-ibmplexserif.css",
-"contentClass":"type-yantramanav-ibmplexserif",
+
+
 "html":`
-<div class="is-section is-section-100 type-yantramanav-ibmplexserif">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box box-autofit min-height-70 is-light-text is-box-5 is-content-top">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -37470,16 +37468,16 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-inconsolata" href="/assets/styles/type-inconsolata.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-yantramanav-ibmplexserif" href="/assets/styles/type-yantramanav-ibmplexserif.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-012a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text is-content-bottom type-raleway-lato" data-anim-end="">
+<div class="is-section is-box is-section-100 is-light-text is-content-bottom " data-anim-end="">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -37531,10 +37529,10 @@ designs: [
 {
 "thumbnail":"preview/item-012b.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 box-space type-raleway-lato">
+<div class="is-section is-section-100 is-shadow-1 box-space ">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text is-content-top">
         <div class="is-overlay" style="background-color: rgb(243, 243, 243);">
@@ -37607,10 +37605,10 @@ designs: [
 {
 "thumbnail":"preview/item-012c.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 no-space-between type-raleway-lato">
+<div class="is-section is-section-100 no-space-between ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 is-content-top box-autofit">
         <div class="is-overlay"></div>
@@ -37657,15 +37655,15 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-raleway-lato" href="/assets/styles/type-raleway-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-010a.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-light-text type-rufina-oxygen">
+<div class="is-section is-box is-section-100 is-light-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -37715,10 +37713,10 @@ designs: [
 {
 "thumbnail":"preview/item-010b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-4 box-autofit">
         <div class="is-overlay"></div>
@@ -37755,15 +37753,15 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-009a.png",
 "category":"3",
-"contentCss":"type-opensans.css",
-"contentClass":"type-opensans",
+
+
 "html":`
-<div class="is-section is-box type-rufina-oxygen is-section-40 box-autofit">
+<div class="is-section is-box  is-section-40 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -37798,7 +37796,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-opensans is-section-60">
+<div class="is-section is-box  is-section-60">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -37808,10 +37806,10 @@ designs: [
 {
 "thumbnail":"preview/item-009b.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -37888,10 +37886,10 @@ designs: [
 {
 "thumbnail":"preview/item-009c.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-lato">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-content-bottom is-dark-text box-autofit min-height-60">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -37958,18 +37956,18 @@ designs: [
     </div>
 </div>
 </div>
-<link data-name="contentstyle" data-class="type-opensans" href="/assets/styles/type-opensans.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-rufina-oxygen" href="/assets/styles/type-rufina-oxygen.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-montserrat-roboto" href="/assets/styles/type-montserrat-roboto.css" rel="stylesheet">
-<link data-name="contentstyle" data-class="type-lato" href="/assets/styles/type-lato.css" rel="stylesheet">`
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">
+<link data-name="contentstyle" data-class="" href="/assets/styles/.css" rel="stylesheet">`
 },
 {
 "thumbnail":"preview/item-008a.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-montserrat-roboto box-autofit min-height-70">
+<div class="is-section is-box is-section-100  box-autofit min-height-70">
 <div class="is-overlay" style="background-color: rgb(255, 255, 255);"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -38012,10 +38010,10 @@ designs: [
 {
 "thumbnail":"preview/item-008b.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-raleway-lato box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -38075,10 +38073,10 @@ designs: [
 {
 "thumbnail":"preview/item-008c.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen">
+<div class="is-section is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-box-6 is-dark-text is-content-top box-autofit min-height-50">
         <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
@@ -38154,10 +38152,10 @@ designs: [
 {
 "thumbnail":"preview/item-008d.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-content-top type-poppins box-autofit">
+<div class="is-section is-box is-section-100 is-content-top  box-autofit">
 <div class="is-overlay">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -38212,10 +38210,10 @@ designs: [
 {
 "thumbnail":"preview/item-007a.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section type-raleway-lato is-section-100 v2">
+<div class="is-section  is-section-100 v2">
 <div class="is-boxes">
     <div class="is-box is-box-6 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -38289,10 +38287,10 @@ designs: [
 {
 "thumbnail":"preview/item-007b.png",
 "category":"3",
-"contentCss":"type-poppins.css",
-"contentClass":"type-poppins",
+
+
 "html":`
-<div class="is-section is-shadow-1 v2 is-section-100 type-poppins">
+<div class="is-section is-shadow-1 v2 is-section-100 ">
 <div class="is-boxes">
     <div class="is-box is-dark-text is-box-3 is-content-top box-autofit">
         <div class="is-overlay">
@@ -38373,10 +38371,10 @@ designs: [
 {
 "thumbnail":"preview/item-007c.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-section-100 v2 type-lato">
+<div class="is-section is-section-100 v2 ">
 <div class="is-boxes">
     <div class="is-box is-box-5 box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -38451,10 +38449,10 @@ designs: [
 {
 "thumbnail":"preview/item-007d.png",
 "category":"3",
-"contentCss":"type-alegreya-lato.css",
-"contentClass":"type-alegreya-lato",
+
+
 "html":`
-<div class="is-section is-box type-alegreya-lato v2 is-section-25 box-autofit">
+<div class="is-section is-box  v2 is-section-25 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -38474,7 +38472,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box v2 is-section-50 type-alegreya-lato">
+<div class="is-section is-box v2 is-section-50 ">
 <div class="is-overlay" style="background-color: rgb(247, 247, 247);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/img-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -38490,7 +38488,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-alegreya-lato v2 is-section-25 box-autofit">
+<div class="is-section is-box  v2 is-section-25 box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -38516,10 +38514,10 @@ designs: [
 {
 "thumbnail":"preview/item-006a.png",
 "category":"3",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-align-center is-section-25 type-quicksand-kalam box-autofit">
+<div class="is-section is-box is-align-center is-section-25  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -38549,7 +38547,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box is-light-text is-content-bottom box-space type-quicksand-kalam is-section-75 box-autofit min-height-50">
+<div class="is-section is-box is-light-text is-content-bottom box-space  is-section-75 box-autofit min-height-50">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -38587,10 +38585,10 @@ designs: [
 {
 "thumbnail":"preview/item-006c.png",
 "category":"3",
-"contentCss":"type-quicksand-kalam.css",
-"contentClass":"type-quicksand-kalam",
+
+
 "html":`
-<div class="is-section is-box is-section-100 type-quicksand-kalam box-autofit">
+<div class="is-section is-box is-section-100  box-autofit">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered is-opacity-95">
@@ -38622,10 +38620,10 @@ designs: [
 {
 "thumbnail":"preview/item-005a.png",
 "category":"3",
-"contentCss":"type-lato.css",
-"contentClass":"type-lato",
+
+
 "html":`
-<div class="is-section is-box is-section-70 type-lato is-content-bottom is-light-text">
+<div class="is-section is-box is-section-70  is-content-bottom is-light-text">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg2-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -38643,7 +38641,7 @@ designs: [
     </div>
 </div>
 </div>
-<div class="is-section is-box type-lato is-section-30">
+<div class="is-section is-box  is-section-30">
 <div class="is-overlay"></div>
 <div class="is-boxes">
     <div class="is-box-centered">
@@ -38688,10 +38686,10 @@ designs: [
 {
 "thumbnail":"preview/item-005b.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-section-100 type-rufina-oxygen md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-dark-text box-autofit">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -38779,10 +38777,10 @@ designs: [
 {
 "thumbnail":"preview/item-003a.png",
 "category":"3",
-"contentCss":"type-rufina-oxygen.css",
-"contentClass":"type-rufina-oxygen",
+
+
 "html":`
-<div class="is-section is-box is-section-100 is-dark-text type-rufina-oxygen">
+<div class="is-section is-box is-section-100 is-dark-text ">
 <div class="is-overlay" style="background-color: rgb(225, 225, 225);">
     <div class="is-overlay-bg" style="background-image: url(&quot;[%IMAGE_PATH%]images/bg-2400x1350.png&quot;); background-position: 50% 60%;"></div>
 </div>
@@ -38840,10 +38838,10 @@ designs: [
 {
 "thumbnail":"preview/item-003b.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 is-shadow-1 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100 is-shadow-1  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box-4 is-box is-content-top is-light-text box-autofit min-height-70">
         <div class="is-overlay" style="background-color: rgb(255, 255, 255);">
@@ -38924,10 +38922,10 @@ designs: [
 {
 "thumbnail":"preview/item-001a.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
-<div class="is-section is-section-100 type-montserrat-roboto md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit min-height-60">
         <div class="is-overlay">
@@ -39004,10 +39002,10 @@ designs: [
 {
 "thumbnail":"preview/item-001b.png",
 "category":"3",
-"contentCss":"type-raleway-lato.css",
-"contentClass":"type-raleway-lato",
+
+
 "html":`
-<div class="is-section is-section-100 type-raleway-lato md-boxes-1 md-boxes-wrap">
+<div class="is-section is-section-100  md-boxes-1 md-boxes-wrap">
 <div class="is-boxes">
     <div class="is-box is-box-7 box-autofit">
         <div class="is-overlay">
@@ -39079,8 +39077,8 @@ designs: [
 {
 "thumbnail":"preview/item-001b.png",
 "category":"3",
-"contentCss":"type-montserrat-roboto.css",
-"contentClass":"type-montserrat-roboto",
+
+
 "html":`
 
 <div apiData="Blog.get_blogCategories" class="flex justify-center pt-10">

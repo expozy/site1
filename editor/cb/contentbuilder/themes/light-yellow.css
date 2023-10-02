@@ -1155,6 +1155,12 @@
 .light .is-builder[gray] .is-tool.is-row-tool svg {
   fill: #000;
 }
+.light .is-builder[gray] .is-tool.is-col-tool {
+  background: #efefe6;
+}
+.light .is-builder[gray] .is-tool.is-col-tool svg {
+  fill: #000;
+}
 .light .is-rowadd-tool {
   border-bottom: 1px solid #ffb784;
 }

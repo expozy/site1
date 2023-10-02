@@ -1188,6 +1188,10 @@ Note: .v2 class option gives optimization for large screen.
 .is-container.leading-none h1, .is-container.leading-none h2, .is-container.leading-none h3, .is-container.leading-none h4, .is-container.leading-none h5, .is-container.leading-none h6 {
     line-height: 1.1;
 }
+.is-container.leading-10 p, .is-container.leading-10 td, .is-container.leading-10 li, .is-container.leading-10 label { line-height: 1; }
+.is-container.leading-10 h1, .is-container.leading-10 h2, .is-container.leading-10 h3, .is-container.leading-10 h4, .is-container.leading-10 h5, .is-container.leading-10 h6 {
+    line-height: 1.1;
+}
 .is-container.leading-11 p, .is-container.leading-11 td, .is-container.leading-11 li, .is-container.leading-11 label { line-height: 1.1; }
 .is-container.leading-11 h1, .is-container.leading-11 h2, .is-container.leading-11 h3, .is-container.leading-11 h4, .is-container.leading-11 h5, .is-container.leading-11 h6 {
     line-height: 1.1;

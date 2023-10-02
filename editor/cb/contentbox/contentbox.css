@@ -13,6 +13,8 @@
   cursor: pointer;
   border-radius: 0px;
   overflow: hidden;
+  border-radius: 3px;
+  overflow: hidden;
 }
 .is-box-tool button {
   width: 40px !important;
@@ -38,6 +40,8 @@
   left: auto;
   width: 40px;
   height: 80px;
+  border-radius: 3px;
+  overflow: hidden;
 }
 .is-section-tool > button {
   width: 40px;
@@ -75,7 +79,7 @@
   background: rgba(255, 255, 255, 0.97);
   color: rgba(0, 0, 0, 0.8);
   border-right: rgba(0, 0, 0, 0.05) 1px solid;
-  z-index: 10006;
+  z-index: 10004;
   opacity: 0.0001;
 }
 #_cbhtml .is-sidebar button.is-sidebar-button {
@@ -109,7 +113,7 @@
 }
 
 .is-sidebar-content {
-  z-index: 10005;
+  z-index: 10003;
   position: fixed;
   top: 0;
   left: 0;
@@ -163,8 +167,12 @@
         #divSidebarSource
 */
 #divSidebarSnippets {
-  max-width: 290px !important;
+  max-width: 300px !important;
   border-left: 60px solid transparent !important;
+}
+
+#_cbhtml .snippet-item {
+  width: 180px !important;
 }
 
 #divSidebarTypography {
@@ -357,6 +365,11 @@
 
 .dark #divStyles > div .is-overlay:after {
   background: rgba(78, 78, 78, 0.13);
+}
+
+#divStyles > div.active img {
+  outline: #5fa1f0 2px solid;
+  transition: none !important;
 }
 
 #divSidebarSource,
@@ -606,6 +619,11 @@
   transition: unset;
 }
 
+.ai-disclaimer .input-ok:focus {
+  outline: #3e93f7 2px solid !important;
+  outline-offset: 2px !important;
+}
+
 /*
 
 // Navbar Fix
@@ -736,3 +754,10 @@
 }
 
 */
+.is-box-info * {
+  color: #000;
+}
+
+.box-modal-open .box-select .is-container {
+  outline: #00da89 1px solid;
+}

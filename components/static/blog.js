@@ -9,6 +9,7 @@ export let Blog = {
 		let response = [];
 
 		response.keyName = 'blogPosts';
+
 		if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
 		if("chnageurl" in options || (dataProxy[response.keyName] != undefined && "chnageurl" in dataProxy[response.keyName]) ){
@@ -56,6 +57,26 @@ export let Blog = {
 		await api.get(endpoint, false);
 
 		if(!api.response) return response['internalError'] = 'No response from api for Blog.get_blogCategories';
+
+		response['obj'] = api.response;
+
+		if("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
+
+		return response;
+	},
+
+	get_blogPosts_filters: async function(data, options){
+		let response = [];
+
+		response['keyName'] = 'blogPosts_filters';
+		if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
+
+		let endpoint = Helpers.combineRequest('blogPosts_filters' , data);
+		let api = new ApiClass();
+
+		await api.get(endpoint, false);
+
+		if(!api.response) return response['internalError'] = 'No response from api for Blog.blogPosts_filters';
 
 		response['obj'] = api.response;
 

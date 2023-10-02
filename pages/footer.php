@@ -1,7 +1,7 @@
 <?php if (!defined("_VALID_PHP")) { die('Direct access to this location is not allowed.'); } ?>
 
 
-<div id="footer" style="<?php if($page->slug == 'checkout' || $page->slug == 'checkout2') echo "display:none"; ?>">
+<div id="footer" class="headerFooterCss" style="<?php if($page->slug == 'checkout' || $page->slug == 'checkout2') echo "display:none"; ?>">
 	<?php echo  Page::html_res_change($page->footer, '10x10'); ?>
 </div>
 
@@ -12,10 +12,10 @@
  <?= Inline::buttonEdit(); ?>
 
 
-
+<div id="templatesDiv" style="display:none;" ></div>
 </body>
 
-
+<link rel="stylesheet" href="/assets/css/animate.css">
 
 
 <?= $core->web['scripts']['footer'];?>
@@ -23,7 +23,9 @@
 <!-- IMPORTNAT : AUTOLOAD.JS MUST BE BEFORE ALPINE.js  -->
 
 <script type="module" src="\components\core\autoload.js" ></script>
+
 <script type="module" src="\assets\plugins\alpinejs\alpine.js"></script>
+
 <script type="module" src="\components\core\classes\page.js" charset="utf-8"></script>
 
 
@@ -48,5 +50,6 @@
 <script type="module" src="\components\core\classes\page.js"></script>
 <script type="module" src="\components\core\classes\link.js"></script>
 
+<?= $core->web['scripts']['footer'] ?? '' ?>
 
 </html>

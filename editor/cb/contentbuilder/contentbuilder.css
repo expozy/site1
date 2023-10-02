@@ -32,6 +32,11 @@ button:focus-visible {
   transition: all ease 0.1s;
 }
 
+.focus-outline {
+  outline: #3e93f7 2px solid !important;
+  outline-offset: 2px !important;
+}
+
 .is-builder {
   transition: all ease 0.3s;
   transform-origin: top;
@@ -55,6 +60,7 @@ button:focus-visible {
 }
 .is-builder > div > div.cell-active:not([data-protected]) {
   outline: 1px solid #00da89;
+  transition: none !important;
 }
 .is-builder .row-active:not([data-protected]) {
   outline: 1px solid #00da89;
@@ -71,6 +77,7 @@ button:focus-visible {
 }
 .is-builder .cell-active .elm-active:not(button) {
   background: rgba(200, 200, 201, 0.11);
+  transition: none !important;
 }
 .is-builder .cell-active table.elm-active {
   background-color: transparent;
@@ -400,6 +407,8 @@ button:focus-visible {
   border: 1px solid #f2f2f2;
   box-shadow: 4px 17px 20px 0px rgba(0, 0, 0, 0.08);
   outline: none;
+  border-radius: 5px;
+  overflow: hidden;
 }
 #_cbhtml .is-pop:hover,
 .is-ui .is-pop:hover {
@@ -644,6 +653,8 @@ button:focus-visible {
   color: #000;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 9px 0px;
+  border-radius: 3px;
+  overflow: hidden;
 }
 #_cbhtml .is-rte-tool div[role=button],
 #_cbhtml .is-elementrte-tool div[role=button],
@@ -839,6 +850,8 @@ button:focus-visible {
   box-sizing: border-box;
   overflow: hidden;
   outline: none;
+  border-radius: 2px;
+  overflow: hidden;
 }
 #_cbhtml .is-rte-pop > div,
 .is-ui .is-rte-pop > div {
@@ -1846,13 +1859,26 @@ button:focus-visible {
   left: 0;
   display: none;
   z-index: 10004;
-  background: rgba(255, 255, 255, 0.000001);
+  background: rgba(0, 0, 0, 0.04);
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
   font-weight: 300;
   outline: none;
+}
+#_cbhtml .is-modal .pickcolorclass, #_cbhtml .is-modal .imagesource, #_cbhtml .is-modal .imageadjust, #_cbhtml .is-modal .imageadjust2,
+#_cbhtml .is-modal .audioselect, #_cbhtml .is-modal .imageselect, #_cbhtml .is-modal .mediaselect, #_cbhtml .is-modal .videoselect, #_cbhtml .is-modal .mediasource,
+.is-ui .is-modal .pickcolorclass,
+.is-ui .is-modal .imagesource,
+.is-ui .is-modal .imageadjust,
+.is-ui .is-modal .imageadjust2,
+.is-ui .is-modal .audioselect,
+.is-ui .is-modal .imageselect,
+.is-ui .is-modal .mediaselect,
+.is-ui .is-modal .videoselect,
+.is-ui .is-modal .mediasource {
+  z-index: 10005 !important;
 }
 #_cbhtml .is-modal a:focus,
 .is-ui .is-modal a:focus {
@@ -1936,14 +1962,14 @@ button:focus-visible {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.000001);
+  background: rgba(0, 0, 0, 0.04);
   z-index: -1;
   max-width: none !important;
   margin: 0 !important;
 }
 #_cbhtml .is-modal .is-modal-overlay.overlay-stay,
 .is-ui .is-modal .is-modal-overlay.overlay-stay {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.04);
 }
 #_cbhtml .is-modal.is-modal-content,
 #_cbhtml .is-modal .is-modal-content,
@@ -1952,6 +1978,8 @@ button:focus-visible {
   background: #fff;
   border: 1px solid rgba(212, 217, 226, 0.75);
   box-shadow: 6px 14px 20px 0px rgba(95, 95, 95, 0.08);
+  border-radius: 5px;
+  overflow: hidden;
 }
 #_cbhtml .is-modal .is-modal-content,
 .is-ui .is-modal .is-modal-content {
@@ -1970,7 +1998,8 @@ button:focus-visible {
   width: 100%;
   padding: 25px 25px;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 #_cbhtml .is-modal.is-modal-full > div:not(.is-modal-overlay),
 .is-ui .is-modal.is-modal-full > div:not(.is-modal-overlay) {
@@ -2036,13 +2065,19 @@ button:focus-visible {
 .is-ui .is-modal div.is-modal-footer button {
   margin-left: 2px;
 }
-#_cbhtml .is-modal.fileselect, #_cbhtml .is-modal.mediaselect, #_cbhtml .is-modal.imageselect, #_cbhtml .is-modal.videoselect, #_cbhtml .is-modal.otherselect,
+#_cbhtml .is-modal.fileselect, #_cbhtml .is-modal.mediaselect, #_cbhtml .is-modal.imageselect, #_cbhtml .is-modal.videoselect, #_cbhtml .is-modal.otherselect, #_cbhtml .is-modal.pickcolorclass, #_cbhtml .is-modal.imagesource, #_cbhtml .is-modal.imageadjust, #_cbhtml .is-modal.imageadjust2, #_cbhtml .is-modal.audioselect, #_cbhtml .is-modal.mediasource,
 .is-ui .is-modal.fileselect,
 .is-ui .is-modal.mediaselect,
 .is-ui .is-modal.imageselect,
 .is-ui .is-modal.videoselect,
-.is-ui .is-modal.otherselect {
-  z-index: 10005;
+.is-ui .is-modal.otherselect,
+.is-ui .is-modal.pickcolorclass,
+.is-ui .is-modal.imagesource,
+.is-ui .is-modal.imageadjust,
+.is-ui .is-modal.imageadjust2,
+.is-ui .is-modal.audioselect,
+.is-ui .is-modal.mediasource {
+  z-index: 10006 !important;
 }
 #_cbhtml .is-modal.previewcontent,
 .is-ui .is-modal.previewcontent {
@@ -2327,6 +2362,14 @@ button:focus-visible {
 .is-ui .is-modal.shortcuts td.shortcut-title {
   font-weight: 500;
   padding-top: 20px;
+}
+#_cbhtml .is-modal.pickcolor,
+.is-ui .is-modal.pickcolor {
+  background: rgba(255, 255, 255, 0);
+}
+#_cbhtml .is-modal.pickcolor .is-modal-overlay,
+.is-ui .is-modal.pickcolor .is-modal-overlay {
+  background: rgba(255, 255, 255, 0);
 }
 #_cbhtml .is-modal.buttoneditor,
 .is-ui .is-modal.buttoneditor {
@@ -2981,6 +3024,7 @@ button:focus-visible {
 .is-ui .is-tool.is-iframe-tool {
   background: rgba(0, 0, 0, 0.15);
   border: transparent 1px solid;
+  box-shadow: none;
 }
 #_cbhtml .is-tool#divImageTool > div, #_cbhtml .is-tool#divImageTool > button, #_cbhtml .is-tool.is-video-tool > div, #_cbhtml .is-tool.is-video-tool > button, #_cbhtml .is-tool.is-audio-tool > div, #_cbhtml .is-tool.is-audio-tool > button, #_cbhtml .is-tool.is-iframe-tool > div, #_cbhtml .is-tool.is-iframe-tool > button,
 .is-ui .is-tool#divImageTool > div,
@@ -3022,13 +3066,12 @@ button:focus-visible {
 #_cbhtml .is-tool.is-spacer-tool,
 .is-ui .is-tool.is-spacer-tool {
   border: none;
-  background: none;
 }
 #_cbhtml .is-tool.is-spacer-tool > button,
 .is-ui .is-tool.is-spacer-tool > button {
   width: 30px;
   height: 30px;
-  background: rgba(240, 240, 240, 0.9);
+  background: none;
 }
 #_cbhtml .is-tool.is-spacer-tool > button svg,
 .is-ui .is-tool.is-spacer-tool > button svg {
@@ -3038,6 +3081,7 @@ button:focus-visible {
 .is-ui .is-tool.is-table-tool {
   border: none;
   background: none;
+  box-shadow: none;
 }
 #_cbhtml .is-tool.is-table-tool:hover,
 .is-ui .is-tool.is-table-tool:hover {
@@ -3071,13 +3115,20 @@ button:focus-visible {
 .is-ui .is-tool.is-module-tool > button svg {
   fill: #121212;
 }
+#_cbhtml .is-tool#divLinkTool, #_cbhtml .is-tool#divButtonTool, #_cbhtml .is-tool#divSvgTool,
+.is-ui .is-tool#divLinkTool,
+.is-ui .is-tool#divButtonTool,
+.is-ui .is-tool#divSvgTool {
+  background: rgba(243, 243, 243, 0.9);
+  box-shadow: none;
+}
 #_cbhtml .is-tool#divLinkTool button, #_cbhtml .is-tool#divButtonTool button, #_cbhtml .is-tool#divSvgTool button,
 .is-ui .is-tool#divLinkTool button,
 .is-ui .is-tool#divButtonTool button,
 .is-ui .is-tool#divSvgTool button {
   width: 30px;
   height: 30px;
-  background: rgba(243, 243, 243, 0.9);
+  background: transparent;
 }
 #_cbhtml .is-tool#divLinkTool button svg, #_cbhtml .is-tool#divButtonTool button svg, #_cbhtml .is-tool#divSvgTool button svg,
 .is-ui .is-tool#divLinkTool button svg,
@@ -3277,7 +3328,7 @@ button:focus-visible {
   padding-left: 25px;
   padding-right: 25px;
   min-width: 110px;
-  background: #f7f7f7;
+  background: #f3f3f3;
   border: transparent 1px solid;
   box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
 }
@@ -3285,7 +3336,7 @@ button:focus-visible {
 #_cbhtml .is-btn.classic-primary:hover,
 .is-ui button.classic-primary:hover,
 .is-ui .is-btn.classic-primary:hover {
-  background: #f9f9f9;
+  background: #f3f3f3;
   border: transparent 1px solid;
 }
 #_cbhtml button.classic-secondary,
@@ -3954,7 +4005,8 @@ button:focus-visible {
 .is-ui .elementstyles {
   width: 300px;
   font-size: 13px;
-  z-index: 10005;
+  z-index: 10004;
+  /*10005*/
 }
 #_cbhtml .elementstyles .elm-list,
 .is-ui .elementstyles .elm-list {
@@ -4239,6 +4291,8 @@ button:focus-visible {
   box-sizing: border-box;
   padding: 0;
   outline: none;
+  border-radius: 2px;
+  overflow: hidden;
 }
 .is-tool:hover {
   z-index: 10003;
@@ -4281,6 +4335,10 @@ button:focus-visible {
   fill: #000;
 }
 
+#_cbhtml[gray] .is-tool {
+  background: rgba(243, 243, 243, 0.9);
+  box-shadow: none;
+}
 #_cbhtml[gray] .is-tool.is-column-tool {
   background: rgba(243, 243, 243, 0.9);
   flex-direction: row;
@@ -4524,9 +4582,6 @@ button:focus-visible {
   background: transparent;
   padding: 5px;
 }
-#_cbhtml .is-tool.is-element-tool {
-  background: rgba(243, 243, 243, 0.9);
-}
 #_cbhtml .is-tool.is-element-tool button {
   width: 25px;
   height: 25px;
@@ -4566,6 +4621,7 @@ button:focus-visible {
   width: auto;
   left: auto;
   right: -40px;
+  box-shadow: none;
 }
 .is-tool.is-row-tool button {
   width: 25px;
@@ -4618,6 +4674,7 @@ button:focus-visible {
   flex-direction: row;
   margin-top: 0px;
   margin-left: -1px;
+  box-shadow: none;
 }
 .is-tool.is-col-tool button {
   width: 25px;
@@ -4896,7 +4953,7 @@ button:focus-visible {
 .is-builder[hidesnippetaddtool] .row-active .is-rowadd-tool {
   display: none;
 }
-.is-builder[hideelementhighlight] .elm-active {
+.is-builder[hideelementhighlight] .cell-active .elm-active {
   background-color: transparent;
 }
 
@@ -5440,3 +5497,17 @@ button:focus-visible {
         background-color: rgb(130 130 130 / 14%) !important;
     }
 }*/
+div[data-html] {
+  min-height: 70px;
+}
+
+[data-module=slider-builder] *,
+[data-module=text-builder] * {
+  outline: none !important;
+}
+
+/* Make slider block resizable */
+.padding-0[data-module=slider-builder],
+.padding-0[data-module=text-builder] {
+  padding: 0 2px 4px !important;
+}

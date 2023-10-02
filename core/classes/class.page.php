@@ -17,10 +17,12 @@ class Page
 	public $url = '';
 	public $seo_title = '';
 	public $seo_description = '';
+	public $seo_tags = '';
 	public $error404 = false;
 	public string $header = '';
 	public string $footer = '';
 	public string $css = '';
+	public string $headCss = '';
 
 	public string $seo_image = '';
 
@@ -59,10 +61,10 @@ class Page
 			if($this->slug == 'post'){
 				$this->type = 'post';
 			} else if ($this->slug == 'product'){
-				//$this->type = 'product';
+				$this->type = 'product';
 			}
 
-
+			$this->headCss = $core->web['headCss'] ?? '';
 
 			//d($this);die();
 
@@ -84,8 +86,7 @@ class Page
 
 
 			//blog
-		if($this->type == 'post' || $this->type == 'index'	|| $this->type == 'product' ||
-			$this->type == 'category' || $this->type == 'blog'	){
+		if($this->type == 'post' || $this->type == 'index'	|| $this->type == 'product' || $this->type == 'category' || $this->type == 'blog'	){
 
 			$cache = false;
 
@@ -120,6 +121,8 @@ class Page
 			$this->css = $row['css']??'';
 			$this->id = $row['id']??0;
 
+
+			//d($this);die();
 			//for editor
 			if(isset($row['slug']))	$this->slug = $row['slug'];
 
@@ -158,33 +161,40 @@ class Page
 		}  else  if($this->type == 'header'){
 
 			$this->html = $this->load_template($this->type);
-			$this->header = '';
-			$this->footer = '';
+			//$this->header = '';
+			//$this->footer = '';
 		}
 
 		else if($this->type == 'footer'){
 
 			$this->html = $this->load_template($this->type);
-			$this->header = '';
-			$this->footer = '';
+			//$this->header = '';
+			//$this->footer = '';
 		}
 
 
 		if(isset($core->devMode) && $core->devMode){
-
-			//d($this);die('end3');
+			// $this->type ='index';
+// d($this);
 			$tmpl = new Template($this->type, $this->slug);
+			// d($tmpl);
+			// die();
+
 
 			if(!file_exists($tmpl->file)){
 				$tmpl->save_html($this->html);
-			} else{
 
+			} else{
 				$this->html = $tmpl->get_html();
+
 			}
 
-			//d($this);
+
+
 			return $this->_devMode();
 		}
+
+
 
 
 		if($this->error404) redirect_to('404');
@@ -199,14 +209,19 @@ class Page
 	function load_template($type){
 
 			$template = new Template($type);
-			//var_dump($template);
+			// var_dump($template);
+
 			return $template->get_html();
 
 	}
 
+
+
 	public static function html_res_change(string $html, string $res):string{
-		    $pattern = '/https:\/\/storage\.de-fra1\.upcloudobjects\.com\/expozy\/nojovete\/contbuilder\/(.*?)\/(.*?)\.webp/';
-			$replacement = 'https://storage.de-fra1.upcloudobjects.com/expozy/nojovete/contbuilder/$1/'.$res.'/$2.webp';
+		global $core;
+	
+		    $pattern = '/https:\/\/storage\.de-fra1\.upcloudobjects\.com\/'.$core->site_name.'\/nojovete\/contbuilder\/(.*?)\/(.*?)\.webp/';
+			$replacement = 'https://storage.de-fra1.upcloudobjects.com/expozy/'.$core->site_name.'/contbuilder/$1/'.$res.'/$2.webp';
 
 
 			return preg_replace($pattern, $replacement, $html);

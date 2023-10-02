@@ -36,7 +36,7 @@ class FrontCore
 
 		$rows = Api::cache(false)->get()->settings();
 		//var_dump($rows);
-	
+
 
 		$this->site_id = $rows['id']?? 1;
 
@@ -54,9 +54,10 @@ class FrontCore
 		}
 
 	}
-	
+
 	public function get_web(){
 		$this->web = Api::get()->settings_web();
+		
 	}
 
 

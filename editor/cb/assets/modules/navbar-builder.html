@@ -372,7 +372,11 @@
                     <input id="inpMenuLink" type="text" style="width:100%;" />
                     <button data-lang data-lang-title title="Goto" class="input-select-section" style="width:100px;height:50px;flex:none;">Goto</button>
                 </div>
-        
+
+                <label style="margin-bottom:12px;display:block">
+                    <input id="inpMenuTarget" class="input-newwindow" type="checkbox"> <span data-lang>Open new window</span>
+                </label>
+
                 <label for="inpMenuHtml" style="width:100%"><span data-lang>HTML</span>:</label>
                 <div style="display:flex;margin-bottom:10px;">
                     <input id="inpMenuHtml" type="text" style="width:100%;" />
@@ -413,6 +417,10 @@
                     <input id="inpMenuLinkUpdate" type="text" style="width:100%;" />
                     <button data-lang data-lang-title title="Goto" class="input-select-section" style="width:100px;flex:none;">Goto</button>
                 </div>
+
+                <label style="margin-bottom:12px;display:block">
+                    <input id="inpMenuTargetUpdate" class="input-newwindow" type="checkbox"> <span data-lang>Open new window</span>
+                </label>
         
                 <label for="inpMenuHtmlUpdate" style="width:100%"><span data-lang>HTML</span>: </label>
                 <div style="display:flex;margin-bottom:15px;">
@@ -558,6 +566,7 @@
                     item ["name"] = $(this).attr('data-name');
                     item ["link"] = $(this).attr('data-link');
                     item ["html"] = $(this).attr('data-html');
+                    item ["target"] = $(this).attr('data-target');
                     item ["classname"] = $(this).attr('data-classname');
                     item ["sub"] = [];
                     jsonObj.push(item);
@@ -575,6 +584,7 @@
                     item ["name"] = $(this).attr('data-name');
                     item ["link"] = $(this).attr('data-link');
                     item ["html"] = $(this).attr('data-html');
+                    item ["target"] = $(this).attr('data-target');
                     item ["classname"] = $(this).attr('data-classname');
                     item ["sub"] = [];
                     sub.push(item);
@@ -607,6 +617,7 @@
             item.html('<span>' + itemData.name + '</span>');
             item.attr('data-name',itemData.name); 
             item.attr('data-link',itemData.link); 
+            item.attr('data-target',itemData.target); 
             item.attr('data-classname',itemData.classname); 
 
             if(itemData.html) item.attr('data-html',itemData.html); // already encoded
@@ -793,6 +804,15 @@
                         inpMenuNameUpdate.value = item.getAttribute('data-name');
                         var inpMenuLinkUpdate = modal.querySelector('#inpMenuLinkUpdate');
                         inpMenuLinkUpdate.value = item.getAttribute('data-link');
+                        
+                        var inpMenuTargetUpdate = modal.querySelector('#inpMenuTargetUpdate');
+                        var isTrueSet = (item.getAttribute('data-target') === 'true');
+                        if(isTrueSet) {
+                            inpMenuTargetUpdate.checked = true;
+                        } else {
+                            inpMenuTargetUpdate.checked = false;
+                        }
+                        
                         var inpMenuHtmlUpdate = modal.querySelector('#inpMenuHtmlUpdate');
 
                         modal.querySelector('.input-remove-icon').style.display = 'none';
@@ -835,6 +855,12 @@
                             item.setAttribute('data-name', inpMenuNameUpdate.value);
                             var inpMenuLinkUpdate = modal.querySelector('#inpMenuLinkUpdate');
                             item.setAttribute('data-link', inpMenuLinkUpdate.value);
+                            var inpMenuTargetUpdate = modal.querySelector('#inpMenuTargetUpdate');
+                            if(inpMenuTargetUpdate.checked) {
+                                item.setAttribute('data-target', true);
+                            } else {
+                                item.setAttribute('data-target', false);
+                            }
                             var inpMenuHtmlUpdate = modal.querySelector('#inpMenuHtmlUpdate');
                             item.setAttribute('data-html', encodeURIComponent(inpMenuHtmlUpdate.value));
 
@@ -913,6 +939,8 @@
                 inpMenuName.value = '';
                 var inpMenuLink = modal.querySelector('#inpMenuLink');
                 inpMenuLink.value = '';
+                var inpMenuTarget = modal.querySelector('#inpMenuTarget');
+                inpMenuTarget.checked = false;
                 var inpMenuHtml = modal.querySelector('#inpMenuHtml');
                 inpMenuHtml.value = '';
                 modal.querySelector('.icon-preview').innerHTML='';
@@ -952,9 +980,10 @@
 
                     var inpMenuName = modal.querySelector('#inpMenuName');
                     var inpMenuLink = modal.querySelector('#inpMenuLink');
+                    var inpMenuTarget = modal.querySelector('#inpMenuTarget');
                     var inpMenuHtml = modal.querySelector('#inpMenuHtml');
 
-                    var html = `<li data-name="${inpMenuName.value}" data-link="${inpMenuLink.value}" data-html="${encodeURIComponent(inpMenuHtml.value)}"><span>${inpMenuName.value}</span><ul class="sortable"></ul></li>`;
+                    var html = `<li data-name="${inpMenuName.value}" data-link="${inpMenuLink.value}" data-target="${inpMenuTarget.checked}" data-html="${encodeURIComponent(inpMenuHtml.value)}"><span>${inpMenuName.value}</span><ul class="sortable"></ul></li>`;
 
                     document.querySelector('.menutree').insertAdjacentHTML('beforeend', html);
 
@@ -1380,15 +1409,23 @@
                     classAttr = ` class="${itemData[i].classname}"`
                 } 
 
+                var isTrueSet = (itemData[i].target === 'true');
+                var targetHtml = '';
+                if(isTrueSet) {
+                    targetHtml = ` target="_blank"`;
+                }
+                
                 var displaytext = (itemData[i].html? decodeURIComponent(itemData[i].html):itemData[i].name);
                 if (itemData[i].sub) {	
                     
                     if(itemData[i].sub.length>0) {
 
+
+
                         if(itemData[i].html) {
-                            item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr}>${displaytext}</a>`; // no caret for html/icon with submenu
+                            item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr+targetHtml}>${displaytext}</a>`; // no caret for html/icon with submenu
                         } else {
-                            item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr}>${displaytext} <span><span class="caret menutoggle"></span></span></a>`;
+                            item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr+targetHtml}>${displaytext} <span><span class="caret menutoggle"></span></span></a>`;
                         }
 
                         var subList = document.createElement('ul');
@@ -1400,13 +1437,13 @@
                         
                     } else {
 
-                        item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr}>${displaytext}</a>`;
+                        item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr+targetHtml}>${displaytext}</a>`;
 
                     }
                 
                 } else {
 
-                    item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr}>${displaytext}</a>`;
+                    item.innerHTML=`<a${sItemStyle} href="${itemData[i].link}"${classAttr+targetHtml}>${displaytext}</a>`;
 
                 }
 

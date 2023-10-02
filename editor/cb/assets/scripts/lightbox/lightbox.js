@@ -405,8 +405,11 @@ var Lightbox = (function () {
        //  - data-modal-externalvideo (ex. youtube url)
        let blockClickables = document.querySelectorAll('.block-click,.button-click,.is-lightbox');
 
-       if (this.parent) {
-         blockClickables = this.parent.querySelectorAll('.block-click,.button-click,.is-lightbox');
+       try {
+         if (this.parent) {
+           blockClickables = this.parent.querySelectorAll('.block-click,.button-click,.is-lightbox');
+         }
+       } catch (e) {//
        }
 
        blockClickables.forEach(block => {
@@ -489,8 +492,11 @@ var Lightbox = (function () {
 
        let lightbox = this.builderStuff.querySelector('div.is-lightbox.lightbox-all'); // in case opened in an iframe (ex. preview)
 
-       if (window.frameElement && !lightbox) {
-         lightbox = parent.document.querySelector('.is-lightbox.lightbox-all');
+       try {
+         if (window.frameElement && !lightbox) {
+           lightbox = parent.document.querySelector('.is-lightbox.lightbox-all');
+         }
+       } catch (e) {//
        }
 
        if (!this.programmatically) {
@@ -569,8 +575,11 @@ var Lightbox = (function () {
 
        let lightbox = document.querySelector('.is-lightbox.lightbox-all'); // in case opened in an iframe (ex. preview)
 
-       if (window.frameElement && !lightbox) {
-         lightbox = parent.document.querySelector('.is-lightbox.lightbox-all');
+       try {
+         if (window.frameElement && !lightbox) {
+           lightbox = parent.document.querySelector('.is-lightbox.lightbox-all');
+         }
+       } catch (e) {//
        }
 
        if (!this.programmatically) {
@@ -653,8 +662,11 @@ var Lightbox = (function () {
 
        let lightbox = document.querySelector('.is-lightbox.lightbox-all'); // in case opened in an iframe (ex. preview)
 
-       if (window.frameElement && !lightbox) {
-         lightbox = parent.document.querySelector('.is-lightbox.lightbox-all');
+       try {
+         if (window.frameElement && !lightbox) {
+           lightbox = parent.document.querySelector('.is-lightbox.lightbox-all');
+         }
+       } catch (e) {//
        }
 
        if (!this.programmatically) {
@@ -772,8 +784,11 @@ var Lightbox = (function () {
        const arrGallery = [];
        let blockClickables = document.querySelectorAll('.block-click,.button-click,.is-lightbox');
 
-       if (this.parent) {
-         blockClickables = this.parent.querySelectorAll('.block-click,.button-click,.is-lightbox');
+       try {
+         if (this.parent) {
+           blockClickables = this.parent.querySelectorAll('.block-click,.button-click,.is-lightbox');
+         }
+       } catch (e) {//
        }
 
        blockClickables.forEach(block => {

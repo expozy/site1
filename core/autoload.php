@@ -41,7 +41,7 @@ require_once(BASEPATH.'core/classes/class.api.php');
 
 $core = new FrontCore();
 $core->get_web();
-//d($core);
+
 
 require_once(BASEPATH.'core/classes/class.page.php');
 $page = new Page();
@@ -57,7 +57,7 @@ require_once(BASEPATH.'core/classes/class.editor.php');
 require_once(BASEPATH.'core/classes/class.template.php');
 
 
-// d($core->site_url);
+
 define('SITEURL',			$core->site_url);
 
 

@@ -170,7 +170,8 @@
   align-items: center; 
 }
 .glide.running .glide__slide {
-  transition: all 500ms ease-in-out;
+  /* transition: all 500ms ease-in-out; */
+  transition: none !important; /* fix carousel flicker */
 }
 .glide .glide__slide--active {
   z-index: 10;
