@@ -30,6 +30,10 @@ export let Blog = {
 
 		response['obj'] = api.response;
 
+		if("pagination" in response.obj){
+			response.obj.pagination['pagesArray'] =  Helpers.pagination(response.obj.pagination['current_page'], response.obj.pagination['total_pages']);
+		}
+		
 		if("chnageurl" in options || (dataProxy[response.keyName] != undefined && "chnageurl" in dataProxy[response.keyName])){
 			response['obj'].chnageurl = true;
 			endpoint = endpoint.replace(response.keyName, "blog");

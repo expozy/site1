@@ -8,7 +8,7 @@ require_once(str_replace("autoload.php", "", realpath(__FILE__)).'classes/class.
 
 
 ini_set('display_errors', 1);
-error_reporting(E_ALL);
+error_reporting(E_ALL ^ E_DEPRECATED);
 $BASEPATH = str_replace("core/autoload.php", "", realpath(__FILE__));
 
 define("BASEPATH", $BASEPATH);

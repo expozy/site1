@@ -1,0 +1,9 @@
+<div class="grid grid-cols-3" keyName="product" apiData="Shop.get_products" data-limit="20">
+  <template x-for="product in data.product.result">
+    <div class="">
+      <p x-text="product.title"></p>
+      <img :src="product.images[0].url" alt="">
+    </div>
+
+  </template>
+</div>
