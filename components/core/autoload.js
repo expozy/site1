@@ -458,7 +458,7 @@ if (devSaveButton !== null) {
 
   devSaveButton.onclick = async function() {
 
-  
+
 		//remove header
 		var parent = document.body;
 
