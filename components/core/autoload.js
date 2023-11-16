@@ -458,46 +458,11 @@ if (devSaveButton !== null) {
 
   devSaveButton.onclick = async function() {
 
-
-		//remove header
-		var parent = document.body;
-
-
-		var header = document.getElementById('header');
-
-		if (header) {
-			parent.removeChild(header);
-		}
-
-		//remove footer
-		var footer = document.getElementById('footer');
-
-		if (footer) {
-			parent.removeChild(footer);
-		}
-
 		//save page
 		await alpineTemplatesGen();
-		await tailwindGen();
+		
 		await Page.saveTemplate();
-
-
-		//remove main
-		var main = document.getElementById('main');
-
-		if (main) {
-				parent.removeChild(main);
-		}
-
-		//add header
-		parent.appendChild(header);
-
-		//add footer
-		parent.appendChild(footer);
-
-		//save head css
-		await alpineTemplatesGen();
-		await tailwindGen();
+		
 		await Page.saveHeadCss();
 
 		window.location.reload();
@@ -505,7 +470,7 @@ if (devSaveButton !== null) {
   };
 }
 
-function processTemplates(container, templates) {
+async function processTemplates(container, templates) {
   return new Promise(resolve => { // Връщаме обещание, което ще бъде резолвнато след като завършим обработката
     templates.forEach(async function (template) {
       if(!template.classList.contains("dontSelect")){

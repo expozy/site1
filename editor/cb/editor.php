@@ -78,6 +78,15 @@ $dir = SITEURL.'/editor/cb/';
 </head>
 <body>
 
+  <script src="/assets/plugins/tailwindcss.3.3.1.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+
+    }
+  </script>
+
 <div class="is-wrapper" style="opacity:0">
   <?php
 
@@ -481,7 +490,7 @@ $dir = SITEURL.'/editor/cb/';
 		document.getElementById('loaderBtn').style.display = "block";
 
 		alpineTemplatesGen();
-		tailwindGen();
+		// tailwindGen();
 			  timeoutId = setTimeout(function () {
 				  save();
 			  }, 100);
@@ -515,6 +524,6 @@ $dir = SITEURL.'/editor/cb/';
 
 <!-- Required js for production -->
 <script src="<?= $dir ?>box/box-flex.js"></script> <!-- Box Framework js include -->
-<script src="/assets/plugins/tailwindcss.3.3.1.js"></script>
+
 </body>
 </html>
