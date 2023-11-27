@@ -13,7 +13,8 @@ class Editor{
 	public string $uri = '';
 	public string $slug = '';
 	public string $html = '';
-
+	public $revisions ;
+	public string $title = '';
 	const TEMPLATE_TYPES = ['product', 'category', 'blog','header', 'footer' ];
 
 	//public $page;
@@ -36,15 +37,25 @@ class Editor{
 
 		$this->type = $parameters['type'];
 		$this->id = $parameters['id']??0;
-		
+
 		$page->type = $parameters['type'];
 		$page->id = $parameters['id']??0;
-		
+
 		if($this->type == 'post'){
 			$page->target_id = $parameters['id'];
 		}
 		$this->load_page();
-		
+		$this->getRevisions();
+
+
+	}
+
+	public function getRevisions(){
+		global $lang;
+
+
+		$revisions = Api::cache(false)->admin_api(true)->data(['type' => 'pages','object_id' => $this->id, 'lang'=>$lang->language])->get()->revisions();
+		$this->revisions = $revisions;
 
 	}
 
@@ -53,21 +64,21 @@ class Editor{
 	public function load_page(){
 		global $page;
 
-		
-		
+
+
 		$page->load_page(false);
 
-		//d($page);
+
 		$this->html = $page->html;
-				
+		$this->title = $page->title;
 		if($page->type == 'post'){
 			$row = Api::cache(false)->id($this->id)->data(['resolution' => '10x10'])->get()->blogPosts();
-						
+
 			$this->html = $row['description'];
-			
+
 		}
-		
-		
+
+
 
 	}
 
@@ -85,20 +96,20 @@ class Editor{
 
 	}
 
-	public function save(string $html, string $language, string $css=''){
+	public function save(string $html, string $language, string $css='', string $revision_title){
 		global $page, $lang;
 
-		
+
 		//remoce <style> from css
 		$css = str_replace(['<style>', '</style>'], '', $css);
-		
-		
+
+
 		if(empty($language)){
 			$language = $lang->language;
 		}
-		
-		
-		
+
+
+
 
 		if($page->type == 'post'){
 
@@ -107,7 +118,7 @@ class Editor{
 			if($row){
 				$row['html'] = $html;
 				$row['css'] = $css;
-				
+				$row['revision_title'] = $revision_title;
 				if(empty($row['title'])) $row['title'] = 'Blog-'.$page->id;
 
 				$this->_refresh_cache('blogPosts', $page->id);
@@ -115,7 +126,7 @@ class Editor{
 				$row['cid'] = $row['category']['id'];
 				// $row['combination_id'] = $row['combination']['id'];
 				$row['lang']=$language;
-				
+
 				$result = Api::admin_api(true)->data($row)->id($this->id)->post()->blogPosts();
 
 				return $result;
@@ -125,49 +136,50 @@ class Editor{
 
 			$row = Api::id($page->id)->get()->pages();
 
-			
+
 			if($row){
 
 				$row['body'] = $html;
 				$row['css'] = $css;
-				
+				$row['revision_title'] = $revision_title;
 				if(empty($row['title'])) $row['title'] = 'Page-'.$page->id;
 
 				$this->_refresh_cache('pages', $page->id);
 
-				
-				
+
+
 				$row['lang']=$language;
+
 				$result = Api::admin_api(true)->data($row)->id($page->id)->post()->pages();
 
 
 				return $result;
 			}
 		}
-		
+
 		else if($page->type == 'header' || $page->type == 'footer'){
-			
+
 			$result = Api::admin_api(true)->data(['headCss' => $css])->post()->settings_web();
-			
+
 			$template = new Template($page->type);
 
 			$template->save_html($html);
-			
+
 			return ['status' => 1];
-			
+
 		}
 		else if (in_array ($page->type, self::TEMPLATE_TYPES)){
 			$template = new Template($page->type);
 
 			$template->save_html($html);
-			
+
 			return ['status' => 1];
 		}
 
 
 		return ['error'=>'type error: '.$page->type];
 
-		
+
 	}
 
 	private function _refresh_cache(string $endpoint, int $id){

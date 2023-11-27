@@ -1,6 +1,6 @@
 import {ApiClass} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
-
+import {Handler} from '../core/handler.js';
 
 export let Search = {
 
@@ -11,7 +11,7 @@ export let Search = {
 			response.keyName = 'search';
 			if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
-			 
+
 			if("chnageurl" in options || (dataProxy[response.keyName] != undefined && "chnageurl" in dataProxy[response.keyName]) ){
 				if (!("initial" in options)) {
 					delete dataProxy.pageUrl.page;

@@ -1,11 +1,11 @@
 import {ApiClass} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
-
+import {Handler} from '../core/handler.js';
 
 export let Payments = {
 
 
-	
+
 	get_payment_methods: async function(data, options){
 		let response = [];
 

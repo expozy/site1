@@ -1,7 +1,7 @@
 import {ApiClass} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
 import {Handler} from '../core/handler.js';
-import {Sliders} from './sliders.js';
+
 
 
 

@@ -1,5 +1,6 @@
 import {ApiClass} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
+import {Handler} from '../core/handler.js';
 
 
 export let Newsletter = {
@@ -13,7 +14,7 @@ export let Newsletter = {
 
     let api = new ApiClass();
 		await api.post('subscribe', data);
-    
+
     if(!api.response) return response['internalError'] = 'No response from api for Newsletter.post_newsletter';
 
     response = api.response;

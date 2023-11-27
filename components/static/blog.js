@@ -1,6 +1,6 @@
 import {ApiClass} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
-
+import {Handler} from '../core/handler.js';
 
 export let Blog = {
 
@@ -33,7 +33,7 @@ export let Blog = {
 		if("pagination" in response.obj){
 			response.obj.pagination['pagesArray'] =  Helpers.pagination(response.obj.pagination['current_page'], response.obj.pagination['total_pages']);
 		}
-		
+
 		if("chnageurl" in options || (dataProxy[response.keyName] != undefined && "chnageurl" in dataProxy[response.keyName])){
 			response['obj'].chnageurl = true;
 			endpoint = endpoint.replace(response.keyName, "blog");

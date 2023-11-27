@@ -2,7 +2,7 @@ import {ApiClass} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
 import {Warehouse} from './warehouse.js';
 import {Page} from '../core/classes/page.js';
-
+import {Handler} from '../core/handler.js';
 
 export let User = {
 

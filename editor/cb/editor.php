@@ -15,7 +15,6 @@ require_once '../../core/autoload.php';
 $editor = new Editor($_GET['i']);
 
 
-
 $dir = SITEURL.'/editor/cb/';
 ?>
 <!DOCTYPE HTML>
@@ -76,18 +75,9 @@ $dir = SITEURL.'/editor/cb/';
     <link href="<?= $dir ?>contentbuilder/contentbuilder.css" rel="stylesheet">
     <link href="<?= $dir ?>contentbox/contentbox.css" rel="stylesheet">
 </head>
-<body>
+<body x-data="{openRevisionsModal:false}">
 
-  <script src="/assets/plugins/tailwindcss.3.3.1.js"></script>
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-
-    }
-  </script>
-
-<div class="is-wrapper" style="opacity:0">
+<div class="is-wrapper" style="opacity:0" id="mainContent">
   <?php
 
   if(empty($editor->html)) {
@@ -124,6 +114,8 @@ $dir = SITEURL.'/editor/cb/';
 <!-- Required js for editing (not needed in production) -->
 <script src="<?= $dir ?>contentbox/lang/en.js"></script>
 <script src="<?= $dir ?>contentbox/contentbox.min.js"></script>
+
+
 
 <script>
 
@@ -376,8 +368,17 @@ $dir = SITEURL.'/editor/cb/';
         }
     });
 
+    builder.addButton({
+         'pos': 9,
+         'title': 'Revisions',
+         'html': '<i @click="openRevisionsModal =! openRevisionsModal" class="fa-solid fa-hard-drive" id="revisions" style="font-size: 18px !important;"></i> ',
+         'onClick': ()=>{
+
+         }
+     });
+
 	 builder.addButton({
-        'pos': 9,
+        'pos': 10,
         'title': 'Save',
         'html': '<i class="fa-regular fa-floppy-disk" id="saveBtn" style="font-size: 18px !important;"></i> <i class="fa-solid fa-spinner fa-spin" id="loaderBtn" style="font-size: 18px !important; display:none;"></i>', // icon
         'onClick': ()=>{
@@ -441,13 +442,14 @@ $dir = SITEURL.'/editor/cb/';
 			const styles = document.getElementById('tailwindCss').getElementsByTagName('style');
 			const lastElement = styles[styles.length - 1];
 			const lastElementString = lastElement.outerHTML;
+      const revision_title = document.getElementById('revisionName').value;
 
 
             var html = builder.html();
             var mainCss = builder.mainCss(); //mainCss() returns css that defines typography style for the body/entire page.
             var sectionCss = builder.sectionCss(); //sectionCss returns css that define typography styles for certan section(s) on the page
 
-          const reqBody = {savecontent:1, content: html, mainCss: mainCss, sectionCss: sectionCss, tailwindCss:lastElementString, get:<?= json_encode($_GET); ?> };
+          const reqBody = {savecontent:1, content: html, mainCss: mainCss, sectionCss: sectionCss, tailwindCss:lastElementString,revision_title:revision_title, get:<?= json_encode($_GET); ?> };
             fetch('api/post.php', {
                 method:'POST',
                 headers: {
@@ -490,7 +492,7 @@ $dir = SITEURL.'/editor/cb/';
 		document.getElementById('loaderBtn').style.display = "block";
 
 		alpineTemplatesGen();
-		// tailwindGen();
+		tailwindGen();
 			  timeoutId = setTimeout(function () {
 				  save();
 			  }, 100);
@@ -520,10 +522,76 @@ $dir = SITEURL.'/editor/cb/';
 		  container.appendChild(div);
 		});
 	}
+
+
+
+
 </script>
 
 <!-- Required js for production -->
 <script src="<?= $dir ?>box/box-flex.js"></script> <!-- Box Framework js include -->
+<script src="/assets/plugins/tailwindcss.3.3.1.js"></script>
+<script type="module" src="\assets\plugins\alpinejs\alpine.js"></script>
+<script type="text/javascript">
+  const rev = <?php echo json_encode( $editor->revisions, JSON_UNESCAPED_UNICODE)  ?>;
+
+  function loadRevision(){
+    let selectedRevision = document.getElementById('revisionsSelect').value;
+
+    builder.loadHtml(rev.result[selectedRevision].object_desc);
+
+  }
+
+</script>
+
+<div x-show="openRevisionsModal" class="w-[600px] h-[400px] overflow-y-scroll  absolute top-0 right-0" style="display:none">
+
+<!-- Main modal -->
+<div class="  justify-center items-center w-full md:inset-0  max-h-full">
+    <div class="p-4 w-full ">
+        <!-- Modal content -->
+        <div class="relative p-4 bg-white rounded-lg shadow ">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    Ревизии
+                </h3>
+
+            </div>
+            <!-- Modal body -->
+
+                <div class="grid gap-4 mb-4 grid-cols-2 mt-3">
+                    <div class="col-span-2">
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Име на ревизия</label>
+                        <input value="<?php echo $editor->title . ' '. date("Y-m-d"); ?>" type="text" name="revisionName" id="revisionName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
+                    </div>
+
+                    <div class="col-span-2 sm:col-span-1">
+                        <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ревизии</label>
+                        <select id="revisionsSelect" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                          <?php
+                          foreach ($editor->revisions['result'] as $key => $revision) {
+                            ?>
+                              <option value="<?php echo $key?>" ><?php echo $revision['title'] ?></option>
+
+                            <?php
+                            }
+                           ?>
+
+                        </select>
+                    </div>
+
+                </div>
+                <button onclick="loadRevision()"  type="button" class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                    Зареди ревизия
+                </button>
+
+        </div>
+    </div>
+</div>
+
+</div>
 
 </body>
 </html>

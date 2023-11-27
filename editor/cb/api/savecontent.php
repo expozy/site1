@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once( "../../../core/autoload.php");
 
 
@@ -8,6 +8,9 @@ $mainCss = $data['mainCss'];
 $sectionCss = $data['sectionCss'];
 $tailwindCss = $data['tailwindCss'];
 $get = $data['get'];
+$revision_title = $data['revision_title'];
+
+
 
 
 
@@ -20,10 +23,10 @@ $_SESSION['sectionCss'] = $sectionCss;
 $editor = new Editor($get['i']);
 
 if(!empty($content)){
-	$result = $editor->save($content, $get['lang']??'', $tailwindCss);
+	$result = $editor->save($content, $get['lang']??'', $tailwindCss, $revision_title);
 } else {
 	$result = ['status' =>0 , 'msg' => 'Empty content'];
 }
 
 
-echo json_encode($result, JSON_PRETTY_PRINT); 
+echo json_encode($result, JSON_PRETTY_PRINT);

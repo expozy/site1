@@ -1,6 +1,6 @@
 import {Api} from '../core/api/api.js';
 import {Helpers} from '../core/helpers.js';
-
+import {Handler} from '../core/handler.js';
 
 const COREURL = localStorage.getItem('COREURL');
 const SAASKEY = localStorage.getItem('SAAS_KEY');
