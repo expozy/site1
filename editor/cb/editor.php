@@ -371,7 +371,7 @@ $dir = SITEURL.'/editor/cb/';
     builder.addButton({
          'pos': 9,
          'title': 'Revisions',
-         'html': '<i @click="openRevisionsModal =! openRevisionsModal" class="fa-solid fa-hard-drive" id="revisions" style="font-size: 18px !important;"></i> ',
+         'html': '<i onclick="toggleDisplay()" class="fa-solid fa-hard-drive" id="revisions" style="font-size: 18px !important;"></i> ',
          'onClick': ()=>{
 
          }
@@ -492,7 +492,7 @@ $dir = SITEURL.'/editor/cb/';
 		document.getElementById('loaderBtn').style.display = "block";
 
 		alpineTemplatesGen();
-		tailwindGen();
+		// tailwindGen();
 			  timeoutId = setTimeout(function () {
 				  save();
 			  }, 100);
@@ -531,20 +531,46 @@ $dir = SITEURL.'/editor/cb/';
 <!-- Required js for production -->
 <script src="<?= $dir ?>box/box-flex.js"></script> <!-- Box Framework js include -->
 <script src="/assets/plugins/tailwindcss.3.3.1.js"></script>
-<script type="module" src="\assets\plugins\alpinejs\alpine.js"></script>
+  <script>
+      tailwind.config = {
+        darkMode: 'class',
+
+      }
+  </script>
+<!-- <script type="module" src="\assets\plugins\alpinejs\alpine.js"></script> -->
 <script type="text/javascript">
   const rev = <?php echo json_encode( $editor->revisions, JSON_UNESCAPED_UNICODE)  ?>;
 
   function loadRevision(){
     let selectedRevision = document.getElementById('revisionsSelect').value;
-
     builder.loadHtml(rev.result[selectedRevision].object_desc);
-
   }
+
+  function toggleDisplay() {
+    var element = document.getElementById('openRevisionsModal');
+
+    if (element) {
+        var currentDisplayStyle = window.getComputedStyle(element).getPropertyValue('display');
+
+        if (currentDisplayStyle === 'none') {
+            // Ако има стил display: none, премахваме го
+            element.style.display = '';
+        } else {
+            // Ако няма стил display: none, добавяме го
+            element.style.display = 'none';
+        }
+    }
+}
+
+// Пример как да използвате функцията:
+// toggleDisplay('вашИдентификаторНаЕлемент');
+
+
+
 
 </script>
 
-<div x-show="openRevisionsModal" class="w-[600px] h-[400px] overflow-y-scroll  absolute top-0 right-0" style="display:none">
+<div id="openRevisionsModal"  class="w-[600px] h-[400px] overflow-y-scroll  absolute top-0 right-0" style="display:none">
 
 <!-- Main modal -->
 <div class="  justify-center items-center w-full md:inset-0  max-h-full">

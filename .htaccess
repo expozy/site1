@@ -52,6 +52,8 @@ ErrorDocument 404 /error_404.php
  RewriteRule ^google_feed$ google_feed.php [NC,L]
  RewriteRule ^rss$ pages/rss.php [NC,L]
  RewriteRule ^logout$ logout.php [QSA,L]
+ RewriteRule ^maintenance$ maintenance.php [QSA,L]
+
 
  RewriteRule ^([a-z]{2})/sitemaps/sitemap_products core/sitemaps/sitemap_products.php?lang=$1 [NC,L,QSA]
  RewriteRule ^([a-z]{2})/sitemaps/sitemap_pages core/sitemaps/sitemap_pages.php?lang=$1 [NC,L,QSA]

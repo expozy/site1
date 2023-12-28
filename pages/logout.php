@@ -13,5 +13,3 @@ session_destroy();
 
 
 <?php
-
-// header('Location: /');   /don't clear localStorage

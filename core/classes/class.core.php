@@ -36,7 +36,9 @@ class FrontCore
 
 		$rows = Api::cache(false)->get()->settings();
 		//var_dump($rows);
-
+		if(is_array($rows) === false ){
+			redirect_to('/maintenance');
+		}
 
 		$this->site_id = $rows['id']?? 1;
 

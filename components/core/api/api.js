@@ -4,7 +4,7 @@ import {cacheSet, cacheGet} from './cache.js';
 
 export const lang = LANG;
 let warehouse_id = 1;
-
+export const currency = localStorage.getItem('currency') != null ? localStorage.getItem('currency') : 'BGN';
 
 
 
@@ -18,7 +18,7 @@ export class ApiClass {
 
 			let conn;
 		let tmp = endpoint.split('?');
-		let url = COREURL +tmp[0]+'?lang='+lang;
+			let url = COREURL +tmp[0]+'?lang='+lang+'&currency='+currency;
 		if(tmp[1] !== undefined){
 			url += '&'+tmp[1];
 		}
@@ -52,7 +52,7 @@ export class ApiClass {
 				}).then(response => response.clone().json().then( data => {
 					this.response = data;
 					this.statusCode = response.status;
-					cacheSet(url, response);
+					cacheSet(url, this.response);
 
 					if(data.redirect){
 					location.href = data.redirect;
