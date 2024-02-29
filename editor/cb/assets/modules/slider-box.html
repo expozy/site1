@@ -10,6 +10,9 @@
         body { margin:20px;height:100%;overflow:hidden;font-family:Sans-Serif;font-size:14px;font-weight:300;line-height:1.7; 
             opacity: 0;
         }
+        @media all and (max-height: 700px) {
+            body {overflow: auto;}
+        }
         #imageList {
             display:inline-block;box-sizing:border-box;width:100%;margin: 0;
             overflow-y:auto;overflow-x:hidden;height:45vh;padding:10px;line-height:1.5;
@@ -1301,7 +1304,7 @@
 
                             _{id} = new Glide(myslider, {
                                 type: "${document.querySelector("#inpType").value}",
-                                autoplay: ${document.querySelector("#inpAutoplay").value},
+                                autoplay: false,
                                 animationDuration: ${document.querySelector("#inpDuration").value},
                                 gap: 0,
                                 perView: 3,
@@ -1332,7 +1335,7 @@
 
                             _{id} = new Glide("#{id}", {
                                 type: "${document.querySelector("#inpType").value}",
-                                autoplay: ${document.querySelector("#inpAutoplay").value},
+                                autoplay: false,
                                 animationDuration: ${document.querySelector("#inpDuration").value},
                                 gap: ${(gap===''?0:gap)},
                                 perView: ${perView},
@@ -1359,6 +1362,27 @@
                         });
 
                         _{id}.mount();
+
+                        const ap = ${document.querySelector("#inpAutoplay").value};
+                        if(ap) {
+                            const glideElement = {id};
+                            let isSliderRunning = false;
+                            const manageSliderVisibility = (entries) => {
+                                if (entries[0].isIntersecting) {
+                                    if (!isSliderRunning) {
+                                        _{id}.update({ autoplay: ap });
+                                        isSliderRunning = true;
+                                    }
+                                } else {
+                                    if (isSliderRunning) {
+                                        _{id}.update({ autoplay: false }); 
+                                        isSliderRunning = false;
+                                    }
+                                }
+                            }
+                            const observer = new IntersectionObserver(manageSliderVisibility, { threshold: 0.5 });
+                            observer.observe(glideElement);
+                        }
 
                     });
                 </scr${''}ipt>
@@ -1397,12 +1421,12 @@
         COMMON METHODS FOR MODULE.
         */
         function getHtml() {
-            var activeModule = parent.document.querySelector('[data-module-active]');
+            var activeModule = parent._cb.doc.querySelector('[data-module-active]');
             return decodeURIComponent(activeModule.getAttribute('data-html'));
         }
 
         function getSettings() {
-            var activeModule = parent.document.querySelector('[data-module-active]');
+            var activeModule = parent._cb.doc.querySelector('[data-module-active]');
             return decodeURIComponent(activeModule.getAttribute('data-settings'));
         }
 

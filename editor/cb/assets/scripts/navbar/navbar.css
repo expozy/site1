@@ -213,6 +213,8 @@ ul:after {clear: both;}
     .is-menu li ul  li a { color:rgba(0, 0, 0, 0.9); }
 	.is-menu li ul  li:hover { background:rgba(0,0,0,0.05); }
 	.is-menu li ul  li:hover a { color:rgba(0, 0, 0, 1)} 
+
+	.is-menu > ul > li > ul.active {z-index:-1} /* new 2 */
 }	
 
 @media all and (max-width: 1024px) {

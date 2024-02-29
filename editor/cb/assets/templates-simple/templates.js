@@ -55,7 +55,7 @@
 		    'html': `
 			<div class="is-section is-box is-section-100 type-poppins box-autofit">
 				<div class="is-overlay"></div>
-				<div class="is-container v2 is-content-1000 leading-14 size-18">
+				<div class="is-container v2 is-content-700 leading-14 size-18">
 
 					<div class="row">
 						<div class="column">
@@ -69,6 +69,31 @@
 			</div>
 `
 		},
+
+		{
+		    'thumbnail': 'preview/simple-canvas.png',
+		    'category': '1',
+			'type': 'canvas',
+		    'contentCss': 'type-system-ui.css',
+		    'contentClass': 'type-system-ui',
+		    'html': `
+			<div class="is-section is-box is-section-100 type-system-ui box-canvas autolayout">
+				<div class="is-overlay"></div>
+				<div class="is-block block-steady height-auto" style="top: calc(50% - 84px); left: calc(50% - 264px); width: 528px;">
+					<div class="is-container container-new size-18 leading-14">
+						<div class="row">
+							<div class="column">
+								<p>
+									Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+									when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+`
+		},
+
         {
             'thumbnail': 'preview/navbar-01.png',
             'category': '1',
@@ -163,6 +188,213 @@
                     '</div>' +
                 '\n</div>'
         },
+
+		/*
+		// Top Bar Module Example
+        {
+            'thumbnail': 'preview/navbar-01.png',
+            'category': '1',
+            'googleFonts': [],
+		    'contentCss': 'type-opensans.css',
+		    'contentClass': 'type-opensans',
+            'type': 'navbar',
+            'html':
+                `<div class="is-section is-section-navbar is-section-sticky is-section-auto is-box type-opensans" style="height:60px;background:transparent;">
+                    <div class="is-overlay">
+                        <div class="is-overlay-content content-selectable" data-module="main-menu" data-module-desc="Navigation Bar" data-dialog-width="570px" data-dialog-height="640px" 
+						
+						data-html="${encodeURIComponent(`
+
+							<div id="{id}" class="main-menu" style="width:100vw;height:60px;display:flex;justify-content:center;align-items:center;background:#ddd">
+								<div>Your Name</div>
+							</div>
+							<scr`+`ipt>
+								var myMenu = document.querySelector('#{id}');
+								console.log(myMenu);
+							</scr`+`ipt>
+						
+						`)}" 
+						
+						data-settings="${encodeURIComponent(`
+							
+							{
+								"logotext": "Your Name",
+								"other": "somevalue"
+							}
+
+						`)}">
+						</div>
+					</div>
+				</div>`
+        },
+
+		// Quiz Builder module Example (using section overlay)
+		{
+            'thumbnail': 'preview/navbar-01.png',
+            'category': '1',
+            'googleFonts': [],
+		    'contentCss': 'type-opensans.css',
+		    'contentClass': 'type-opensans',
+            'type': 'navbar',
+            'html':
+                `<div class="is-section is-section-100 is-box type-opensans">
+                    <div class="is-overlay">
+                        <div class="is-overlay-content content-selectable" data-module="quiz-builder" data-module-desc="Quiz Builder" data-dialog-width="570px" data-dialog-height="640px" 
+						
+						data-html="${encodeURIComponent(`
+
+							<h3>Your question here</h3>
+							<div class="flex flex-col mt-4 mb-4">
+								<label><input type="radio" name="answer{id}" value="One">One</label>
+								<label><input type="radio" name="answer{id}" value="Two">Two</label>
+								<label><input type="radio" name="answer{id}" value="Three">Three</label>
+								<label><input type="radio" name="answer{id}" value="Four">Four</label>
+							</div>
+							<button id="{id}" class="transition-all inline-block whitespace-nowrap cursor-pointer no-underline border-2 border-solid mr-2 mt-2 mb-1 py-2 size-17 border-current hover:border-current font-normal leading-14 rounded-full tracking-wide px-10" style="background-color: rgb(255, 255, 255);">Submit</button>
+
+							<p id="result{id}"></p>
+
+							<scr`+`ipt>
+							(function() {
+								let docReady = function(fn) {
+									let stateCheck = setInterval(function() {
+										if (document.readyState !== "complete") return;
+										clearInterval(stateCheck);
+										try {
+											fn()
+										} catch (e) {}
+									}, 1);
+								};
+								docReady(function() {
+									let btnSubmit = document.querySelector("#{id}");
+									btnSubmit.addEventListener('click', ()=>{
+										getSelectedChoice();
+									});
+								});
+								function getSelectedChoice() {
+									const radioButtons = document.getElementsByName("answer{id}");
+									let selectedChoice = "";
+									for (let i = 0; i < radioButtons.length; i++) {
+										if (radioButtons[i].checked) {
+										selectedChoice = radioButtons[i].value;
+										break; // Exit the loop once a checked radio button is found
+										}
+									}
+									if (selectedChoice !== "") {
+										const divResult = document.querySelector("#result{id}");
+										if(selectedChoice === 'Three') {
+											divResult.innerHTML = 'Your answer: '+selectedChoice+'. <b>That is correct!</b>'
+										} else {
+											divResult.innerHTML = 'Your answer: '+selectedChoice+'. That is incorrect!'
+										}
+									} else {
+										alert("No choice selected");
+									}
+								}
+							})();
+							</scr`+`ipt>
+						
+						`)}" 
+						
+						data-settings="${encodeURIComponent(`
+								
+							{
+								"question": "Your question here",
+								"choices": "One, Two, Three, Four",
+								"answer": "Three"
+							}
+
+						`)}">
+						</div>
+					</div>
+				</div>`
+        },
+
+		// Quiz Builder module Example (using block)
+		{
+            'thumbnail': 'preview/navbar-01.png',
+            'category': '1',
+            'googleFonts': [],
+		    'contentCss': 'type-opensans.css',
+		    'contentClass': 'type-opensans',
+            'type': 'navbar',
+            'html':
+                `<div class="is-section is-box is-section-100 type-poppins box-autofit last-box">
+					<div class="is-overlay"></div>
+					<div class="is-container v2 is-content-1000 leading-14 size-18">
+				
+						<div class="row">
+							<div class="column full" data-noedit data-module="quiz-builder" data-module-desc="Quiz Builder" data-html="${encodeURIComponent(`
+
+									<h3>Your question here</h3>
+									<div class="flex flex-col mt-4 mb-4">
+										<label><input type="radio" name="answer{id}" value="One">One</label>
+										<label><input type="radio" name="answer{id}" value="Two">Two</label>
+										<label><input type="radio" name="answer{id}" value="Three">Three</label>
+										<label><input type="radio" name="answe{id}" value="Four">Four</label>
+									</div>
+									<button id="{id}" class="transition-all inline-block whitespace-nowrap cursor-pointer no-underline border-2 border-solid mr-2 mt-2 mb-1 py-2 size-17 border-current hover:border-current font-normal leading-14 rounded-full tracking-wide px-10" style="background-color: rgb(255, 255, 255);">Submit</button>
+
+									<p id="result{id}"></p>
+
+									<scr`+`ipt>
+									(function() {
+										let docReady = function(fn) {
+											let stateCheck = setInterval(function() {
+												if (document.readyState !== "complete") return;
+												clearInterval(stateCheck);
+												try {
+													fn()
+												} catch (e) {}
+											}, 1);
+										};
+										docReady(function() {
+											let btnSubmit = document.querySelector("#{id}");
+											btnSubmit.addEventListener('click', ()=>{
+												getSelectedChoice();
+											});
+										});
+										function getSelectedChoice() {
+											const radioButtons = document.getElementsByName("answer{id}");
+											let selectedChoice = "";
+											for (let i = 0; i < radioButtons.length; i++) {
+												if (radioButtons[i].checked) {
+												selectedChoice = radioButtons[i].value;
+												break; // Exit the loop once a checked radio button is found
+												}
+											}
+											if (selectedChoice !== "") {
+												const divResult = document.querySelector("#result{id}");
+												if(selectedChoice === 'Three') {
+													divResult.innerHTML = 'Your answer: '+selectedChoice+'. <b>That is correct!</b>'
+												} else {
+													divResult.innerHTML = 'Your answer: '+selectedChoice+'. That is incorrect!'
+												}
+											} else {
+												alert("No choice selected");
+											}
+										}
+									})();
+									</scr`+`ipt>
+
+								`)}" 
+								
+								data-settings="${encodeURIComponent(`
+									
+									{
+										"question": "Your question here",
+										"choices": "One, Two, Three, Four",
+										"answer": "Three"
+									}
+
+								`)}">
+							</div>
+						</div>
+
+					</div>
+				</div>`
+        },
+		*/
 
 		{
 		    'thumbnail': 'preview/simple-05.png',
@@ -1262,7 +1494,7 @@
 
 								var _{id} = new Glide("#{id}", {
 									type: "carousel",
-									autoplay: 3000,
+									autoplay: false,
 									animationDuration: 1000,
 									gap: 0,
 									perView: 1,
@@ -1276,6 +1508,25 @@
 										}
 									},
 								}).mount();
+
+								const glideElement = {id};
+								let isSliderRunning = false;
+								const manageSliderVisibility = (entries) => {
+									if (entries[0].isIntersecting) {
+										if (!isSliderRunning) {
+											_{id}.update({ autoplay: 3000 });
+											isSliderRunning = true;
+										}
+									} else {
+										if (isSliderRunning) {
+											_{id}.update({ autoplay: false }); 
+											isSliderRunning = false;
+										}
+									}
+								}
+								const observer = new IntersectionObserver(manageSliderVisibility, { threshold: 0.5 });
+								observer.observe(glideElement);
+								
 							});
 						</script>
 					`)}" data-settings="${encodeURIComponent(`
@@ -1442,7 +1693,7 @@
 
 						var _{id} = new Glide("#{id}", {
 							type: "carousel",
-							autoplay: 3000,
+							autoplay: false,
 							animationDuration: 1000,
 							gap: 0,
 							perView: 1,
@@ -1456,6 +1707,25 @@
 								}
 							},
 						}).mount();
+
+						const glideElement = {id};
+						let isSliderRunning = false;
+						const manageSliderVisibility = (entries) => {
+							if (entries[0].isIntersecting) {
+								if (!isSliderRunning) {
+									_{id}.update({ autoplay: 3000 });
+									isSliderRunning = true;
+								}
+							} else {
+								if (isSliderRunning) {
+									_{id}.update({ autoplay: false }); 
+									isSliderRunning = false;
+								}
+							}
+						}
+						const observer = new IntersectionObserver(manageSliderVisibility, { threshold: 0.5 });
+						observer.observe(glideElement);
+
 					});
 				</script>
 			`)}" data-settings="${encodeURIComponent(`
@@ -1571,7 +1841,7 @@
 
 						var _{id} = new Glide("#{id}", {
 							type: "carousel",
-							autoplay: 3000,
+							autoplay: false,
 							animationDuration: 1000,
 							gap: 0,
 							perView: 1,
@@ -1585,6 +1855,25 @@
 								}
 							},
 						}).mount();
+
+						const glideElement = {id};
+						let isSliderRunning = false;
+						const manageSliderVisibility = (entries) => {
+							if (entries[0].isIntersecting) {
+								if (!isSliderRunning) {
+									_{id}.update({ autoplay: 3000 });
+									isSliderRunning = true;
+								}
+							} else {
+								if (isSliderRunning) {
+									_{id}.update({ autoplay: false }); 
+									isSliderRunning = false;
+								}
+							}
+						}
+						const observer = new IntersectionObserver(manageSliderVisibility, { threshold: 0.5 });
+						observer.observe(glideElement);
+
 					});
 				</script>
 			`)}" data-settings="${encodeURIComponent(`
@@ -1734,7 +2023,7 @@
 
 					var _{id} = new Glide("#{id}", {
 						type: "carousel",
-						autoplay: 3000,
+						autoplay: false,
 						animationDuration: 1000,
 						gap: 0,
 						perView: 3,
@@ -1748,6 +2037,25 @@
 							}
 						},
 					}).mount();
+
+					const glideElement = {id};
+					let isSliderRunning = false;
+					const manageSliderVisibility = (entries) => {
+						if (entries[0].isIntersecting) {
+							if (!isSliderRunning) {
+								_{id}.update({ autoplay: 3000 });
+								isSliderRunning = true;
+							}
+						} else {
+							if (isSliderRunning) {
+								_{id}.update({ autoplay: false }); 
+								isSliderRunning = false;
+							}
+						}
+					}
+					const observer = new IntersectionObserver(manageSliderVisibility, { threshold: 0.5 });
+					observer.observe(glideElement);
+
 				});
 			</script>
 		`)}" data-settings="${encodeURIComponent(`
@@ -2113,7 +2421,7 @@
 					let myslider = document.querySelector("#{id}");
 					let _{id} = new Glide(myslider, {
 						type: "slider",
-						autoplay: 3000,
+						autoplay: false,
 						animationDuration: 600,
 						gap: 0,
 						perView: 3,
@@ -2150,6 +2458,24 @@
 					});
 
 					_{id}.mount();
+
+					const glideElement = {id};
+					let isSliderRunning = false;
+					const manageSliderVisibility = (entries) => {
+						if (entries[0].isIntersecting) {
+							if (!isSliderRunning) {
+								_{id}.update({ autoplay: 3000 });
+								isSliderRunning = true;
+							}
+						} else {
+							if (isSliderRunning) {
+								_{id}.update({ autoplay: false }); 
+								isSliderRunning = false;
+							}
+						}
+					}
+					const observer = new IntersectionObserver(manageSliderVisibility, { threshold: 0.5 });
+					observer.observe(glideElement);
 
 				});
 			</script>

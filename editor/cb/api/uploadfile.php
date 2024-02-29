@@ -3,7 +3,6 @@ require_once 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-	var_dump($_FILES);
     $filename = pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
 	$ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
 

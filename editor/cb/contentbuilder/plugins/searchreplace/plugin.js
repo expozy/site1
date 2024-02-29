@@ -217,7 +217,7 @@
                 }
 
                 label {
-                    color: ${_cb.styleLabelColor};
+                    color: ${_cb.styleModalColor};
                 }
             </style>
         </head>

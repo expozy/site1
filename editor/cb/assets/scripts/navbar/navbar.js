@@ -315,6 +315,7 @@ var NavBar = (function () {
                 if (e.target.getAttribute('href') === '') {
                   //href empty => just to open sub menu)
                   e.preventDefault();
+                  e.stopImmediatePropagation();
                   toClose = false;
                 }
               }
@@ -347,71 +348,106 @@ var NavBar = (function () {
             }
           });
           menuLI.addEventListener('mouseleave', e => {
-            const viewportWidth = window.innerWidth;
-            if (viewportWidth <= 1024) return; // if mobile, do not use mouse leave/enter // previously: <1024
 
-            this.timer = setTimeout(() => {
-              const subMenu = menuLI.querySelector('ul');
-              if (subMenu) dom.removeClass(subMenu, 'active');
+            clearTimeout(this.mouseLeaveTimeout);
+            this.mouseLeaveTimeout = setTimeout(() => {
+
+              const viewportWidth = window.innerWidth;
+              if (viewportWidth <= 1024) return; // if mobile, do not use mouse leave/enter // previously: <1024
+
+              this.timer = setTimeout(() => {
+                const subMenu = menuLI.querySelector('ul');
+                if (subMenu) dom.removeClass(subMenu, 'active');
+              }, 200);
+              e.preventDefault();
+              e.stopImmediatePropagation();
+
             }, 200);
-            e.preventDefault();
-            e.stopImmediatePropagation();
+            
           });
           menuLI.addEventListener('mouseenter', e => {
-            const viewportWidth = window.innerWidth;
-            if (viewportWidth <= 1024) return; // if mobile, do not use mouse leave/enter // previously: <1024
 
-            if (this.staticClose) return;
-            const div = document.querySelector('.is-menu-search-input');
-            if (dom.hasClass(div, 'active')) return; // don't continue if search bar active
+            let numDelay = 200;
+            if(menuLI.parentNode.classList.contains('is-menu-links'))numDelay=0;
 
-            clearTimeout(this.timer);
-            const parentUL = menuLI.closest('ul');
-
-            if (!menuLI.querySelector('ul')) {
-              // don't have sub menu
-              let elms = parentUL.querySelectorAll('li');
-              elms.forEach(elm => {
-                const subMenu = elm.querySelector('ul');
-                dom.removeClass(subMenu, 'active'); //close all submenu
-              });
-              return true;
+            if(this.previousLI) {
+              const endTime = new Date().getTime();
+              const duration = endTime - this.startTime;
+              if(duration<30) {
+                if(this.previousLI.parentNode.classList.contains('is-menu-links')) {
+                  // previous li is top menu
+                  return;
+                }
+              }
             }
+            this.startTime = new Date().getTime();
+            this.previousLI = menuLI;
 
-            if (dom.hasClass(parentUL, 'is-menu-links')) {
-              //1st (top) level
-              let elms = parentUL.querySelectorAll('li');
-              elms.forEach(elm => {
-                if (elm !== menuLI) {
+            clearTimeout(this.mouseEnterTimeout);
+            this.mouseEnterTimeout = setTimeout(() => {
+
+              const viewportWidth = window.innerWidth;
+              if (viewportWidth <= 1024) return; // if mobile, do not use mouse leave/enter // previously: <1024
+
+              if (this.staticClose) return;
+              const div = document.querySelector('.is-menu-search-input');
+              if (dom.hasClass(div, 'active')) return; // don't continue if search bar active
+
+              clearTimeout(this.timer);
+              const parentUL = menuLI.closest('ul');
+
+              if (!menuLI.querySelector('ul')) {
+                // don't have sub menu
+                let elms = parentUL.querySelectorAll('li');
+                elms.forEach(elm => {
+                  const subMenu = elm.querySelector('ul');
+                  dom.removeClass(subMenu, 'active'); //close all submenu
+                });
+                return true;
+              }
+
+              if (dom.hasClass(parentUL, 'is-menu-links')) {
+                //1st (top) level
+                let elms = parentUL.querySelectorAll('li');
+                elms.forEach(elm => {
+                  if (elm !== menuLI) {
+                    //close siblings, except current
+                    const subMenu = elm.querySelector('ul');
+                    dom.removeClass(subMenu, 'active');
+                  }
+                }); //close all submenu
+
+                elms = document.querySelectorAll('.is-menu > ul > li ul');
+                elms.forEach(elm => {
+                  const subMenu = elm.querySelector('ul');
+                  dom.removeClass(subMenu, 'active');
+                });
+              }
+
+              if (dom.hasClass(parentUL, 'active') && !dom.hasClass(parentUL, 'is-menu-links')) {
+                //other levels
+                const elms = parentUL.querySelectorAll('li');
+                elms.forEach(elm => {
                   //close siblings, except current
-                  const subMenu = elm.querySelector('ul');
-                  dom.removeClass(subMenu, 'active');
-                }
-              }); //close all submenu
+                  if (elm !== menuLI) {
+                    const subMenu = elm.querySelector('ul');
+                    dom.removeClass(subMenu, 'active');
+                  }
+                });
+              }
 
-              elms = document.querySelectorAll('.is-menu > ul > li ul');
-              elms.forEach(elm => {
-                const subMenu = elm.querySelector('ul');
-                dom.removeClass(subMenu, 'active');
-              });
-            }
+              const subMenu = menuLI.querySelector('ul');
+              if (subMenu) {
+                setTimeout(()=>{
+                  dom.addClass(subMenu, 'active');
+                }, 80); /* new 2 */
+                // dom.addClass(subMenu, 'active');
+              }
+              e.preventDefault();
+              e.stopImmediatePropagation();
 
-            if (dom.hasClass(parentUL, 'active') && !dom.hasClass(parentUL, 'is-menu-links')) {
-              //other levels
-              const elms = parentUL.querySelectorAll('li');
-              elms.forEach(elm => {
-                //close siblings, except current
-                if (elm !== menuLI) {
-                  const subMenu = elm.querySelector('ul');
-                  dom.removeClass(subMenu, 'active');
-                }
-              });
-            }
-
-            const subMenu = menuLI.querySelector('ul');
-            if (subMenu) dom.addClass(subMenu, 'active');
-            e.preventDefault();
-            e.stopImmediatePropagation();
+            }, numDelay);
+            
           });
         });
         const toggle = document.querySelector('#is-menu-toggle');

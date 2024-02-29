@@ -8,6 +8,10 @@ svg {
   pointer-events: none;
 }
 
+.is-container > div > div svg {
+  pointer-events: initial;
+}
+
 [contenteditable] svg {
   pointer-events: initial;
 }
@@ -35,6 +39,23 @@ button:focus-visible {
 .focus-outline {
   outline: #3e93f7 2px solid !important;
   outline-offset: 2px !important;
+}
+
+.is-page {
+  position: relative;
+  transform-origin: top;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.is-page > .is-box.box-select {
+  outline: 1px solid #00da89;
+  outline-offset: -1px;
+  z-index: 1;
 }
 
 .is-builder {
@@ -91,7 +112,8 @@ button:focus-visible {
 .is-builder .cell-active[data-html] {
   background-color: rgba(200, 200, 201, 0.11);
 }
-.is-builder .cell-active .icon-active {
+.is-builder .cell-active .icon-active,
+.is-builder .cell-active .svg-active {
   background-color: rgba(200, 200, 201, 0.4);
 }
 .is-builder .elm-inspected {
@@ -207,6 +229,12 @@ button:focus-visible {
   display: none !important;
 }
 
+#_cbhtml {
+  height: 0px;
+  float: left;
+  margin-top: -100px;
+}
+
 #_cbhtml,
 .is-ui {
   /*
@@ -219,7 +247,7 @@ button:focus-visible {
   font-family: sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
-  font-weight: 300px;
+  font-weight: 300;
   /*  general use */
   /*
   .rte-align-options,
@@ -248,11 +276,11 @@ button:focus-visible {
 }
 #_cbhtml .style-helper.on,
 .is-ui .style-helper.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .style-helper.hover,
 .is-ui .style-helper.hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .style-helper svg,
 .is-ui .style-helper svg {
@@ -356,12 +384,12 @@ button:focus-visible {
 }
 #_cbhtml .style-helper-button-classic,
 .is-ui .style-helper-button-classic {
-  background: #f7f7f7;
+  background: transparent;
   color: #000;
 }
 #_cbhtml .style-helper-button-classic.hover,
 .is-ui .style-helper-button-classic.hover {
-  background: #f9f9f9;
+  background: #f1f1f1;
 }
 #_cbhtml .style-helper-button-classic svg,
 .is-ui .style-helper-button-classic svg {
@@ -620,13 +648,13 @@ button:focus-visible {
 #_cbhtml .is-general-options div[role=button].on,
 .is-ui .is-general-options button.on,
 .is-ui .is-general-options div[role=button].on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-general-options button:hover,
 #_cbhtml .is-general-options div[role=button]:hover,
 .is-ui .is-general-options button:hover,
 .is-ui .is-general-options div[role=button]:hover {
-  background: whitesmoke !important;
+  background: #f1f1f1 !important;
 }
 #_cbhtml .is-general-options button:focus,
 #_cbhtml .is-general-options div[role=button]:focus,
@@ -679,7 +707,7 @@ button:focus-visible {
 .is-ui .is-elementrte-tool div[role=button].on,
 .is-ui .is-rte-pop.rte-more-options div[role=button].on,
 .is-ui .is-rte-pop.elementrte-more-options div[role=button].on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-tool div[role=button]:hover,
 #_cbhtml .is-elementrte-tool div[role=button]:hover,
@@ -689,7 +717,7 @@ button:focus-visible {
 .is-ui .is-elementrte-tool div[role=button]:hover,
 .is-ui .is-rte-pop.rte-more-options div[role=button]:hover,
 .is-ui .is-rte-pop.elementrte-more-options div[role=button]:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-tool div[role=button]:focus,
 #_cbhtml .is-elementrte-tool div[role=button]:focus,
@@ -721,9 +749,10 @@ button:focus-visible {
 .is-ui .is-rte-pop.elementrte-more-options button {
   background-color: transparent;
   color: #121212;
-  width: 45px;
+  width: 44px;
   height: 40px;
-  margin: 0;
+  margin: 0 2px 0 0;
+  border-radius: 3px;
   box-shadow: none;
 }
 #_cbhtml .is-rte-tool button.on,
@@ -734,7 +763,7 @@ button:focus-visible {
 .is-ui .is-elementrte-tool button.on,
 .is-ui .is-rte-pop.rte-more-options button.on,
 .is-ui .is-rte-pop.elementrte-more-options button.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-tool button:hover,
 #_cbhtml .is-elementrte-tool button:hover,
@@ -744,7 +773,7 @@ button:focus-visible {
 .is-ui .is-elementrte-tool button:hover,
 .is-ui .is-rte-pop.rte-more-options button:hover,
 .is-ui .is-rte-pop.elementrte-more-options button:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-tool button:focus,
 #_cbhtml .is-elementrte-tool button:focus,
@@ -868,11 +897,11 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop button.on,
 .is-ui .is-rte-pop button.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop button:hover,
 .is-ui .is-rte-pop button:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop .is-label,
 .is-ui .is-rte-pop .is-label {
@@ -946,7 +975,7 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop.rte-paragraph-options li.on,
 .is-ui .is-rte-pop.rte-paragraph-options li.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-paragraph-options > ul,
 .is-ui .is-rte-pop.rte-paragraph-options > ul {
@@ -976,7 +1005,7 @@ button:focus-visible {
 #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:hover, #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li:focus,
 .is-ui .is-rte-pop.rte-paragraph-options > ul > li:hover,
 .is-ui .is-rte-pop.rte-paragraph-options > ul > li:focus {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-paragraph-options > ul > li > *,
 .is-ui .is-rte-pop.rte-paragraph-options > ul > li > * {
@@ -984,9 +1013,12 @@ button:focus-visible {
   margin: 0 !important;
   line-height: 1.45 !important;
   text-align: center;
-  transform: scale(0.7);
   white-space: nowrap;
   pointer-events: none;
+}
+#_cbhtml .is-rte-pop.rte-paragraph-options > ul > li > *:not(p),
+.is-ui .is-rte-pop.rte-paragraph-options > ul > li > *:not(p) {
+  transform: scale(0.8);
 }
 #_cbhtml .is-rte-pop.rte-textsetting-options > div,
 .is-ui .is-rte-pop.rte-textsetting-options > div {
@@ -1006,15 +1038,15 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop.rte-textsetting-options button.on,
 .is-ui .is-rte-pop.rte-textsetting-options button.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-textsetting-options button:hover,
 .is-ui .is-rte-pop.rte-textsetting-options button:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-textsetting-options button:focus,
 .is-ui .is-rte-pop.rte-textsetting-options button:focus {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-textsetting-options.active,
 .is-ui .is-rte-pop.rte-textsetting-options.active {
@@ -1094,11 +1126,11 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop.rte-formatting-options button.on,
 .is-ui .is-rte-pop.rte-formatting-options button.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-formatting-options button:hover,
 .is-ui .is-rte-pop.rte-formatting-options button:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-list-options button,
 .is-ui .is-rte-pop.rte-list-options button {
@@ -1107,11 +1139,11 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop.rte-list-options button.on,
 .is-ui .is-rte-pop.rte-list-options button.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-list-options button:hover,
 .is-ui .is-rte-pop.rte-list-options button:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-align-options button,
 .is-ui .is-rte-pop.rte-align-options button {
@@ -1120,11 +1152,11 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop.rte-align-options button.on,
 .is-ui .is-rte-pop.rte-align-options button.on {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-align-options button:hover,
 .is-ui .is-rte-pop.rte-align-options button:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-color-picker,
 .is-ui .is-rte-pop.rte-color-picker {
@@ -1194,15 +1226,35 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop.rte-icon-options,
 .is-ui .is-rte-pop.rte-icon-options {
-  width: 280px;
+  width: 270px;
 }
-#_cbhtml .is-rte-pop.rte-icon-options iframe,
-.is-ui .is-rte-pop.rte-icon-options iframe {
-  margin: 1px 0 0;
+#_cbhtml .is-rte-pop.rte-icon-options #inpRteIconSearch,
+.is-ui .is-rte-pop.rte-icon-options #inpRteIconSearch {
+  height: 40px;
+  flex: none;
+}
+#_cbhtml .is-rte-pop.rte-icon-options > div,
+.is-ui .is-rte-pop.rte-icon-options > div {
+  flex-direction: column;
   width: 100%;
-  max-width: 300px;
+  padding: 0;
+}
+#_cbhtml .is-rte-pop.rte-icon-options > div .div-icon-list,
+.is-ui .is-rte-pop.rte-icon-options > div .div-icon-list {
+  width: 100%;
   height: 100%;
-  border: none;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#_cbhtml .is-rte-pop.rte-icon-options > div .div-icon-list button,
+.is-ui .is-rte-pop.rte-icon-options > div .div-icon-list button {
+  font-size: 16px;
+  width: 50px;
+  height: 40px;
+  outline-offset: -2px;
 }
 #_cbhtml .is-rte-pop.rte-icon-options.active,
 .is-ui .is-rte-pop.rte-icon-options.active {
@@ -1213,7 +1265,7 @@ button:focus-visible {
     height: 0;
   }
   to {
-    height: 240px;
+    height: 280px;
   }
 }
 #_cbhtml .is-rte-pop.rte-icon-options.deactive,
@@ -1222,11 +1274,53 @@ button:focus-visible {
 }
 @keyframes icon-slide-in {
   from {
-    height: 240px;
+    height: 280px;
   }
   to {
     height: 0;
   }
+}
+#_cbhtml .is-rte-pop.rte-fontfamily-options,
+.is-ui .is-rte-pop.rte-fontfamily-options {
+  width: 260px;
+}
+#_cbhtml .is-rte-pop.rte-fontfamily-options #inpRteFontSearch,
+.is-ui .is-rte-pop.rte-fontfamily-options #inpRteFontSearch {
+  height: 40px;
+  flex: none;
+  text-align: center;
+}
+#_cbhtml .is-rte-pop.rte-fontfamily-options > div,
+.is-ui .is-rte-pop.rte-fontfamily-options > div {
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+#_cbhtml .is-rte-pop.rte-fontfamily-options > div .div-font-list,
+.is-ui .is-rte-pop.rte-fontfamily-options > div .div-font-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#_cbhtml .is-rte-pop.rte-fontfamily-options > div .div-font-list button,
+.is-ui .is-rte-pop.rte-fontfamily-options > div .div-font-list button {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  outline-offset: -2px;
+  flex: none;
+}
+#_cbhtml .is-rte-pop.rte-fontfamily-options > div .div-font-list button img,
+.is-ui .is-rte-pop.rte-fontfamily-options > div .div-font-list button img {
+  height: 24px;
+  pointer-events: none;
+}
+#_cbhtml .is-rte-pop.rte-fontfamily-options > div .div-font-list button.hidden,
+.is-ui .is-rte-pop.rte-fontfamily-options > div .div-font-list button.hidden {
+  display: none;
 }
 #_cbhtml .is-rte-pop.rte-fontfamily-options iframe,
 .is-ui .is-rte-pop.rte-fontfamily-options iframe {
@@ -1303,11 +1397,11 @@ button:focus-visible {
 }
 #_cbhtml .is-rte-pop.rte-customtag-options > div button:hover,
 .is-ui .is-rte-pop.rte-customtag-options > div button:hover {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-customtag-options > div button:focus,
 .is-ui .is-rte-pop.rte-customtag-options > div button:focus {
-  background: whitesmoke;
+  background: #f1f1f1;
 }
 #_cbhtml .is-rte-pop.rte-zoom-options > div,
 .is-ui .is-rte-pop.rte-zoom-options > div {
@@ -1325,7 +1419,7 @@ button:focus-visible {
     height: 0;
   }
   to {
-    height: 78px;
+    height: 95px;
   }
 }
 #_cbhtml .is-rte-pop.rte-zoom-options.deactive,
@@ -1437,6 +1531,45 @@ button:focus-visible {
 .is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options {
   height: 260px;
 }
+#_cbhtml[toolbarleft] .is-rte-pop.rte-fontfamily-options #inpRteFontSearch,
+.is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options #inpRteFontSearch {
+  height: 40px;
+  flex: none;
+  text-align: center;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-fontfamily-options > div,
+.is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options > div {
+  flex-direction: column;
+  width: 100%;
+  height: 320px;
+  padding: 0;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list,
+.is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list button,
+.is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list button {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  outline-offset: -2px;
+  flex: none;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list button img,
+.is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list button img {
+  height: 24px;
+  pointer-events: none;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list button.hidden,
+.is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options > div .div-font-list button.hidden {
+  display: none;
+}
 #_cbhtml[toolbarleft] .is-rte-pop.rte-fontfamily-options iframe,
 .is-ui[toolbarleft] .is-rte-pop.rte-fontfamily-options iframe {
   margin: 9px 0 9px 0;
@@ -1535,6 +1668,35 @@ button:focus-visible {
 #_cbhtml[toolbarleft] .is-rte-pop.rte-icon-options,
 .is-ui[toolbarleft] .is-rte-pop.rte-icon-options {
   height: 320px;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-icon-options #inpRteIconSearch,
+.is-ui[toolbarleft] .is-rte-pop.rte-icon-options #inpRteIconSearch {
+  height: 40px;
+  flex: none;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-icon-options > div,
+.is-ui[toolbarleft] .is-rte-pop.rte-icon-options > div {
+  flex-direction: column;
+  width: 100%;
+  height: 320px;
+  padding: 0;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-icon-options > div .div-icon-list,
+.is-ui[toolbarleft] .is-rte-pop.rte-icon-options > div .div-icon-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#_cbhtml[toolbarleft] .is-rte-pop.rte-icon-options > div .div-icon-list button,
+.is-ui[toolbarleft] .is-rte-pop.rte-icon-options > div .div-icon-list button {
+  font-size: 16px;
+  width: 50px;
+  height: 40px;
+  outline-offset: -2px;
 }
 #_cbhtml[toolbarleft] .is-rte-pop.rte-icon-options iframe,
 .is-ui[toolbarleft] .is-rte-pop.rte-icon-options iframe {
@@ -1692,6 +1854,45 @@ button:focus-visible {
 .is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options {
   height: 260px;
 }
+#_cbhtml[toolbarright] .is-rte-pop.rte-fontfamily-options #inpRteFontSearch,
+.is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options #inpRteFontSearch {
+  height: 40px;
+  flex: none;
+  text-align: center;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-fontfamily-options > div,
+.is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options > div {
+  flex-direction: column;
+  width: 100%;
+  height: 320px;
+  padding: 0;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list,
+.is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list button,
+.is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list button {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  outline-offset: -2px;
+  flex: none;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list button img,
+.is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list button img {
+  height: 24px;
+  pointer-events: none;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list button.hidden,
+.is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options > div .div-font-list button.hidden {
+  display: none;
+}
 #_cbhtml[toolbarright] .is-rte-pop.rte-fontfamily-options iframe,
 .is-ui[toolbarright] .is-rte-pop.rte-fontfamily-options iframe {
   margin: 9px 0 9px 0;
@@ -1753,6 +1954,30 @@ button:focus-visible {
 #_cbhtml[toolbarright] .is-rte-pop.rte-icon-options,
 .is-ui[toolbarright] .is-rte-pop.rte-icon-options {
   height: 320px;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-icon-options > div,
+.is-ui[toolbarright] .is-rte-pop.rte-icon-options > div {
+  flex-direction: column;
+  width: 100%;
+  height: 320px;
+  padding: 0;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-icon-options > div .div-icon-list,
+.is-ui[toolbarright] .is-rte-pop.rte-icon-options > div .div-icon-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#_cbhtml[toolbarright] .is-rte-pop.rte-icon-options > div .div-icon-list button,
+.is-ui[toolbarright] .is-rte-pop.rte-icon-options > div .div-icon-list button {
+  font-size: 16px;
+  width: 50px;
+  height: 40px;
+  outline-offset: -2px;
 }
 #_cbhtml[toolbarright] .is-rte-pop.rte-icon-options iframe,
 .is-ui[toolbarright] .is-rte-pop.rte-icon-options iframe {
@@ -1867,19 +2092,6 @@ button:focus-visible {
   font-weight: 300;
   outline: none;
 }
-#_cbhtml .is-modal .pickcolorclass, #_cbhtml .is-modal .imagesource, #_cbhtml .is-modal .imageadjust, #_cbhtml .is-modal .imageadjust2,
-#_cbhtml .is-modal .audioselect, #_cbhtml .is-modal .imageselect, #_cbhtml .is-modal .mediaselect, #_cbhtml .is-modal .videoselect, #_cbhtml .is-modal .mediasource,
-.is-ui .is-modal .pickcolorclass,
-.is-ui .is-modal .imagesource,
-.is-ui .is-modal .imageadjust,
-.is-ui .is-modal .imageadjust2,
-.is-ui .is-modal .audioselect,
-.is-ui .is-modal .imageselect,
-.is-ui .is-modal .mediaselect,
-.is-ui .is-modal .videoselect,
-.is-ui .is-modal .mediasource {
-  z-index: 10005 !important;
-}
 #_cbhtml .is-modal a:focus,
 .is-ui .is-modal a:focus {
   outline: #3e93f7 2px solid;
@@ -1897,11 +2109,11 @@ button:focus-visible {
 }
 #_cbhtml .is-modal button:hover,
 .is-ui .is-modal button:hover {
-  background: #fff;
+  background: #f1f1f1;
 }
 #_cbhtml .is-modal button.on,
 .is-ui .is-modal button.on {
-  background: #f2f2f2;
+  background: #f1f1f1;
 }
 #_cbhtml .is-modal button.is-btn-color,
 .is-ui .is-modal button.is-btn-color {
@@ -1976,7 +2188,7 @@ button:focus-visible {
 .is-ui .is-modal.is-modal-content,
 .is-ui .is-modal .is-modal-content {
   background: #fff;
-  border: 1px solid rgba(212, 217, 226, 0.75);
+  border: 1px solid #e3e3e3;
   box-shadow: 6px 14px 20px 0px rgba(95, 95, 95, 0.08);
   border-radius: 5px;
   overflow: hidden;
@@ -1992,7 +2204,7 @@ button:focus-visible {
 #_cbhtml .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay),
 .is-ui .is-modal:not(.is-modal-content) > div:not(.is-modal-overlay) {
   background: #fff;
-  border: 1px solid rgba(212, 217, 226, 0.75);
+  border: 1px solid #e3e3e3;
   box-shadow: 6px 14px 20px 0px rgba(95, 95, 95, 0.08);
   position: relative;
   width: 100%;
@@ -2065,12 +2277,14 @@ button:focus-visible {
 .is-ui .is-modal div.is-modal-footer button {
   margin-left: 2px;
 }
-#_cbhtml .is-modal.fileselect, #_cbhtml .is-modal.mediaselect, #_cbhtml .is-modal.imageselect, #_cbhtml .is-modal.videoselect, #_cbhtml .is-modal.otherselect, #_cbhtml .is-modal.pickcolorclass, #_cbhtml .is-modal.imagesource, #_cbhtml .is-modal.imageadjust, #_cbhtml .is-modal.imageadjust2, #_cbhtml .is-modal.audioselect, #_cbhtml .is-modal.mediasource,
+#_cbhtml .is-modal.fileselect, #_cbhtml .is-modal.mediaselect, #_cbhtml .is-modal.imageselect, #_cbhtml .is-modal.videoselect, #_cbhtml .is-modal.otherselect, #_cbhtml .is-modal.pickcolor, #_cbhtml .is-modal.pickcolormore, #_cbhtml .is-modal.pickcolorclass, #_cbhtml .is-modal.imagesource, #_cbhtml .is-modal.imageadjust, #_cbhtml .is-modal.imageadjust2, #_cbhtml .is-modal.audioselect, #_cbhtml .is-modal.mediasource,
 .is-ui .is-modal.fileselect,
 .is-ui .is-modal.mediaselect,
 .is-ui .is-modal.imageselect,
 .is-ui .is-modal.videoselect,
 .is-ui .is-modal.otherselect,
+.is-ui .is-modal.pickcolor,
+.is-ui .is-modal.pickcolormore,
 .is-ui .is-modal.pickcolorclass,
 .is-ui .is-modal.imagesource,
 .is-ui .is-modal.imageadjust,
@@ -2286,6 +2500,39 @@ button:focus-visible {
   border: transparent 1px solid;
   background-color: transparent;
 }
+#_cbhtml .is-modal.pagesize .is-modal-content,
+.is-ui .is-modal.pagesize .is-modal-content {
+  max-width: 980px;
+}
+#_cbhtml .is-modal.pagesize .div-page-sizes,
+.is-ui .is-modal.pagesize .div-page-sizes {
+  display: flex;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #f3f3f3;
+  flex-flow: row wrap;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 590px;
+}
+#_cbhtml .is-modal.pagesize .div-page-sizes .paper-item,
+.is-ui .is-modal.pagesize .div-page-sizes .paper-item {
+  flex: none;
+}
+#_cbhtml .is-modal.pagesize [data-pagesize],
+.is-ui .is-modal.pagesize [data-pagesize] {
+  background: #fff;
+  margin: 20px;
+  box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.1);
+  min-width: 70px;
+  min-height: 70px;
+}
+#_cbhtml .is-modal.pagesize .input-width,
+#_cbhtml .is-modal.pagesize .input-height,
+.is-ui .is-modal.pagesize .input-width,
+.is-ui .is-modal.pagesize .input-height {
+  width: 65px;
+}
 #_cbhtml .is-modal.edittable,
 .is-ui .is-modal.edittable {
   z-index: 10002;
@@ -2323,6 +2570,10 @@ button:focus-visible {
   width: 100%;
   margin-top: 30px;
 }
+#_cbhtml .is-modal.edittable .is-modal-overlay,
+.is-ui .is-modal.edittable .is-modal-overlay {
+  display: none !important;
+}
 #_cbhtml .is-modal.edittable button,
 .is-ui .is-modal.edittable button {
   height: 35px;
@@ -2339,6 +2590,125 @@ button:focus-visible {
   padding: 0;
   background: rgba(255, 255, 255, 0.2);
   border: rgba(0, 0, 0, 0.09) 1px solid;
+}
+#_cbhtml .is-modal.editblock,
+.is-ui .is-modal.editblock {
+  z-index: 10002;
+  position: fixed;
+  overflow: hidden;
+  width: 300px;
+  height: auto;
+  top: calc(50vh - 275px);
+  left: auto;
+  right: 40px;
+  box-sizing: content-box;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#_cbhtml .is-modal.editblock .is-modal-bar,
+.is-ui .is-modal.editblock .is-modal-bar {
+  line-height: 30px;
+  height: 30px;
+}
+#_cbhtml .is-modal.editblock .is-modal-bar .is-modal-close,
+.is-ui .is-modal.editblock .is-modal-bar .is-modal-close {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+}
+#_cbhtml .is-modal.editblock.active,
+.is-ui .is-modal.editblock.active {
+  display: flex;
+}
+#_cbhtml .is-modal.editblock > div:not(.is-draggable),
+.is-ui .is-modal.editblock > div:not(.is-draggable) {
+  width: 100%;
+  margin-top: 30px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+#_cbhtml .is-modal.editblock .is-modal-overlay,
+.is-ui .is-modal.editblock .is-modal-overlay {
+  display: none !important;
+}
+#_cbhtml .is-modal.editblock button,
+.is-ui .is-modal.editblock button {
+  width: auto;
+  height: 35px;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 1px 20px;
+  box-sizing: border-box;
+  border: none;
+  outline-offset: -2px;
+}
+#_cbhtml .is-modal.editblock button:focus,
+.is-ui .is-modal.editblock button:focus {
+  border-radius: 2px;
+}
+#_cbhtml .is-modal.editblock button.is-btn-color,
+.is-ui .is-modal.editblock button.is-btn-color {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: rgba(0, 0, 0, 0.09) 1px solid;
+}
+#_cbhtml .is-modal.editblock button span,
+.is-ui .is-modal.editblock button span {
+  margin-left: 5px;
+}
+#_cbhtml .is-modal.editblock button svg,
+.is-ui .is-modal.editblock button svg {
+  width: 12px;
+  height: 12px;
+  flex: none;
+}
+#_cbhtml .is-modal.editblock button.input-cell-bgimage,
+.is-ui .is-modal.editblock button.input-cell-bgimage {
+  margin-right: 1px;
+}
+#_cbhtml .is-modal.editblock button.input-cell-bgimage svg,
+.is-ui .is-modal.editblock button.input-cell-bgimage svg {
+  width: 14px;
+  height: 14px;
+}
+#_cbhtml .is-modal.editblock .asset-page-preview,
+#_cbhtml .is-modal.editblock .asset-block-preview,
+.is-ui .is-modal.editblock .asset-page-preview,
+.is-ui .is-modal.editblock .asset-block-preview {
+  max-width: 120px;
+  height: 100px;
+}
+#_cbhtml .is-modal.editblock .asset-page-preview img,
+#_cbhtml .is-modal.editblock .asset-block-preview img,
+.is-ui .is-modal.editblock .asset-page-preview img,
+.is-ui .is-modal.editblock .asset-block-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#_cbhtml .is-modal.editblock .div-content-textcolor,
+.is-ui .is-modal.editblock .div-content-textcolor {
+  display: flex;
+}
+#_cbhtml .is-modal.editblock .div-content-textcolor button,
+.is-ui .is-modal.editblock .div-content-textcolor button {
+  width: 40px;
+  border: transparent 1px solid;
+}
+#_cbhtml .is-modal.editblock .div-content-textcolor button[data-textcolor=dark],
+.is-ui .is-modal.editblock .div-content-textcolor button[data-textcolor=dark] {
+  width: auto;
+  background-color: #f7f7f7;
+  color: #111;
+}
+#_cbhtml .is-modal.editblock .div-content-textcolor button[data-textcolor=light],
+.is-ui .is-modal.editblock .div-content-textcolor button[data-textcolor=light] {
+  width: auto;
+  background-color: #333;
+  color: #f7f7f7;
 }
 #_cbhtml .is-modal.shortcuts div.is-modal-content,
 .is-ui .is-modal.shortcuts div.is-modal-content {
@@ -2370,6 +2740,71 @@ button:focus-visible {
 #_cbhtml .is-modal.pickcolor .is-modal-overlay,
 .is-ui .is-modal.pickcolor .is-modal-overlay {
   background: rgba(255, 255, 255, 0);
+}
+#_cbhtml .is-modal.snippetwindow,
+.is-ui .is-modal.snippetwindow {
+  z-index: 10002;
+  position: fixed;
+  overflow: hidden;
+  width: 228px;
+  height: 85vh;
+  min-height: 560px;
+  max-height: 968px;
+  top: calc(50% - 42.5vh);
+  left: auto;
+  right: 40px;
+  box-sizing: content-box;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 6px;
+  box-shadow: 9px 14px 30px 1px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+#_cbhtml .is-modal.snippetwindow.left,
+.is-ui .is-modal.snippetwindow.left {
+  right: auto;
+  left: 40px;
+}
+#_cbhtml .is-modal.snippetwindow #divSnippetWindow,
+.is-ui .is-modal.snippetwindow #divSnippetWindow {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-top: transparent 20px solid;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+#_cbhtml .is-modal.snippetwindow .is-modal-overlay,
+.is-ui .is-modal.snippetwindow .is-modal-overlay {
+  display: none !important;
+}
+#_cbhtml .is-modal.snippetwindow .is-modal-bar,
+.is-ui .is-modal.snippetwindow .is-modal-bar {
+  line-height: 30px;
+  height: 20px;
+  background-color: transparent;
+  transition: none !important;
+}
+#_cbhtml .is-modal.snippetwindow .is-modal-bar .is-modal-close,
+.is-ui .is-modal.snippetwindow .is-modal-bar .is-modal-close {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  top: 0px;
+}
+#_cbhtml .is-modal.snippetwindow.active,
+.is-ui .is-modal.snippetwindow.active {
+  display: flex;
+}
+#_cbhtml .is-modal.snippetwindow > div:not(.is-draggable),
+.is-ui .is-modal.snippetwindow > div:not(.is-draggable) {
+  width: 100%;
+  margin-top: 20px;
+}
+#_cbhtml .is-modal.snippetwindow #divSnippetHandle,
+.is-ui .is-modal.snippetwindow #divSnippetHandle {
+  display: none !important;
 }
 #_cbhtml .is-modal.buttoneditor,
 .is-ui .is-modal.buttoneditor {
@@ -2690,7 +3125,6 @@ button:focus-visible {
 #_cbhtml .is-modal.columnsettings .image-src > button, #_cbhtml .is-modal.rowsettings .image-src > button,
 .is-ui .is-modal.columnsettings .image-src > button,
 .is-ui .is-modal.rowsettings .image-src > button {
-  background: transparent !important;
   width: 50px;
   height: 43px;
 }
@@ -2713,7 +3147,6 @@ button:focus-visible {
 #_cbhtml .is-modal.imagesource .image-src > button, #_cbhtml .is-modal.mediasource .image-src > button,
 .is-ui .is-modal.imagesource .image-src > button,
 .is-ui .is-modal.mediasource .image-src > button {
-  background: transparent !important;
   width: 50px;
   height: 43px;
 }
@@ -2722,6 +3155,7 @@ button:focus-visible {
 .is-ui .is-modal.mediasource .input-select {
   width: 50px;
   height: 43px;
+  flex: none;
 }
 #_cbhtml .is-modal.imagesource .input-upload, #_cbhtml .is-modal.mediasource .input-upload,
 .is-ui .is-modal.imagesource .input-upload,
@@ -2841,7 +3275,6 @@ button:focus-visible {
 }
 #_cbhtml .is-modal.insertimage .image-src > button,
 .is-ui .is-modal.insertimage .image-src > button {
-  background: transparent !important;
   width: 50px;
   height: 43px;
 }
@@ -2870,7 +3303,6 @@ button:focus-visible {
 }
 #_cbhtml .is-modal.imagelink .image-src button,
 .is-ui .is-modal.imagelink .image-src button {
-  background: transparent !important;
   width: 50px;
   height: 43px;
 }
@@ -2885,7 +3317,6 @@ button:focus-visible {
 }
 #_cbhtml .is-modal.imagelink .image-link button,
 .is-ui .is-modal.imagelink .image-link button {
-  background: transparent !important;
   width: 50px;
   height: 43px;
 }
@@ -2913,10 +3344,6 @@ button:focus-visible {
 .is-ui .is-modal.videolink .video-url .inpVideoLinkSource {
   width: 100%;
 }
-#_cbhtml .is-modal.videolink .video-url button,
-.is-ui .is-modal.videolink .video-url button {
-  background: transparent !important;
-}
 #_cbhtml .is-modal.videolink .input-select,
 .is-ui .is-modal.videolink .input-select {
   width: 50px;
@@ -2925,12 +3352,25 @@ button:focus-visible {
   height: 43px;
   width: 50px;
   border-left: none;
-  background: transparent;
+  flex: none;
 }
 #_cbhtml .is-modal.videolink .input-upload,
 .is-ui .is-modal.videolink .input-upload {
   width: 50px;
   height: 43px;
+}
+#_cbhtml .is-modal.svgsettings div.is-modal-content,
+.is-ui .is-modal.svgsettings div.is-modal-content {
+  max-width: 550px;
+}
+#_cbhtml .is-modal.svgsettings div.is-modal-content #inpSvgCode,
+.is-ui .is-modal.svgsettings div.is-modal-content #inpSvgCode {
+  width: 100%;
+  height: 300px;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: "Courier New", monospace;
+  resize: none;
 }
 #_cbhtml .is-modal.audiolink div.is-modal-content,
 .is-ui .is-modal.audiolink div.is-modal-content {
@@ -2947,10 +3387,6 @@ button:focus-visible {
 .is-ui .is-modal.audiolink .audio-url .inpAudioLinkSource {
   width: 100%;
 }
-#_cbhtml .is-modal.audiolink .audio-url button,
-.is-ui .is-modal.audiolink .audio-url button {
-  background: transparent !important;
-}
 #_cbhtml .is-modal.audiolink .input-select,
 .is-ui .is-modal.audiolink .input-select {
   width: 50px;
@@ -2959,7 +3395,7 @@ button:focus-visible {
   height: 43px;
   width: 50px;
   border-left: none;
-  background: transparent;
+  flex: none;
 }
 #_cbhtml .is-modal.audiolink .input-upload,
 .is-ui .is-modal.audiolink .input-upload {
@@ -2986,10 +3422,6 @@ button:focus-visible {
 .is-ui .is-modal.createlink .link-src .input-url {
   width: 100%;
 }
-#_cbhtml .is-modal.createlink .link-src button,
-.is-ui .is-modal.createlink .link-src button {
-  background: transparent !important;
-}
 #_cbhtml .is-modal.createlink .input-select,
 .is-ui .is-modal.createlink .input-select {
   width: 60px;
@@ -2997,7 +3429,7 @@ button:focus-visible {
   height: 43px;
   width: 50px;
   border-left: none;
-  background: transparent;
+  flex: none;
 }
 #_cbhtml .is-modal.viewconfig .div-themes,
 .is-ui .is-modal.viewconfig .div-themes {
@@ -3016,6 +3448,12 @@ button:focus-visible {
 #_cbhtml .is-modal.viewconfig button.input-setcolor:focus,
 .is-ui .is-modal.viewconfig button.input-setcolor:focus {
   outline-offset: -2px;
+}
+#_cbhtml .is-modal .div-anyfile-upload,
+#_cbhtml .is-modal [class^=image-larger],
+.is-ui .is-modal .div-anyfile-upload,
+.is-ui .is-modal [class^=image-larger] {
+  flex: none;
 }
 #_cbhtml .is-tool#divImageTool, #_cbhtml .is-tool.is-video-tool, #_cbhtml .is-tool.is-audio-tool, #_cbhtml .is-tool.is-iframe-tool,
 .is-ui .is-tool#divImageTool,
@@ -3043,6 +3481,7 @@ button:focus-visible {
 .is-ui .is-tool.is-audio-tool svg,
 .is-ui .is-tool.is-iframe-tool svg {
   fill: #fff;
+  color: #fff;
 }
 #_cbhtml .is-tool#divImageResizer,
 .is-ui .is-tool#divImageResizer {
@@ -3097,43 +3536,49 @@ button:focus-visible {
 .is-ui .is-tool.is-table-tool > button svg {
   fill: #121212;
 }
-#_cbhtml .is-tool.is-code-tool, #_cbhtml .is-tool.is-module-tool,
+#_cbhtml .is-tool.is-code-tool, #_cbhtml .is-tool.is-module-tool, #_cbhtml .is-tool.is-svg-tool,
 .is-ui .is-tool.is-code-tool,
-.is-ui .is-tool.is-module-tool {
+.is-ui .is-tool.is-module-tool,
+.is-ui .is-tool.is-svg-tool {
   border: none;
   background: none;
+  border-radius: 3px;
+  overflow: hidden;
 }
-#_cbhtml .is-tool.is-code-tool > button, #_cbhtml .is-tool.is-module-tool > button,
+#_cbhtml .is-tool.is-code-tool > button, #_cbhtml .is-tool.is-module-tool > button, #_cbhtml .is-tool.is-svg-tool > button,
 .is-ui .is-tool.is-code-tool > button,
-.is-ui .is-tool.is-module-tool > button {
-  width: 30px;
-  height: 30px;
+.is-ui .is-tool.is-module-tool > button,
+.is-ui .is-tool.is-svg-tool > button {
+  width: 35px !important;
+  height: 35px !important;
   background: rgba(240, 240, 240, 0.9);
 }
-#_cbhtml .is-tool.is-code-tool > button svg, #_cbhtml .is-tool.is-module-tool > button svg,
+#_cbhtml .is-tool.is-code-tool > button svg, #_cbhtml .is-tool.is-module-tool > button svg, #_cbhtml .is-tool.is-svg-tool > button svg,
 .is-ui .is-tool.is-code-tool > button svg,
-.is-ui .is-tool.is-module-tool > button svg {
+.is-ui .is-tool.is-module-tool > button svg,
+.is-ui .is-tool.is-svg-tool > button svg {
+  width: 14px !important;
+  height: 14px !important;
   fill: #121212;
 }
-#_cbhtml .is-tool#divLinkTool, #_cbhtml .is-tool#divButtonTool, #_cbhtml .is-tool#divSvgTool,
+#_cbhtml .is-tool#divLinkTool, #_cbhtml .is-tool#divButtonTool,
 .is-ui .is-tool#divLinkTool,
-.is-ui .is-tool#divButtonTool,
-.is-ui .is-tool#divSvgTool {
+.is-ui .is-tool#divButtonTool {
   background: rgba(243, 243, 243, 0.9);
   box-shadow: none;
+  border-radius: 3px;
+  overflow: hidden;
 }
-#_cbhtml .is-tool#divLinkTool button, #_cbhtml .is-tool#divButtonTool button, #_cbhtml .is-tool#divSvgTool button,
+#_cbhtml .is-tool#divLinkTool button, #_cbhtml .is-tool#divButtonTool button,
 .is-ui .is-tool#divLinkTool button,
-.is-ui .is-tool#divButtonTool button,
-.is-ui .is-tool#divSvgTool button {
+.is-ui .is-tool#divButtonTool button {
   width: 30px;
   height: 30px;
   background: transparent;
 }
-#_cbhtml .is-tool#divLinkTool button svg, #_cbhtml .is-tool#divButtonTool button svg, #_cbhtml .is-tool#divSvgTool button svg,
+#_cbhtml .is-tool#divLinkTool button svg, #_cbhtml .is-tool#divButtonTool button svg,
 .is-ui .is-tool#divLinkTool button svg,
-.is-ui .is-tool#divButtonTool button svg,
-.is-ui .is-tool#divSvgTool button svg {
+.is-ui .is-tool#divButtonTool button svg {
   fill: #121212;
 }
 #_cbhtml .dot,
@@ -3214,11 +3659,11 @@ button:focus-visible {
 }
 #_cbhtml .is-side button:hover,
 .is-ui .is-side button:hover {
-  background: #fff;
+  background: #f1f1f1;
 }
 #_cbhtml .is-side button.on,
 .is-ui .is-side button.on {
-  background: #f2f2f2;
+  background: #f1f1f1;
 }
 #_cbhtml .is-side.active,
 .is-ui .is-side.active {
@@ -3309,14 +3754,14 @@ button:focus-visible {
   width: 100%;
   height: 43px;
   display: block;
-  background: #f7f7f7;
+  background: transparent;
   box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
 }
 #_cbhtml button.classic:hover,
 #_cbhtml .is-btn.classic:hover,
 .is-ui button.classic:hover,
 .is-ui .is-btn.classic:hover {
-  background: #f9f9f9;
+  background: #f1f1f1;
 }
 #_cbhtml button.classic-primary,
 #_cbhtml .is-btn.classic-primary,
@@ -3328,7 +3773,7 @@ button:focus-visible {
   padding-left: 25px;
   padding-right: 25px;
   min-width: 110px;
-  background: #f3f3f3;
+  background: #f5f5f5;
   border: transparent 1px solid;
   box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.32);
 }
@@ -3336,8 +3781,7 @@ button:focus-visible {
 #_cbhtml .is-btn.classic-primary:hover,
 .is-ui button.classic-primary:hover,
 .is-ui .is-btn.classic-primary:hover {
-  background: #f3f3f3;
-  border: transparent 1px solid;
+  background: #f1f1f1;
 }
 #_cbhtml button.classic-secondary,
 #_cbhtml .is-btn.classic-secondary,
@@ -3356,8 +3800,7 @@ button:focus-visible {
 #_cbhtml .is-btn.classic-secondary:hover,
 .is-ui button.classic-secondary:hover,
 .is-ui .is-btn.classic-secondary:hover {
-  background: transparent;
-  border: transparent 1px solid;
+  background: #f1f1f1;
 }
 #_cbhtml textarea:not(.monaco-mouse-cursor-text),
 .is-ui textarea:not(.monaco-mouse-cursor-text) {
@@ -3411,7 +3854,8 @@ button:focus-visible {
 }
 #_cbhtml select:focus,
 .is-ui select:focus {
-  outline-offset: 0;
+  outline: #3e93f7 2px solid;
+  outline-offset: -2px;
   box-shadow: none;
 }
 #_cbhtml input[type=text],
@@ -3435,7 +3879,7 @@ button:focus-visible {
 #_cbhtml input[type=text]:focus,
 .is-ui input[type=text]:focus {
   outline: #3e93f7 2px solid;
-  outline-offset: 0;
+  outline-offset: -2px;
   box-shadow: none;
 }
 #_cbhtml input[type=text] [type=checkbox], #_cbhtml input[type=text] [type=radio],
@@ -3461,6 +3905,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   line-height: 1;
+  cursor: pointer;
 }
 #_cbhtml label.label-checkbox input,
 .is-ui label.label-checkbox input {
@@ -3479,6 +3924,7 @@ button:focus-visible {
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   margin: 2px !important;
+  border-radius: 2px !important;
 }
 #_cbhtml .is-rangeslider:hover,
 .is-ui .is-rangeslider:hover {
@@ -3495,7 +3941,7 @@ button:focus-visible {
   appearance: none;
   width: 25px !important;
   height: 24px !important;
-  border-radius: 0 !important;
+  border-radius: 3px !important;
   background: #0e75de;
   cursor: pointer;
   margin: 0 !important;
@@ -3504,6 +3950,7 @@ button:focus-visible {
 .is-ui .is-rangeslider::-moz-range-thumb {
   width: 25px !important;
   height: 24px !important;
+  border-radius: 3px !important;
   background: #0e75de;
   cursor: pointer;
   margin: 0 !important;
@@ -3716,12 +4163,34 @@ button:focus-visible {
 .is-ui .is-tabs-more li.active {
   background: whitesmoke;
 }
+#_cbhtml .inp-snippets.custom-select,
+.is-ui .inp-snippets.custom-select {
+  width: 100%;
+}
+#_cbhtml .inp-snippets.custom-select .select-styled,
+.is-ui .inp-snippets.custom-select .select-styled {
+  border: none;
+  border-bottom: 1px solid #bababa38;
+  padding: 0 6px 0 14px;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+#_cbhtml .inp-snippets.custom-select .select-options,
+.is-ui .inp-snippets.custom-select .select-options {
+  max-height: 300px;
+  top: 46px;
+}
+#_cbhtml .inp-snippets.custom-select .select-options li,
+.is-ui .inp-snippets.custom-select .select-options li {
+  font-size: 14px !important;
+  padding: 0 8px 0 14px;
+}
 #_cbhtml #divSnippetList,
 .is-ui #divSnippetList {
   right: -230px;
   width: 230px;
   background: #fff;
-  border-left: 1px solid #e8e8e8;
+  border-left: 1px solid #e6e6e6;
   box-shadow: rgba(0, 0, 0, 0.03) 0 0 10px 0px;
 }
 #_cbhtml #divSnippetList.active,
@@ -3744,7 +4213,7 @@ button:focus-visible {
   top: 170px;
   left: -40px;
   background: #fff;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #dfdfdf;
   border-right: none;
   line-height: 39px;
   text-align: center;
@@ -3793,7 +4262,7 @@ button:focus-visible {
   overflow-y: auto;
   overflow-x: hidden;
   text-align: center;
-  border-top: transparent 40px solid !important;
+  border-top: transparent 46px solid !important;
   outline: none;
 }
 #_cbhtml .is-design-list > div,
@@ -4461,6 +4930,7 @@ button:focus-visible {
   flex-direction: column;
   background-color: transparent;
   box-shadow: none;
+  border-radius: 3px;
 }
 #_cbhtml .is-pop.columnmore button span {
   display: inline-block;
@@ -4468,10 +4938,10 @@ button:focus-visible {
   height: 24px;
 }
 #_cbhtml .is-pop.columnmore button.on {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.columnmore button:hover {
-  background-color: rgba(0, 0, 0, 0.03) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.columnmore div.is-separator {
   width: 100%;
@@ -4496,6 +4966,7 @@ button:focus-visible {
   flex-direction: column;
   background-color: transparent;
   box-shadow: none;
+  border-radius: 3px;
 }
 #_cbhtml .is-pop.rowmore button span {
   display: inline-block;
@@ -4503,10 +4974,10 @@ button:focus-visible {
   height: 24px;
 }
 #_cbhtml .is-pop.rowmore button.on {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.rowmore button:hover {
-  background-color: rgba(0, 0, 0, 0.03) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.rowmore div.is-separator {
   width: 100%;
@@ -4531,6 +5002,7 @@ button:focus-visible {
   flex-direction: column;
   background-color: transparent;
   box-shadow: none;
+  border-radius: 3px;
 }
 #_cbhtml .is-pop.elmmore button span {
   display: inline-block;
@@ -4538,10 +5010,10 @@ button:focus-visible {
   height: 24px;
 }
 #_cbhtml .is-pop.elmmore button.on {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.elmmore button:hover {
-  background-color: rgba(0, 0, 0, 0.03) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.quickadd {
   width: 430px;
@@ -4562,12 +5034,13 @@ button:focus-visible {
   flex-direction: column;
   background-color: transparent;
   box-shadow: none;
+  border-radius: 3px;
 }
 #_cbhtml .is-pop.quickadd button.on {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.quickadd button:hover {
-  background-color: rgba(0, 0, 0, 0.03) !important;
+  background-color: #f1f1f1;
 }
 #_cbhtml .is-pop.quickadd .pop-separator {
   width: 100%;
@@ -4579,8 +5052,11 @@ button:focus-visible {
   width: 100%;
   height: 50px;
   flex-direction: initial;
-  background: transparent;
   padding: 5px;
+}
+#_cbhtml .is-tool.is-element-tool {
+  border-radius: 3px;
+  overflow: hidden;
 }
 #_cbhtml .is-tool.is-element-tool button {
   width: 25px;
@@ -4622,6 +5098,8 @@ button:focus-visible {
   left: auto;
   right: -40px;
   box-shadow: none;
+  border-radius: 2px;
+  overflow: hidden;
 }
 .is-tool.is-row-tool button {
   width: 25px;
@@ -4675,6 +5153,8 @@ button:focus-visible {
   margin-top: 0px;
   margin-left: -1px;
   box-shadow: none;
+  border-radius: 2px;
+  overflow: hidden;
 }
 .is-tool.is-col-tool button {
   width: 25px;
@@ -4701,6 +5181,79 @@ button:focus-visible {
 .is-tool.is-col-tool .cell-more svg {
   width: 14px;
   height: 14px;
+}
+.is-tool.is-canvas-tool {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  left: auto;
+  right: -40px;
+  box-shadow: none;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.is-tool.is-canvas-tool button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.is-tool.is-canvas-tool button.box-up svg, .is-tool.is-canvas-tool button.box-down svg {
+  width: 12px;
+  height: 12px;
+}
+.is-tool.is-canvas-tool button.box-settings svg {
+  width: 12px;
+  height: 12px;
+}
+.is-tool.is-canvas-tool button.box-remove svg {
+  width: 14px;
+  height: 14px;
+}
+.is-tool.is-canvasadd-tool {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  top: auto;
+  bottom: -37px;
+  left: calc(50% - 15px);
+  box-shadow: none;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.is-tool.is-canvasadd-tool button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.is-tool.is-canvasadd-tool button.box-add svg {
+  width: 14px;
+  height: 14px;
+}
+
+.page-web .is-tool.is-canvas-tool {
+  top: 10vh;
+  right: 5px;
+}
+.page-web .is-tool.is-canvasadd-tool {
+  bottom: 5px;
+}
+
+.page-web-container .is-tool.is-canvasadd-tool {
+  bottom: 5px;
+}
+
+.is-page:not(.page-web):not(.page-web-container) .is-canvasadd-tool {
+  background-color: #ffffffa3;
+  box-shadow: 2px 3px 9px #62626212;
+}
+
+.is-page:not(.page-web) .is-canvas-tool {
+  background-color: #ffffffa3;
+  box-shadow: 2px 3px 9px #62626212;
 }
 
 .is-builder[gray] .is-tool.is-row-tool {
@@ -4987,6 +5540,7 @@ button:focus-visible {
   border-radius: 0px;
   color: #fefefe;
   z-index: 100005;
+  -webkit-font-smoothing: auto;
 }
 
 /*!
@@ -5511,3 +6065,306 @@ div[data-html] {
 .padding-0[data-module=text-builder] {
   padding: 0 2px 4px !important;
 }
+
+/* IFRAME * New Control Panel */
+.is-content-view.desktop {
+  width: 1366px;
+  height: 853px;
+}
+.is-content-view.tablet-landscape {
+  width: 1080px;
+  height: 810px;
+}
+.is-content-view.tablet {
+  width: 768px;
+  height: 1024px;
+}
+.is-content-view.mobile {
+  width: 390px;
+  height: 844px;
+}
+
+@media all and (min-width: 1620px) {
+  .is-content-view.desktop {
+    width: 1420px;
+    height: 887px;
+  }
+
+  .is-content-view.tablet-landscape {
+    width: 1280px;
+    height: 960px;
+  }
+}
+@media all and (min-width: 1720px) {
+  .is-content-view.desktop {
+    width: 1520px;
+    height: 949px;
+  }
+
+  .is-content-view.tablet-landscape {
+    width: 1280px;
+    height: 960px;
+  }
+}
+@media all and (min-width: 1820px) {
+  .is-content-view.desktop {
+    width: 1620px;
+    height: 1012px;
+  }
+
+  .is-content-view.tablet-landscape {
+    width: 1280px;
+    height: 960px;
+  }
+}
+@media all and (max-width: 1520px) {
+  .is-content-view {
+    transform: scale(0.93);
+  }
+}
+@media all and (max-width: 1450px) {
+  .is-content-view {
+    transform: scale(0.87);
+  }
+}
+@media all and (max-width: 1375px) {
+  .is-content-view {
+    transform: scale(0.73);
+  }
+}
+@media all and (max-width: 1175px) {
+  .is-content-view {
+    transform: scale(0.67);
+  }
+}
+@media all and (max-width: 1090px) {
+  .is-content-view {
+    transform: scale(0.62);
+  }
+}
+.custom-select {
+  --cs-height: 46px;
+  --cs-border: 1px solid #ddd;
+  --cs-background: #fff;
+  --cs-hover-background: #f2f2f2;
+  --cs-selected-background: #eee;
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  height: var(--cs-height);
+  width: 100%;
+}
+.custom-select .select-styled {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px 0 14px;
+  border: var(--cs-border);
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  box-sizing: border-box;
+  height: var(--cs-height);
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: -2px 5px 10px -6px rgba(0, 0, 0, 0.08);
+  outline: none;
+}
+.custom-select .select-styled span {
+  display: flex;
+}
+.custom-select .select-styled span img {
+  height: 25px;
+  margin-top: 3px;
+}
+.custom-select .select-styled:focus-visible {
+  outline: #3e93f7 2px solid;
+  outline-offset: -1px;
+}
+.custom-select .select-styled > span:first-child {
+  position: absolute;
+  margin-right: 23px;
+}
+.custom-select .select-styled > span:nth-child(2) {
+  position: absolute;
+  height: 15px;
+  top: calc(50% - 7.5px);
+  right: 6px;
+  display: flex;
+}
+.custom-select .select-styled svg {
+  width: 15px;
+  height: 15px;
+}
+.custom-select .select-styled[aria-expanded=true] > span:nth-child(2) {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  top: calc(50% - 7.5px);
+}
+.custom-select input {
+  display: none;
+  width: 100%;
+  height: 40px;
+  border: var(--cs-border);
+  border-top: none;
+  padding: 0 3px 0 8px;
+  box-sizing: border-box;
+  margin: 0;
+  position: absolute;
+  top: var(--cs-height);
+  left: 0;
+  font-size: 15px;
+  z-index: 2;
+  outline-offset: 0;
+  background: var(--cs-background);
+}
+.custom-select input:focus {
+  outline: none;
+}
+.custom-select .select-options {
+  display: none;
+  position: absolute;
+  top: calc(var(--cs-height) + 1px);
+  left: 0;
+  border: var(--cs-border);
+  box-sizing: border-box;
+  border-top: none;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--cs-background);
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.custom-select.has-search .select-options {
+  top: calc(var(--cs-height) + 40px);
+}
+.custom-select .select-options.active {
+  display: block;
+}
+.custom-select .select-options li {
+  padding: 0 8px 0 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 36px;
+  align-items: center;
+}
+.custom-select .select-options li img {
+  margin: 8px 0;
+  height: 25px;
+}
+.custom-select .select-options li:hover {
+  background-color: var(--cs-hover-background);
+}
+.custom-select .select-options li.selected {
+  background-color: var(--cs-selected-background);
+}
+
+/* Switch */
+.is-ui .switch, .builder-ui .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.is-ui .switch input, .builder-ui .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.is-ui .switch .slider, .builder-ui .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.is-ui .switch .slider:before, .builder-ui .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.is-ui .switch input:checked + .slider, .builder-ui .switch input:checked + .slider {
+  background-color: #0e75de;
+  border-radius: 34px;
+}
+.is-ui .switch input:focus + .slider, .builder-ui .switch input:focus + .slider {
+  box-shadow: 0 0 1px #0e75de;
+}
+.is-ui .switch input:checked + .slider:before, .builder-ui .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.dark .is-ui .switch .slider,
+.dark .builder-ui .switch .slider {
+  background-color: #7c7c7c;
+}
+.dark .is-ui .switch .slider:before,
+.dark .builder-ui .switch .slider:before {
+  background-color: rgba(255, 255, 255, 0.82);
+}
+.dark .is-ui .switch input:checked + .slider,
+.dark .builder-ui .switch input:checked + .slider {
+  background-color: #0e75de;
+}
+.dark .is-ui .switch input:focus + .slider,
+.dark .builder-ui .switch input:focus + .slider {
+  box-shadow: 0 0 1px #0e75de;
+}
+
+.dark .div-font-list > button img,
+.colored-dark .div-font-list > button img,
+.colored .div-font-list > button img {
+  mix-blend-mode: screen;
+  filter: invert(1);
+}
+
+i.bi, i.icon {
+  display: inline-flex;
+}
+
+/* block tool */
+/*
+.is-block-tool {
+    border-radius: 3px;
+    overflow: hidden;
+    top: 3px;
+    right: 3px;
+    left: auto;
+    width: 25px;
+
+    button {
+        width: 25px; 
+        height: 25px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    svg {
+        width: 14px;
+        height: 14px;
+        fill: #000;
+    }
+} 
+.is-block.active:not(.multi):not(.editable) .is-block-tool {
+    display: flex;
+}
+*/

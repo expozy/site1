@@ -555,6 +555,17 @@
                 
             };
 
+            this.refresh = function () {
+                // $('ul.sortable').sortable('destroy');
+                $('ul.sortable').sortable({
+                    connectWith: 'ul.sortable',
+                    placeholder: 'placeholder',
+                    deactivate: function(e){
+                    
+                    }
+                }).disableSelection();
+            };
+
             this.getMenu = function () {
                 return JSON.parse('{"menu":' + JSON.stringify($element.data('menubuilder').parseMenu()) + '}');			
             };
@@ -924,6 +935,8 @@
                     });
                         
                 });
+
+                jQuery('#menu1').data('menubuilder').refresh();
             }
 
             applyTreeBehavior();

@@ -74,7 +74,7 @@
 }
 .dark #_cbhtml .style-helper.snippet-background,
 .dark .is-ui .style-helper.snippet-background {
-  background: #c7c7c7;
+  background: #cacaca;
 }
 .dark #_cbhtml .style-helper.snippet-tabs-background,
 .dark .is-ui .style-helper.snippet-tabs-background {
@@ -173,7 +173,7 @@
 .dark #_cbhtml .is-area-2nd,
 .dark .is-ui .is-area-2nd {
   color: #fafafa !important;
-  background: #c7c7c7 !important;
+  background: #cacaca !important;
 }
 .dark #_cbhtml .is-area-2nd button,
 .dark .is-ui .is-area-2nd button {
@@ -400,6 +400,28 @@
 .dark #_cbhtml .is-rte-pop.rte-textsetting-options button:focus,
 .dark .is-ui .is-rte-pop.rte-textsetting-options button:focus {
   background: #0074f1;
+}
+.dark #_cbhtml .is-rte-pop.rte-icon-options input[type=text],
+.dark .is-ui .is-rte-pop.rte-icon-options input[type=text] {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-bottom: none;
+}
+.dark #_cbhtml .is-rte-pop.rte-icon-options #inpRteIconSearch::placeholder,
+.dark .is-ui .is-rte-pop.rte-icon-options #inpRteIconSearch::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark #_cbhtml .is-rte-pop.rte-fontfamily-options input[type=text],
+.dark .is-ui .is-rte-pop.rte-fontfamily-options input[type=text] {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-bottom: none;
+}
+.dark #_cbhtml .is-rte-pop.rte-fontfamily-options #inpRteFontSearch::placeholder,
+.dark .is-ui .is-rte-pop.rte-fontfamily-options #inpRteFontSearch::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 .dark #_cbhtml .is-rte-pop.rte-color-picker button,
 .dark .is-ui .is-rte-pop.rte-color-picker button {
@@ -686,6 +708,26 @@
 .dark .is-ui .is-modal.pickcolor .is-color-preview {
   border: transparent 1px solid;
 }
+.dark #_cbhtml .is-modal.snippetwindow,
+.dark .is-ui .is-modal.snippetwindow {
+  background-color: #d3d3d3;
+}
+.dark #_cbhtml .is-modal.snippetwindow .is-modal-bar,
+.dark .is-ui .is-modal.snippetwindow .is-modal-bar {
+  background-color: #d3d3d3;
+}
+.dark #_cbhtml .is-modal.snippetwindow .is-modal-bar .is-modal-close,
+.dark .is-ui .is-modal.snippetwindow .is-modal-bar .is-modal-close {
+  color: #000;
+}
+.dark #_cbhtml .is-modal.snippetwindow .is-modal-bar .is-modal-close:hover,
+.dark .is-ui .is-modal.snippetwindow .is-modal-bar .is-modal-close:hover {
+  background: lightgrey;
+}
+.dark #_cbhtml .is-modal.snippetwindow .select-styled,
+.dark .is-ui .is-modal.snippetwindow .select-styled {
+  border-bottom: 1px solid #bababa38;
+}
 .dark #_cbhtml .is-modal.pickcolormore div.is-modal-content > div,
 .dark .is-ui .is-modal.pickcolormore div.is-modal-content > div {
   opacity: 0.9;
@@ -760,26 +802,26 @@
 .dark .is-ui .is-tool.is-table-tool > button svg {
   fill: #000;
 }
-.dark #_cbhtml .is-tool.is-code-tool > button, .dark #_cbhtml .is-tool.is-module-tool > button,
+.dark #_cbhtml .is-tool.is-code-tool > button, .dark #_cbhtml .is-tool.is-module-tool > button, .dark #_cbhtml .is-tool.is-svg-tool > button,
 .dark .is-ui .is-tool.is-code-tool > button,
-.dark .is-ui .is-tool.is-module-tool > button {
+.dark .is-ui .is-tool.is-module-tool > button,
+.dark .is-ui .is-tool.is-svg-tool > button {
   background: #eaeaea;
 }
-.dark #_cbhtml .is-tool.is-code-tool > button svg, .dark #_cbhtml .is-tool.is-module-tool > button svg,
+.dark #_cbhtml .is-tool.is-code-tool > button svg, .dark #_cbhtml .is-tool.is-module-tool > button svg, .dark #_cbhtml .is-tool.is-svg-tool > button svg,
 .dark .is-ui .is-tool.is-code-tool > button svg,
-.dark .is-ui .is-tool.is-module-tool > button svg {
+.dark .is-ui .is-tool.is-module-tool > button svg,
+.dark .is-ui .is-tool.is-svg-tool > button svg {
   fill: #000;
 }
-.dark #_cbhtml .is-tool#divLinkTool button, .dark #_cbhtml .is-tool#divButtonTool button, .dark #_cbhtml .is-tool#divSvgTool button,
+.dark #_cbhtml .is-tool#divLinkTool button, .dark #_cbhtml .is-tool#divButtonTool button,
 .dark .is-ui .is-tool#divLinkTool button,
-.dark .is-ui .is-tool#divButtonTool button,
-.dark .is-ui .is-tool#divSvgTool button {
+.dark .is-ui .is-tool#divButtonTool button {
   background: #eaeaea;
 }
-.dark #_cbhtml .is-tool#divLinkTool button svg, .dark #_cbhtml .is-tool#divButtonTool button svg, .dark #_cbhtml .is-tool#divSvgTool button svg,
+.dark #_cbhtml .is-tool#divLinkTool button svg, .dark #_cbhtml .is-tool#divButtonTool button svg,
 .dark .is-ui .is-tool#divLinkTool button svg,
-.dark .is-ui .is-tool#divButtonTool button svg,
-.dark .is-ui .is-tool#divSvgTool button svg {
+.dark .is-ui .is-tool#divButtonTool button svg {
   fill: #000;
 }
 .dark #_cbhtml #divImageProgress,
@@ -1028,51 +1070,6 @@
   color: #fff;
   background: rgba(151, 158, 163, 0.55);
 }
-.dark #_cbhtml .is-dropdown .dropdown-toggle,
-.dark .is-ui .is-dropdown .dropdown-toggle {
-  color: #fff;
-  background: #4c5155;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.04);
-}
-.dark #_cbhtml .is-dropdown .dropdown-toggle:hover,
-.dark .is-ui .is-dropdown .dropdown-toggle:hover {
-  background: #4e5458;
-}
-.dark #_cbhtml .is-dropdown .dropdown-toggle svg,
-.dark .is-ui .is-dropdown .dropdown-toggle svg {
-  fill: #fafafa;
-}
-.dark #_cbhtml .is-dropdown .dropdown-toggle::after,
-.dark .is-ui .is-dropdown .dropdown-toggle::after {
-  border-top-color: #fafafa;
-  border-bottom-color: transparent;
-}
-.dark #_cbhtml .is-dropdown .dropdown-toggle.active::after,
-.dark .is-ui .is-dropdown .dropdown-toggle.active::after {
-  border-bottom-color: #fafafa;
-  border-top-color: transparent;
-}
-.dark #_cbhtml .is-dropdown .dropdown-menu,
-.dark .is-ui .is-dropdown .dropdown-menu {
-  border: transparent 1px solid;
-  background-color: #4e5458;
-}
-.dark #_cbhtml .is-dropdown .dropdown-menu li,
-.dark .is-ui .is-dropdown .dropdown-menu li {
-  color: #fff;
-  background-color: #4e5458;
-}
-.dark #_cbhtml .is-dropdown .dropdown-menu li:hover, .dark #_cbhtml .is-dropdown .dropdown-menu li:focus,
-.dark .is-ui .is-dropdown .dropdown-menu li:hover,
-.dark .is-ui .is-dropdown .dropdown-menu li:focus {
-  color: #fff;
-  background: rgba(151, 158, 163, 0.55);
-}
-.dark #_cbhtml .is-dropdown .dropdown-menu li.selected,
-.dark .is-ui .is-dropdown .dropdown-menu li.selected {
-  color: #fff;
-  background: rgba(151, 158, 163, 0.55);
-}
 .dark #_cbhtml .elementstyles .elm-list,
 .dark .is-ui .elementstyles .elm-list {
   color: rgba(250, 250, 250, 0.95);
@@ -1091,6 +1088,10 @@
 .dark .is-ui .elementstyles .is-settings button.is-btn-color {
   background-color: rgba(255, 255, 255, 0.2);
   border: rgba(255, 255, 255, 0.22) 1px solid;
+}
+.dark #_cbhtml .elementstyles div.is-separator,
+.dark .is-ui .elementstyles div.is-separator {
+  border-top-color: #585858;
 }
 .dark .is-tool {
   background: #eaeaea;
@@ -1316,4 +1317,28 @@
 }
 .dark .scroll-darker *::-webkit-scrollbar-thumb {
   background-color: rgba(78, 78, 78, 0.62);
+}
+.dark .custom-select .select-styled span {
+  color: #000;
+}
+.dark .custom-select input {
+  background: #4e5458;
+}
+.dark .custom-select .select-options {
+  border: transparent 1px solid;
+  background-color: #4e5458;
+  color: #f1f1f1;
+}
+.dark .custom-select .select-options li {
+  color: #f1f1f1;
+}
+.dark .custom-select .select-options li:hover {
+  background-color: rgba(151, 158, 163, 0.55);
+}
+.dark .custom-select .select-options li.selected {
+  background-color: rgba(151, 158, 163, 0.55);
+}
+.dark .div-font-list > button img {
+  mix-blend-mode: screen;
+  filter: invert(1);
 }

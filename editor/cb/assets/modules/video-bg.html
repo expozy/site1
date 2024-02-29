@@ -772,12 +772,12 @@
         COMMON METHODS FOR MODULE.
         */
         function getHtml() {
-            var activeModule = parent.document.querySelector('[data-module-active]');
+            var activeModule = parent._cb.doc.querySelector('[data-module-active]');
             return decodeURIComponent(activeModule.getAttribute('data-html'));
         }
 
         function getSettings() {
-            var activeModule = parent.document.querySelector('[data-module-active]');
+            var activeModule = parent._cb.doc.querySelector('[data-module-active]');
             return decodeURIComponent(activeModule.getAttribute('data-settings'));
         }
 

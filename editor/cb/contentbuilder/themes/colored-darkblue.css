@@ -401,6 +401,28 @@
 .colored .is-ui .is-rte-pop.rte-textsetting-options button:focus {
   background: #0c57a5;
 }
+.colored #_cbhtml .is-rte-pop.rte-icon-options input[type=text],
+.colored .is-ui .is-rte-pop.rte-icon-options input[type=text] {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(7, 52, 99, 0.4);
+  border: none;
+  border-bottom: 1px solid rgba(69, 153, 241, 0.45);
+}
+.colored #_cbhtml .is-rte-pop.rte-icon-options #inpRteIconSearch::placeholder,
+.colored .is-ui .is-rte-pop.rte-icon-options #inpRteIconSearch::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.colored #_cbhtml .is-rte-pop.rte-fontfamily-options input[type=text],
+.colored .is-ui .is-rte-pop.rte-fontfamily-options input[type=text] {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(7, 52, 99, 0.4);
+  border: none;
+  border-bottom: 1px solid rgba(69, 153, 241, 0.45);
+}
+.colored #_cbhtml .is-rte-pop.rte-fontfamily-options #inpRteFontSearch::placeholder,
+.colored .is-ui .is-rte-pop.rte-fontfamily-options #inpRteFontSearch::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 .colored #_cbhtml .is-rte-pop.rte-color-picker button,
 .colored .is-ui .is-rte-pop.rte-color-picker button {
   color: rgba(255, 255, 255, 0.95);
@@ -678,6 +700,18 @@
 .colored .is-ui .is-modal.pickcolor .is-color-preview {
   border: transparent 1px solid;
 }
+.colored #_cbhtml .is-modal.snippetwindow,
+.colored .is-ui .is-modal.snippetwindow {
+  background-color: #e5e6e9;
+}
+.colored #_cbhtml .is-modal.snippetwindow .is-modal-bar,
+.colored .is-ui .is-modal.snippetwindow .is-modal-bar {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.colored #_cbhtml .is-modal.snippetwindow .select-styled,
+.colored .is-ui .is-modal.snippetwindow .select-styled {
+  border-bottom: 1px solid #bababa38;
+}
 .colored #_cbhtml .is-modal.pickcolormore div.is-modal-content > div,
 .colored .is-ui .is-modal.pickcolormore div.is-modal-content > div {
   opacity: 0.9;
@@ -752,26 +786,26 @@
 .colored .is-ui .is-tool.is-table-tool > button svg {
   fill: #000;
 }
-.colored #_cbhtml .is-tool.is-code-tool > button, .colored #_cbhtml .is-tool.is-module-tool > button,
+.colored #_cbhtml .is-tool.is-code-tool > button, .colored #_cbhtml .is-tool.is-module-tool > button, .colored #_cbhtml .is-tool.is-svg-tool > button,
 .colored .is-ui .is-tool.is-code-tool > button,
-.colored .is-ui .is-tool.is-module-tool > button {
+.colored .is-ui .is-tool.is-module-tool > button,
+.colored .is-ui .is-tool.is-svg-tool > button {
   background: #edeef1;
 }
-.colored #_cbhtml .is-tool.is-code-tool > button svg, .colored #_cbhtml .is-tool.is-module-tool > button svg,
+.colored #_cbhtml .is-tool.is-code-tool > button svg, .colored #_cbhtml .is-tool.is-module-tool > button svg, .colored #_cbhtml .is-tool.is-svg-tool > button svg,
 .colored .is-ui .is-tool.is-code-tool > button svg,
-.colored .is-ui .is-tool.is-module-tool > button svg {
+.colored .is-ui .is-tool.is-module-tool > button svg,
+.colored .is-ui .is-tool.is-svg-tool > button svg {
   fill: #000;
 }
-.colored #_cbhtml .is-tool#divLinkTool button, .colored #_cbhtml .is-tool#divButtonTool button, .colored #_cbhtml .is-tool#divSvgTool button,
+.colored #_cbhtml .is-tool#divLinkTool button, .colored #_cbhtml .is-tool#divButtonTool button,
 .colored .is-ui .is-tool#divLinkTool button,
-.colored .is-ui .is-tool#divButtonTool button,
-.colored .is-ui .is-tool#divSvgTool button {
+.colored .is-ui .is-tool#divButtonTool button {
   background: #edeef1;
 }
-.colored #_cbhtml .is-tool#divLinkTool button svg, .colored #_cbhtml .is-tool#divButtonTool button svg, .colored #_cbhtml .is-tool#divSvgTool button svg,
+.colored #_cbhtml .is-tool#divLinkTool button svg, .colored #_cbhtml .is-tool#divButtonTool button svg,
 .colored .is-ui .is-tool#divLinkTool button svg,
-.colored .is-ui .is-tool#divButtonTool button svg,
-.colored .is-ui .is-tool#divSvgTool button svg {
+.colored .is-ui .is-tool#divButtonTool button svg {
   fill: #000;
 }
 .colored #_cbhtml #divImageProgress,
@@ -1018,49 +1052,6 @@
 .colored .is-ui .is-selectbox-options > div.selected {
   background: rgba(255, 255, 255, 0.38);
 }
-.colored #_cbhtml .is-dropdown .dropdown-toggle,
-.colored .is-ui .is-dropdown .dropdown-toggle {
-  color: #000;
-  background: #d2d4d8;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.03);
-}
-.colored #_cbhtml .is-dropdown .dropdown-toggle:hover,
-.colored .is-ui .is-dropdown .dropdown-toggle:hover {
-  background: #d5d7da;
-}
-.colored #_cbhtml .is-dropdown .dropdown-toggle svg,
-.colored .is-ui .is-dropdown .dropdown-toggle svg {
-  fill: #000;
-}
-.colored #_cbhtml .is-dropdown .dropdown-toggle::after,
-.colored .is-ui .is-dropdown .dropdown-toggle::after {
-  border-top-color: #000;
-  border-bottom-color: transparent;
-}
-.colored #_cbhtml .is-dropdown .dropdown-toggle.active::after,
-.colored .is-ui .is-dropdown .dropdown-toggle.active::after {
-  border-bottom-color: #000;
-  border-top-color: transparent;
-}
-.colored #_cbhtml .is-dropdown .dropdown-menu,
-.colored .is-ui .is-dropdown .dropdown-menu {
-  border: transparent 1px solid;
-  background-color: #d2d4d8;
-}
-.colored #_cbhtml .is-dropdown .dropdown-menu li,
-.colored .is-ui .is-dropdown .dropdown-menu li {
-  color: #000;
-  background-color: #d2d4d8;
-}
-.colored #_cbhtml .is-dropdown .dropdown-menu li:hover, .colored #_cbhtml .is-dropdown .dropdown-menu li:focus,
-.colored .is-ui .is-dropdown .dropdown-menu li:hover,
-.colored .is-ui .is-dropdown .dropdown-menu li:focus {
-  background: rgba(255, 255, 255, 0.38);
-}
-.colored #_cbhtml .is-dropdown .dropdown-menu li.selected,
-.colored .is-ui .is-dropdown .dropdown-menu li.selected {
-  background: rgba(255, 255, 255, 0.38);
-}
 .colored #_cbhtml .elementstyles .elm-list,
 .colored .is-ui .elementstyles .elm-list {
   color: rgba(0, 0, 0, 0.95);
@@ -1274,4 +1265,24 @@
 }
 .colored .scroll-darker *::-webkit-scrollbar-thumb {
   background-color: rgba(78, 78, 78, 0.62);
+}
+.colored .custom-select .select-styled span {
+  color: #000;
+}
+.colored .custom-select input {
+  background: #d2d4d8;
+}
+.colored .custom-select .select-options {
+  border: transparent 1px solid;
+  background-color: #d2d4d8;
+  color: #000;
+}
+.colored .custom-select .select-options li {
+  color: #000;
+}
+.colored .custom-select .select-options li:hover {
+  background-color: rgba(255, 255, 255, 0.38);
+}
+.colored .custom-select .select-options li.selected {
+  background-color: rgba(255, 255, 255, 0.38);
 }

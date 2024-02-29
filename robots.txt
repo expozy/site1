@@ -10,6 +10,7 @@ Disallow: /components/*
 Disallow: /core/*
 Disallow: /static/*
 
+
 # Used for many other (non-commercial) purposes as well
 User-agent: CCBot
 Disallow: /

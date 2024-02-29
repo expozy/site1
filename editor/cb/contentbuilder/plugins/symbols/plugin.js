@@ -5,7 +5,7 @@
 (function () {
     if(typeof _cb === 'undefined') return;
 
-    var html = '<div class="is-modal is-side' + (_cb.settings.sidePanel == 'right' ? '' : ' fromleft') + ' viewsymbols" style="width:280px;z-index:10004;" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true">' +
+    var html = '<div class="is-modal is-side' + (_cb.settings.sidePanel == 'right' ? '' : ' fromleft') + ' viewsymbols" style="width:290px;z-index:10004;" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true">' +
                     '<button tabindex="-1" title="' + _cb.out('Close') + '" class="is-side-close" style="z-index:1;width:25px;height:25px;position:absolute;top:10px;right:13px;box-sizing:border-box;padding:0;line-height:25px;font-size: 12px;text-align:center;cursor:pointer;background:transparent"><svg class="is-icon-flex" style="width:25px;height:25px;"><use xlink:href="#ion-ios-close-empty"></use></svg></button>' +
                     
                     '' +

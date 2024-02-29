@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simple Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="#">  
+    
+    <!-- Required css for production -->    
+    <link href="assets/minimalist-blocks/content.css" rel="stylesheet"> <!-- Snippets css include (contains a simple css for content blocks/snippets) -->
+    <link href="box/box-flex.css" rel="stylesheet"> <!-- Box Framework css include (contains a simple css for sections) -->
+    
+    <!-- Required css for editing (not needed in production) -->   
+    <link href="contentbuilder/contentbuilder.css" rel="stylesheet">
+    <link href="contentbox/contentbox.css" rel="stylesheet">
+
+    <link data-name="contentstyle" data-class="type-poppins" href="assets/styles/type-poppins.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="is-wrapper" style="opacity:0">
+    <div class="is-section is-box is-section-100 is-dark-text type-poppins min-height-60">
+        <div class="is-overlay">
+        </div>
+        <div class="is-container v2 leading-13 is-content-1000 size-16">
+            <div class="row">
+                <div class="column full">
+                    <p class="uppercase size-14 tracking-400 text-center">Hello, This is Company-Name</p>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="column full">
+                    <div class="spacer height-40"></div>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="flex flex-col justify-center items-start text-center column">
+                    <h1 class="leading-09 size-64 text-left">We create simple and effective designs.</h1>
+                    <div class="spacer height-40"></div>
+    
+                    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type.</p>
+                    <div class="spacer height-20"></div>
+    
+                    <div class="button-group w-full text-left">
+                        <a href="#" role="button" class="transition-all inline-block cursor-pointer no-underline border-2 border-solid mr-1 mt-2 mb-2 uppercase py-2 size-14 px-8 border-current hover:border-current font-normal leading-relaxed ml-0 rounded-full tracking-125" title="" onmouseover="if(this.getAttribute('data-hover-bg'))this.style.backgroundColor=this.getAttribute('data-hover-bg');" onmouseout="if(this.getAttribute('data-bg'))this.style.backgroundColor=this.getAttribute('data-bg');else this.style.backgroundColor=''" style="color: rgb(0, 0, 0);">How We Work</a>
+                        <a href="#" role="button" class="transition-all inline-block cursor-pointer no-underline border-2 border-solid mr-1 mt-2 mb-2 uppercase py-2 size-14 px-8 text-black ml-1 leading-relaxed rounded-full border-transparent hover:border-transparent font-normal tracking-125" title="" onmouseover="if(this.getAttribute('data-hover-bg'))this.style.backgroundColor=this.getAttribute('data-hover-bg');" onmouseout="if(this.getAttribute('data-bg'))this.style.backgroundColor=this.getAttribute('data-bg');else this.style.backgroundColor=''" data-bg="rgb(240,240,240)" style="background-color: rgb(240, 240, 240);" data-hover-bg="">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-start text-center column"><img src="uploads/office1.png" alt="" data-filename="file-types.png"></div>
+    
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+<!-- Slider feature (by setting slider: 'glide') -->
+<link href="assets/scripts/glide/css/glide.core.css" rel="stylesheet">
+<link href="assets/scripts/glide/css/glide.theme.css" rel="stylesheet">
+<script src="assets/scripts/glide/glide.js"></script>
+
+<!-- Navbar feature (by setting navbar: true) -->
+<link href="assets/scripts/navbar/navbar.css" rel="stylesheet">
+<script src="assets/scripts/navbar/navbar.min.js"></script>
+
+<!-- Required js for editing (not needed in production) -->  
+<script src="contentbox/lang/en.js"></script>
+<script src="contentbox/contentbox.min.js"></script>
+<script>
+
+    let intervalId, previousHtml; //Used for Auto Save
+
+    //Enable editing
+    const builder = new ContentBox({
+
+        wrapper: '.is-wrapper',
+        previewURL: 'preview.html',
+
+        // clearPreferences: true,
+        zoom: (document.body.clientWidth <=1920 ? 0.88: 0.75),
+        slider: 'glide',
+        navbar: true,
+        
+        // Default Asset Manager (can be replaced with your own asset/file manager application)
+        imageSelect: 'assets.html',
+        videoSelect: 'assets.html',
+        audioSelect: 'assets.html',
+        fileSelect: 'assets.html',
+        mediaSelect: 'assets.html',
+
+        onChange: function () {
+            // Auto save
+            clearInterval(intervalId);
+            intervalId = setInterval(()=>{
+                // Check for change every 2s
+                let html = builder.htmlCheck(); // htmlCheck() is used only for checking purpose
+                if(previousHtml!==html) { // Save only if content changed
+                    save(); 
+                    // console.log('saving');
+                    previousHtml=html;
+                }
+            }, 2000);
+        },
+
+        onUploadCoverImage: (e) => {
+            uploadFile(e, (response)=>{
+                if(!response.error) {
+                    const uploadedImageUrl = response.url;
+                    if(uploadedImageUrl) builder.boxImage(uploadedImageUrl);
+                }
+            });
+        },
+        onMediaUpload: (e)=>{
+            uploadFile(e, (response)=>{
+                if(!response.error) {
+                    const uploadedImageUrl = response.url; 
+                    if(uploadedImageUrl) builder.returnUrl(uploadedImageUrl);
+                }
+            });
+        },
+
+        templates: [
+            {   
+                url: 'assets/templates-simple/templates.js',
+                path: 'assets/templates-simple/', 
+                pathReplace: [],
+                numbering: true,
+                showNumberOnHover: true,
+            },
+            {   
+                url: 'assets/templates-quick/templates.js',
+                path: 'assets/templates-quick/', 
+                pathReplace: [],
+                numbering: true,
+                showNumberOnHover: true,
+            },
+            {   
+                url: 'assets/templates-animated/templates.js',
+                path: 'assets/templates-animated/', 
+                pathReplace: [],
+                numbering: true,
+                showNumberOnHover: true,
+            },
+        ],
+    });
+    
+    // Example of adding custom buttons
+    builder.addButton({ 
+        'pos': 2, // button position
+        'title': 'Undo',
+        'html': '<svg class="is-icon-flex" style="width:14px;height:14px;"><use xlink:href="#ion-ios-undo"></use></svg>', // icon
+        'onClick': ()=>{
+            builder.undo();
+        }
+    });
+    builder.addButton({ 
+        'pos': 3,
+        'title': 'Redo',
+        'html': '<svg class="is-icon-flex" style="width:14px;height:14px;"><use xlink:href="#ion-ios-redo"></use></svg>', // icon
+        'onClick': ()=>{
+            builder.redo();
+        }
+    });
+    builder.addButton({ 
+        'pos': 5, 
+        'title': 'Animation',
+        'html': '<svg class="is-icon-flex" style="fill:rgba(0, 0, 0, 0.7);width:14px;height:14px;"><use xlink:href="#icon-wand"></use></svg>', // icon
+        'onClick': ()=>{
+            builder.openAnimationPanel();
+        }
+    });
+    builder.addButton({ 
+        'pos': 6,
+        'title': 'Settings',
+        'html': '<svg class="is-icon-flex" style="width:15px;height:15px;"><use xlink:href="#icon-settings"></use></svg>', // icon
+        'onClick': ()=>{
+            builder.openSettings();
+        }
+    });
+    builder.addButton({ 
+        'pos': 7, 
+        'title': 'Preview',
+        'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#ion-eye"></use></svg>', // icon
+        'onClick': ()=>{
+            var html = builder.html();
+            localStorage.setItem('preview-html', html); 
+            var mainCss = builder.mainCss(); 
+            localStorage.setItem('preview-maincss', mainCss); 
+            var sectionCss = builder.sectionCss();
+            localStorage.setItem('preview-sectioncss', sectionCss);
+
+            window.open('preview.html', '_blank').focus();
+        }
+    });
+
+    async function uploadFile(e, callback) {
+
+        // For demo purpose (no file upload)
+        const selectedFile = e.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(selectedFile);
+        reader.onload = () => {
+            const data = {};
+            data.url = reader.result;
+            if(callback) callback(data);
+        }
+
+    }
+
+    function save() {
+
+        
+    }
+</script>
+
+<!-- Required js for production --> 
+<script src="box/box-flex.js"></script> <!-- Box Framework js include -->
+
+<!-- Optional: if you want to add smooth scrolling -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+<script>
+SmoothScroll({
+    frameRate: 150,
+    animationTime: 800,
+    stepSize: 120,
+    pulseAlgorithm: 1,
+    pulseScale: 4,
+    pulseNormalize: 1,
+    accelerationDelta: 300,
+    accelerationMax: 2,
+    keyboardSupport: 1,
+    arrowScroll: 50,
+    fixedBackground: 0
+});
+</script>
+
+</body>
+</html>

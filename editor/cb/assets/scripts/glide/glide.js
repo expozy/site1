@@ -1290,7 +1290,8 @@
    * @return {Boolean}
    */
   function exist(node) {
-    if (node && node instanceof window.HTMLElement) {
+    // if (node && node instanceof window.HTMLElement) {
+    if (node && node.nodeType === 1) {
       return true;
     }
 

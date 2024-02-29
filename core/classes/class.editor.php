@@ -13,7 +13,7 @@ class Editor{
 	public string $uri = '';
 	public string $slug = '';
 	public string $html = '';
-	public $revisions ;
+	public array $revisions = [] ;
 	public string $title = '';
 	const TEMPLATE_TYPES = ['product', 'category', 'blog','header', 'footer' ];
 
@@ -54,7 +54,7 @@ class Editor{
 		global $lang;
 
 
-		$revisions = Api::cache(false)->admin_api(true)->data(['type' => 'pages','object_id' => $this->id, 'lang'=>$lang->language])->get()->revisions();
+		$revisions = Api::cache(false)->admin_api(true)->data(['type' => 'pages','object_id' => $this->id, 'lang'=>$lang->language, 'limit'=>20 , 'sort'=>''])->get()->revisions();
 		$this->revisions = $revisions;
 
 	}
@@ -98,7 +98,7 @@ class Editor{
 
 	public function save(string $html, string $language, string $css='', string $revision_title){
 		global $page, $lang;
-
+		
 
 		//remoce <style> from css
 		$css = str_replace(['<style>', '</style>'], '', $css);
@@ -134,8 +134,8 @@ class Editor{
 		} else if($page->type == 'index'){
 
 
+			
 			$row = Api::id($page->id)->get()->pages();
-
 
 			if($row){
 

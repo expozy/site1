@@ -1289,7 +1289,7 @@
                         let myslider = document.querySelector("#{id}");
                         let _{id} = new Glide(myslider, {
                             type: "${document.querySelector("#inpType").value}",
-                            autoplay: ${document.querySelector("#inpAutoplay").value},
+                            autoplay: false,
                             animationDuration: ${document.querySelector("#inpDuration").value},
                             gap: 0,
                             perView: 3,
@@ -1325,6 +1325,27 @@
                         });
 
                         _{id}.mount();
+
+                        const ap = ${document.querySelector("#inpAutoplay").value};
+                        if(ap) {
+                            const glideElement = {id};
+                            let isSliderRunning = false;
+                            const manageSliderVisibility = (entries) => {
+                                if (entries[0].isIntersecting) {
+                                    if (!isSliderRunning) {
+                                        _{id}.update({ autoplay: ap });
+                                        isSliderRunning = true;
+                                    }
+                                } else {
+                                    if (isSliderRunning) {
+                                        _{id}.update({ autoplay: false }); 
+                                        isSliderRunning = false;
+                                    }
+                                }
+                            }
+                            const observer = new IntersectionObserver(manageSliderVisibility, { threshold: 0.5 });
+                            observer.observe(glideElement);
+                        }
 
                     });
                 </scr${''}ipt>
@@ -1363,12 +1384,12 @@
         COMMON METHODS FOR MODULE.
         */
         function getHtml() {
-            var activeModule = parent.document.querySelector('[data-module-active]');
+            var activeModule = parent._cb.doc.querySelector('[data-module-active]');
             return decodeURIComponent(activeModule.getAttribute('data-html'));
         }
 
         function getSettings() {
-            var activeModule = parent.document.querySelector('[data-module-active]');
+            var activeModule = parent._cb.doc.querySelector('[data-module-active]');
             return decodeURIComponent(activeModule.getAttribute('data-settings'));
         }
 

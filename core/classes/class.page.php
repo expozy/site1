@@ -197,7 +197,7 @@ class Page
 
 
 
-		if($this->error404) redirect_to('404');
+		if($this->error404) redirect_to('/404');
 
 	}
 
