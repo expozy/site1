@@ -99,7 +99,7 @@ class Editor{
 	public function save(string $html, string $language, string $css='', string $revision_title){
 		global $page, $lang;
 		
-
+		
 		//remoce <style> from css
 		$css = str_replace(['<style>', '</style>'], '', $css);
 
@@ -107,7 +107,8 @@ class Editor{
 		if(empty($language)){
 			$language = $lang->language;
 		}
-
+		
+		$lang->set_language($language);
 
 
 
@@ -135,7 +136,7 @@ class Editor{
 
 
 			
-			$row = Api::id($page->id)->get()->pages();
+			$row = Api::data(['lang'=>$language])->id($page->id)->get()->pages();
 
 			if($row){
 

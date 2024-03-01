@@ -22,7 +22,7 @@ export let User = {
 				localStorage.setItem('token', api.response.token);
 
 
-				fetch('/editor/cb/api/post.php', {
+				fetch('/pages/editorLogin.php', {
 				 	method: 'POST',
 				 	cache: 'no-cache',
 				 	credentials: 'same-origin',

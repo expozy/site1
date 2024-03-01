@@ -36,6 +36,14 @@ class Lang
 		}
 
     }
+	
+	public function set_language(string $lang)
+    {
+        global $core;
+
+		$this->language = $lang;
+		$_SESSION['LANG_'. APP_NAME] =  $lang;
+    }
 
 	/** =========================================================
 	 * Function : langList()
