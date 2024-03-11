@@ -257,13 +257,12 @@ img.bordered {border: #ccc 1px solid;}
     .quote > p {margin-left:20px !important;font-size: 1.2em;}
 }
 
-.is-social a > i {text-decoration:none;color:#333;font-size:1.2em;margin:0 15px;-webkit-transition: all 0.1s ease-in-out;transition: all 0.1s ease-in-out;}
-.is-social a:first-child > i {margin:0 15px 0 0}
-.is-social a:last-child > i {margin:0 0 0 15px}
-.is-light-text .is-social a > i {color:rgba(255,255,255,0.93)}
-.is-light-text .is-social a:hover > i {color:rgba(255,255,255,0.93)}
-.is-dark-text .is-social a > i {color:#000}
-.is-dark-text .is-social a:hover > i {color:#000}
+.is-social { display: flex; gap: 2.2rem; margin:1.2rem 0 0.8rem; }
+.is-social a > i {font-size: 1.2em;}
+.is-social.text-left { justify-content: flex-start }
+.is-social.text-right { justify-content: flex-end }
+.is-social.text-center { justify-content: center }
+.is-social.text-justify { justify-content: space-around }
 
 .height-20 {height:20px;flex:none;}
 .height-40 {height:40px;flex:none;}

@@ -51,7 +51,8 @@ Options -MultiViews -Indexes +FollowSymlinks
 
  RewriteRule ^google_feed$ google_feed.php [NC,L]
  RewriteRule ^rss$ pages/rss.php [NC,L]
- RewriteRule ^demo$ pages/demo.php [QSA,L]
+ RewriteRule ^demo$ pages/other.php?demo=1 [QSA,L]
+ RewriteRule ^downloadPages$ pages/other.php?downloadPages=1 [QSA,L]
 
 
  RewriteRule ^([a-z]{2})/sitemaps/sitemap_products core/sitemaps/sitemap_products.php?lang=$1 [NC,L,QSA]
@@ -59,4 +60,7 @@ Options -MultiViews -Indexes +FollowSymlinks
  RewriteRule ^([a-z]{2})/sitemaps/sitemap_blog core/sitemaps/sitemap_blog.php?lang=$1 [NC,L,QSA]
  RewriteRule ^([a-z]{2})/sitemap core/sitemaps/index.php?lang=$1 [NC,L,QSA]
  RewriteRule ^([a-z]{2})/ index.php?lang=$1 [NC,L,QSA]
+
+
+
 </IfModule>

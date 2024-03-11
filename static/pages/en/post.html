@@ -1,0 +1,13 @@
+<div apidata="Blog.get_blogPosts" keyname="post" :data-id="data.corePage.target_id" data-test="true" id="blogPost">
+    <div class="bgDots py-10  ">
+        <p x-text="data.post.title" class="text-2xl text-center font-bold text-slate-800 pb-4"></p>
+
+    </div>
+    <template x-if="data.post.description">
+
+        <div x-html="data.post.description">
+
+        </div>
+
+    </template>
+</div>

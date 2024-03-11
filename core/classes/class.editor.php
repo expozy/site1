@@ -15,7 +15,7 @@ class Editor{
 	public string $html = '';
 	public array $revisions = [] ;
 	public string $title = '';
-	const TEMPLATE_TYPES = ['product', 'category', 'blog','header', 'footer' ];
+	private const TEMPLATE_TYPES = ['product', 'category', 'blog','header', 'footer' ];
 
 	//public $page;
 
@@ -53,10 +53,14 @@ class Editor{
 	public function getRevisions(){
 		global $lang;
 
+		$type = $this->type == 'post' ? 'blog' : 'pages';
 
-		$revisions = Api::cache(false)->admin_api(true)->data(['type' => 'pages','object_id' => $this->id, 'lang'=>$lang->language, 'limit'=>20 , 'sort'=>''])->get()->revisions();
-		$this->revisions = $revisions;
 
+		$revisions = Api::cache(false)->admin_api(true)->data(['type' => $type,'object_id' => $this->id, 'lang'=>$lang->language, 'limit'=>20 , 'sort'=>''])->get()->revisions();
+		$this->revisions = $revisions['result'];
+ 
+		//d($revisions);die();
+		
 	}
 
 
@@ -80,21 +84,11 @@ class Editor{
 
 
 
-	}
-
-
-	public static function red_file(string $filename):string{
-			$filepath = BASEPATH.'pages/'.$filename;
-
-			$html = '';
-
-			if(file_exists($filepath)){
-				$html = file_get_contents($filepath);
-			}
-
-			return $html;
 
 	}
+
+
+
 
 	public function save(string $html, string $language, string $css='', string $revision_title){
 		global $page, $lang;
@@ -132,16 +126,22 @@ class Editor{
 
 				return $result;
 			}
-		} else if($page->type == 'index'){
+		} else if($page->type == 'index' || $page->type == 'header' || $page->type == 'footer'){
 
-
+			if($page->type == 'header'){
+				$page->id = Page::ID_HEADER;
+			}
+			
+			if($page->type == 'footer'){
+				$page->id = Page::ID_FOOTER;
+			}
 			
 			$row = Api::data(['lang'=>$language])->id($page->id)->get()->pages();
 
 			if($row){
 
-				$row['body'] = $html;
-				$row['css'] = $css;
+				$row['description'] = $html;
+//				$row['css'] = $css;
 				$row['revision_title'] = $revision_title;
 				if(empty($row['title'])) $row['title'] = 'Page-'.$page->id;
 
@@ -152,25 +152,25 @@ class Editor{
 				$row['lang']=$language;
 
 				$result = Api::admin_api(true)->data($row)->id($page->id)->post()->pages();
+	
+				$template = new Template($page->type, $page->slug);
+				$template->save_html($html);
+				$template->save_css($css);
 
-
+				//if edit footer replace header css 
+				if($page->id == Page::ID_FOOTER){
+					$header_template = new Template('index', 'header');
+					$header_template->save_css($css);
+				}
+				
+				
 				return $result;
 			}
 		}
 
-		else if($page->type == 'header' || $page->type == 'footer'){
-
-			$result = Api::admin_api(true)->data(['headCss' => $css])->post()->settings_web();
-
-			$template = new Template($page->type);
-
-			$template->save_html($html);
-
-			return ['status' => 1];
-
-		}
+		
 		else if (in_array ($page->type, self::TEMPLATE_TYPES)){
-			$template = new Template($page->type);
+			$template = new Template($page->type,$page->css);
 
 			$template->save_html($html);
 

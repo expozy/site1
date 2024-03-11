@@ -6,10 +6,14 @@ if (!defined("_VALID_PHP")) { die('Direct access to this location is not allowed
  * ========================================================== */
 class Template
 {
-		public const DIR_PATH = BASEPATH.'static/';
-		public $file = false;
-		public $page_type = '';
-		public $page_slug = '';
+		public const DIR_PATH = BASEPATH.'static/pages/';
+		public const DIR_PATH_CSS = BASEPATH.'static/css/';
+		private string|false $file = false;
+		private string|false $file_css = false;
+		private string $page_type = '';
+		private string $page_slug = '';
+		private string $dir_file = '';
+		private string $dir_css = '';
 
 		public function __construct(string $type, string $slug='') {
 			global $lang;
@@ -17,12 +21,15 @@ class Template
 			$this->page_type = $type;
 			$this->page_slug = $slug;
 
-			if($this->page_type=='footer' || $this->page_type == 'header'){
-				$slug = '';
-			}
+//			if($this->page_type=='footer' || $this->page_type == 'header'){
+//				$slug = '';
+//			}
+			$this->dir_file = self::DIR_PATH."{$lang->language}";
+			$this->dir_css = self::DIR_PATH_CSS."{$lang->language}";
 
-			$this->file = self::DIR_PATH.$this->page_type.'~'.$slug.'~'.$lang->language. '.html';
-
+			
+			$this->file = "{$this->dir_file}/{$slug}.html";
+			$this->file_css = "{$this->dir_css}/{$slug}.css";
 
 		}
 
@@ -39,22 +46,83 @@ class Template
 
 			return $html;
 		}
+		
+		public function get_css(){
+			$css = '';
 
-		public function save_html($html){
+			if(file_exists($this->file_css)){
 
+
+				//d(file_get_contents($this->file));
+				$css = file_get_contents($this->file_css);
+			}
+
+			return $css;
+		}
+
+		public function save_html(string $html){
 
 			if($this->page_type != 'index' && $this->page_type != 'header' && $this->page_type != 'footer' && $this->page_type != 'post' && $this->page_type != 'product'){
 				return false;
 			}
+			
 			if($this->page_type == 'index'){
-				$page = Api::data(['slug'=> $this->page_slug])->get()->pages();
+				$page = Api::cache(false)->data(['slug'=> $this->page_slug])->get()->pages();
+
 				if(!isset($page['id']) || $page['id'] == 0){
 					return false;
 				}
 			}
+			
+			if (!is_dir($this->dir_file)) {
+				mkdir($this->dir_file, 0777, true);
+			}
 
-			return file_put_contents($this->file, $html);
+			$return = file_put_contents($this->file, $html);
+
+			return $return;
 		}
+		
+		public function save_css(string $css){
+
+			if($this->page_type != 'index' && $this->page_type != 'header' && $this->page_type != 'footer' && $this->page_type != 'post' && $this->page_type != 'product'){
+				return false;
+			}
+			
+			if($this->page_type == 'index'){
+				$page = Api::cache(false)->data(['slug'=> $this->page_slug])->get()->pages();
+
+				if(!isset($page['id']) || $page['id'] == 0){
+					return false;
+				}
+			}
+			
+			if (!is_dir($this->dir_file)) {
+				mkdir($this->dir_file, 0777, true);
+			}
+			
+			$css = str_replace(['<style>', '</style>'], '', $css);
+
+			//change header css
+			if($this->page_slug == 'header' || $this->page_slug == 'footer'){
+				$css = str_replace(['<style>', '</style>', '{.','}.'], ['', '', '{.headerFooterCss .','}.headerFooterCss .'], $css);
+			}
+			$return = file_put_contents($this->file_css, $css);
+			
+			
+			return $return;
+		}
+		
+		public function set_pageType($type){
+				
+				$this->page_type = $type;
+		}
+		
+		public function get_fileName(){
+			return $this->file;
+		}
+		
+		
 
 
 

@@ -6,12 +6,6 @@
 </div>
 
 
-
-
-
- <?= Inline::buttonEdit(); ?>
-
-
 <div id="templatesDiv" style="display:none;" ></div>
 </body>
 

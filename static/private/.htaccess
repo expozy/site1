@@ -1,0 +1,8 @@
+<Files "*">
+    AuthType Basic
+    AuthName "Защитен достъп"
+    AuthUserFile .htpasswd
+    Require valid-user
+</Files>
+
+ Deny from all

@@ -34,9 +34,7 @@ export let User = {
 
 				 });
 
-				 if(DEV_MODE){
-					 window.location = '/';
-				 }
+
 
 				return response;
 			}else {

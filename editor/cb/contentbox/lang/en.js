@@ -823,3 +823,5 @@ _txt["Desktop - Large Screen"] = "Desktop - Large Screen";
 _txt["Desktop / Laptop"] = "Desktop / Laptop";
 _txt["Auto Layout on Mobile"] = "Auto Layout on Mobile";
 _txt["Column Gap"] = "Column Gap";
+_txt["More Options"] = "More Options";
+_txt["Reset Rotation"] = "Reset Rotation";

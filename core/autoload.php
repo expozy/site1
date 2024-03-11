@@ -42,19 +42,21 @@ require_once(BASEPATH.'core/classes/class.api.php');
 $core = new FrontCore();
 $core->get_web();
 
+require_once(BASEPATH.'core/classes/class.lang.php');
+$lang = New Lang();
 
+require_once(BASEPATH.'core/classes/class.template.php');
 require_once(BASEPATH.'core/classes/class.page.php');
 $page = new Page();
 
-require_once(BASEPATH.'core/classes/class.lang.php');
-$lang = New Lang();
+
 
 require_once(BASEPATH.'core/classes/class.users.php');
 $user = New Users();
 
 require_once(BASEPATH.'core/classes/class.editor.php');
 
-require_once(BASEPATH.'core/classes/class.template.php');
+
 
 
 

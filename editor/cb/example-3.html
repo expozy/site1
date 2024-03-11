@@ -1,0 +1,426 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Default Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="#">  
+    
+    <!-- Required css for production -->    
+    <link href="assets/minimalist-blocks/content.css" rel="stylesheet"> <!-- Snippets css include (contains a simple css for content blocks/snippets) -->
+    <link href="box/box-flex.css" rel="stylesheet"> <!-- Box Framework css include (contains a simple css for sections) -->
+    
+    <!-- Required css for editing (not needed in production) -->   
+    <link href="contentbuilder/contentbuilder.css" rel="stylesheet">
+    <link href="contentbox/contentbox.css" rel="stylesheet">
+
+    <link data-name="contentstyle" data-class="type-poppins" href="assets/styles/type-poppins.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="is-wrapper" style="opacity:0">
+    <!-- This is a sample initial content. -->
+    <div class="is-section is-box is-section-100 is-dark-text type-poppins">
+        <div class="is-overlay">
+        </div>
+        <div class="is-container v2 leading-13 is-content-1000 size-17">
+            <div class="row">
+                <div class="column">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Helper to create loading status (Optional). -->
+<script src="assets/scripts/loading/loading.js"></script> 
+<script>
+    const loading = new Loading();
+    window.loading = loading;
+    // to stop: window.loading.stop() // will be called on event onStart (see index.js)
+</script>
+
+<!-- Slider feature (by setting slider: 'glide') -->
+<link href="assets/scripts/glide/css/glide.core.css" rel="stylesheet">
+<link href="assets/scripts/glide/css/glide.theme.css" rel="stylesheet">
+<script src="assets/scripts/glide/glide.js"></script>
+
+<!-- Navbar feature (by setting navbar: true) -->
+<link href="assets/scripts/navbar/navbar.css" rel="stylesheet">
+<script src="assets/scripts/navbar/navbar.min.js"></script>
+
+<!-- Required js for editing (not needed in production) -->  
+<script src="contentbox/lang/en.js"></script>
+<script src="contentbox/contentbox.min.js"></script>
+<script>
+
+    let intervalId, previousHtml; //Used for Auto Save
+
+    //Enable editing
+    const builder = new ContentBox({
+        wrapper: '.is-wrapper',
+        canvas: true,
+        previewURL: 'preview.html',
+        
+        // clearPreferences: true, // Reset settings
+        
+        onStart: ()=>{ // Builder start
+            if(window.loading) window.loading.stop(); // end loading status 
+        },
+
+        // controlPanel: true,
+        iframeSrc: 'blank.html',
+        zoom: 1,
+        screenMode: 'desktop', // or fullview
+    
+        // customTags: [["Site Name", "{%SITENAME%}"],
+        //     ["Logo", "{%LOGO%}"],
+        //     ["My Plugin", "{%MY_PLUGIN%}"]],
+
+        slider: 'glide',
+        navbar: true,
+        
+        // To enable AI Assistant
+        sendCommandUrl: '/sendcommand',
+        // AIToolbar: false,
+        // showDisclaimer: false,
+        // startAIAssistant: true, // Auto open 'AI Assistant' panel
+        // enableShortCommands: false,
+        speechRecognitionLang: 'en-US', 
+        triggerWords: {
+            send: ['send', 'okay', 'ok', 'execute', 'run'],
+            abort: ['abort', 'cancel'],
+            clear: ['clear', 'erase']
+        },
+        
+        // If using DeepGram for speech recognition, specify the speechTranscribeUrl.
+        // speechTranscribeUrl: 'ws://localhost:3002',
+        // The server implementation for ws://localhost:3002 can be found in server.js (Node.js code)
+
+        // Enabling AI image generation
+        textToImageUrl: '/texttoimage', 
+        upscaleImageUrl: '/upscaleimage',
+        // imageAutoUpscale: false,
+        // viewFileUrl: '/viewfile', // If using S3
+
+        // Default Asset Manager (can be replaced with your own asset/file manager application)
+        imageSelect: 'assets.html',
+        videoSelect: 'assets.html',
+        audioSelect: 'assets.html',
+        fileSelect: 'assets.html',
+        mediaSelect: 'assets.html', // for images and videos
+        // You can replace it with your own asset/file manager application
+        // or use: https://innovastudio.com/asset-manager
+
+        // Or use custom:
+        // onImageSelectClick: () => {  }, 
+        // onVideoSelectClick: () => {  },
+        // onAudioSelectClick: () => {  },
+        // onFileSelectClick: () => {  },
+        // onMediaSelectClick: () => {  },
+        
+        onUploadCoverImage: (e) => {
+            uploadFile(e, (response)=>{
+                const uploadedFileUrl = response.url; // get saved image url
+                builder.boxImage(uploadedFileUrl); // change cover image
+            });
+        },
+        onImageUpload: (e)=>{ 
+            uploadFile(e, (response)=>{
+                const uploadedFileUrl = response.url; // get saved file url
+                builder.returnUrl(uploadedFileUrl); // apply
+            });
+        },
+        onVideoUpload: (e)=>{
+            uploadFile(e, (response)=>{
+                const uploadedFileUrl = response.url; // get saved file url
+                builder.returnUrl(uploadedFileUrl); // apply
+            });
+        },   
+        onAudioUpload: (e)=>{
+            uploadFile(e, (response)=>{
+                const uploadedFileUrl = response.url; // get saved file url
+                builder.returnUrl(uploadedFileUrl); // apply
+            });
+        },
+        onMediaUpload: (e)=>{
+            uploadFile(e, (response)=>{
+                const uploadedFileUrl = response.url; // get saved file url
+                builder.returnUrl(uploadedFileUrl); // apply
+            });
+        },
+        onFileUpload: (e)=>{
+            uploadFile(e, (response)=>{
+                const uploadedFileUrl = response.url; // get saved file url
+                builder.returnUrl(uploadedFileUrl); // apply
+            });
+        },
+    
+        onChange: function () {
+            // Auto save
+            clearInterval(intervalId);
+            intervalId = setInterval(()=>{
+                // Check for change every 2s
+                let html = builder.htmlCheck(); // htmlCheck() is used only for checking purpose
+                if(previousHtml!==html) { // Save only if content changed
+                    save(); 
+                    console.log('saving');
+                    previousHtml=html;
+                }
+            }, 2000);
+        },
+        
+        // contentStylePath: 'assets/styles/',
+
+        templates: [
+            {   
+                url: 'assets/templates-simple/templates.js',
+                path: 'assets/templates-simple/', 
+                pathReplace: [],
+                numbering: true,
+                showNumberOnHover: true,
+            },
+            {   
+                url: 'assets/templates-quick/templates.js',
+                path: 'assets/templates-quick/', 
+                pathReplace: [],
+                numbering: true,
+                showNumberOnHover: true,
+            },
+            {   
+                url: 'assets/templates-animated/templates.js',
+                path: 'assets/templates-animated/', 
+                pathReplace: [],
+                numbering: true,
+                showNumberOnHover: true,
+            },
+        ],
+
+        /* ContentBuilder settings */
+        // modulePath: 'assets/modules/', 
+        // fontAssetPath: 'assets/fonts/', 
+        // assetPath: 'assets/', 
+        // snippetUrl: 'assets/minimalist-blocks/content.js', 
+        // snippetPath: 'assets/minimalist-blocks/',
+        // pluginPath: 'contentbuilder/', 
+        // useLightbox: true,
+    });
+
+    // localStorage.removeItem('mypage'); // clear saved content
+
+    // For demo purpose, load content from local storage
+    let html = localStorage.getItem('mypage') || '';
+    let mainCss = localStorage.getItem('maincss') || '';
+    let sectionCss = localStorage.getItem('sectioncss') || '';
+    if(html!=='') {
+        builder.loadStyles(mainCss, sectionCss); // Load styles
+        builder.loadHtml(html); // Load html
+    }
+    
+    // Example of adding custom buttons
+    builder.addButton({ 
+        'pos': 2, // button position
+        'title': 'Undo',
+        'html': '<svg class="is-icon-flex" style="width:14px;height:14px;"><use xlink:href="#icon-undo"></use></svg>',
+        'onClick': ()=>{
+            builder.undo();
+        }
+    });
+    builder.addButton({ 
+        'pos': 3,
+        'title': 'Redo',
+        'html': '<svg class="is-icon-flex" style="width:14px;height:14px;"><use xlink:href="#icon-redo"></use></svg>',
+        'onClick': ()=>{
+            builder.redo();
+        }
+    });
+    builder.addButton({ 
+        'pos': 4, 
+        'title': 'Animation',
+        'html': '<svg class="is-icon-flex" style="fill:rgba(0, 0, 0, 0.7);width:14px;height:14px;"><use xlink:href="#icon-wand"></use></svg>',
+        'onClick': ()=>{
+            builder.openAnimationPanel();
+        }
+    });
+    builder.addButton({ 
+        'pos': 5,
+        'title': 'Timeline Editor',
+        'html': '<svg><use xlink:href="#icon-anim-timeline"></use></svg>', 
+        'onClick': ()=>{
+            builder.openAnimationTimeline();
+        }
+    });
+    builder.addButton({ 
+        'pos': 6,
+        'title': 'AI Assistant',
+        'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#icon-message"></use></svg>', 
+        'onClick': (e)=>{
+
+            builder.openAIAssistant();
+
+        }
+    });
+    builder.addButton({ 
+        'pos': 8,
+        'title': 'Settings',
+        'html': '<svg class="is-icon-flex" style="width:15px;height:15px;"><use xlink:href="#icon-settings"></use></svg>',
+        'onClick': (e)=>{
+            builder.openSettings(e);
+        }
+    });
+    builder.addButton({ 
+        'pos': 9, 
+        'title': 'Preview',
+        'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#ion-eye"></use></svg>',
+        'onClick': ()=>{
+            var html = builder.html();
+            localStorage.setItem('preview-html', html); 
+            var mainCss = builder.mainCss(); 
+            localStorage.setItem('preview-maincss', mainCss); 
+            var sectionCss = builder.sectionCss();
+            localStorage.setItem('preview-sectioncss', sectionCss);
+
+            window.open('preview.html', '_blank').focus();
+        }
+    });
+    if(builder.iframeSrc && !builder.controlPanel) builder.addButton({ 
+        'pos': 10,
+        'title': 'Toggle Device Toolbar',
+        'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#icon-devices"></use></svg>', 
+        'onClick': (e)=>{
+
+            if(builder.screenMode!=='fullview') {
+                builder.setScreenMode('fullview');
+            } else {
+                builder.setScreenMode('desktop');
+            }
+
+        }
+    });
+
+    /*
+    // Example to apply theme
+    setTimeout(()=>{
+        builder.editor.setUIColor('dark','contentbuilder/themes/dark.css');
+    }, 300);
+    */
+
+    async function uploadFile(e, callback) {
+
+        // For demo purpose (no file upload)
+        const selectedFile = e.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(selectedFile);
+        reader.onload = () => {
+            const data = {};
+            data.url = reader.result;
+            if(callback) callback(data);
+        }
+
+        // For uploading file to the server or S3 storage:
+        /*
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+        await fetch('/upload', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response=>response.json())
+        .then(data=>{
+            if(callback) callback(data);
+        });
+    */
+    }
+
+    function save() {
+
+        // For demo purpose, save to local storage
+        let html = builder.html();
+        let mainCss = builder.mainCss(); // Returns the default typography style for the page
+        let sectionCss = builder.sectionCss(); // Returns the typography styles for specific sections on the page
+
+        localStorage.setItem('mypage', html); //In this example, save the content into browser's local storage.
+        localStorage.setItem('maincss', mainCss); //In this example, save the styles into browser's local storage.
+        localStorage.setItem('sectioncss', sectionCss); //In this example, save the styles into browser's local storage.
+
+        // For saving to the server, use the following:
+        /*
+        builder.saveImages('', ()=>{
+
+            // Then save the content
+            let html = builder.html();
+            let mainCss = builder.mainCss(); // Returns the default typography style for the page
+            let sectionCss = builder.sectionCss(); // Returns the typography styles for specific sections on the page
+            
+            const data = {
+                html: html,
+                mainCss: mainCss,
+                sectionCss: sectionCss,
+            };
+
+            fetch('/save', {
+                method:'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response=>response.json())
+            .then(response=>{
+                if(response.error) { 
+                    console.log(response.error);
+                }
+            });
+
+        }, (img, base64, filename)=>{
+
+            // Upload base64 images
+            const reqBody = { image: base64, filename: filename };
+            fetch('/uploadbase64', {
+                method:'POST',
+                body: JSON.stringify(reqBody),
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response=>response.json())
+            .then(response=>{
+                if(!response.error) { 
+                    const uploadedImageUrl = response.url;
+                    img.setAttribute('src', uploadedImageUrl); // Update image src
+                }
+            });
+
+        });
+        */
+
+    }
+</script>
+
+<!-- Required js for production --> 
+<script src="box/box-flex.js"></script> <!-- Box Framework js include -->
+
+<!-- Optional: if you want to add smooth scrolling -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+<script>
+SmoothScroll({
+    frameRate: 150,
+    animationTime: 800,
+    stepSize: 120,
+    pulseAlgorithm: 1,
+    pulseScale: 4,
+    pulseNormalize: 1,
+    accelerationDelta: 300,
+    accelerationMax: 2,
+    keyboardSupport: 1,
+    arrowScroll: 50,
+    fixedBackground: 0
+});
+</script>
+
+</body>
+</html>

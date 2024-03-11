@@ -188,8 +188,11 @@ class Users
 	}
 
 
-	public function is_Admin() {
-		return $this->userlevel >= self::LEVEL_ADMIN ? true : false;
+	public function is_admin() {
+		return $this->userlevel >= self::LEVEL_ADMIN  ? true : false;
+	}
+	public function is_superAdmin() {
+		return $this->userlevel > self::LEVEL_ADMIN  ? true : false;
 	}
 
 	public function hasAccess(){

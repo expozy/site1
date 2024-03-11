@@ -1,39 +1,40 @@
-import {Api} from '../core/api/api.js';
-import {Page} from './classes/page.js';
-import {Helpers} from './helpers.js';
+import { Api } from '../core/api/api.js';
+import { Page } from './classes/page.js';
+import { Helpers } from './helpers.js';
 
 
 let updatedMain = false;
 
 // GLOBAL DATA OBJECT
 let dataBody = {
-  corePage:PAGEINIT,
-  user:USER,
-  pageUrl:URL_PARAMETERS,
-  settings:{logo:LOGO_URL, social:SOCIAL_NETWORKS},
-  openCart:false,
-  openMobileMenu:false,
+  corePage: PAGEINIT,
+  user: USER,
+  pageUrl: URL_PARAMETERS,
+  settings: { logo: LOGO_URL, social: SOCIAL_NETWORKS },
+  openCart: false,
+  openMobileMenu: false,
   screenWidth: window.screen.width,
   scrollPosition: window.pageYOffset,
-  openLogin:false,
-  openRegistration:false,
-  openProduct:false,
-  openForgotten:false,
-  openGeolocation:false,
-  location:[],
+  openLogin: false,
+  openRegistration: false,
+  openProduct: false,
+  openForgotten: false,
+  openGeolocation: false,
+  darkMode: false,
+  location: [],
 };
 
 
 // const fn = () => console.log('we capture a change');
 const dataProxy = new Proxy(dataBody, {
-  set (target, property, value) {
-    if(property == 'corePage'){
+  set(target, property, value) {
+    if (property == 'corePage') {
       updatedMain = false;
       value.html += '<div x-init="callBackMain()"></div>';
     }
 
     target[property] = value;
-    document.getElementById('body').dispatchEvent(new CustomEvent('update', { detail: {value:value, property:property }, bubbles: true }));
+    document.getElementById('body').dispatchEvent(new CustomEvent('update', { detail: { value: value, property: property }, bubbles: true }));
     return true;
 
   }
@@ -43,10 +44,10 @@ const dataProxy = new Proxy(dataBody, {
 
 window.dataProxy = dataProxy;
 
-function callBackMain(){
-  if(updatedMain == true) return;
-    callApiData();
-    updatedMain = true;
+function callBackMain() {
+  if (updatedMain == true) return;
+  callApiData();
+  updatedMain = true;
 
 }
 
@@ -61,14 +62,14 @@ window.callBackMain = callBackMain;
    We can call updatedata method to refresh the page with new data.*/
 
 document.addEventListener('alpine:init', () => {
-  window.dataset =  function () {
+  window.dataset = function () {
     return {
-      data:dataBody,
-      updatedata(data, keyName){
-        if(data['property']){
+      data: dataBody,
+      updatedata(data, keyName) {
+        if (data['property']) {
           this.data[data['property']] = {};
           this.data[data['property']] = data.value;
-        }else {
+        } else {
           this.data = {};
           this.data = dataBody;
         }
@@ -90,18 +91,18 @@ document.addEventListener('alpine:init', () => {
 
 loadData();
 
- async function loadData(){
-   let corePage = await Page.get();
-   dataProxy['corePage'] = corePage;
+async function loadData() {
+  let corePage = await Page.get();
+  dataProxy['corePage'] = corePage;
 }
 
 // END INITITIAL DATA ON PAGE LOAD
 
 
-function callApiData(){
-    let apiDataElements = document.querySelectorAll('[apiData]');
+function callApiData() {
+  let apiDataElements = document.querySelectorAll('[apiData]');
 
-  for(const element of apiDataElements){
+  for (const element of apiDataElements) {
     let functionCall = element.getAttribute('apiData');
     let keyName = element.getAttribute('keyName');
 
@@ -114,14 +115,14 @@ function callApiData(){
 
 
 
-    let importFile =  functionCall.split(".")[0];
+    let importFile = functionCall.split(".")[0];
     importFile = importFile.charAt(0).toLowerCase() + importFile.slice(1);
 
     import(`../static/${importFile}.js`)
-    .then(module => {
+      .then(module => {
         try {
-         eval(functionCall + '(data, options)');
-        } catch(error) {
+          eval(functionCall + '(data, options)');
+        } catch (error) {
           console.error('Failed to get Data' + error);
         }
       })
@@ -143,35 +144,35 @@ window.callApiData = callApiData;
   Can extract json data from closest form or attributes wich start with "data-"
 */
 
-async function  alpineListeners(method, element){
+async function alpineListeners(method, element) {
 
-try {
-  element.preventDefault();
-} catch (e) {
+  try {
+    element.preventDefault();
+  } catch (e) {
 
-}
+  }
 
-  if(element.currentTarget !== null && element.currentTarget !== undefined){
-    if(element.target.tagName == 'SELECT'){
+  if (element.currentTarget !== null && element.currentTarget !== undefined) {
+    if (element.target.tagName == 'SELECT') {
       element = element.target.options[element.target.selectedIndex];
-    }else {
+    } else {
       element = element.currentTarget;
     }
-  }else if( element.srcElement !== null && element.srcElement !== undefined){
+  } else if (element.srcElement !== null && element.srcElement !== undefined) {
     element = element.srcElement;
   }
 
-  let data= {};
+  let data = {};
   let options = {};
   let keyName = '';
 
   // WE DONT HAVE A METHOD SET IN EVENT TARGET
-  if(method == null) return console.error(`Method is not set` );
-  if(element != undefined){
+  if (method == null) return console.error(`Method is not set`);
+  if (element != undefined) {
     let formData;
     let attributesData;
     // GET DATA FROM CLOSEST FORM IF HAVE
-    if(element.closest("form") != null){
+    if (element.closest("form") != null) {
       formData = Helpers.get_form_data(element.closest("form"));
       data = Object.assign(data, formData);
     }
@@ -181,17 +182,17 @@ try {
     data = Object.assign(data, attributesData);
     // keyName = element.getAttribute('keyName');
 
-      options = getDataAttributes(element, 'options');
+    options = getDataAttributes(element, 'options');
 
     // Get keyName if we have
-    if(element.getAttribute('keyName') != undefined){
+    if (element.getAttribute('keyName') != undefined) {
       keyName = element.getAttribute('keyName');
 
-      if(keyName != undefined) options['keyName'] = keyName;
+      if (keyName != undefined) options['keyName'] = keyName;
 
       // If we dont have endpoint in event target get endpoint from dataBody if we have.
-      if(data['endpoint'] === undefined && (keyName in dataBody && dataBody[keyName]['endpoint'] != undefined )){
-        if (dataBody[keyName]){
+      if (data['endpoint'] === undefined && (keyName in dataBody && dataBody[keyName]['endpoint'] != undefined)) {
+        if (dataBody[keyName]) {
           options['endpoint'] = dataBody[keyName]['endpoint'];
         }
       }
@@ -208,25 +209,25 @@ try {
   */
   // let response ={};
 
-  let importFile =  method.split(".")[0];
+  let importFile = method.split(".")[0];
   importFile = importFile.charAt(0).toLowerCase() + importFile.slice(1);
 
   await import(`../static/${importFile}.js`)
-  // .then( module =>  {
-  //
-  // })
+    // .then( module =>  {
+    //
+    // })
     .catch(error => console.error(`File in ../static/${importFile}.js was not found !  /n  ${method}`));
 
 
-    // console.log('request');
+  // console.log('request');
   let response = await eval(method + '(data, options)');
 
 
 
-  if(response != undefined){
+  if (response != undefined) {
 
     //PREDIFENED ERRORS WITH LOGIC IN METHODS
-    if ("internalError" in response && typeof(response.internalError) !== "undefined") return console.error(`InternalError \n alpineListeners : ${method} \n Error : ${response.msg}` );
+    if ("internalError" in response && typeof (response.internalError) !== "undefined") return console.error(`InternalError \n alpineListeners : ${method} \n Error : ${response.msg}`);
 
     // IF WE HAVE STATUS SHOW SUCCESS OR ERRORS MSGS
     if ("status" in response) Helpers.show_errors(response);
@@ -235,20 +236,20 @@ try {
     if ("clearForm" in response && element.closest("form") != undefined) Helpers.clear_form_data(element.closest("form"));
 
     // IF WE DONT HAVE ELEMENT KEYNAME CHECK  KEYNAME IN RESPONSE.
-    if (("keyName" in response && typeof(response.keyName) !== "") && response.keyName != '') keyName = response.keyName;
+    if (("keyName" in response && typeof (response.keyName) !== "") && response.keyName != '') keyName = response.keyName;
 
     // IF WE HAVE KEYNAME AT END SET RESPONSE TO GLOBAL DATA AND UPDATE
-    if(keyName != ''  ){
+    if (keyName != '') {
       dataProxy[keyName] = response.obj;
     }
 
 
     // IF WE HAVE REDIRECT URL
-    if ("url" in response) return forceChange(response.url) ;
+    if ("url" in response) return forceChange(response.url);
 
-      return response['status'];
+    return response['status'];
 
-  }else {
+  } else {
     console.error(`no response for alpineListeners /n ${method}`);
   }
 
@@ -258,21 +259,21 @@ window.alpineListeners = alpineListeners;
 
 // END  ALPINE CLICK EVENT LISTENER
 
-async function forceChange(url){
-    history.pushState(null, null, url);
-    dataProxy['pageUrl'] = [];
-    Page.load();
-    document.getElementById('main').scrollIntoView(true);
+async function forceChange(url) {
+  history.pushState(null, null, url);
+  dataProxy['pageUrl'] = [];
+  Page.load();
+  document.getElementById('main').scrollIntoView(true);
 }
 
 window.forceChange = forceChange;
 
 // GET ALL ATTRIBUTES OF ELEMENT WICH START WITH " DATA- "
 
-function getDataAttributes(element, prefix){
+function getDataAttributes(element, prefix) {
   const dataAttrs = element.getAttributeNames().reduce((obj, name) => {
-    if (name.startsWith(prefix +'-')) {
-      return  {...obj, [name.slice(name.indexOf('-') + 1)]: element.getAttribute(name)};
+    if (name.startsWith(prefix + '-')) {
+      return { ...obj, [name.slice(name.indexOf('-') + 1)]: element.getAttribute(name) };
     }
     return obj;
   }, {});
@@ -284,28 +285,28 @@ function getDataAttributes(element, prefix){
 
 
 document.addEventListener('alpine:init', () => {
-  window.notification =  function () {
+  window.notification = function () {
     return {
-        notices: [],
-        visible: [],
-        add(notice) {
-            notice.id = Date.now();
-            notice.type = notice.type;
-            this.notices.push(notice);
-            this.fire(notice.id);
-        },
-        fire(id) {
-            this.visible.push(this.notices.find(notice => notice.id == id))
-            const timeShown = 3000 * this.visible.length
-            setTimeout(() => {
-                this.remove(id)
-            }, timeShown)
-        },
-        remove(id) {
-            const notice = this.visible.find(notice => notice.id == id)
-            const index = this.visible.indexOf(notice)
-            this.visible.splice(index, 1)
-        },
+      notices: [],
+      visible: [],
+      add(notice) {
+        notice.id = Date.now();
+        notice.type = notice.type;
+        this.notices.push(notice);
+        this.fire(notice.id);
+      },
+      fire(id) {
+        this.visible.push(this.notices.find(notice => notice.id == id))
+        const timeShown = 3000 * this.visible.length
+        setTimeout(() => {
+          this.remove(id)
+        }, timeShown)
+      },
+      remove(id) {
+        const notice = this.visible.find(notice => notice.id == id)
+        const index = this.visible.indexOf(notice)
+        this.visible.splice(index, 1)
+      },
 
     };
 
@@ -320,19 +321,19 @@ document.addEventListener('alpine:init', () => {
 
 */
 
-function initScripts(){
+function initScripts() {
 
   let scripts = document.getElementById("main").querySelectorAll("script");
-  for(const script of scripts){
+  for (const script of scripts) {
     let newScript = document.createElement("script");
 
     let textContent = script.textContent;
-    if(textContent === ''){
-      let src =  script.src
+    if (textContent === '') {
+      let src = script.src
       newScript.setAttribute('src', script.src);
     }
 
-    newScript.textContent = textContent ;
+    newScript.textContent = textContent;
     document.body.appendChild(newScript);
   }
 
@@ -355,38 +356,38 @@ window.initScripts = initScripts;
   FROM 10x10px TO NEEDED WIDTH OF CONTAINER
 */
 
- replaceImages();
- window.replaceImages = replaceImages;
+replaceImages();
+window.replaceImages = replaceImages;
 
 
-function replaceImages(){
+function replaceImages() {
   let images = document.querySelectorAll('img');
 
   let imageOptions = {};
   let observer = new IntersectionObserver((entries, observer) => {
 
     entries.forEach((entry, type) => {
-      if(!entry.isIntersecting) return;
-      if(entry.target.localName == 'img'){
+      if (!entry.isIntersecting) return;
+      if (entry.target.localName == 'img') {
 
         const image = entry.target;
         const originSrcUrl = image.getAttribute('src');
-        let newUrl = '';
-        if(image.clientWidth != 0){
-          if(image.clientWidth < 640){
+        let newUrl = originSrcUrl;
+        if (image.clientWidth != 0) {
+          if (image.clientWidth < 640) {
             // newUrl = originSrcUrl.replace('10x10', '360x240');
             newUrl = originSrcUrl.replace('10x10', '800x600');
           }
-          if(image.clientWidth >= 640 && image.clientWidth < 800){
+          if (image.clientWidth >= 640 && image.clientWidth < 800) {
             // newUrl = originSrcUrl.replace('10x10', '640x480');
             newUrl = originSrcUrl.replace('10x10', '800x600');
           }
 
-          if(image.clientWidth >= 800 && image.clientWidth < 1024){
+          if (image.clientWidth >= 800 && image.clientWidth < 1024) {
             // newUrl = originSrcUrl.replace('10x10', '800x600');
             newUrl = originSrcUrl.replace('10x10', '1024x768');
           }
-          if(image.clientWidth > 1024 ){
+          if (image.clientWidth > 1024) {
             // newUrl = originSrcUrl.replace('10x10', '1024x768');
             newUrl = originSrcUrl.replace('10x10', '1024x768');
           }
@@ -396,33 +397,33 @@ function replaceImages(){
         observer.unobserve(image);
       }
 
-      if(entry.target.localName == 'div'){
+      if (entry.target.localName == 'div') {
         const el = entry.target;
         const styles = window.getComputedStyle(el);
         let originSrcUrl = styles.backgroundImage;
         let newUrl = originSrcUrl;
-        if(originSrcUrl != 'none'){
-          if(el.clientWidth != 0){
-            if(el.clientWidth < 640){
+        if (originSrcUrl != 'none') {
+          if (el.clientWidth != 0) {
+            if (el.clientWidth < 640) {
               // newUrl = originSrcUrl.replace('10x10', '360x240');
               newUrl = originSrcUrl.replace('10x10', '640x480');
             }
 
-            if(el.clientWidth >= 640 && el.clientWidth < 800){
+            if (el.clientWidth >= 640 && el.clientWidth < 800) {
               // newUrl = originSrcUrl.replace('10x10', '640x480');
-                newUrl = originSrcUrl.replace('10x10', '800x600');
+              newUrl = originSrcUrl.replace('10x10', '800x600');
             }
 
-            if(el.clientWidth >= 800 && el.clientWidth < 1024){
+            if (el.clientWidth >= 800 && el.clientWidth < 1024) {
               // newUrl = originSrcUrl.replace('10x10', '800x600');
               newUrl = originSrcUrl.replace('10x10', '1024x768');
             }
 
-            if(el.clientWidth > 1024 ){
+            if (el.clientWidth > 1024) {
               newUrl = originSrcUrl.replace('10x10', '1024x768');
             }
           }
-          el.style.backgroundImage=newUrl;
+          el.style.backgroundImage = newUrl;
 
         }
       }
@@ -437,14 +438,14 @@ function replaceImages(){
 
 
   // GET ALL DIVS .is-overlay-bg
-    let overlaysElements = document.getElementsByClassName("is-overlay-bg");
-      for(const container of overlaysElements){
-        const styles = window.getComputedStyle(container);
-        if(styles.backgroundImage != 'none'){
-          observer.observe(container);
-        }
+  let overlaysElements = document.getElementsByClassName("is-overlay-bg");
+  for (const container of overlaysElements) {
+    const styles = window.getComputedStyle(container);
+    if (styles.backgroundImage != 'none') {
+      observer.observe(container);
+    }
 
-      }
+  }
 }
 
 window.replaceImages = replaceImages;
@@ -456,16 +457,14 @@ if (devSaveButton !== null) {
 
 
 
-  devSaveButton.onclick = async function() {
+  devSaveButton.onclick = async function () {
+    // dataProxy['user']['token']
+    //save page
+    await alpineTemplatesGen();
+    await classGen();
+    await Page.saveCss();
 
-		//save page
-		await alpineTemplatesGen();
-		
-		await Page.saveTemplate();
-		
-		await Page.saveHeadCss();
 
-		window.location.reload();
 
   };
 }
@@ -473,20 +472,20 @@ if (devSaveButton !== null) {
 async function processTemplates(container, templates) {
   return new Promise(resolve => { // Връщаме обещание, което ще бъде резолвнато след като завършим обработката
     templates.forEach(async function (template) {
-      if(!template.classList.contains("dontSelect")){
+      if (!template.classList.contains("dontSelect")) {
 
 
-      var templateContent = template.content;
-      var div = document.createElement("div");
-      div.appendChild(templateContent.cloneNode(true));
+        var templateContent = template.content;
+        var div = document.createElement("div");
+        div.appendChild(templateContent.cloneNode(true));
 
-      var nestedTemplates = div.querySelectorAll("template");
-      if (nestedTemplates.length > 0) {
-        await processTemplates(div, nestedTemplates); // Изчакваме вложените шаблони да бъдат обработени
-      }
-
-      container.appendChild(div);
+        var nestedTemplates = div.querySelectorAll("template");
+        if (nestedTemplates.length > 0) {
+          await processTemplates(div, nestedTemplates); // Изчакваме вложените шаблони да бъдат обработени
         }
+
+        container.appendChild(div);
+      }
     });
 
     resolve(); // Резолваме обещанието, когато завършим обработката
@@ -502,36 +501,56 @@ async function alpineTemplatesGen() {
   await processTemplates(container, templates); // Изчакваме обработката на шаблоните да завърши
 }
 
+async function classGen() {
+  var elementsWithAttribute = document.querySelectorAll('[\\:class]');
+
+  elementsWithAttribute.forEach(function (element) {
+
+    var attributeValue = element.getAttribute(':class');
+    var replacedValue = attributeValue.replace(/['"]/g, ' ');
+
+    if (elementsWithAttribute[0].classList.length == 0) {
+      elementsWithAttribute[0].setAttribute('class', replacedValue);
+    } else {
+      replacedValue = elementsWithAttribute[0].classList.value + ' ' + replacedValue
+      elementsWithAttribute[0].setAttribute('class', replacedValue);
+    }
+
+  });
+
+
+}
+
 
 /*
   CHANGE CURRENT LANGUAGE
   changeLang('bg')
 */
-function changeLang(lang){
-  if(dataBody.corePage.lang != undefined && dataBody.corePage.lang != ''){
+function changeLang(lang) {
+  if (dataBody.corePage.lang != undefined && dataBody.corePage.lang != '') {
     let currentLang = dataBody.corePage.lang;
-    if(currentLang != lang){
-    let oldUrl = window.location.href;
-      if(oldUrl.includes(`/${currentLang}/`)){
+    if (currentLang != lang) {
+      let oldUrl = window.location.href;
+      if (oldUrl.includes(`/${currentLang}/`)) {
         var newUrl = oldUrl.replace(`/${currentLang}/`, `/${lang}/`);
         window.location.href = newUrl;
 
-      }else {
+      } else {
         window.location.href = window.location.origin + `/${lang}/`;
       }
     }
-  }else {
-      window.location.href = window.location.origin + `/${lang}/`;
+  } else {
+    window.location.href = window.location.origin + `/${lang}/`;
   }
 }
 
-window.changeLang  = changeLang ;
+window.changeLang = changeLang;
 
 
-window.addEventListener('resize', function(event) {
+window.addEventListener('resize', function (event) {
   dataProxy['screenWidth'] = window.screen.width;
 }, true);
 
-window.addEventListener('scroll', function(event) {
+window.addEventListener('scroll', function (event) {
   dataProxy['scrollPosition'] = window.pageYOffset;
 }, true);

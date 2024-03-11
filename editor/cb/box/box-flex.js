@@ -241,10 +241,10 @@
         let pins;
         if(isInIframe) {
             pins = document.querySelectorAll('.is-wrapper .section-pin');
-            if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); // do not apply skrollrr if .m-skrollrr-off found on mobile /* mobile update */
+            // if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); // do not apply skrollrr if .m-skrollrr-off found on mobile /* mobile update */
         } else {
             pins = document.querySelectorAll('.is-wrapper:not(.is-edit) .section-pin');
-            if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper:not(.is-edit) .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); // do not apply skrollrr 
+            // if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper:not(.is-edit) .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); // do not apply skrollrr 
         }
 
         if(pins.length>0) window.scrollTo(0, 0);
@@ -285,10 +285,10 @@
 
         if(isInIframe) {
             pins = document.querySelectorAll('.is-wrapper .section-pin');
-            if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); /* mobile update */    
+            // if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); /* mobile update */    
         } else {
             pins = document.querySelectorAll('.is-wrapper:not(.is-edit) .section-pin');
-            if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper:not(.is-edit) .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); /* mobile update */
+            // if(viewportWidth<=760) pins = document.querySelectorAll('.is-wrapper:not(.is-edit) .section-pin:not(.m-skrollrr-off):not(.m-pin-off)'); /* mobile update */
         }
 
         pins.forEach(function(sectionPin){
@@ -297,9 +297,11 @@
     
             const pinWrap = document.createElement('div');
             pinWrap.classList.add('pin-wrap');
+            if(sectionPin.classList.contains('m-skrollrr-off')) pinWrap.classList.add('m-skrollrr-off');
+            
             if(sectionPin.classList.contains('pin-space-lg')) pinWrap.classList.add('pin-space-lg');
             if(sectionPin.classList.contains('pin-space-xl')) pinWrap.classList.add('pin-space-xl');
-    
+            
             // Section Visibility
             if(sectionPin.classList.contains('xs-hidden')) pinWrap.classList.add('xs-hidden');
             if(sectionPin.classList.contains('sm-hidden')) pinWrap.classList.add('sm-hidden');

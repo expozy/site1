@@ -4,15 +4,26 @@ if(session_id() == '') session_start();
 
 $parameters = json_decode(base64_decode($_GET['i'] ?? ''), true);
 
-if(isset($parameters['token'])){ $_SESSION['token'] = $parameters['token'];}
 
 if(!isset($_GET['i'])) die();
+
 
 define( "_VALID_PHP", true);
 require_once '../../core/autoload.php';
 
+if(isset($parameters['token'])){
+	
+	
+	require_once(BASEPATH.'core/classes/class.cryptor.php');
+	$_SESSION['token'] = Cryptor::Decrypt($parameters['token'], SAAS_KEY);
+	
+	$user = new Users();
+}
+
+
 
 $editor = new Editor($_GET['i']);
+
 
 
 $dir = SITEURL.'/editor/cb/';
@@ -34,28 +45,7 @@ $dir = SITEURL.'/editor/cb/';
   		localStorage.setItem('token', '<?= $_SESSION['token']?>');
   	</script>
 	
-	<!-- СТИЛ ЗА ЗАКЛЮЧЕНИТЕ СЕКЦИИ -->
-    <style media="screen">
-    .is-section.lock{
-      background-image: url(/editor/cb/assets/images/lock2.png) !important;
-      background-size: contain!important;
-      background-repeat: no-repeat!important;
-      background-position: center!important;
-      background-color: white !important;
-      width: 100% !important;
-      max-width: 100% !important;
-
-      min-height: unset !important;
-      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-      margin-bottom: 10px !important;
-      aspect-ratio: 5 / 1;
-    }
-
-    .is-section.lock > div{
-      opacity: 0 !important;
-    }
-
-    </style>
+	
 	
     <!-- Required css for production -->    
     <link href="<?= $dir ?>assets/minimalist-blocks/content.css" rel="stylesheet"> 
@@ -106,8 +96,7 @@ $dir = SITEURL.'/editor/cb/';
             <span>Save</span>
         </button>
 		<button class="btn-loader" title="Loading" id="loaderBtn" style="display:none;">
-            <svg><use xlink:href="#icon-save"></use></svg>
-            <span>Loading...</span>
+            <i class="fa-solid fa-spinner animate-spin text-[22px]"></i>
         </button>
 		
 
@@ -152,23 +141,26 @@ $dir = SITEURL.'/editor/cb/';
 </div>
 <div class="topbar-shadow"></div>
 
+    <div class="is-wrapper" style="opacity:0;" id="mainContent">
+    <?php  echo empty($editor->html) ? '' : $editor->html;   ?>
+        </div>
+  
 
-<div class="is-wrapper" style="opacity:0" id="mainContent">
-  <?php  echo empty($editor->html) ? '' : $editor->html;   ?>
-</div>
 
-<div style="display: none;" id="tailwindCss"></div>
-<div style="display: none;" id="templatesDiv"></div>
-<div style="display: none !important;">
+        <div style="display: none;" id="tailwindCss"></div>
+<!-- <div style="display: none;" id="templatesDiv"></div> -->
+<div style="display: none !important;" id="headerFooterHtml">
 <?php
-		if($page->type == 'header'){
+
+		if($page->slug == 'header'){
 			echo $page->footer;
 
-		} else if($page->type == 'footer'){
+		} else if($page->slug == 'footer'){
 			echo $page->header;
 		}
 ?>
 <?php  ?></div>
+
 <!-- Slider feature (by setting slider: 'glide') -->
 <link href="<?= $dir ?>assets/scripts/glide/css/glide.core.css" rel="stylesheet">
 <link href="<?= $dir ?>assets/scripts/glide/css/glide.theme.css" rel="stylesheet">
@@ -189,12 +181,12 @@ $dir = SITEURL.'/editor/cb/';
     //Enable editing
     const builder = new ContentBox({
         
-        previewURL: 'preview.html',
+        previewURL: 'preview.html', //'preview.html',
 
         controlPanel: true,
         iframeSrc: 'blank.html',
         zoom: 1,
-        screenMode: 'fullview', // or fullview
+        //screenMode: 'fullview', // or fullview
         topSpace: true, // to give a space on top for custom toolbar
         iframeCentered: true,
 		
@@ -229,22 +221,22 @@ $dir = SITEURL.'/editor/cb/';
         
          templates: [
             {   
-                url: 'assets/templates-simple/templates.js',
-                path: 'assets/templates-simple/', 
+                url: '<?= $dir ?>assets/templates-simple/templates.js',
+                path: '<?= $dir ?>assets/templates-simple/', 
                 pathReplace: [],
                 numbering: true,
                 showNumberOnHover: true,
             },
             {   
-                url: 'assets/templates-quick/templates.js',
-                path: 'assets/templates-quick/', 
+                url: '<?= $dir ?>assets/templates-quick/templates.js',
+                path: '<?= $dir ?>assets/templates-quick/', 
                 pathReplace: [],
                 numbering: true,
                 showNumberOnHover: true,
             },
             {   
-                url: 'assets/templates-animated/templates.js',
-                path: 'assets/templates-animated/', 
+                url: '<?= $dir ?>assets/templates-animated/templates.js',
+                path: '<?= $dir ?>assets/templates-animated/', 
                 pathReplace: [],
                 numbering: true,
                 showNumberOnHover: true,
@@ -456,20 +448,20 @@ $dir = SITEURL.'/editor/cb/';
         'title': 'Preview',
         'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#ion-eye"></use></svg>',
         'onClick': ()=>{
-            var html = builder.html();
-            localStorage.setItem('preview-html', html); 
-            var mainCss = builder.mainCss(); 
-            localStorage.setItem('preview-maincss', mainCss); 
-            var sectionCss = builder.sectionCss();
-            localStorage.setItem('preview-sectioncss', sectionCss);
+            // var html = builder.html();
+            // localStorage.setItem('preview-html', html); 
+            // var mainCss = builder.mainCss(); 
+            // localStorage.setItem('preview-maincss', mainCss); 
+            // var sectionCss = builder.sectionCss();
+            // localStorage.setItem('preview-sectioncss', sectionCss);
 
-            window.open('preview.html', '_blank').focus();
+            window.open('<?= $page->url ?>', '_blank').focus();
         }
     });
 	builder.addButton({
          'pos': 11,
          'title': 'Revisions',
-         'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#ion-eye"></use></svg>',
+         'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#icon-list-search"></use></svg>',
          'onClick': ()=>{
 				toggleDisplay();
          }
@@ -505,11 +497,14 @@ $dir = SITEURL.'/editor/cb/';
     function save() {
 
         builder.saveImages('', function(){
-     
-	  		const styles = document.getElementById('tailwindCss').getElementsByTagName('style');
+           
+            var iframe = document.getElementById('ifrBuilder');
+            const styles = iframe.contentDocument.getElementById('tailwindCss').getElementsByTagName('style');
 			const lastElement = styles[styles.length - 1];
 			const lastElementString = lastElement.outerHTML;
 			const revision_title = document.getElementById('revisionName').value;
+
+
 			
             var html = builder.html();
 			
@@ -528,7 +523,7 @@ $dir = SITEURL.'/editor/cb/';
             
             .then(response=>response.json())
             .then(data=>{
-					document.getElementById('saveBtn').style.display = "block";
+					document.getElementById('saveBtn').style.display = "flex";
 					document.getElementById('loaderBtn').style.display = "none";
             });
 
@@ -648,39 +643,59 @@ $dir = SITEURL.'/editor/cb/';
 	
 	function saveContent(){
 		document.getElementById('saveBtn').style.display = "none";
-		document.getElementById('loaderBtn').style.display = "block";
+		document.getElementById('loaderBtn').style.display = "flex";
+        
 
-		alpineTemplatesGen();
+
+        var iframe = document.getElementById('ifrBuilder');
+
+        let html = document.getElementById('headerFooterHtml').innerHTML;
+        if(iframe.contentWindow.document.getElementById('headerFooter').innerHTML === ''){
+            iframe.contentWindow.document.getElementById('headerFooter').innerHTML = html;
+        }
+
+
+
+        iframe.contentWindow.alpineTemplatesGen();
+        iframe.contentWindow.classGen();
+		// alpineTemplatesGen();
+		// classGen();
 		// tailwindGen();
 			  timeoutId = setTimeout(function () {
 				  save();
 			  }, 100);
 	}
 
-	function alpineTemplatesGen() {
-		var templates = document.querySelectorAll("template");
 
-		var container = document.getElementById("templatesDiv");
-		container.innerHTML = '';
+	// function classGen(){
+	// 	var elementsWithClassAttribute = document.querySelectorAll('[\\:class]');
+	// 	debugger;
+	// }
+	
+	// function alpineTemplatesGen() {
+	// 	var templates = document.querySelectorAll("template");
+
+	// 	var container = document.getElementById("templatesDiv");
+	// 	container.innerHTML = '';
 
 
-		processTemplates(container, templates);
-	}
+	// 	processTemplates(container, templates);
+	// }
 
-	function processTemplates(container, templates) {
-		templates.forEach(function (template) {
-		  var templateContent = template.content;
-		  var div = document.createElement("div");
-		  div.appendChild(templateContent.cloneNode(true));
+	// function processTemplates(container, templates) {
+	// 	templates.forEach(function (template) {
+	// 	  var templateContent = template.content;
+	// 	  var div = document.createElement("div");
+	// 	  div.appendChild(templateContent.cloneNode(true));
 
-		  var nestedTemplates = div.querySelectorAll("template");
-		  if (nestedTemplates.length > 0) {
-			processTemplates(div, nestedTemplates);
-		  }
+	// 	  var nestedTemplates = div.querySelectorAll("template");
+	// 	  if (nestedTemplates.length > 0) {
+	// 		processTemplates(div, nestedTemplates);
+	// 	  }
 
-		  container.appendChild(div);
-		});
-	}
+	// 	  container.appendChild(div);
+	// 	});
+	// }
 
 
 </script>
@@ -688,18 +703,20 @@ $dir = SITEURL.'/editor/cb/';
 <!-- Required js for production --> 
 <script src="box/box-flex.js"></script> <!-- Box Framework js include -->
 <script src="/assets/plugins/tailwindcss.3.3.1.js"></script>
+<script src="https://kit.fontawesome.com/134d7d4e2d.js" crossorigin="anonymous"></script>
+<!-- <script src="/assets/plugins/tailwindcss.3.3.1.js"></script>
 <script>
       tailwind.config = {
         darkMode: 'class',
 
       }
-</script>
+</script> -->
 <script type="text/javascript">
   const rev = <?php echo json_encode( $editor->revisions, JSON_UNESCAPED_UNICODE)  ?>;
 
   function loadRevision(){
     let selectedRevision = document.getElementById('revisionsSelect').value;
-    builder.loadHtml(rev.result[selectedRevision].object_desc);
+    builder.loadHtml(rev[selectedRevision].object_desc);
   }
 
   function toggleDisplay() {
@@ -718,14 +735,9 @@ $dir = SITEURL.'/editor/cb/';
     }
 }
 
-// Пример как да използвате функцията:
-// toggleDisplay('вашИдентификаторНаЕлемент');
-
-
-
 
 </script>
-<div id="openRevisionsModal"  class="w-[600px] h-[400px] overflow-y-scroll  absolute top-0 right-0" style="display:none">
+<div id="openRevisionsModal"  class="w-[600px] h-[400px] overflow-y-scroll  absolute top-0 right-0 z-20" style="display:none">
 
 	<!-- Main modal -->
 	<div class="  justify-center items-center w-full md:inset-0  max-h-full">
@@ -735,7 +747,7 @@ $dir = SITEURL.'/editor/cb/';
 				<!-- Modal header -->
 				<div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
 					<h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-						Ревизии
+                    Revisions
 					</h3>
 
 				</div>
@@ -743,15 +755,16 @@ $dir = SITEURL.'/editor/cb/';
 
 					<div class="grid gap-4 mb-4 grid-cols-2 mt-3">
 						<div class="col-span-2">
-							<label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Име на ревизия</label>
+							<label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Revisions Name</label>
 							<input value="<?php echo $editor->title ?>" type="text" name="revisionName" id="revisionName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
 						</div>
 
 						<div class="col-span-2 sm:col-span-1">
-							<label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ревизии</label>
+							<label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Revisions</label>
 							<select id="revisionsSelect" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
 							  <?php
-							  foreach ($editor->revisions['result'] as $key => $revision) {
+                             
+							  foreach ($editor->revisions as $key => $revision) {
 								?>
 								  <option value="<?php echo $key?>" ><?php echo $revision['title'] ?> : <?php echo $revision['date_created'] ?></option>
 
@@ -765,7 +778,7 @@ $dir = SITEURL.'/editor/cb/';
 					</div>
 					<button onclick="loadRevision()"  type="button" class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
 						<svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
-						Зареди ревизия
+						Load Revisions
 					</button>
 
 			</div>

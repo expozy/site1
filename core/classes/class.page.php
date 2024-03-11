@@ -13,20 +13,24 @@ class Page
 	public int $target_id = 0;
 	public $slug = false;
 	public $title = '';
-	public $html = '';
+	
 	public $url = '';
 	public $seo_title = '';
 	public $seo_description = '';
 	public $seo_tags = '';
+	public string $seo_image = '';
+		
 	public $error404 = false;
+
 	public string $header = '';
 	public string $footer = '';
 	public string $css = '';
 	public string $headCss = '';
+	public $html = '';
 
-	public string $seo_image = '';
 
-
+	const ID_HEADER = 100;
+	const ID_FOOTER = 101;
 
 	function __construct(){
 			global $core;
@@ -64,9 +68,13 @@ class Page
 				$this->type = 'product';
 			}
 
-			$this->headCss = $core->web['headCss'] ?? '';
+			//Get head css
+			$head_template = new Template('index', 'header');
+			$this->headCss = $head_template->get_css();
 
-			//d($this);die();
+
+			
+			
 
 	}
 
@@ -74,20 +82,16 @@ class Page
 		global $lang, $core;
 
 
-		$header = new Template('header');
-
+		$header = new Template('header', 'header');
 		$this->header = $header->get_html();
 
-		$footer = new Template('footer');
-
-
+		$footer = new Template('footer', 'footer');
 		$this->footer = $footer->get_html();
 
 
 
 			//blog
 		if($this->type == 'post' || $this->type == 'index'	|| $this->type == 'product' || $this->type == 'category' || $this->type == 'blog'	){
-
 			$cache = false;
 
 
@@ -99,7 +103,7 @@ class Page
 
 
 			if($this->id){
-				global $core;
+				
 				$core->id = $this->id;
 				$row = Api::cache($cache)->id($this->id)->data(['resolution' => '10x10'])->get()->pages();
 			} else {
@@ -113,118 +117,133 @@ class Page
 
 			$this->tempCategory = $row['tempCategory'] ??'';
 			$this->combination = $row['combination'] ??'';
-			$this->html = $row['description'] ??'';
+			//$this->html = $row['description'] ??'';
 			$this->title = $row['title'] ??'';
 			$this->seo_title = $row['seo_title'] ??'';
 			$this->seo_description = $row['seo_description'] ??'';
 			$this->url = $row['url']??'';
-			$this->css = $row['css']??'';
+			//$this->css = $row['css']??'';
 			$this->id = $row['id']??0;
-
-
-			//d($this);die();
 			//for editor
 			if(isset($row['slug']))	$this->slug = $row['slug'];
+			
+			$template = new Template($this->type, $this->slug);
+				
+			$this->html = $template->get_html();
+			$this->css = $template->get_css();
+
+		
+			
 
 			if($this->type == 'post'){
-
-					global $core;
-
 					$this->id = 16;
 
 					$target = Api::cache($cache)->id($this->target_id)->data(['resolution' => '10x10'])->get()->blogPosts();
 
+					$this->title = $target['title'];
 					$this->seo_title = $target['seo_title'] ??'';
 					$this->seo_description = $target['seo_description'] ??'';
 					$this->seo_image = $target['images'][0]['url'] ?? '';
+					$this->seo_tags = $target['seo_tags'] ?? '';
 
 					$this->error404 = $target ? false : true;
 
 			} else if($this->type == 'product'){
-					global $core;
-
 					$this->id = 13;
 
 
 					$target = Api::cache($cache)->id($this->target_id)->data(['resolution' => '10x10'])->get()->products();
 
+					$this->title = $target['title'];
 					$this->seo_title = $target['seo_title'] ??'';
 					$this->seo_description = $target['seo_description'] ??'';
+					$this->seo_image = $target['images'][0]['url'] ?? '';
 					$this->seo_tags = $target['seo_tags'] ?? '';
 
 					$this->error404 = $target ? false : true;
 			}
 
-
-
-
 		}  else  if($this->type == 'header'){
-
-			$this->html = $this->load_template($this->type);
-			//$this->header = '';
-			//$this->footer = '';
+			$this->html = $this->header;
 		}
-
 		else if($this->type == 'footer'){
-
-			$this->html = $this->load_template($this->type);
-			//$this->header = '';
-			//$this->footer = '';
+			$this->html = $this->footer;
 		}
 
-
-		if(isset($core->devMode) && $core->devMode){
-			// $this->type ='index';
-// d($this);
-			$tmpl = new Template($this->type, $this->slug);
-			// d($tmpl);
-			// die();
-
-
-			if(!file_exists($tmpl->file)){
-				$tmpl->save_html($this->html);
-
-			} else{
-				$this->html = $tmpl->get_html();
-
-			}
-
-
-
-			return $this->_devMode();
+		if(empty($this->seo_title)){
+			
+			$this->seo_title = $this->title." - ".$core->site_name;
 		}
-
-
-
-
+		if(empty($this->seo_description)){
+			$this->seo_description = $this->title." - ".$core->site_name;
+		}
+		if(empty($this->seo_tags)){
+			$this->seo_tags = $this->title.",".$core->site_name;
+		}
+		if(empty($this->seo_image)){
+			$this->seo_image = $core->web['logo'];
+		}
+		//d($this);
+	
 		if($this->error404) redirect_to('/404');
 
-	}
-
-	private function _devMode(){
-		//d($this) ;
-	}
-
-
-	function load_template($type){
-
-			$template = new Template($type);
-			// var_dump($template);
-
-			return $template->get_html();
 
 	}
+
+
+
 
 
 
 	public static function html_res_change(string $html, string $res):string{
-		global $core;
+			global $core;
 	
-		    $pattern = '/https:\/\/storage\.de-fra1\.upcloudobjects\.com\/'.$core->site_name.'\/nojovete\/contbuilder\/(.*?)\/(.*?)\.webp/';
-			$replacement = 'https://storage.de-fra1.upcloudobjects.com/expozy/'.$core->site_name.'/contbuilder/$1/'.$res.'/$2.webp';
+		    $pattern = '/https:\/\/r2\.expozy\.com\/'.$core->site_name.'\/contbuilder\/(.*?)\/(.*?)\.webp/';
+			$replacement = 'https://r2.expozy.com/'.$core->site_name.'/contbuilder/$1/'.$res.'/$2.webp';
 
 
 			return preg_replace($pattern, $replacement, $html);
+	}
+	
+	public static function downloadPages(){
+			global $lang;
+			
+			
+			$language = Api::cache(false)->get()->languages();
+			$orig_i = get('i');
+			$parameters = json_decode(base64_decode($orig_i), true);
+			$parameters['type'] = 'index';
+			
+			
+			foreach($language as $lng){
+					
+					$lang->language = $lng['lang'];
+					
+					$pages = Api::cache(false)->data(['lang'=>$lng['lang']])->get()->pages();
+			
+					foreach($pages['result'] as $page){
+						
+						
+						$parameters['id'] = $page['id'];
+						
+						
+						$new_parameters = base64_encode(json_encode($parameters));
+						$editor = new Editor($new_parameters);
+						$rev = $editor->revisions[0]['object_desc'] ?? '';
+						
+						
+						
+						$template = new Template('index', $page['slug']);
+						
+						if(file_exists($template->get_fileName()) === false){
+							$template->save_html($rev);
+						}
+
+					}
+			}
+			
+		
+			
 	}
 
 

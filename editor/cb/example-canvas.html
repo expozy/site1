@@ -1,0 +1,630 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ContentBox.js Canvas Mode Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ContentBox.js is a web page designer Javascript library. Use it to create your own CMS or online site builder.">
+    <link rel="shortcut icon" href="#" />  
+    
+    <!-- Required css for production -->    
+    <link href="assets/minimalist-blocks/content.css" rel="stylesheet" async> <!-- Snippets css include (contains a simple css for content blocks/snippets) -->
+    <link href="box/box-flex.css" rel="stylesheet" async> <!-- Box Framework css include (contains a simple css for sections) -->
+    
+    <!-- Required css for editing (not needed in production) -->   
+    <link href="contentbuilder/contentbuilder.css" rel="stylesheet" async>
+    <link href="contentbox/contentbox.css" rel="stylesheet" async>
+
+    <link data-name="contentstyle" data-class="type-poppins" href="assets/styles/type-poppins.css" rel="stylesheet" async>
+
+    <style>
+        /* Switch the device buttons to save space on smaller screen */
+        @media all and (max-width: 1380px) {
+            .custom-topbar .btn-device-desktop,
+            .custom-topbar .btn-device-tablet,
+            .custom-topbar .btn-device-tablet-landscape,
+            .custom-topbar .btn-device-mobile {display:none !important} /* Hide the topbar buttons */
+
+            .is-responsive-toolbar {display:inline-flex !important} /* Show the default buttons */
+        }
+        .topbar-shadow {
+            position: fixed;
+            left: 0;top: 47px;
+            width: 100%;
+            height: 5px;
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 5px 0px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Helper to create loading status. -->
+<script src="assets/scripts/loading/loading.js"></script> 
+<script>
+    const loading = new Loading();
+    window.loading = loading;
+    // to stop: window.loading.stop() // will be called on event onStart
+</script>
+
+<!-- Example of a custom topbar -->
+<div class="builder-ui keep-selection custom-topbar" data-tooltip>
+    <div>
+        Your Name - &nbsp;<a href="https://innovastudio.com/contentbox">ContentBox.js</a>
+    </div>
+    <div>
+        <!-- custom buttons here -->
+        <button class="btn-back" title="Back">
+            <svg><use xlink:href="#icon-back"></use></svg>
+            <span>Back</span>
+        </button>
+
+        <div class="separator"></div>
+
+        <button class="btn-undo" title="Undo">
+            <svg><use xlink:href="#icon-undo"></use></svg>
+        </button>
+
+        <button class="btn-redo" title="Redo">
+            <svg><use xlink:href="#icon-redo"></use></svg>
+        </button>
+
+        <button class="btn-save" title="Save">
+            <svg><use xlink:href="#icon-save"></use></svg>
+            <span>Save</span>
+        </button>
+
+        <button class="btn-publish" title="Publish">
+            <svg><use xlink:href="#icon-publish"></use></svg>
+            <span>Publish</span>
+        </button>
+
+    </div>
+    <div>
+        <!-- custom buttons here -->
+        <button class="btn-device-desktop-large" data-device="desktop-lg" title="Desktop - Large Screen">
+            <svg style="width:18px;height:18px;"><use xlink:href="#icon-device-desktop"></use></svg>
+        </button>
+        <button class="btn-device-desktop" data-device="desktop" title="Desktop / Laptop">
+            <svg style="width:20px;height:20px;"><use xlink:href="#icon-device-laptop"></use></svg>
+        </button>
+        <button class="btn-device-tablet-landscape" data-device="tablet-landscape" title="Tablet - Landscape">
+            <svg style="width:18px;height:18px;transform:rotate(-90deg)"><use xlink:href="#icon-device-tablet"></use></svg>
+        </button>
+        <button class="btn-device-tablet" data-device="tablet" title="Tablet - Portrait">
+            <svg  style="width:18px;height:18px;"><use xlink:href="#icon-device-tablet"></use></svg>
+        </button>
+        <button class="btn-device-mobile" data-device="mobile" title="Mobile">
+            <svg  style="width:18px;height:18px;"><use xlink:href="#icon-device-mobile"></use></svg>
+        </button>
+        <button class="btn-fullview" data-device="fullview" title="Full View">
+            <svg  style="width:18px;height:18px;"><use xlink:href="#icon-fullview"></use></svg>
+        </button>
+
+        <div class="separator"></div>
+
+        <button class="btn-download" title="Download">
+            <svg><use xlink:href="#icon-download"></use></svg>
+        </button>
+
+        <button class="btn-html" title="HTML">
+            <svg><use xlink:href="#icon-code"></use></svg>
+        </button>
+
+        <button class="btn-preview" title="Preview">
+            <svg><use xlink:href="#icon-eye"></use></svg>
+        </button>
+
+        <div class="separator"></div>
+
+        <button class="btn-togglepanel" data-button="togglepanel" title="Toggle Edit Panel"> <!-- To enable state, add:  data-state="togglepanel" -->
+            <svg><use xlink:href="#icon-pencil"></use></svg>
+        </button>
+    </div>
+</div>
+<div class="topbar-shadow"></div>
+
+<div class="is-wrapper" style="opacity:0">
+</div>
+
+<!-- Enable Slider feature -->
+<link href="assets/scripts/glide/css/glide.core.css" rel="stylesheet" async>
+<link href="assets/scripts/glide/css/glide.theme.css" rel="stylesheet" async>
+<script src="assets/scripts/glide/glide.js" async></script>
+
+<!-- Enable Navbar feature -->
+<link href="assets/scripts/navbar/navbar.css" rel="stylesheet" async>
+<script src="assets/scripts/navbar/navbar.min.js" async></script>
+
+<!-- Required js for editing (not needed in production) -->  
+<script src="contentbox/lang/en.js"></script>
+<script src="contentbox/contentbox.min.js"></script>
+<script>
+
+var timeoutId; //Used for Auto Save
+
+//Enable editing
+const builder = new ContentBox({
+    wrapper: '.is-wrapper',
+    canvas: true,
+
+    clearPreferences: true,
+    paste: 'text',
+
+    controlPanel: true,
+    iframeSrc: 'blank.html',
+    onStart: ()=>{ // Builder start
+        if(window.loading) window.loading.stop(); // end loading status (see index.html for loading status start)
+    },
+    zoom: 1,
+    screenMode: 'fullview',
+    topSpace: true, // to give a space on top for custom toolbar
+    iframeCentered: true,
+
+    htmlButton: false, // Set to false as we will use a custom topbar.
+    undoRedoButtons: false,
+    toggleDeviceButton: false,
+    deviceButtons: false,
+
+    // To enable AI Assistant
+    sendCommandUrl: '/sendcommand',
+    AIToolbar: false,
+    // showDisclaimer: false,
+    // startAIAssistant: true, // Auto open 'AI Assistant' panel
+    // enableShortCommands: false,
+    speechRecognitionLang: 'en-US', 
+    triggerWords: {
+        send: ['send', 'okay', 'ok', 'execute', 'run'],
+        abort: ['abort', 'cancel'],
+        clear: ['clear', 'erase']
+    },
+    mediaPath: '/assets/gallery/',
+    onlineDemo: true,
+
+    slider: 'glide',
+    navbar: true,
+    // livePreviewOpen: true,
+    showSelectCover: false,
+
+    imageSelect: 'assets.html',
+    fileSelect: 'assets.html',
+    videoSelect: 'assets.html',
+    audioSelect: 'assets.html',
+    mediaSelect: 'assets.html', // for images and videos
+    // You can replace it with your own asset/file manager application
+    // or use: https://innovastudio.com/asset-manager
+
+    imageSelectWidth: '80vw',
+    imageSelectHeight: '75vh',
+    fileSelectWidth: '80vw',
+    fileSelectHeight: '75vh',
+    videoSelectWidth: '80vw',
+    videoSelectHeight: '75vh',
+    audioSelectWidth: '80vw',
+    audioSelectHeight: '75vh',
+    mediaSelectWidth: '80vw',
+    mediaSelectHeight: '75vh',
+
+    imageSelectMaxWidth: '1400px',
+    fileSelectMaxWidth: '1400px',
+    videoSelectMaxWidth: '1400px',
+    audioSelectMaxWidth: '1400px',
+    mediaSelectMaxWidth: '1400px',
+
+    /* ContentBox settings */
+    contentStylePath: '/assets/styles/',
+
+    templates: [
+        {   
+            url: '/assets/templates-simple/templates.js',
+            path: '/assets/templates-simple/', 
+            pathReplace: [],
+            numbering: true,
+            showNumberOnHover: true,
+        },
+        {   
+            url: '/assets/templates-quick/templates.js',
+            path: '/assets/templates-quick/', 
+            pathReplace: [],
+            numbering: true,
+            showNumberOnHover: true,
+        },
+        {   
+            url: '/assets/templates-animated/templates.js',
+            path: '/assets/templates-animated/', 
+            pathReplace: [],
+            numbering: true,
+            showNumberOnHover: true,
+        },
+    ],
+
+    /* ContentBuilder settings */
+    snippetUrl: '/assets/minimalist-blocks/content.js',
+    snippetPath: '/assets/minimalist-blocks/', 
+    snippetPathReplace: ['assets/','/assets/'], // for snippets
+    modulePath: '/assets/modules/',
+    assetPath: '/assets/', // Used for the location of ionicons/
+    fontAssetPath: '/assets/fonts/',
+    pluginPath: 'contentbuilder/', 
+
+    onChange: function () {
+        //Auto Save
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(function () {
+            save();                    
+        }, 1000);
+    },
+    onUploadCoverImage: (e) => {
+        uploadFile(e, (response)=>{
+            if(!response.error) {
+                const uploadedImageUrl = response.url;
+                if(uploadedImageUrl) builder.boxImage(uploadedImageUrl);
+            }
+        });
+    },
+    onImageUpload: (e)=>{
+        uploadFile(e, (response)=>{
+            if(!response.error) {
+                const uploadedImageUrl = response.url; 
+                if(uploadedImageUrl) builder.returnUrl(uploadedImageUrl);
+            }
+        });
+    },
+    onMediaUpload: (e)=>{
+        uploadFile(e, (response)=>{
+            if(!response.error) {
+                const uploadedImageUrl = response.url; 
+                if(uploadedImageUrl) builder.returnUrl(uploadedImageUrl);
+            }
+        });
+    },
+    
+    /*
+    onVideoUpload: (e)=>{
+        uploadFile(e, (response)=>{
+            if(!response.error) {
+                const uploadedFileUrl = response.url;
+                if(uploadedImageUrl) builder.returnUrl(uploadedFileUrl);
+            }
+        });
+    },  
+    onAudioUpload: (e)=>{
+        uploadFile(e, (response)=>{
+            if(!response.error) {
+                const uploadedFileUrl = response.url;
+                if(uploadedImageUrl) builder.returnUrl(uploadedFileUrl);
+            }
+        });
+    },  
+    */
+
+    onAdd: (html)=>{
+        html = html.replace(new RegExp(encodeURIComponent('{recaptchakey}'), 'g'), '6LfrbMEfAAAAAOQiElV7w0_GO21dhp5xyDVOFVDK');
+        return html;
+    },
+});
+
+// Load saved content. In this example we use browser's localStorage.
+let initialContent = `
+<div class="is-section is-box is-section-100 type-system-ui box-canvas autolayout last-box scroll-target">
+
+<div class="is-block" style="top: 0%; left: 50.5855%; height: 76.9704%; width: 49.4403%;" data--t="0%" data--l="50.5855%" data--b="" data--r="" data--w="49.4403%" data--h="76.9704%" data--t-1236="0px" data--l-1236="49.5955%" data--b-1236="" data--r-1236="0px" data--w-1236="" data--h-1236="74.7967%" data--t-1068="36.5854%" data--l-1068="61.5169%" data--b-1068="" data--r-1068="0px" data--w-1068="" data--h-1068="38.4146%" data--t-1280="0%" data--l-1280="51.5149%" data--b-1280="" data--r-1280="" data--w-1280="48.5156%" data--h-1280="74.7854%">
+
+    <div class="is-block-overlay" style="background-image: url(&quot;/uploads/office.jpg&quot;); background-size: cover; background-position-x: 100%;" &quot;);="" background-position:="" 50%="" 60%;"="" data-bg-lg="background-size: cover; background-position-x: 100%;" data-bg-ori="background-position-x: 100%; background-size: cover;"></div>
+</div>
+
+<div class="is-overlay"></div>
+<div class="is-block block-steady height-auto" style="top: calc(13.4223% - 79.997px); left: calc(11.1947% - 68.1755px); width: 609px;" data--t="calc((100% - 596px) / 7.45028)" data--l="calc((100% - 609px) / 8.93283)" data--b="" data--r="" data--w="609px" data--h="" data--t-1280="calc(9.66079% - 53.0377px)" data--l-1280="calc(4.58139% - 24.2356px)" data--b-1280="" data--r-1280="" data--w-1280="529px" data--h-1280="">
+
+    <div class="is-container size-18 leading-14">
+
+        <div class="row">
+            <div class="column full">
+                <h1 class="font-semibold tracking-wider xs-size-24 md-size-32 sm-size-35 size-38">Hi, I am (Your Name). A digital designer living in (City Name) with a passion for creating visually stunning and user-friendly digital experiences.</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column full">
+                <div class="spacer height-60"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column full text-center">
+                <p class="font-semibold tracking-wider text-left"><a href="#" title="" class="no-underline size-28 xs-size-24 md-size-24 sm-size-21">Let's Talk&nbsp;</a>&nbsp;<i class="icon ion-android-arrow-forward"></i></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="width: 61%; flex: 0 0 auto;">
+                <p>I strive to deliver visually stunning and intuitive digital experiences that fit your company's needs.&nbsp;Together we will achieve your goal.</p>
+            </div>
+            <div class="column" style="width: 100%;">
+                <div class="spacer height-80"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="is-block-overlay"></div>
+</div>
+<div class="is-block block-steady height-auto" style="top: calc(95.4778% - 116.483px); left: calc(98.0232% - 1012.58px); width: 1033px;" data--t="calc(95.4778% - 116.483px)" data--l="calc(98.0232% - 1012.58px)" data--b="" data--r="" data--w="1033px" data--h="">
+
+    <div class="is-container size-18 leading-14">
+        <div class="row">
+            <div class="column">
+                <h3 class="uppercase font-medium md-size-18 sm-size-18 size-21">Web Design &amp; Development</h3>
+            </div>
+            <div class="column">
+                <h3 class="uppercase font-medium size-21 md-size-18 sm-size-18">Branding</h3>
+            </div>
+            <div class="column">
+                <h3 class="uppercase font-medium size-21 md-size-18 sm-size-18">Creative Direction</h3>
+            </div>
+            <div class="column">
+                <h3 class="uppercase font-medium size-21 md-size-18 sm-size-18">Film &amp; Photography</h3>
+            </div>
+        </div>
+    </div>
+    <div class="is-block-overlay" style="background-color: rgb(255, 255, 255);"></div>
+</div>
+</div>
+`;
+
+let html = localStorage.getItem('mypage') || initialContent;
+builder.loadHtml(html); // Load html
+
+let mainCss = localStorage.getItem('maincss') || '';
+let sectionCss = localStorage.getItem('sectioncss') || '';
+builder.loadStyles(mainCss, sectionCss); // Load styles
+
+// Example of adding custom buttons
+builder.addButton({ 
+    'pos': 2, // button position
+    'title': 'Animation',
+    'html': '<svg class="is-icon-flex" style="fill:rgba(0, 0, 0, 0.7);width:14px;height:14px;"><use xlink:href="#icon-wand"></use></svg>', 
+    'onClick': ()=>{
+        builder.openAnimationPanel();
+    }
+});
+builder.addButton({ 
+    'pos': 3,
+    'title': 'Timeline Editor',
+    'html': '<svg><use xlink:href="#icon-anim-timeline"></use></svg>', 
+    'onClick': ()=>{
+        builder.openAnimationTimeline();
+    }
+});
+builder.addButton({ 
+    'pos': 4,
+    'title': 'AI Assistant',
+    'html': '<svg class="is-icon-flex" style="width:16px;height:16px;"><use xlink:href="#icon-message"></use></svg>', 
+    'onClick': (e)=>{
+
+        builder.openAIAssistant();
+
+    }
+});
+// builder.addButton({ 
+//     'pos': 6,
+//     'title': 'Settings',
+//     'html': '<svg class="is-icon-flex" style="width:15px;height:15px;"><use xlink:href="#icon-settings"></use></svg>', 
+//     'onClick': (e)=>{
+//         builder.openSettings(e);
+//     }
+// });
+builder.addButton({ 
+    'pos': 7,
+    'title': 'Clear Content',
+    'html': '<svg class="is-icon-flex"><use xlink:href="#icon-eraser"></use></svg>', 
+    'onClick': (e)=>{
+        builder.clear();
+    }
+});
+
+async function uploadFile(e, callback) {
+
+    // For demo purpose (no file upload)
+    const selectedFile = e.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(selectedFile);
+    reader.onload = () => {
+        const data = {};
+        data.url = reader.result;
+        if(callback) callback(data);
+    }
+
+    // For uploading file to the server or S3 storage:
+    /*
+    const formData = new FormData();
+    formData.append('file', selectedFile);
+    await fetch('/upload', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response=>response.json())
+    .then(data=>{
+        if(callback) callback(data);
+    });
+    */
+}
+
+async function save() {
+
+    /*
+    builder.saveImages('', async ()=>{
+
+        //Save content
+        let html = builder.html();
+        let mainCss = builder.mainCss(); // Default typography style for the page
+        let sectionCss = builder.sectionCss(); // Typography styles for the sections
+
+        // Save to local storage
+        // localStorage.setItem('mypage', html);
+        // localStorage.setItem('maincss', mainCss);
+        // localStorage.setItem('sectioncss', sectionCss);
+        
+    }, async (img, base64, filename)=>{
+
+        // For uploading file to the server or S3 storage:
+        // Upload base64 images
+        const reqBody = { image: base64, filename: filename };
+        let result = await fetch('/uploadbase64', {
+            method:'POST',
+            body: JSON.stringify(reqBody),
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        });
+        result = await result.json();
+        if(!result.error) { 
+            const uploadedImageUrl = result.url;
+            img.setAttribute('src', uploadedImageUrl); // Update image src
+        }
+        
+    });
+    */
+}
+
+
+/* Custom Topbar */
+const btnBack = document.querySelector('.custom-topbar .btn-back');
+btnBack.addEventListener('click', ()=>{
+    alert('Button clicked. This is an example of a custom button.');
+});
+
+const btnUndo = document.querySelector('.custom-topbar .btn-undo');
+btnUndo.addEventListener('click', ()=>{
+    builder.undo();
+});
+
+const btnRedo = document.querySelector('.custom-topbar .btn-redo');
+btnRedo.addEventListener('click', ()=>{
+    builder.redo();
+});
+
+const btnSave = document.querySelector('.custom-topbar .btn-save');
+btnSave.addEventListener('click', ()=>{
+    alert('Button clicked. This is an example of a custom button.');
+});
+
+const btnPublish = document.querySelector('.custom-topbar .btn-publish');
+btnPublish.addEventListener('click', ()=>{
+    alert('Button clicked. This is an example of a custom button.');
+});
+
+const btnFullView = document.querySelector('.custom-topbar .btn-fullview');
+const btnDeviceDesktopLarge = document.querySelector('.custom-topbar .btn-device-desktop-large');
+const btnDeviceDesktop = document.querySelector('.custom-topbar .btn-device-desktop');
+const btnDeviceTabletLandscape = document.querySelector('.custom-topbar .btn-device-tablet-landscape');
+const btnDeviceTablet = document.querySelector('.custom-topbar .btn-device-tablet');
+const btnDeviceMobile = document.querySelector('.custom-topbar .btn-device-mobile');
+
+const clearActiveButtons = () => {
+    btnFullView.classList.remove('on');
+    btnDeviceDesktop.classList.remove('on');
+    btnDeviceDesktopLarge.classList.remove('on');
+    btnDeviceTabletLandscape.classList.remove('on');
+    btnDeviceTablet.classList.remove('on');
+    btnDeviceMobile.classList.remove('on');
+}
+
+btnFullView.addEventListener('click', ()=>{
+    builder.setScreenMode('fullview');
+    clearActiveButtons();
+    btnFullView.classList.add('on');
+});
+
+btnDeviceDesktopLarge.addEventListener('click', ()=>{
+    builder.setScreenMode('desktop-lg');
+    clearActiveButtons();
+    btnDeviceDesktopLarge.classList.add('on');
+});
+
+btnDeviceDesktop.addEventListener('click', ()=>{
+    builder.setScreenMode('desktop');
+    clearActiveButtons();
+    btnDeviceDesktop.classList.add('on');
+});
+
+btnDeviceTabletLandscape.addEventListener('click', ()=>{
+    builder.setScreenMode('tablet-landscape');
+    clearActiveButtons();
+    btnDeviceTabletLandscape.classList.add('on');
+});
+
+btnDeviceTablet.addEventListener('click', ()=>{
+    builder.setScreenMode('tablet');
+    clearActiveButtons();
+    btnDeviceTablet.classList.add('on');
+});
+
+btnDeviceMobile.addEventListener('click', ()=>{
+    builder.setScreenMode('mobile');
+    clearActiveButtons();
+    btnDeviceMobile.classList.add('on');
+});
+
+if(builder.screenMode==='fullview'){
+    btnFullView.classList.add('on');
+} else if(builder.screenMode==='desktop-lg'){
+    btnDeviceDesktopLarge.classList.add('on');
+} else if(builder.screenMode==='desktop'){
+    btnDeviceDesktop.classList.add('on');
+} else if(builder.screenMode==='tablet-landscape'){
+    btnDeviceTabletLandscape.classList.add('on');
+} else if(builder.screenMode==='tablet'){
+    btnDeviceTablet.classList.add('on');
+} else if(builder.screenMode==='mobile'){
+    btnDeviceMobile.classList.add('on');
+} 
+
+const btnDownload = document.querySelector('.custom-topbar .btn-download');
+if(btnDownload) btnDownload.addEventListener('click', ()=>{
+    alert('Download feature is disabled in this demo')
+});
+
+const btnHtml = document.querySelector('.custom-topbar .btn-html');
+if(btnHtml) btnHtml.addEventListener('click', ()=>{
+    builder.viewHtml();
+});
+
+const btnPreview = document.querySelector('.custom-topbar .btn-preview');
+btnPreview.addEventListener('click', ()=>{
+    let html = builder.html();
+    localStorage.setItem('preview-html', html); 
+    let mainCss = builder.mainCss(); 
+    localStorage.setItem('preview-maincss', mainCss); 
+    let sectionCss = builder.sectionCss();
+    localStorage.setItem('preview-sectioncss', sectionCss);
+
+    window.open('preview.html', '_blank').focus();
+});
+
+const btnTogglePanel = document.querySelector('.custom-topbar .btn-togglepanel');
+if(btnTogglePanel) btnTogglePanel.addEventListener('click', ()=>{
+    builder.toggleEditPanel();
+});
+
+</script>
+
+<!-- Required js for production --> 
+<script src="box/box-flex.js" defer></script> <!-- Box Framework js include -->
+
+<!-- Optional: if you want to add smooth scrolling -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+<script>
+SmoothScroll({
+    frameRate: 150,
+    animationTime: 800,
+    stepSize: 120,
+    pulseAlgorithm: 1,
+    pulseScale: 4,
+    pulseNormalize: 1,
+    accelerationDelta: 300,
+    accelerationMax: 2,
+    keyboardSupport: 1,
+    arrowScroll: 50,
+    fixedBackground: 0
+});
+</script>
+
+</body>
+</html>

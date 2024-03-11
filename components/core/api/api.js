@@ -31,7 +31,7 @@ export class ApiClass {
 		const data = await cacheGet(url);
 
 //debugger;
-	if (DEV_MODE === 0 && cachable === true && typeof data === 'object' && data !== null && Object.keys(data).length > 0) {
+	if (cachable === true && typeof data === 'object' && data !== null && Object.keys(data).length > 0) {
 
 
 			this.response = data;

@@ -8,7 +8,7 @@ class Inline {
 		global $user;
 		
 		$html = '';
-		if($user->userlevel == Users::LEVEL_ADMIN){
+		if($user->is_admin()){
 			$html = '<div class="inline_cont" ><a href="'.self::gen_url().'" class="circle inline_off"><span><i class="fas fa-pencil-alt"></i></a></span></div>';
 		}
 		
@@ -34,7 +34,7 @@ class Inline {
 	public function toggle(){
 		global $user;
 		
-		if($user->userlevel == Users::LEVEL_ADMIN){
+		if($user->is_admin()){
 				if(isset($_SESSION['inline_mode'])){
 					$_SESSION['inline_mode'] = $_SESSION['inline_mode'] ? false : true;
 				} else {

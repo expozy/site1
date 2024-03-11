@@ -49,7 +49,6 @@
 			const LOGO_URL = "<?php echo $core->web['logo'] ?>";
 			const FAVICON_URL = "<?php echo $core->web['favicon'] ?>";
 			const SOCIAL_NETWORKS = <?php echo json_encode($core->web['links'], JSON_UNESCAPED_UNICODE) ?>;
-			const DEV_MODE = <?php echo $core->devMode ? 1:0 ?>;
 			const URL_PARAMETERS = <?php echo json_encode($_GET) ?>;
 			const SITENAME = <?php echo json_encode($core->site_name) ?>;
 		</script>
@@ -82,9 +81,11 @@
 			letter-spacing: 0.7px;
 		}
 		</style>
+		
 
 		<style id="headCss"><?= $page->headCss ?></style>
 		<style id="pageCss"><?= $page->css ?></style>
+		
 
 		<?= $core->web['scripts']['header'] ?? '' ?>
 	</head>
@@ -93,7 +94,7 @@
 
 		<!-- INIT BODY FUNCTION. CONNECTED WITH ALPINE X_DATA  -->
 
-		<body x-data="dataset" @update.window="updatedata($event.detail)" id="body" x-init="$watch('data', value => console.log(value))" >
+		<body :class="data.darkMode == true ? 'dark' : '' " x-data="dataset" @update.window="updatedata($event.detail)" id="body" x-init="$watch('data', value => console.log(value))" >
 
 
 			<!-- NOTIFICATION CONTAINER. ALPINE ADD MESSAGES FROM CORE  -->
@@ -115,8 +116,8 @@
 		</div>
 
 
-<?php	 if($core->devMode && $user->logged_in && $user->is_Admin()) { ?>
-	<script></script>
+<?php if($user->logged_in && $user->is_superAdmin()) { ?>
+	
 	<div style="display: none;" id="tailwindCss"></div>
 	<div style="width:100px;height: 50px;position: fixed;right: 100px;bottom: 60px;background-color: red;z-index: 1000;display: flex;justify-content: center;align-items: center;border-radius: 25px;color: white;font-weight: bold;letter-spacing: 1.2px;font-size: 18px;cursor: pointer;" id="dev_save">Save</div>
 	<script src="/assets/plugins/tailwindcss.3.3.1.js"></script>

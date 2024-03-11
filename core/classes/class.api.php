@@ -71,7 +71,7 @@ class Api
 		    $headers[] = "authorization: session ". sha1(session_id());
 		}
 		
-		
+		//d($headers);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 		
 		$url = CORE_URL;
@@ -79,7 +79,7 @@ class Api
 			$url .= '/';
 		}
 		$url .= "api/";
-		if(self::$admin_api){
+		if(isset($data['admin_api']) && $data['admin_api']){
 			$url .= "admin/";
 		}
 		$url .= $endpoint;
@@ -116,7 +116,7 @@ class Api
 		}
 		
 		/***** Cache Module **********/
-		//var_dump($url);die();
+		//var_dump($url);
 		$cache_result = false;
 		
 		$cache_obj = new Cache($endpoint, $url, $method, $id);
@@ -132,7 +132,8 @@ class Api
 			 $result_from_cache = true;
 		} else {
 		
-			
+			//d($url);
+			//d($method);
 			curl_setopt($ch, CURLOPT_URL,$url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, strtoupper($method));
@@ -289,6 +290,9 @@ class Api
 		if(self::$sort){
 			$data['sort'] = self::$sort;
 		}
+		if(self::$admin_api){
+			$data['admin_api'] = self::$admin_api;
+		}
 		
 		/** clear data **/
 		self::$limit = 0;
@@ -297,6 +301,7 @@ class Api
 		self::$sort = 0;
 		self::$data = array();
 		self::$cache = true;
+		self::$admin_api = false;
 		
 		$_GET['query_route'] = '';
 

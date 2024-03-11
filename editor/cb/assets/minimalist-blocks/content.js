@@ -68,7 +68,14 @@ var data_basic = {
 			<div class="is-block block-steady" style="top: 20%; left: 20%; width:540px;height: 300px" data-new-dummy="1">
 				<div class="is-block-overlay" style="background-image: url(&quot;assets/minimalist-blocks/images/img-2400x1350.png"&quot;); background-position: 50% 60%;"></div>
 			</div>
-			`	
+			`,
+			'html2': `
+			<div class="row">
+				<div class="column pt-0 pb-0 pl-0 pr-0 flex flex-col justify-center">
+				<img src="assets/minimalist-blocks/images/img-2400x1350.png" alt="">
+				</div>
+			</div>
+			`
 		},
 
 		// {

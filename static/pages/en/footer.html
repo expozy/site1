@@ -1,0 +1,18 @@
+<!-- <div id="frameViews" class="is-content-view tablet-landscape"> -->
+<div class="is-section is-box is-section-100 type-poppins box-autofit last-box scroll-target">
+    <div class="is-overlay"></div>
+    <div class="is-container v2 is-content-700 leading-14 size-18">
+
+        <div class="row">
+            <div class="column">
+                <p class="font-semibold size-120 text-slate-600">FOOTER</p>
+            </div>
+        </div>
+    </div>
+</div> <!-- </div> -->
+
+<template x-if="openCategory">
+    <template x-if="openCategory">
+        <i class="fa-solid fa-circle-plus text-[22px] text-slate-900" :class="currentCategory == category.id ? 'bg-[#370000] text-white ' : 'shadow ' " @click="openCategory =! openCategory"></i>
+    </template>
+</template>

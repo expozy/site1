@@ -17314,19 +17314,27 @@ const renderSnippetPanel = (builder, snippetOpen) => {
       if (activeBuilderArea) {
         dom.addClass(activeBuilderArea, 'builder-active');
       }
-
-      // destroy
-      if (builder.sortableOnCanvas) {
-        builder.sortableOnCanvas.forEach(obj => {
-          if (obj) {
-            obj.destroy();
-          }
-        });
-        builder.sortableOnCanvas = [];
-      }
-      if (builder.sortableOnPage) builder.sortableOnPage.destroy();
-      let dummies = builder.doc.querySelectorAll('.block-dummy');
-      dummies.forEach(elm => elm.parentNode.removeChild(elm));
+    },
+    onUnchoose: () => {
+      setTimeout(() => {
+        // Give time for onAdd to finish
+        // Destroy placed in onUnchoose in case a snippet is just clicked (no drag/drop) so that onAdd is not triggered.
+        // destroy
+        if (builder.sortableOnCanvas) {
+          builder.sortableOnCanvas.forEach(obj => {
+            if (obj) {
+              obj.destroy();
+            }
+          });
+          builder.sortableOnCanvas = [];
+        }
+        if (builder.sortableOnPage) {
+          builder.sortableOnPage.destroy();
+          builder.sortableOnPage = null;
+        }
+        let dummies = builder.doc.querySelectorAll('.block-dummy');
+        dummies.forEach(elm => elm.parentNode.removeChild(elm));
+      }, 10);
     }
   });
   if (builder.opts.snippetList === '#divSnippetList') {
@@ -48159,7 +48167,8 @@ class Hyperlink {
                 selection = selectionText;
                 const range = selection.getRangeAt(0);
                 const fragment = range.extractContents();
-                const link = document.createElement('a');
+                const link = this.builder.doc.createElement('a'); //
+
                 link.setAttribute('href', url);
                 link.setAttribute('title', title);
                 if (modal.querySelector('.input-newwindow').checked) {
@@ -48179,7 +48188,8 @@ class Hyperlink {
               } else if (selectionElm) {
                 selection = selectionElm;
                 selectionElm.innerHTML = `<a class="dummylink" href="dummy">${linktext}</a>`;
-                let link = document.querySelector('.dummylink');
+                let link = this.builder.doc.querySelector('.dummylink'); //
+
                 link.setAttribute('href', url);
                 link.setAttribute('title', title);
                 if (modal.querySelector('.input-newwindow').checked) {
@@ -81524,10 +81534,14 @@ class Common {
   applyPercentage(block) {
     const zoom = this.zoom;
     const rect = this.getRect(block);
-    const container = block.closest('.box-canvas');
+    let container = block.closest('.box-canvas');
+    if (block.parentNode.closest(this.selector)) {
+      // block is in  group
+      container = block.parentNode.closest(this.selector);
+    }
     const containerRect = this.getRect(container); // if container has top/left
 
-    this.horizontalRulerTop = container.querySelector('.h-ruler-top');
+    this.horizontalRulerTop = container.querySelector('.h-ruler-top'); // no rulers in group
     this.horizontalRulerBottom = container.querySelector('.h-ruler-bottom');
     this.horizontalRulerMiddle = container.querySelector('.h-ruler-middle');
     this.verticalRulerLeft = container.querySelector('.v-ruler-left');
@@ -81539,10 +81553,10 @@ class Common {
     let bottomTouched = false;
     let leftTouched = false;
     let rightTouched = false;
-    if (this.horizontalRulerTop.hasAttribute('data-topTouched')) topTouched = true;
-    if (this.horizontalRulerBottom.hasAttribute('data-bottomTouched')) bottomTouched = true;
-    if (this.verticalRulerLeft.hasAttribute('data-leftTouched')) leftTouched = true;
-    if (this.verticalRulerRight.hasAttribute('data-rightTouched')) rightTouched = true;
+    if (this.horizontalRulerTop && this.horizontalRulerTop.hasAttribute('data-topTouched')) topTouched = true;
+    if (this.horizontalRulerBottom && this.horizontalRulerBottom.hasAttribute('data-bottomTouched')) bottomTouched = true;
+    if (this.verticalRulerLeft && this.verticalRulerLeft.hasAttribute('data-leftTouched')) leftTouched = true;
+    if (this.verticalRulerRight && this.verticalRulerRight.hasAttribute('data-rightTouched')) rightTouched = true;
     let isChildBlock = false;
     if (block.parentNode.matches(this.selector)) {
       // child block
@@ -81621,10 +81635,10 @@ class Common {
 
     // reset
     setTimeout(() => {
-      this.horizontalRulerTop.removeAttribute('data-topTouched');
-      this.horizontalRulerBottom.removeAttribute('data-bottomTouched');
-      this.verticalRulerLeft.removeAttribute('data-leftTouched');
-      this.verticalRulerRight.removeAttribute('data-rightTouched');
+      if (this.horizontalRulerTop) this.horizontalRulerTop.removeAttribute('data-topTouched');
+      if (this.horizontalRulerBottom) this.horizontalRulerBottom.removeAttribute('data-bottomTouched');
+      if (this.verticalRulerLeft) this.verticalRulerLeft.removeAttribute('data-leftTouched');
+      if (this.verticalRulerRight) this.verticalRulerRight.removeAttribute('data-rightTouched');
     }, 10);
   }
   applyPixels(block) {
@@ -82122,6 +82136,8 @@ class Ruler {
     this.rulerRight = null;
   }
   updateRulers(block) {
+    if (block.parentNode.closest(this.selector)) return; // block is in  group
+
     const container = block.closest('.box-canvas');
     this.horizontalRulerTop = container.querySelector('.h-ruler-top');
     this.horizontalRulerBottom = container.querySelector('.h-ruler-bottom');
@@ -82146,6 +82162,8 @@ class Ruler {
     this.rulerRight = null;
     this.elements = container.querySelectorAll(this.selector);
     this.elements.forEach(element => {
+      if (element.parentNode.closest(this.selector)) return; // block is in  group
+
       if (!this.doc.body.contains(element)) return; // in case element removed (eg. unGroup, block deleted)
 
       if (block.contains(element)) return; // In case of group moving
@@ -82824,7 +82842,6 @@ class Resizable {
     }
 
     this.target = event.target.parentNode; // block
-
     this.clonedTarget = this.doc.querySelector(this.selector + '.cloned');
     event.preventDefault();
     event.stopPropagation();
@@ -82843,6 +82860,8 @@ class Resizable {
         this.startX = touch.clientX;
         this.startY = touch.clientY;
       }
+      this.target.style.transition = ''; // prevent anim/delay while dragging (in case a block has animation transition)
+      if (this.clonedTarget) this.clonedTarget.style.transition = '';
 
       //Initial
       this.initialWidth = parseFloat(getComputedStyle(this.target).width);
@@ -83329,6 +83348,7 @@ class Draggable {
       const y = startY - rect.top + containerRect.top;
       target.setAttribute('data-startx', x);
       target.setAttribute('data-starty', y);
+      target.style.transition = ''; // prevent anim/delay while dragging (in case a block has animation transition)
 
       // reset (from applyPercentage bottomTouched)
       if (target.style.bottom) {
@@ -83403,6 +83423,39 @@ class Draggable {
     }
   }
   updateBlockStyle(target) {
+    // Block placement should must not 50% outside the container
+    const container = target.closest('.box-canvas');
+    if (!target.parentNode.closest('.is-group')) {
+      let containerHeight = container.offsetHeight;
+      let containerWidth = container.offsetWidth;
+      /*
+      if(target.offsetTop + target.offsetHeight>=containerHeight) {
+          target.style.top = containerHeight-target.offsetHeight +'px';
+      }
+      if(target.offsetTop<=0) {
+          target.style.top = '0px';
+      }
+      if(target.offsetLeft + target.offsetWidth>=åcontainerWidth) {
+          target.style.left = (containerWidth-target.offsetWidth) +'px';
+      }
+      if(target.offsetLeft<=0) {
+          target.style.left = '0px';
+      }
+      */
+      if (target.offsetTop + target.offsetHeight <= target.offsetHeight / 2) {
+        target.style.top = '0px';
+      }
+      if (containerHeight - target.offsetTop <= target.offsetHeight / 2) {
+        target.style.top = containerHeight - target.offsetHeight + 'px';
+      }
+      if (target.offsetLeft + target.offsetWidth <= target.offsetWidth / 2) {
+        target.style.left = '0px';
+      }
+      if (containerWidth - target.offsetLeft <= target.offsetWidth / 2) {
+        target.style.left = containerWidth - target.offsetWidth + 'px';
+      }
+    }
+
     // Replace with ruler's alignment
     if (this.ruler.rulerTop !== null) target.style.top = this.ruler.rulerTop + 'px';
     if (this.ruler.rulerBottom !== null) target.style.top = this.ruler.rulerBottom - target.offsetHeight + 'px'; //new
@@ -87772,6 +87825,9 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
           let clonedDiv = block.cloneNode(true);
           clonedDiv.style.top = '20%';
           clonedDiv.style.left = '20%';
+          clonedDiv.style.transform = ''; // clear anim
+          clonedDiv.style.transition = '';
+          clonedDiv.style.opacity = '';
           if (builder) {
             const cloneBuilder = clonedDiv.querySelector(this.container);
             cloneBuilder.innerHTML = '';
@@ -87781,7 +87837,7 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
             this.applyBehaviorOn(cloneBuilder);
             cloneBuilder.click();
           } else {
-            block.parentNode.appendChild(clonedDiv);
+            box.appendChild(clonedDiv);
           }
           block.classList.remove('active');
           this.doc.querySelectorAll('.clone').forEach(elm => elm.parentNode.removeChild(elm));
@@ -88500,7 +88556,7 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
         }
         
         .is-block.clone {
-            z-index:10000;
+            z-index:1000;
             background-color: transparent !important;
             background: none !important;
         }
@@ -89049,6 +89105,18 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
             });
             var html = result[0].html;
             var noedit = result[0].noedit;
+            if (result[0].mode === 'canvas') {
+              html = result[0].html2;
+              if (!html) {
+                html = `
+                                <div class="row">
+                                    <div class="column pt-0 pb-0 pl-0 pr-0 flex flex-col justify-center">
+                                    <img src="${this.opts.snippetPath}images/img-2400x1350.png" alt="">
+                                    </div>
+                                </div>
+                            `;
+              }
+            }
             var bSnippet;
             if (html.indexOf('"row') === -1) {
               bSnippet = true; // Just snippet (without row/column grid)
@@ -89159,7 +89227,10 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
               dummies.forEach(elm => elm.parentNode.removeChild(elm));
               this.sortableOnCanvas = [];
             }
-            if (this.sortableOnPage) this.sortableOnPage.destroy();
+            if (this.sortableOnPage) {
+              this.sortableOnPage.destroy();
+              this.sortableOnPage = null;
+            }
           }
         }
       });
@@ -92417,7 +92488,10 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
               dummies.forEach(elm => elm.parentNode.removeChild(elm));
               this.sortableOnCanvas = [];
             }
-            if (this.sortableOnPage) this.sortableOnPage.destroy();
+            if (this.sortableOnPage) {
+              this.sortableOnPage.destroy();
+              this.sortableOnPage = null;
+            }
           }
         });
         this.sortableOnCanvas.push(obj);
@@ -92493,7 +92567,10 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
               dummies.forEach(elm => elm.parentNode.removeChild(elm));
               this.sortableOnCanvas = [];
             }
-            if (this.sortableOnPage) this.sortableOnPage.destroy();
+            if (this.sortableOnPage) {
+              this.sortableOnPage.destroy();
+              this.sortableOnPage = null;
+            }
             return;
           }
           if (itemEl.getAttribute('data-id')) {
@@ -92647,7 +92724,10 @@ Add an image for each feature.`, 'Create a new content showcasing a photo galler
             dummies.forEach(elm => elm.parentNode.removeChild(elm));
             this.sortableOnCanvas = [];
           }
-          if (this.sortableOnPage) this.sortableOnPage.destroy();
+          if (this.sortableOnPage) {
+            this.sortableOnPage.destroy();
+            this.sortableOnPage = null;
+          }
         }
       });
     }
