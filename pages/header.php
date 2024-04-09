@@ -6,12 +6,11 @@
 		<!-- SEO PAGE SETTINGS  -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title><?php echo ($page->seo_title != '') ? $page->seo_title : $core->site_name ?></title>
+		<title><?php echo $page->seo_title ?></title>
 		<link rel="icon" type="image/x-icon" href="<?php echo $core->web['favicon'] ?>">
 		<meta property="og:url" content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" />
 		<meta property="og:type" content="website" />
 		<meta name="author" content="https://expozy.com/">
-
 
 
 
@@ -44,13 +43,14 @@
 			const COREURL = "<?php echo CORE_URL; ?>api/";
 			const LOGGED_IN = "<?php echo $user->logged_in ?>";
 			const USER_EMAIL = "<?php echo $user->email ?>";
-			const PAGEINIT = <?php echo json_encode($page, JSON_UNESCAPED_UNICODE) ?>;
 			const USER = <?php echo json_encode($user, JSON_UNESCAPED_UNICODE) ?>;
 			const LOGO_URL = "<?php echo $core->web['logo'] ?>";
 			const FAVICON_URL = "<?php echo $core->web['favicon'] ?>";
 			const SOCIAL_NETWORKS = <?php echo json_encode($core->web['links'], JSON_UNESCAPED_UNICODE) ?>;
 			const URL_PARAMETERS = <?php echo json_encode($_GET) ?>;
 			const SITENAME = <?php echo json_encode($core->site_name) ?>;
+			const JS_VERSION = <?php echo JS_VERSION; ?>;
+			const PAGEINIT = {id: <?= $page->id?>, target_id: <?= $page->target_id; ?>  };
 		</script>
 
 
@@ -61,7 +61,7 @@
 
 
 		<!-- CORE SYSTEM SETTINGS -->
-		<link rel="stylesheet" href="/assets/css/custom.css">
+		<link rel="stylesheet" href="/assets/css/custom.css?v=<?php echo JS_VERSION ?>">
 		<link href="<?= CBURL ?>assets/minimalist-blocks/content.css" rel="stylesheet" type="text/css" />
 		<link href="<?= CBURL ?>box/box-flex.css" rel="stylesheet" type="text/css" />
 		<!-- <link href="/assets/expozyBox/minimalist-blocks/content.css" rel="stylesheet" type="text/css" />

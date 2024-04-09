@@ -27,7 +27,7 @@ class Api
 	protected static $method;
 	protected static $admin_api = false;
 	protected static $cache = true;
-
+	protected static $redirect = true;
 
 	//protected static $api_key = '';
 
@@ -57,6 +57,8 @@ class Api
 		$id = self::$id;
 		$curent_request_cache = self::$cache;
 		$result_from_cache = false;
+		$redirect = self::$redirect;
+		
 		$data = self::_generate_data();
 		
 		$ch = curl_init();
@@ -132,14 +134,13 @@ class Api
 			 $result_from_cache = true;
 		} else {
 		
-			//d($url);
-			//d($method);
+			
 			curl_setopt($ch, CURLOPT_URL,$url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, strtoupper($method));
 
 			$server_output = curl_exec($ch);
-						
+
 			curl_close ($ch);
 			
 			$result_from_cache = false;
@@ -161,12 +162,19 @@ class Api
 		    return $server_output;
 		}
 		
+		//d($return);die();
+		
 		if(isset($return['redirect'])){
-		    //session_destroy();
-			//d($headers);die();
-		    header('Location: ' . $return['redirect']);
+//		    var_dump($url);
+//			var_dump($redirect);die();
+			if($redirect){
+				header('Location: ' . $return['redirect']);
+				die();
+			}
+		    
+			
 		    //redirect_to($return['redirect']);
-		    die();
+		  
 		}
 		
 		
@@ -181,6 +189,7 @@ class Api
 		header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, HEAD, OPTIONS');
 		header('Access-Control-Allow-Headers: Authorization,Origin, X-Requested-With, Content-Type, Accept, Cache-Control, X-CSRF-TOKEN, X-XSRF-TOKEN');
 		header('Content-Type: application/json');
+		
 
 		die (json_encode($array, JSON_PRETTY_PRINT));
 		//();
@@ -226,6 +235,11 @@ class Api
 	
 	public static function cache(bool $cache):object{
 		static::$cache = $cache;
+		return new static;
+	}
+	
+	public static function redirect(bool $redirect):object{
+		static::$redirect = $redirect;
 		return new static;
 	}
 
@@ -301,6 +315,7 @@ class Api
 		self::$sort = 0;
 		self::$data = array();
 		self::$cache = true;
+		self::$redirect = true;
 		self::$admin_api = false;
 		
 		$_GET['query_route'] = '';

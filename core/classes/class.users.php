@@ -151,6 +151,26 @@ class Users
 
 		return $return;
 	}
+	
+	public function loginByToken(string $token)
+	{
+		global $core;
+
+		$row = Api::get()->users();
+
+		if(!$row) return;
+
+		$this->logged_in = true;
+		$this->uid = $_SESSION['uid'] = $row['id'];
+		$this->email = $_SESSION['email'] = $row['email'];
+		$this->names = $_SESSION['names'] = $row['first_name'] . ' ' . $row['last_name'];
+		$this->balance = $_SESSION['balance'] = $row['balance'];
+		$this->userlevel = $_SESSION['userlevel'] = $row['userlevel'];
+		$this->lastlogin = date('Y-m-d H:i:s');
+		$_SESSION['site_id'] = $core->site_id;
+		$this->token = $_SESSION['token'] = $row['token'];
+
+	}
 
 	/** =========================================================
 	 * Function : logout()

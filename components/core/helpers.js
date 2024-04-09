@@ -1,5 +1,5 @@
 
-export let Helpers = {
+let Helpers = {
 
 
 	get_form_data: function (form) {
@@ -13,7 +13,7 @@ export let Helpers = {
 
 			if (e.name != '') {
 
-				if (e.name.endsWith('[]')) {
+				if (e.name.endsWith('[]') && e.type != 'file') {
 					if (object[e.name] !== undefined) {
 						if (e.value != '') {
 							object[e.name].push(e.value);
@@ -215,3 +215,5 @@ export let Helpers = {
 
 
 };
+
+window.Helpers = Helpers

@@ -1,8 +1,10 @@
-<?php echo '<?xml version="1.0" encoding="UTF-8"?' ?>
+<?php echo '<?xml version="1.0" encoding="UTF-8"?>' ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <?php 
 define( "_VALID_PHP", true);
 require_once '../autoload.php';
+CommonMarkheader('Content-type: application/xml');
+
 //$products = [];
 $page = 1;
 $total_pages = 0;

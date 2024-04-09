@@ -25,7 +25,7 @@ define('CLASSES_DIR',				'core/classes/');
 define('HELPERS_DIR',				'core/helpers/');
 define('PLUGINS_DIR',				'core/plugins/');
 define('PAGES_DIR',					'pages/');
-
+define('JS_VERSION',				'13');
 
 
 /* SAAS

@@ -1,28 +1,26 @@
-import {ApiClass} from '../core/api/api.js';
-import {Helpers} from '../core/helpers.js';
-import {Handler} from '../core/handler.js';
+
 
 export let Currencies = {
 
-		get_currencies: async function (data, options){
-			let response = [];
+	get_currencies: async function (data, options) {
+		let response = [];
 
-			let endpoint = Helpers.combineRequest('currencies' , data);
+		let endpoint = Helpers.combineRequest('currencies', data);
 
-			let api = new ApiClass();
-			await api.get(endpoint, true);
+		let api = new ApiClass();
+		await api.get(endpoint, true);
 
-			if(!api.response) return response['internalError'] = 'No response from api for Currencies.get_currencies';
+		if (!api.response) return response['internalError'] = 'No response from api for Currencies.get_currencies';
 
-			response['obj'] = api.response;
-			response['keyName'] = 'currencies';
+		response['obj'] = api.response;
+		response['keyName'] = 'currencies';
 
-			if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
+		if ("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
-			if("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
+		if ("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
 
-			return response;
-		},
+		return response;
+	},
 
 
 

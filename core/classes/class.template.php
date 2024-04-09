@@ -6,7 +6,7 @@ if (!defined("_VALID_PHP")) { die('Direct access to this location is not allowed
  * ========================================================== */
 class Template
 {
-		public const DIR_PATH = BASEPATH.'static/pages/';
+		public const DIR_PATH = BASEPATH.'static/';
 		public const DIR_PATH_CSS = BASEPATH.'static/css/';
 		private string|false $file = false;
 		private string|false $file_css = false;
@@ -14,22 +14,28 @@ class Template
 		private string $page_slug = '';
 		private string $dir_file = '';
 		private string $dir_css = '';
-
-		public function __construct(string $type, string $slug='') {
+		
+		
+		public function __construct(string $type, string $slug='', bool $private = false) {
 			global $lang;
 
 			$this->page_type = $type;
 			$this->page_slug = $slug;
 
-//			if($this->page_type=='footer' || $this->page_type == 'header'){
-//				$slug = '';
-//			}
-			$this->dir_file = self::DIR_PATH."{$lang->language}";
-			$this->dir_css = self::DIR_PATH_CSS."{$lang->language}";
+			if($private && $this->page_type !=='footer' && $this->page_type !== 'header'){
+					$this->dir_file = self::DIR_PATH."private/{$lang->language}";
+					$this->file = "{$this->dir_file}/{$slug}";
+			} else {
+					$this->dir_file = self::DIR_PATH."pages/{$lang->language}";
+					$this->file = "{$this->dir_file}/{$slug}.html";
+			}
+ 
 
+			$this->dir_css = self::DIR_PATH_CSS."{$lang->language}";
 			
-			$this->file = "{$this->dir_file}/{$slug}.html";
 			$this->file_css = "{$this->dir_css}/{$slug}.css";
+			
+
 
 		}
 
@@ -37,13 +43,13 @@ class Template
 		public function get_html(){
 			$html = '';
 
+			
 			if(file_exists($this->file)){
-
-
-				//d(file_get_contents($this->file));
 				$html = file_get_contents($this->file);
 			}
 
+
+			
 			return $html;
 		}
 		

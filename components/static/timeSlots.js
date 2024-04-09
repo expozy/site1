@@ -1,45 +1,43 @@
-import {ApiClass} from '../core/api/api.js';
-import {Helpers} from '../core/helpers.js';
-import {Handler} from '../core/handler.js';
+
 
 export let Timeslots = {
 
 
-  get_time_slots: async function(data, options){
+	get_time_slots: async function (data, options) {
 		let response = [];
 
 		response['keyName'] = 'time_slots';
-		if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
+		if ("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
-		let endpoint = Helpers.combineRequest('time_slots' , data);
+		let endpoint = Helpers.combineRequest('time_slots', data);
 		let api = new ApiClass();
 
 		await api.get(endpoint, false);
 
-		if(!api.response) return response['internalError'] = 'No response from api for Timeslots.get_time_slots';
+		if (!api.response) return response['internalError'] = 'No response from api for Timeslots.get_time_slots';
 
 		response['obj'] = api.response;
 
-		if("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
+		if ("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
 
 		return response;
 	},
-  get_time_slots_days: async function(data, options){
+	get_time_slots_days: async function (data, options) {
 		let response = [];
 
 		response['keyName'] = 'time_slots_days';
-		if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
+		if ("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
-		let endpoint = Helpers.combineRequest('time_slots_days' , data);
+		let endpoint = Helpers.combineRequest('time_slots_days', data);
 		let api = new ApiClass();
 
 		await api.get(endpoint, false);
 
-		if(!api.response) return response['internalError'] = 'No response from api for Timeslots.get_time_slots_days';
+		if (!api.response) return response['internalError'] = 'No response from api for Timeslots.get_time_slots_days';
 
 		response['obj'] = api.response;
 
-		if("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
+		if ("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
 
 		return response;
 	},

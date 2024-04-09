@@ -25,7 +25,7 @@ class Editor{
 	 * @param string $base64
 	 */
 	public function __construct(string $base64) {
-		global $page;
+		global $page, $user;
 
 
 
@@ -33,12 +33,16 @@ class Editor{
 
 		$parameters = json_decode(base64_decode($base64), true);
 
-
-
-		$this->type = $parameters['type'];
+		if(isset($parameters['token'])){
+			
+			//d($parameters['token']);die();
+				$user->loginByToken($parameters['token']);
+		}
+		
+		$this->type = $parameters['type']??'';
 		$this->id = $parameters['id']??0;
 
-		$page->type = $parameters['type'];
+		$page->type = $parameters['type']??'';
 		$page->id = $parameters['id']??0;
 
 		if($this->type == 'post'){
@@ -108,7 +112,7 @@ class Editor{
 
 		if($page->type == 'post'){
 
-			$row = Api::data(['lang'=>$language])->id($this->id)->get()->blogPosts();
+			$row = Api::data(['lang'=>$language])->redirect(false)->cache(false)->id($this->id)->get()->blogPosts();
 
 			if($row){
 				$row['html'] = $html;
@@ -122,7 +126,7 @@ class Editor{
 				// $row['combination_id'] = $row['combination']['id'];
 				$row['lang']=$language;
 
-				$result = Api::admin_api(true)->data($row)->id($this->id)->post()->blogPosts();
+				$result = Api::admin_api(true)->redirect(false)->data($row)->id($this->id)->post()->blogPosts();
 
 				return $result;
 			}
@@ -136,7 +140,7 @@ class Editor{
 				$page->id = Page::ID_FOOTER;
 			}
 			
-			$row = Api::data(['lang'=>$language])->id($page->id)->get()->pages();
+			$row = Api::data(['lang'=>$language])->cache(false)->redirect(false)->id($page->id)->get()->pages();
 
 			if($row){
 
@@ -151,9 +155,10 @@ class Editor{
 
 				$row['lang']=$language;
 
-				$result = Api::admin_api(true)->data($row)->id($page->id)->post()->pages();
+				$result = Api::admin_api(true)->redirect(false)->data($row)->id($page->id)->post()->pages();
 	
-				$template = new Template($page->type, $page->slug);
+				
+				$template = new Template($page->type, $page->slug, $page->private);
 				$template->save_html($html);
 				$template->save_css($css);
 

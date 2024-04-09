@@ -1,6 +1,21 @@
-import { Api } from '../core/api/api.js';
-import { Page } from './classes/page.js';
-import { Helpers } from './helpers.js';
+// Старт функция 
+async function callBackMain() {
+  await import(`./helpers.js?v=${JS_VERSION}`);
+  await import(`./classes/page.js?v=${JS_VERSION}`);
+  await import(`./api/api.js?v=${JS_VERSION}`);
+  await import(`./handler.js?v=${JS_VERSION}`);
+
+  replaceImages();
+
+  if (updatedMain == true) return;
+  callApiData();
+  updatedMain = true;
+
+}
+
+window.callBackMain = callBackMain;
+
+
 
 
 let updatedMain = false;
@@ -25,7 +40,7 @@ let dataBody = {
 };
 
 
-// const fn = () => console.log('we capture a change');
+
 const dataProxy = new Proxy(dataBody, {
   set(target, property, value) {
     if (property == 'corePage') {
@@ -44,14 +59,7 @@ const dataProxy = new Proxy(dataBody, {
 
 window.dataProxy = dataProxy;
 
-function callBackMain() {
-  if (updatedMain == true) return;
-  callApiData();
-  updatedMain = true;
 
-}
-
-window.callBackMain = callBackMain;
 
 
 
@@ -89,14 +97,7 @@ document.addEventListener('alpine:init', () => {
 // END INIT BODY DATA METHOD
 
 
-loadData();
 
-async function loadData() {
-  let corePage = await Page.get();
-  dataProxy['corePage'] = corePage;
-}
-
-// END INITITIAL DATA ON PAGE LOAD
 
 
 function callApiData() {
@@ -118,7 +119,7 @@ function callApiData() {
     let importFile = functionCall.split(".")[0];
     importFile = importFile.charAt(0).toLowerCase() + importFile.slice(1);
 
-    import(`../static/${importFile}.js`)
+    import(`../static/${importFile}.js?v=${JS_VERSION}`)
       .then(module => {
         try {
           eval(functionCall + '(data, options)');
@@ -212,7 +213,7 @@ async function alpineListeners(method, element) {
   let importFile = method.split(".")[0];
   importFile = importFile.charAt(0).toLowerCase() + importFile.slice(1);
 
-  await import(`../static/${importFile}.js`)
+  await import(`../static/${importFile}.js?v=${JS_VERSION}`)
     // .then( module =>  {
     //
     // })
@@ -271,6 +272,7 @@ window.forceChange = forceChange;
 // GET ALL ATTRIBUTES OF ELEMENT WICH START WITH " DATA- "
 
 function getDataAttributes(element, prefix) {
+
   const dataAttrs = element.getAttributeNames().reduce((obj, name) => {
     if (name.startsWith(prefix + '-')) {
       return { ...obj, [name.slice(name.indexOf('-') + 1)]: element.getAttribute(name) };
@@ -356,8 +358,8 @@ window.initScripts = initScripts;
   FROM 10x10px TO NEEDED WIDTH OF CONTAINER
 */
 
-replaceImages();
-window.replaceImages = replaceImages;
+
+// window.replaceImages = replaceImages;
 
 
 function replaceImages() {
@@ -448,18 +450,17 @@ function replaceImages() {
   }
 }
 
-window.replaceImages = replaceImages;
+
 
 
 
 const devSaveButton = document.getElementById("dev_save");
 if (devSaveButton !== null) {
 
-
-
   devSaveButton.onclick = async function () {
     // dataProxy['user']['token']
     //save page
+    Page.get();
     await alpineTemplatesGen();
     await classGen();
     await Page.saveCss();

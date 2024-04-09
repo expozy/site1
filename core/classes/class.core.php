@@ -35,7 +35,7 @@ class FrontCore
 		//$current_url = 'https://' . $current_url['host'];
 
 		$rows = Api::cache(false)->get()->settings();
-	
+
 		if(is_array($rows) === false ){
 			//die('END maintenance');
 			redirect_to('/maintenance');

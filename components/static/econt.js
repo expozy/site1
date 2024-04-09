@@ -1,38 +1,36 @@
-import {ApiClass} from '../core/api/api.js';
-import {Helpers} from '../core/helpers.js';
-import {Handler} from '../core/handler.js';
+
 
 export let Econt = {
 
 
-		get_offices: async function (data, options){
-			let response = [];
+	get_offices: async function (data, options) {
+		let response = [];
 
-      data['offices'] = true;
+		data['offices'] = true;
 
-			let endpoint = Helpers.combineRequest('econt' , data);
+		let endpoint = Helpers.combineRequest('econt', data);
 
-			let api = new ApiClass();
-			await api.get(endpoint, true);
-
-
-			if(!api.response) return response['internalError'] = 'No response from api for Econt.get_offices';
+		let api = new ApiClass();
+		await api.get(endpoint, true);
 
 
-      response['keyName'] = 'econt_offices';
-			response['obj'] = api.response;
+		if (!api.response) return response['internalError'] = 'No response from api for Econt.get_offices';
 
-			if(options !== undefined){
-				if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
-				if("initial" in options && options['initial'] == true){
-					return Handler.responseHandler(response);
-				}
+		response['keyName'] = 'econt_offices';
+		response['obj'] = api.response;
+
+		if (options !== undefined) {
+			if ("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
+
+			if ("initial" in options && options['initial'] == true) {
+				return Handler.responseHandler(response);
 			}
+		}
 
-			return response;
+		return response;
 
-		},
+	},
 }
 
 window.Econt = Econt;

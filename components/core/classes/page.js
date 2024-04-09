@@ -1,5 +1,4 @@
-import { ApiClass, Api } from './../api/api.js';
-import { Helpers } from './../helpers.js';
+
 
 export class PageClass {
 
@@ -22,6 +21,7 @@ export class PageClass {
 		this.seo_title = null;
 		this.seo_description = null;
 		this.seo_image = null;
+		this.private = false;
 	}
 
 	async get() {
@@ -64,21 +64,22 @@ export class PageClass {
 			this.lang = LANG;
 		}
 
-		const Api = new ApiClass();
+		const api = new ApiClass();
 
 		if (this.id > 0) {
-			await Api.get('pages/' + this.id);
+
+			await api.get('pages/' + this.id);
 		} else {
-			await Api.get('pages?slug=' + this.slug);
+			await api.get('pages?slug=' + this.slug);
 		}
 
 
 
-		let page = Api.response;
+		let page = api.response;
 
 
-		if (Api.statusCode != 200) {
-			//window.location.href = "/404";
+		if (api.statusCode != 200) {
+			window.location.href = "/404";
 		}
 
 
@@ -86,8 +87,15 @@ export class PageClass {
 		this.id = page.id;
 		this.title = page.title;
 		this.css = page.css;
+		this.url = page.url;
+		//this.target_id = 0;
+		this.seo_tags = page.seo_tags;
+		this.seo_title = page.seo_title;
+		this.seo_description = page.seo_description;
+		this.private = page.private;
 
-		this.updateMeta(page);
+
+		this.updateMeta();
 
 		let response_html = await fetch(this.get_template_url());
 
@@ -117,7 +125,7 @@ export class PageClass {
 		// debugger;
 
 		// GET ALL URL PARAMETERS
-		let parameters = new URL(this.url).searchParams;
+		let parameters = new URL(window.location.href).searchParams;
 		parameters.forEach(function (value, key) {
 
 			if (key.endsWith('[]')) {
@@ -199,7 +207,7 @@ export class PageClass {
 			css: lastElementString,
 			page_id: this.id
 		};
-		Api.post('revisions?lang=' + this.lang, reqBody);
+		api.post('revisions?lang=' + this.lang, reqBody);
 
 		fetch("/pages/editor.php?lang=" + this.lang, {
 			method: 'POST',
@@ -209,12 +217,12 @@ export class PageClass {
 			},
 			body: JSON.stringify({ saveCss: 1, css: lastElementString, slug: this.slug })
 		}).then(response => response.json().then(data => {
-			if(data.status == 1){
+			if (data.status == 1) {
 				window.location.reload();
 			} else {
-				Helpers.show_toast_msg('Save failed' , 'error');
+				Helpers.show_toast_msg('Save failed', 'error');
 			}
-			
+
 		}));
 
 	}
@@ -222,44 +230,78 @@ export class PageClass {
 
 
 	get_template_url() {
-
-		return SITEURL + "/static/pages/" + this.lang + "/" + this.slug + ".html";
+		
+		if(this.private){
+			return `${SITEURL}/pages/privatejs.php?lang=${this.lang}&slug=${this.slug}`;
+			
+		} else {
+			return `${SITEURL}/static/pages/${this.lang}/${this.slug}.html`;
+		}
+		
 	}
 
 	get_css_url() {
 
-		return SITEURL + "/static/css/" + this.lang + "/" + this.slug + ".css";
+		return `${SITEURL}/static/css/${this.lang}/${this.slug}.css`;
 	}
 
 
-	async updateMeta(page) {
+	async updateMeta() {
 
+		let api = new ApiClass();
+
+
+
+		//debugger;
 		if (this.slug === 'product') {
-			await Api.get('products/' + this.target_id);
-			let response = Api.response;
-			this.title = response.title;
-			if (response.seo_description != '') this.seo_description = response.seo_description;
-			if (response.seo_title != '') this.seo_title = response.seo_title;
-			if (response.seo_tags != '') this.seo_tags = response.seo_tags;
-			if (response.images[0] != undefined) this.seo_image = response.images[0].image;
+			await api.get('products/' + this.target_id);
+			let response = api.response;
+
+			this.seo_title = response.seo_title.trim() !== '' ? response.seo_title : response.title;
+			this.seo_description = response.seo_description !== '' ? response.seo_description : `${response.title} - ${SITENAME}`;
+			this.seo_image = response.images[0] !== undefined ? response.images[0].image : LOGO_URL;
+			this.seo_tags = response.seo_tags !== '' ? response.seo_tags : this.seo_title;
+
+		} else if (this.slug === 'products' && this.target_id > 0) {
+			await api.get('categories/' + this.target_id);
+			let response = api.response;
+
+			this.seo_title = response.title;
+			this.seo_description = response.description !== '' ? response.description : this.seo_description;
+			this.seo_image = response.image_url !== '' ? response.image_url : LOGO_URL;
+			this.seo_tags = this.seo_title;
+
+
+		} else if (this.slug === 'post') {
+			await api.get('blogPosts/' + this.target_id);
+			let response = api.response;
+
+			this.seo_title = response.seo_title.trim() !== '' ? response.seo_title : response.title;
+			this.seo_description = response.seo_description.trim() !== '' ? response.seo_description : `${response.title} - ${SITENAME}`;
+			this.seo_image = response.images[0] !== undefined ? response.images[0].url : LOGO_URL;
+			this.seo_tags = response.tags !== '' ? response.tags : this.seo_title;
+
+		} else if (this.slug === 'blog' && this.target_id > 0) {
+			await api.get('blogCategories/' + this.target_id);
+			let response = api.response;
+
+			this.seo_title = response.title;
+			this.seo_tags = this.seo_title;
+
 		}
 
-		if (this.slug === 'post') {
-			
-			await Api.get('blogPosts/' + this.target_id);
-			let response = Api.response;
-			this.title = response.title;
-			if (response.seo_description != '') this.seo_description = response.seo_description;
-			if (response.seo_title != '') this.seo_title = response.seo_title;
-			if (response.seo_tags != '') this.seo_tags = response.seo_tags;
-			if (response.images[0] != undefined) this.seo_image = response.images[0].url;
+
+		if (this.seo_title === '') {
+			this.seo_title = this.title;
+		}
+		if (this.seo_description === '') {
+			this.seo_description = this.seo_title;
+		}
+		if (this.seo_tags === '') {
+			this.seo_tags = this.seo_title;
 		}
 
-		if (this.seo_description == null || this.seo_description == '') this.seo_description = `${this.title} ${SITENAME}`;
-		if (this.seo_title == null || this.seo_title == '') this.seo_title = `${this.title} ${SITENAME}`;
-		if (this.seo_tags == null || this.seo_tags == '') this.seo_tags = `${this.title} ${SITENAME}`.replace(/ /g, ', ');
-		if (this.seo_image == null || this.seo_image == '') this.seo_image = LOGO_URL;
-
+		this.seo_tags = prepareTags(this.seo_tags);
 
 		let seo_description = document.getElementsByClassName('seo_description');
 		for (const e of seo_description) {
@@ -281,13 +323,15 @@ export class PageClass {
 			e.content = this.seo_tags;
 		}
 
-		document.title = this.seo_title;
+
+		document.title = `${this.seo_title}`;
 	}
 
 
 	async getAllPages() {
+		let api = new ApiClass();
 
-		await Api.get('pages?page=1&limit=5');
+		await api.get('pages?page=1&limit=5');
 
 		const resultsPerPage = Api.response.pagination.results_per_page;
 		let currentPage = Api.response.pagination.current_page;
@@ -299,7 +343,7 @@ export class PageClass {
 			currentPage++;
 
 			try {
-				await Api.get('pages?limit=' + resultsPerPage + '&page=' + currentPage);
+				await api.get('pages?limit=' + resultsPerPage + '&page=' + currentPage);
 				if (!Api.response.result) {
 					throw new Error(`Грешка при извличане на страница ${currentPage}`);
 				}
@@ -320,11 +364,21 @@ export class PageClass {
 
 
 
+
+
 };
 
-export let Page = new PageClass();
+function prepareTags(string) {
+	if (Array.isArray(string)) {
+		return string.join(", ");
+	}
+
+	return string.replace(/ /g, ', ');
+}
 
 
+window.Page = new PageClass();
+// window.PageClass = PageClass;
 //Page.getAllPages()
 //  .then((allPages) => {
 //    console.log(allPages);

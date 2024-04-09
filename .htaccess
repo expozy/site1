@@ -45,6 +45,10 @@ Options -MultiViews -Indexes +FollowSymlinks
  #ExpiresByType image/png "access 1 year"
 </IfModule>
 
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+</IfModule>
+
 <IfModule mod_rewrite.c>
  RewriteEngine On
  RewriteRule ^logout pages/logout.php [NC,L]
@@ -60,7 +64,7 @@ Options -MultiViews -Indexes +FollowSymlinks
  RewriteRule ^([a-z]{2})/sitemaps/sitemap_blog core/sitemaps/sitemap_blog.php?lang=$1 [NC,L,QSA]
  RewriteRule ^([a-z]{2})/sitemap core/sitemaps/index.php?lang=$1 [NC,L,QSA]
  RewriteRule ^([a-z]{2})/ index.php?lang=$1 [NC,L,QSA]
-
+ RewriteRule ^private/([a-z]{2})/ index.php?lang=$1 [NC,L,QSA]
 
 
 </IfModule>

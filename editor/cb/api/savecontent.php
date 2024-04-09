@@ -35,6 +35,7 @@ $_SESSION['sectionCss'] = $sectionCss;
 $editor = new Editor($get['i']);
 
 
+
 if(!empty($content)){
 	$result = $editor->save($content, $get['lang']??'', $tailwindCss, $revision_title);
 	

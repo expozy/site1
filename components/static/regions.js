@@ -1,26 +1,24 @@
-import {ApiClass} from '../core/api/api.js';
-import {Helpers} from '../core/helpers.js';
-import {Handler} from '../core/handler.js';
+
 
 export let Regions = {
 
 
-	get_regions: async function(data, options){
+	get_regions: async function (data, options) {
 		let response = [];
 
 		response['keyName'] = 'regions';
-		if("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
+		if ("keyName" in options && options['keyName'] != '' && options['keyName'] != null) response.keyName = options['keyName'];
 
-		let endpoint = Helpers.combineRequest('regions' , data);
+		let endpoint = Helpers.combineRequest('regions', data);
 		let api = new ApiClass();
 
 		await api.get(endpoint, false);
 
-		if(!api.response) return response['internalError'] = 'No response from api for Regions.get_regions';
+		if (!api.response) return response['internalError'] = 'No response from api for Regions.get_regions';
 
 		response['obj'] = api.response;
 
-		if("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
+		if ("initial" in options && options['initial'] == true) return Handler.responseHandler(response);
 
 		return response;
 	},
