@@ -389,7 +389,7 @@ function replaceImages() {
             // newUrl = originSrcUrl.replace('10x10', '800x600');
             newUrl = originSrcUrl.replace('10x10', '1024x768');
           }
-          if (image.clientWidth > 1024) {
+          if (image.clientWidth >= 1024) {
             // newUrl = originSrcUrl.replace('10x10', '1024x768');
             newUrl = originSrcUrl.replace('10x10', '1024x768');
           }
@@ -421,7 +421,7 @@ function replaceImages() {
               newUrl = originSrcUrl.replace('10x10', '1024x768');
             }
 
-            if (el.clientWidth > 1024) {
+            if (el.clientWidth >= 1024) {
               newUrl = originSrcUrl.replace('10x10', '1024x768');
             }
           }

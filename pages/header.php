@@ -47,7 +47,7 @@
 			const LOGO_URL = "<?php echo $core->web['logo'] ?>";
 			const FAVICON_URL = "<?php echo $core->web['favicon'] ?>";
 			const SOCIAL_NETWORKS = <?php echo json_encode($core->web['links'], JSON_UNESCAPED_UNICODE) ?>;
-			const URL_PARAMETERS = <?php echo json_encode($_GET) ?>;
+			const URL_PARAMETERS = <?php unset($_GET['query_id']); echo json_encode($_GET) ?>;
 			const SITENAME = <?php echo json_encode($core->site_name) ?>;
 			const JS_VERSION = <?php echo JS_VERSION; ?>;
 			const PAGEINIT = {id: <?= $page->id?>, target_id: <?= $page->target_id; ?>  };

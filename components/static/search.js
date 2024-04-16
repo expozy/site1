@@ -33,7 +33,7 @@ export let Search = {
 		if ("chnageurl" in options || (dataProxy[response.keyName] != undefined && "chnageurl" in dataProxy[response.keyName])) {
 			response['obj'].chnageurl = true;
 			// change Url With data parameters
-			history.pushState(null, null, endpoint);
+			history.replaceState(null, null, endpoint);
 		}
 
 		if ('scroll' in options) {

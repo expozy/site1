@@ -5,7 +5,7 @@
 
 export const lang = LANG;
 let warehouse_id = 1;
-export const currency = localStorage.getItem('currency') != null ? localStorage.getItem('currency') : 'BGN';
+export const currency = localStorage.getItem('currency');
 
 
 
@@ -19,7 +19,14 @@ export class ApiClass {
 
 		let conn;
 		let tmp = endpoint.split('?');
-		let url = COREURL + tmp[0] + '?lang=' + lang + '&currency=' + currency;
+		let url;
+		if (currency != undefined) {
+			url = COREURL + tmp[0] + '?lang=' + lang + '&currency=' + currency;
+		} else {
+			url = COREURL + tmp[0] + '?lang=' + lang;
+		}
+
+
 		if (tmp[1] !== undefined) {
 			url += '&' + tmp[1];
 		}

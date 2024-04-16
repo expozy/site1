@@ -1,6 +1,6 @@
 
 
-export let QA = {
+export let Qa = {
 
 
 	get_qa: async function (data, options) {
@@ -45,4 +45,4 @@ export let QA = {
 
 
 };
-window.QA = QA;
+window.Qa = Qa;
