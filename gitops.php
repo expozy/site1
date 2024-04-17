@@ -6,7 +6,7 @@ if(count($files) == 3){
 	$git_clone = "git clone https://github.com/expozy/frontend.expozy.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard";
 	$output = shell_exec($git_clone);
 	header('Location: /en/login');
-	die($output);
+	die();
 }
 
 
@@ -24,7 +24,7 @@ if($user->is_admin() === false){
 $output = shell_exec("git remote get-url origin");
 $curent_repo = trim(basename($output));
 
-$frontend_project = $core->site_name === 'frontend' ? true : false;
+
 
 
 
@@ -48,6 +48,7 @@ if(post('github_token')){
 }
 
 $github_token = isset($_SESSION['github_token']) && !empty($_SESSION['github_token']) ? $_SESSION['github_token'] : false;
+$frontend_project = $core->site_name === 'frontend' ? true : false;
 
 if(post('upload_repo')){
 	//check if repo exist
@@ -66,6 +67,34 @@ if(post('upload_repo')){
 	
 }
 
+$hide_table = $frontend_project === true || $github_token === false ? true : false;
+
+
+$repos = Api::data(['github_token'=> $github_token, 'github_route'=>'repos'])->get()->git();
+
+
+if(post('download')){
+	
+	
+	//delete all files
+	deleteFiles('.');
+	$git_clone = "git clone ".post('repo')." tmp && mv tmp/.git . && rm -rf tmp && git reset --hard";
+	$output = shell_exec($git_clone);
+	header('Location: /gitops.php');
+	die();	
+}  
+
+function deleteFiles($target) {
+	
+	$files = scandir($target);
+	foreach($files as $file){
+		if(is_dir($file)){
+			 shell_exec("rm -r " . escapeshellarg($file));
+		} elseif(is_file($file)) {
+			 unlink($file);
+		}
+	}
+}
 
 ?>
 
@@ -105,22 +134,26 @@ if(post('upload_repo')){
 			 <br /><br/>
 			 <br /><br/>
 			 
-			 <div class="red"><?php if(!$github_token) echo "Please, enter github token: <a href='https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens' target='_blank'>Help</a>"; ?></div>
-			 <div style="<?php if(!$github_token) echo "display:none;"; ?>">
+			 <div class="red">
+				<div><?php if($frontend_project) echo "Please, change SAAS KEY"; ?></div>
+				<div><?php if(!$github_token) echo "Please, enter github token: <a href='https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens' target='_blank'>Help</a>"; ?></div>
+			 </div>
+			 <div style="<?php if($hide_table) echo "display:none;"; ?>">
 					Push to repo: <br/><i>*you can push only in repo of project</i>
-					<?php if($frontend_project) echo "<br/><br/><div class='red'>YOU CAN NOT PUSH TO THIS REPO, PLEASE CHANGE SAAS KEY</div><br/>"; ?> 
 				   <form method="post">
 					   <input type="hidden" name="upload_repo"  value="1" />
 					   <input type="text" placeholder="GitHub username" value="<?php echo $core->site_name; ?>" disabled/>	
-					   <button <?php if($frontend_project) echo "disabled" ?>>PUSH</button>
+					   <button>PUSH</button>
 				   </form>
 				   <br/>
 				   <br/>
 				   Fetch from GitHub:
-				   <form>
-					   <select>
-						   <option></option>
-						   <option></option>
+				   <form method="post">
+					   <input type="hidden" name='download' value='1' />
+					   <select name='repo'>
+						   <?php foreach($repos as $repo) { ?>
+						   <option value='<?php echo $repo['clone_url']; ?>' <?php if($repo['name'] == $core->site_name) echo 'selected'; ?>><?php echo $repo['name']; ?></option>
+						   <?php } ?>
 					   </select>
 					   <input type="text" name="" placeholder="GitHub username" value="<?php echo $core->site_name; ?>" disabled/>
 
