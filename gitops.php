@@ -5,7 +5,7 @@ $files = scandir(__DIR__);
 if(count($files) == 3){
 	$git_clone = "git clone https://github.com/expozy/frontend.expozy.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard";
 	$output = shell_exec($git_clone);
-	header('Location: /en/login');
+	header('Location: /gitops.php');
 	die();
 }
 
@@ -14,11 +14,25 @@ define( "_VALID_PHP", true);
 
 require_once( "core/autoload.php");
 
-/**** Check access level ****/
-if($user->is_admin() === false){
-	die('Please login!');
+
+if(post('login')){
+	
+	$res = $user->login(post('email'), post('password'));
+	header('Location: /gitops.php');
 }
 
+
+/**** Check access level ****/
+if($user->is_admin() === false){
+	
+	echo '	<form method="post">
+					   <input type="hidden" name="login"  value="1" />
+					   <input type="text" placeholder="Email" name="email"/>
+					   <input type="password" placeholder="password" name="password"/>
+					   <button>LOGIN</button>
+			</form>';
+	die('Please login first!');
+}
 
 
 $output = shell_exec("git remote get-url origin");
@@ -39,7 +53,8 @@ if(post('saas_key')){
 
 	// save new content
 	file_put_contents($file, $newContent);
-	header('Location: /en/login');
+	
+	header('Location: /gitops.php');
 	die();
 }
  
@@ -164,4 +179,4 @@ function deleteFiles($target) {
 			 </div>
 		</div>
 	</body>
-</html>
+</html>  
