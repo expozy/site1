@@ -1,0 +1,5 @@
+[18-Apr-2024 10:51:06 Europe/Sofia] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function GitOps::get_repo(), 1 passed in /home/v3frontend/web/storefront7.studiowebdemo.com/public_html/gitops.php on line 121 and exactly 2 expected in /home/v3frontend/web/storefront7.studiowebdemo.com/public_html/core/classes/class.gitops.php:17
+Stack trace:
+#0 /home/v3frontend/web/storefront7.studiowebdemo.com/public_html/gitops.php(121): GitOps::get_repo()
+#1 {main}
+  thrown in /home/v3frontend/web/storefront7.studiowebdemo.com/public_html/core/classes/class.gitops.php on line 17
